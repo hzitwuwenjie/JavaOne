@@ -11,7 +11,7 @@ package com.jc02.zoudongping;
  * |    @description   哈哈
  * +---------------------------------Oooo---------------------------------------+
  */
-public class zoudongping {
+public class Test1 {
     public static void main(String[] args){
         System.out.println("我是邹东平！！！");
     }
