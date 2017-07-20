@@ -11,5 +11,7 @@ public class test2 {
         double c = (a + b) * 0.8;
 
         System.out.println("消费总金额" + c);
+
+
     }
 }
