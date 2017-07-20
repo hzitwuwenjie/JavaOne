@@ -1,4 +1,4 @@
-package com.jc02.homework.liwei;/**
+package com.jc02.liwei;/**
  * Created by 熊不举 on 2017/7/20.
  */
 
