@@ -1,10 +1,15 @@
 package com.jc02.lichenxi;
 
 /**
- * Created by Nehcey on 2017/7/20.
+ * Created by 李晨曦 on 2017/7/20.
  */
 public class LiChenxi {
     public static void main(String[] args) {
-        System.out.println("你好！我是李晨曦。我加入了你的项目组！");
+        int a = 380;
+        int b = 1000;
+        int c = a + b;
+        double d = c * 0.8;
+        System.out.println("总金额"+c);
+        System.out.println("实际消费金额"+d);
     }
 }
