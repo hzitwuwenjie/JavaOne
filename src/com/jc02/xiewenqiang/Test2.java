@@ -1,4 +1,4 @@
-package com.jc02.xwq;
+package com.jc02.xiewenqiang;
 
 /**
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
@@ -8,7 +8,7 @@ package com.jc02.xwq;
  * +---------------------------------Oooo---------------------------------------+
  */
 
-public class Test {
+public class Test2 {
 
     public static void main(String[] args) {
         int pricea=245;
