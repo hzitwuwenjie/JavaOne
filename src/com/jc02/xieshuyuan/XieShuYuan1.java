@@ -11,7 +11,7 @@ package com.jc02.xieshuyuan;
  * |    @description   计算消费总金额
  * +---------------------------------Oooo---------------------------------------+
  */
-public class test1 {
+public class XieShuYuan1 {
     public static void main(String[] args) {
         //物件
         float a=380;
