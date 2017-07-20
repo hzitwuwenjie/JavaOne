@@ -13,6 +13,6 @@ package com.jc02.ycc;
  */
 public class Test1 {
     public static void main(String[] args) {
-        System.out.println("你好，我加入了你的项目");
+        System.out.println("你好，我加入了你的项目 123");
     }
 }
