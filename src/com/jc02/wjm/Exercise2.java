@@ -17,7 +17,7 @@ public class Exercise2 {
         e=2*a+b+c;
         f= (int) (d-(e*0.8));
         g= (int) (e*0.8/100*3);
-        System.out.println("**********消费单**********");
+        System.out.println("*********消费单**********");
         System.out.println("购买物品   单价   个数   金额 ");
         System.out.println("黄金战甲\t"+a+"\t2\t"+'￥'+2*a);
         System.out.println("死亡之奴\t"+b+"\t1\t"+'￥'+b);
