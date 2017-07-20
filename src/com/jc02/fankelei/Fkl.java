@@ -1,4 +1,4 @@
-package com.jc02.fkl;
+package com.jc02.fankelei;
 
 /**
  * 　　  　  　           \\\|///
@@ -7,11 +7,12 @@ package com.jc02.fkl;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 范珂磊　　　　　　                                                                 　|
  * |　@author 江西财经大学                                                   |
- * |　@create 2017年07月20日 - 15:58
+ * |　@create 2017年07月20日 - 16:55
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class fankelei {
+public class Fkl {
+
     public static void main(String[] args) {
         System.out.println("范珂磊");
     }
