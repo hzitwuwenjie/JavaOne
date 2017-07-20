@@ -11,7 +11,7 @@ package com.jc02.xiongzairen;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class XiongZaiRen {
+public class Demo1 {
     public static void main(String[] args) {
         System.out.println("你好，我是熊再仁");
     }
