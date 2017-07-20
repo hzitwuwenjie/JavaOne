@@ -15,7 +15,7 @@ public class Test_2
 {
     public static void main(String[] args) {
 
-
+//
         int z=1500;
         int a= 245;
         int b= 570;
