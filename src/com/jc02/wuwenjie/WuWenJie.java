@@ -1,18 +1,19 @@
-package com.jc02.fkl;
+package com.jc02.wuwenjie;
 
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
  * 　　　　　  　(　 .@.@　)
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
- * |　@author 范珂磊　　　　　　                                                                 　|
- * |　@author 江西财经大学                                                   |
- * |　@create 2017年07月20日 - 15:58
+ * |　@author 　༺༺超༒神༻༻
+ * |　@author 深圳合众艾特信息技术有限公司
+ * |　@create 2017年07月20日 - 15:52
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class fankelei {
+public class WuWenJie {
+
     public static void main(String[] args) {
-        System.out.println("范珂磊");
+        System.out.println("你好！我是吴文杰。我加入了你的项目");
     }
 }
