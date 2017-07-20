@@ -13,7 +13,7 @@ package com.com.jc02.pentaqq;
  */
 public class Name {
     public static void main(String[] args) {
-       System.out.println("我是秦佳俊");
+       System.out.println("我是秦佳俊!!!");
     }
 
 }
