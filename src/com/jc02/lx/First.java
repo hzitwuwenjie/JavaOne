@@ -13,8 +13,20 @@ package com.jc02.lx;/**
  * |    @description   sdfghjk
  * +---------------------------------Oooo---------------------------------------+
  */
-public class lixiang {
+public class First {
     public static void main(String[] args) {
-        System.out.println("Hello 我是李响，我加入了你的项目! ");
+            String[] menu= new String[2];
+            menu[0]= "黄金战衣";
+            menu[1]= "地狱咆哮的尖刀";
+        double[] price=new double[2];
+        price[0]= 380;
+        price[1]= 1000;
+
+        double count= 0;
+        for(int i=0; i< price.length; i++){
+            count+= price[i];
+        }
+        double finalcount= count* 0.8;
+        System.out.println("消费总金额: "+ finalcount);
     }
 }
