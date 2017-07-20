@@ -29,15 +29,15 @@ public class Tong {
             int b = 245 * 2;
             int c = 570;
             int d = 320;
-            double e = (b + c + d) % 100 * 3;
+            double e = (b + c + d) *0.8 / 100 * 3;
             double f = (b + c + d) * 0.8;
             double g = 1500 - (b + c + d) * 0.8;
 
             System.out.println("-------" + "*消费单*" + "--------");
             System.out.println("购买物品" + "单价" + "个数" + "金额");
-            System.out.println("黄金战衣" + "245"  + "2"   + "b");
-            System.out.println("死亡之弩" + "570"  + "1"   + "c");
-            System.out.println("水杖"     + "320"  + "1"   + "d");
+            System.out.println("黄金战衣" + "245"  + "2"   +  b);
+            System.out.println("死亡之弩" + "570"  + "1"   +  c);
+            System.out.println("水杖"     + "320"  + "1"   +  d);
 
             System.out.println("折扣"       + "8折");
             System.out.println("消费总金额" + 'f'    + f);
