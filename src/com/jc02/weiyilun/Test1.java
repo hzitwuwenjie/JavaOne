@@ -11,7 +11,7 @@ package com.jc02.weiyilun;
  * |  @description   第一次作业
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Test_1
+public class Test1
 {
     public static void main(String[] args) {
         double a = 380;
