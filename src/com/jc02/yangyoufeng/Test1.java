@@ -12,7 +12,8 @@ package com.jc02.yangyoufeng;
  * +---------------------------------Oooo---------------------------------------+
  */
 public class Test1 {
-        public static void main(String[] args) {
+        public static void main(String[] args)
+        {
             int a=380;
             int b=1000;
             double c=(a+b)*0.8;

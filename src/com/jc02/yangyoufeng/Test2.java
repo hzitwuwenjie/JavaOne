@@ -26,7 +26,6 @@ public class Test2 {
         System.out.println("黄金战袍   ￥245    2     490 ");
         System.out.println("死亡之奴   ￥570    1     570   ");
         System.out.println("水杖       ￥320    1     320  ");
-
         System.out.println("折扣：8折    ");
         System.out.println("消费总额" + d);
         System.out.println("实际交费" + h);
