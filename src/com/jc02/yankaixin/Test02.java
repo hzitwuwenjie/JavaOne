@@ -25,7 +25,7 @@ public class Test02 {
         double result = (a_result+b_result+c_result)*0.8;
         double actual_money = 1500;
         int point = (int)(result/100)*3;
-        System.out.println("*******消费单*******" );
+        System.out.println("********消费单********" );
         System.out.println("购买物品    " + "单价     " + "个数     " + "金额");
         System.out.println("黄金战衣    " + "￥" + a + "    " + a_sum + "        ￥" + a_result);
         System.out.println("死亡之弩    " + "￥" + b + "    " + b_sum + "        ￥" + b_result);
