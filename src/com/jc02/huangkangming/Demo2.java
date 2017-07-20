@@ -16,7 +16,6 @@ public class Demo2 {
         int a = 380;
         int b = 1000;
         System.out.println("消费总金额："+((a+b)*0.8));
-        System.out.println("我是黄康明");
         test();
     }
     public static void test(){
