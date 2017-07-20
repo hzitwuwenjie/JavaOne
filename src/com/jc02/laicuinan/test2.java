@@ -13,5 +13,6 @@ public class test2 {
         System.out.println("消费总金额" + c);
 
 
+
     }
 }

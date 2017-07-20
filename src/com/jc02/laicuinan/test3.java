@@ -22,5 +22,6 @@ public class test3 {
         System.out.println("实际交费:" +i );
         System.out.println("找钱:"+(i-t));
         System.out.println("本次购物所得积分为:"+d);
+
     }
 }
