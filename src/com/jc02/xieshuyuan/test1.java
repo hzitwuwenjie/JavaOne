@@ -13,6 +13,7 @@ package com.jc02.xieshuyuan;
  */
 public class test1 {
     public static void main(String[] args) {
+        //物件
         float a=380;
         float b=1000;
         float c=(a+b)*0.8f;
