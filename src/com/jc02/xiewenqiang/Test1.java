@@ -1,4 +1,4 @@
-package com.jc02.xwq;
+package com.jc02.xiewenqiang;
 
 /**
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
