@@ -5,6 +5,6 @@ package com.com.jc02.jiang;
  */
 public class Jiang {
     public static void main(String[] args) {
-        System.out.println("你好，我是姜子旭，可以下班了吗");
+        System.out.println("你好，我是，可以下班了吗");
     }
 }
