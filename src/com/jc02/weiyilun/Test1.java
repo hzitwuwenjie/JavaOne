@@ -14,8 +14,8 @@ package com.jc02.weiyilun;
 public class Test1
 {
     public static void main(String[] args) {
-        double a = 380;
-        double b = 1000;
+        double a= 380;
+        double b= 1000;
 
         System.out.println("消费总金额:"+0.8*(a+b));
     }

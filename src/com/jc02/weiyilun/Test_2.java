@@ -17,8 +17,8 @@ public class Test_2
 
 
         int z=1500;
-        int a=245;
-        int b=570;
+        int a= 245;
+        int b= 570;
         int c=320;
         double d=0.8*(a*2+b+c);
 
