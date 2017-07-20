@@ -1,25 +1,18 @@
-package com.jc02.homework;
+package com.jc02.fkl;
 
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
  * 　　　　　  　(　 .@.@　)
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
- * |　@author 　༺༺超༒神༻༻
- * |　@author 深圳合众艾特信息技术有限公司
- * |　@create 2017年07月20日 - 14:47
+ * |　@author 范珂磊　　　　　　                                                                 　|
+ * |　@author 江西财经大学                                                   |
+ * |　@create 2017年07月20日 - 15:58
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Test1 {
-
+public class fankelei {
     public static void main(String[] args) {
-
-        System.out.println("写完下班！");
+        System.out.println("范珂磊");
     }
-
-
-
-
-
 }
