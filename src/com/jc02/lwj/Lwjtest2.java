@@ -30,7 +30,7 @@ public class Lwjtest2 {
         System.out.println("折扣：      8折");
         System.out.println("实际交费："+f);
         System.out.println("找钱："+g);
-        System.out.println("本次购物所获的积分："+e);
+        System.out.println("本次购物所获的积1："+e);
     }
 
 }
