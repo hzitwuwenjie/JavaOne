@@ -18,20 +18,7 @@ public class Tong {
         int a=10;
         int b=9;
         System.out.println('a'+a);
-    }
-
-    package com.beautiful.jxufe;
-
-
-
-       public static void main(String[] args) {
-           int a=380;
-           int b=1000;
-           double c=0.8*(a+b);
-           System.out.println('c'+c);
-
-       }
-          */
+    }   */
 
 
 
