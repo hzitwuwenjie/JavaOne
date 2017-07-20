@@ -15,7 +15,7 @@ import com.sun.org.apache.xpath.internal.SourceTree;
  */
 public class YanKaiXin {
     public static void main(String[] args) {
-        System.out.println("你好！我是严凯新，我加入了你的项目");
+        System.out.println("你好啊！我是严凯新，我加入了你的项目");
     }
 }
 
