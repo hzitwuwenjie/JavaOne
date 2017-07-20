@@ -13,7 +13,9 @@ package com.jc02.zengjing;
  */
 public class Test1 {
     public static void main(String[] args) {
-        System.out.println("你好，我是曾靖。我加入了你的项目");
-        System.out.println("欢迎你");
+        int a =380;
+        int b =1000;
+        double c = (a+b)*0.8;
+        System.out.println("消费总金额："+c);
     }
 }
