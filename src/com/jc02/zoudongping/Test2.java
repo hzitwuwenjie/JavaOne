@@ -25,12 +25,13 @@ public class Test2 {
         System.out.println("＊＊＊＊＊＊*消费单*＊＊＊＊＊＊");
         System.out.println("购买物品   单价   个数   金额");
         System.out.println("黄金战役  ￥"+a+"     "+2+"    ￥"+a*2);
-        System.out.println("死亡之怒  ￥"+b+"     "+1+"    ￥"+b*1);
-        System.out.println("水杖      ￥"+c+"     "+1+"    ￥"+c*1);
+        System.out.println("死亡之怒  ￥"+b+"     "+1+"    ￥"+b);
+        System.out.println("水杖      ￥"+c+"     "+1+"    ￥"+c);
         System.out.println("折扣           "+8+"折");
         System.out.println("消费总金额     ￥"+d);
         System.out.println("实际交费       ￥"+1500);
         System.out.println("找钱           ￥"+f);
         System.out.println("本次购物所获的积分是："+e);
+
     }
 }

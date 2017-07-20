@@ -18,5 +18,6 @@ public class Test1 {
         double c;
         c=(a+b)*0.8;
         System.out.println("消费金额:"+c);
+
     }
 }
