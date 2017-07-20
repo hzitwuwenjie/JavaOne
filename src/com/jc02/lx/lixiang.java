@@ -15,6 +15,6 @@ package com.jc02.lx;/**
  */
 public class lixiang {
     public static void main(String[] args) {
-        System.out.println("Hello 我是李响，我加入了你的项目！");
+        System.out.println("Hello 我是李响，我加入了你的项目!");
     }
 }
