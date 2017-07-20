@@ -1,18 +1,18 @@
-package com.jc02.lwj;
+package com.jc02.zoudongping;
 
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
  * 　　　　　  　(　 .@.@　)
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
- * |　@author 李文俊　　　　　　                                                                 　|
+ * |　@author 邹东平　　　　　　                                                                 　|
  * |　@author 江西财经大学                                                   |
- * |　@create 2017年07月20日 - 17:11
- * |    @description   1
+ * |　@create 2017年07月20日 - 15:52
+ * |    @description   哈哈
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Lwj {
-    public static void main(String[] args) {
-        System.out.println("你好");//
+public class Test1 {
+    public static void main(String[] args){
+        System.out.println("我是邹东平！！！");
     }
 }
