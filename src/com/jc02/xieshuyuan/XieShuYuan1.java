@@ -8,7 +8,7 @@ package com.jc02.xieshuyuan;
  * |　@author 谢树源　　　　　                                                                 　|
  * |　@author 深圳合众艾特信息技术有限公司                                                   |
  * |　@create 2017年07月20日 - 14:31
- * |    @description   计算消费总金额
+ * |    @description    ‘计算消费总金额’
  * +---------------------------------Oooo---------------------------------------+
  */
 public class XieShuYuan1 {
