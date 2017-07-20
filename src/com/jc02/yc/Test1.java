@@ -1,4 +1,4 @@
-package com.jc02.ycc;
+package com.jc02.yc;
 
 /**
  * 　　  　  　           \\\|///
