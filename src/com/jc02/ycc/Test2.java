@@ -13,8 +13,8 @@ package com.jc02.ycc;
  */
 public class Test2 {
     public static void main(String[] args) {
-        int a=245; //黄金战衣单价
-        int b=570;//死亡之弩单价
+        int a=245; // 黄金战衣单价
+        int b=570;// 死亡之弩单价
         int c=320;//冰杖单价
         int d=a*2+b+c;//消费总金额
         int x=3*(d/100);//计算消费积分
