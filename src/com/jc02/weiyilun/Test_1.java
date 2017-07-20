@@ -14,8 +14,9 @@ package com.jc02.weiyilun;
 public class Test_1
 {
     public static void main(String[] args) {
-        System.out.println("啦啦啦，我是卖报的小当家");
-        System.out.println("啦啦啦，我是卖报的小当家");
-        System.out.println("啦啦啦，我是卖报的小当家");
+        double a = 380;
+        double b = 1000;
+
+        System.out.println("消费总金额:"+0.8*(a+b));
     }
 }
