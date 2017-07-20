@@ -12,4 +12,7 @@ package com.jc02.homework.xieshuyuan;
  * +---------------------------------Oooo---------------------------------------+
  */
 public class XieShuYuan {
+    public static void main(String[] args) {
+        System.out.println("我是谢树源");
+    }
 }
