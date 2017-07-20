@@ -12,6 +12,7 @@ public class dengzhiyu {
             double f=(c+d)*0.8;
             int a=0;
             System.out.println("消费金额 "+f);
+            //
         }
 }
 
