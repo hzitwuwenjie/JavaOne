@@ -32,5 +32,6 @@ public class Test2 {
         System.out.println("实际交费       ￥"+1500);
         System.out.println("找钱           ￥"+f);
         System.out.println("本次购物所获的积分是："+e);
+
     }
 }
