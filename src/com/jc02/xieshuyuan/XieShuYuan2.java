@@ -11,7 +11,7 @@ package com.jc02.xieshuyuan;
  * |    @description   消费单
  * +---------------------------------Oooo---------------------------------------+
  */
-public class test2 {
+public class XieShuYuan2 {
     public static void main(String[] args) {
         int a=245;
         int a_number=2;
