@@ -13,8 +13,8 @@ package com.jc02.lwj;
  */
 public class  Lwjtest1{
     public static void main(String[] args) {
-        int a=380;
-        int b=1000;
+        int a=380;//黄金战衣的价格
+        int b=1000;//地狱咆哮的价格
         double c=(a+b)*0.8;
         System.out.println("消费总金额："+c);
 
