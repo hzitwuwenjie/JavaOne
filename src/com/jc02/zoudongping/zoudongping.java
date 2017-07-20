@@ -13,6 +13,6 @@ package com.jc02.zoudongping;
  */
 public class zoudongping {
     public static void main(String[] args){
-        System.out.println("我是邹东平！");
+        System.out.println("我是邹东平");
     }
 }
