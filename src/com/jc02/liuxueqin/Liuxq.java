@@ -7,7 +7,7 @@ package com.jc02.liuxueqin;/*
  *  +---------------------------------Oooo---------------------------------------+
  */
 
-public class LiuXueQin {
+public class Liuxq {
     public static void main(String[] args) {
         System.out.println("你好！我是刘雪琴。我加入了你的项目");
     }

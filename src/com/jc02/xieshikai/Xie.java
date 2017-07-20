@@ -11,7 +11,7 @@ package com.jc02.xieshikai;
  * |  @description   hi
  * +---------------------------------Oooo---------------------------------------+
  */
-public class xieshikai {
+public class Xie {
     public static void main(String[] args) {
         System.out.println("hi!");
     }

@@ -8,10 +8,10 @@ package com.jc02.xieshuyuan;
  * |　@author 谢树源　　　　　                                                                 　|
  * |　@author 深圳合众艾特信息技术有限公司                                                   |
  * |　@create 2017年07月20日 - 14:35
- * |    @description   消费单
+ * |    @description    ‘消费单’
  * +---------------------------------Oooo---------------------------------------+
  */
-public class test2 {
+public class XieShuYuan2 {
     public static void main(String[] args) {
         int a=245;
         int a_number=2;
