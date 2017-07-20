@@ -23,7 +23,7 @@ public class Test2 {
         int actual=1500;
         double sum;
 
-        System.out.println("***********消费单************");
+        System.out.println("***********消费单***********");
         System.out.println("购买物品\t"+"单价\t"+"个数\t"+"金额");
         System.out.println("黄金战衣\t"+"￥"+pricea+'\t'+num1+"\t\t"+"￥"+(pricea*num1));
         System.out.println("死亡之奴\t"+"￥"+priceb+'\t'+num2+"\t\t"+"￥"+(priceb*num2));
