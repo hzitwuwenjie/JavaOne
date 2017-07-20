@@ -10,7 +10,7 @@ package com.jc02.xiongzairen;
  * |　@create 2017年07月20日 - 15:54
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
- */
+*/
 public class Demo1 {
     public static void main(String[] args) {
         System.out.println("你好啊，我是熊再仁");
