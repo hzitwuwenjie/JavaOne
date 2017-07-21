@@ -7,16 +7,14 @@ import java.util.Scanner;
  */
 public class Test6 {
 
-
-
-    public int sumONEandHundred(){
+    public void sumONEandHundred(){
         int i=0;
         int sum=0;
         while (i<=100){
             sum=sum+i;
             i=i+2;
         }
-        return  sum;
+        System.out.println(sum);
     }
     public void number(){
           int a = 0;
@@ -35,6 +33,9 @@ public class Test6 {
 
     }
     public static void main(String[] args) {
+        Test6 test =new Test6();
+        test.sumONEandHundred();
+        test.number();
 
     }
 }
