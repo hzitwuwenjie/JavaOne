@@ -94,6 +94,7 @@ public class Exercise13 {
         ff4();
         System.out.println("第五个三角形");
         ff5();
+        System.out.println("");
         System.out.println("第六个三角形");
         ff6();
 
