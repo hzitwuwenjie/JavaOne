@@ -25,7 +25,7 @@ public class Test3 {
         {
             System.out.println("输入数字不正确，请重新输入");
             return;
-        }
+        }else {
         System.out.println("您输入的数字是："+ num3);
         System.out.println("随机数字："+num2);
         if(num3/100%10 == num2)
@@ -33,10 +33,7 @@ public class Test3 {
             System.out.println("你中奖了");
         }else {
             System.out.println("谢谢参与");
-        }
+        }}
 
 
-    }
-
-
-}
+    }}
