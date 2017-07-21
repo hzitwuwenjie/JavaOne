@@ -13,7 +13,7 @@ import java.util.Scanner;
  * |    @description   循环语句操作商品购买付账
  * +---------------------------------Oooo---------------------------------------+
  */
-public class LianXi5 {
+public class LianXi6 {
     public static void main(String[] args) {
         System.out.println("****************************************************");
         System.out.println("请选择购买的商品编号：");
