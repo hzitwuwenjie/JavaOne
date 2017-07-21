@@ -15,14 +15,30 @@ package com.jc02.xieshikai;
 public class Task5 {
     public static void main(String[] args) {
         for (int i = 1; i <= 150; i++) {
-            if(i%3==0)
+
+            if(i%3==0&&i%5!=0&&i%7!=0)//3满足
                 System.out.println(i+" foo");
-            if(i%5==0)
+
+            if(i%3!=0&&i%5==0&&i%7!=0)//5满足
                 System.out.println(i+" biz");
-            if(i%7==0)
+
+            if(i%3!=0&&i%5!=0&&i%7==0)//7满足
                 System.out.println(i+" baz");
-            else
-                System.out.println(i+"");
+
+            if(i%3==0&&i%5==0&&i%7!=0)//3、5满足
+                System.out.println(i+" foo biz");
+
+            if(i%3==0&&i%5!=0&&i%7==0)//3、7满足
+                System.out.println(i+" foo baz");
+
+            if(i%3!=0&&i%5==0&&i%7==0)//5、7满足
+                System.out.println(i+" biz baz");
+
+            if(i%3==0&&i%5==0&&i%7==0)//3、5、7满足
+                System.out.println(i+" foo biz baz");
+
+            if(i%3!=0&&i%5!=0&&i%7!=0)//3、5、7都不满足
+                System.out.println(i+" ");
         }
     }
 }
