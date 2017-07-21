@@ -21,7 +21,7 @@ public class July21g {
         System.out.println("魔界饰品分发系统\n************************\n1`账号信息管理\n2`购物结算\n3`装备返点\n4`注销\n************************\n请选择，输入数字：");
         int num= input.nextInt();
         while(num< 1|| num> 4){
-            System.out.print("数字错误，请重新输入！");
+            System.out.print("数字错误， 请重新输入！");
             num= input.nextInt();
         }System.exit(0);
     }
