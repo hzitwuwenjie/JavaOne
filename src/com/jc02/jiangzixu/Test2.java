@@ -19,5 +19,4 @@ public class Test2 {
         System.out.println("找钱：       ￥" + (1500.0D - sum));
         System.out.println("本次购物所获积分：" + num);
     }
-
 }
