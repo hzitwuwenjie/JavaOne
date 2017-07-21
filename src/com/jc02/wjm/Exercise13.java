@@ -12,7 +12,7 @@ package com.jc02.wjm;
  * +---------------------------------Oooo---------------------------------------+
  */
 public class Exercise13 {
-    /*public static void ff1(){
+    public static void ff1(){
         for(int i=1;i<10;i++){
             for(int j=0;j<i;j++)
                 System.out.print("*");
@@ -47,32 +47,56 @@ public class Exercise13 {
                 System.out.print("*");
             System.out.println();
         }
-    }*/
+    }
     public static void ff5(){
-        for(int i=8;i>0;i--){
+        for(int i=0;i<8;i++){
+           for(int j=0;j<(8-i);j++)
+                System.out.print(" ");
+            System.out.print("*");
+          for(int k=0;k<(2*i-1);k++) {
+                 System.out.print(" ");
+            }
+            if(i==0){}
+            else
+                System.out.print("*");
+            System.out.println();
+
+        }
+        for (int l=0;l<17;l++)
+              System.out.print("*");
+    }
+    public static void ff6(){
+        for(int i=9;i>0;i--){
             for(int j=0;j<=i;j++)
                 System.out.print(" ");
-            for(int k=0;k<=2*(8-i);k++)
-                if(k==(i+7))
+            for(int k=0;k<=2*(9-i);k++)
                 System.out.print("*");
-                else System.out.print(" ");
-
             System.out.println();
-        }
 
+        }
+        for(int a=9;a>0;a--){
+            for(int b=0;b<=9-a;b++)
+                System.out.print(" ");
+            for(int c=1;c<=2*a-1;c++)
+                System.out.print("*");
+            System.out.println();
     }
+}
 
     public static void main(String[] args) {
-        /*System.out.println("第一个三角形");
+        System.out.println("第一个三角形");
         ff1();
         System.out.println("第二个三角形");
         ff2();
         System.out.println("第三个三角形");
         ff3();
         System.out.println("第四个三角形");
-        ff4();*/
+        ff4();
         System.out.println("第五个三角形");
         ff5();
+        System.out.println("第六个三角形");
+        ff6();
+
 
 
     }
