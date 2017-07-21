@@ -24,6 +24,7 @@ public class Test11 {
             String password = in.next();
             if (username.equals("jc02") && password.equals("123")) {
                 System.out.println("欢迎登陆Shopping系统!");
+                break;
             } else {
                 if (2 - i == 0) {
                         System.out.println("您输入的错误次数过多，程序退出");
