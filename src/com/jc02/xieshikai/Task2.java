@@ -40,6 +40,5 @@ public class Task2 {
         System.out.println("实际交费：\t"+"¥"+money);
         System.out.println("找钱：\t\t"+"¥"+change);
         System.out.println("本次购物所获的积分："+credits);
-
     }
 }
