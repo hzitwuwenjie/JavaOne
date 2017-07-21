@@ -20,8 +20,8 @@ public class Test11 {
         String s="";
         while(num!= 0)
         {
-           s=s+num%2;
-            num=num/2;
+           s+=num%2;
+            num/=2;
         }
         for(int i=s.length()-1;i>=0;i--)
         {
