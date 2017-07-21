@@ -8,7 +8,7 @@ public class Test13 {
 
         int  i=0;
         int  j=0;
-        int k=0;
+        int  k=0;
         String c="\t";
         String d="*";
      for (i=0;i<10;i++){                       //列
