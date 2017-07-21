@@ -1,8 +1,12 @@
 package com.jc02.wangxainlei;
 
+public class Test2 {
 
-class Test2 {
     public static void main(String[] args) {
+         int a=380;//黄金战衣
+        int b=1000;//地狱咆哮之刀
+       double c;
+         c=(a+b)*0.8;
+        System.out.println("  消费金额："+c);}
 
-    System.out.println("你好！我是王先磊，我加入了你的项目");}
 }
