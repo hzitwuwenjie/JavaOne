@@ -24,6 +24,7 @@ public class RenWu2 {
         double g=(d+e+f)*0.8;
         int h=1500;
         double i=h-g;
+
         int  j=(int)g/100;
 
 
