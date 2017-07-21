@@ -27,14 +27,16 @@ public class Second {
         price[0]= 245;
         price[1]= 570;
         price[2]= 320;
-        double count= price[0]* 2+ price[1]+ price[2];
-        double finalcount= count* 0.8;
-        int jifen= (int)finalcount/ 100* 3;
+        double count= 0;
         System.out.println("**************消费清单*************");
         System.out.println("购买物品    单价    个数     金额");
         for(int i= 0; i< menu.length; i++){
-            System.out.println(menu[i]+ amount[i]+ "$"+ price[i]);
+            count= price[i]* amount[i];
+            System.out.println(menu[i]+ price[i]+ amount[i]+ "$"+ count);
+            count+= count;
         }
+        double finalcount= count* 0.8;
+        int jifen= (int)finalcount/ 100* 3;
         System.out.println("折扣：8折\n消费总金额：￥"+ finalcount+"\n实际交费：￥1500"+ "\n找钱：￥"+ (1500- finalcount)+"\n本次购物所获积分："+ jifen);
 
 
