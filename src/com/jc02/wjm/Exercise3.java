@@ -16,7 +16,7 @@ import java.util.Scanner;
  */
 public class Exercise3 {
     public static void main(String[] args) {
-        System.out.println("请输入一个四位数参与抽奖：");
+        System.out.println("请输入一个四位数参与抽奖 ：");
         Scanner a=new Scanner(System.in);
         int b=a.nextInt();//输入数字
         Random rand=new Random();
