@@ -19,6 +19,7 @@ public class Test2
         int num3 = 320;
         double  num4=(num1*2+num2+num3)*0.8;
         int num5=(int) (num4/100)*3;
+
         System.out.println("************消费单**************");
         System.out.println("购买物品\t" + "单价\t"+"个数\t" +"金额");
         System.out.println("黄金战衣\t" + "$"+num1+"\t"+2+" $"  +  2*num1);
