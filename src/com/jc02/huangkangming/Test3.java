@@ -16,9 +16,11 @@ import java.util.Scanner;
  */
 public class Test3 {
     public static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
         Random random = new Random();
-        int b = random.nextInt(10);
+        int b = random.nextInt(1);
+
         System.out.println("请输入一个4位整数");
         int a = in.nextInt();
         if (a < 1000 || a > 9999) {
