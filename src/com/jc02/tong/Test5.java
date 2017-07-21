@@ -14,7 +14,7 @@ package com.jc02.tong;
 public class Test5 {
     public static void main(String[] args) {
 
-        int i;
+        int i=0;
         for (i = 0; i <= 150; i++) {
             System.out.println(i);
 
