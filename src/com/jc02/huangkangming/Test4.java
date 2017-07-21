@@ -17,7 +17,6 @@ public class Test4 {
     public static void main(String[] args) {
         Scanner in =new Scanner(System.in);
 
-
         System.out.println("\t\t\t\t\t\t1.登录系统");
         System.out.println("\t\t\t\t\t\t2.退出");
         System.out.println("* * * * * * * * * * * * * * * * * * * * * * * * * * * * *");
