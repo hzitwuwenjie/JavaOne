@@ -1,5 +1,7 @@
 package com.jc02.huangkangming;
 
+import java.util.Scanner;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -22,5 +24,23 @@ public class Test6 {
             i++;
         }
         System.out.println("偶数之和为："+sum);
+        test();
+    }
+    public static void test(){
+        Scanner in=new Scanner(System.in);
+        int zhengShu=0;
+        int fuShu=0;
+        int a;
+        do{
+            a=in.nextInt();
+            if(a>0){
+                zhengShu++;
+            }
+            if(a<0){
+                fuShu++;
+            }
+        } while(a!=0);
+        System.out.println("您输入的正数个数为："+zhengShu);
+        System.out.println("您输入的负数个数为："+fuShu);
     }
 }
