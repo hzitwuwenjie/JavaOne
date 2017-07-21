@@ -1,5 +1,7 @@
 package com.jc02.yankaixin;
 
+import java.util.Scanner;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -7,16 +9,24 @@ package com.jc02.yankaixin;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 严凯新　　　　　　                                                                 　|
  * |　@author 江西财经大学软件工程                                                |
- * |　@create 2017年07月20日 - 17:23
- * |  @description
+ * |　@create 2017年07月21日 - 15:37
+ * |  @description   将数字转换成二进制
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Test01 {
-    public static void main(String[] args) {
-        double a = 380;
-        double b = 1000;
-        double result = (a+b)*0.8;
-        System.out.println("消费总金额:" + result);
+public class Test10 {
 
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("请输入一个整：");
+        int i = input.nextInt();
+        StringBuffer s = new StringBuffer("");
+        while(i/2!=1){
+            s.append(i%2);
+            i /= 2;
+        }
+        s.append(i%2);
+        s.append(1);
+        System.out.println(s.reverse());
     }
 }
