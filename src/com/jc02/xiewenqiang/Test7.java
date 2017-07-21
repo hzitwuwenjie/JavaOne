@@ -6,7 +6,7 @@ import java.util.Scanner;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 谢文强　　　　　　                                                                 　|
  * |　@create 2017年07月21日 - 11:52
- * |  @description   while语句练习
+ * |  @description   do/while语句练习
  * +---------------------------------Oooo---------------------------------------+
  */
 public class Test7 {
