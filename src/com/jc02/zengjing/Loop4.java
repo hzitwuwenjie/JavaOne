@@ -14,14 +14,10 @@ package com.jc02.zengjing;
 public class Loop4 {
     public static void main(String[] args) {
         for (int i = 1; i <10 ; i++) {
-            for (int l = 0; l <10- i; l++) {
+            for (int j = 0; j <10- i; j++) {
                 System.out.print(" ");
             }
-            for (int j = 10; j > 10-i; j--) {
-                System.out.print("*");
-
-            }
-            for (int k = 1; k < i; k++) {
+            for (int k = 0; k <(2*i-1); k++) {
                 System.out.print("*");
             }
             System.out.println("");
