@@ -12,7 +12,7 @@ public class Test12 {
         System.out.println("请输入密码：");
         password=input.next();
         if(name.equals("123")&&password.equals("123")){
-            System.out.println("登录 成功");
+            System.out.println("登录成功");
             break;
         }else {
                if(2-i==0){

@@ -8,7 +8,7 @@ public class Test11 {
     int c=0;
     double d=0;
         for(a=1;a<=10;a++){
-            System.out.print(" 请输入第" + a + "位顾客的年龄：");
+            System.out.print(" 请输入第 " + a + "位顾客的年龄：");
             b=input.nextInt();
             //System.out.println(b);
             if (b>30) c++;
