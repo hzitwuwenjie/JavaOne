@@ -16,7 +16,7 @@ public class Test8 {
             else  if(number>0)
                 zhengshu++;
         }while (number!=0);
-        System.out.println("输入正数的次数："+zhengshu);
+       System.out.println("输入正数的次数："+zhengshu);
         System.out.println("输入负数的次数："+fushu);
 
 
