@@ -27,7 +27,7 @@ public class Test11 {
             }
                 else{
                     if(2-i==0){
-                        System.out.println("登录次数超过限制，程序退出");
+                        System.out.println("登录次数超过限制，程序退出");//
                         System.exit(0);
                     }
                     else{

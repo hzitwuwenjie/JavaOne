@@ -29,7 +29,7 @@ public class Test10 {
         }
         //使得字符串中的每个字符从右往左输出
         for (int i =bin.length()-1; i >=0 ; i--) {
-            System.out.print(bin.charAt(i));
+            System.out.print(bin.charAt(i));//
         }
     }
 }
