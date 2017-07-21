@@ -19,7 +19,7 @@ public class Test3 {
             return;
         }
         else {
-            System.out.println("您输入的数字为： "+i+"\n"+"随机生成的数字为： "+j);
+            System.out.println("您输入的数字为： "+i +"\n"+"随机生成的数字为： "+j);
             if (k == j) {
                 System.out.println("恭喜您中奖");
             }
