@@ -31,27 +31,25 @@ public class Test_7
         System.out.println("********************************");
         Scanner num=new Scanner(System.in);
         do{
-            System.out.println("请选择购买的商品编号：\t");
+            System.out.print("请选择购买的商品编号：\t");
             d=num.nextInt();
             switch (d) {
                 case 1:
-                    Scanner count1 = new Scanner(System.in);
-                    System.out.println("请选择购买的商品数量：\t");
-                    e = count1.nextInt();
+                    System.out.print("请选择购买的商品数量：\t");
+                    e = num.nextInt();
                     f=a*e;
                     System.out.println("黄金战甲" + "￥" + a + "\t" + "数量" + e + "\t" + "小计" + "￥" + f);
                     break;
                 case 2:
-                    Scanner count2 = new Scanner(System.in);
-                    System.out.println("请选择购买的商品数量：\t");
-                    e = count2.nextInt();
+
+                    System.out.print("请选择购买的商品数量：\t");
+                    e = num.nextInt();
                     f=b*e;
                     System.out.println("冰杖" + "￥" + b + "\t" + "数量" + e + "\t" + "小计" + "￥" + f);
                     break;
                 case 3:
-                    Scanner count3 = new Scanner(System.in);
-                    System.out.println("请选择购买的商品数量：\t");
-                    e = count3.nextInt();
+                    System.out.print("请选择购买的商品数量：\t");
+                    e = num.nextInt();
                     f=c*e;
                     System.out.println("死亡之弩" + "￥" + c + "\t" + "数量" + e + "\t" + "小计" + "￥" + f);
                     break;

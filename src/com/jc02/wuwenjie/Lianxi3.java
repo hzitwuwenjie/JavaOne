@@ -14,9 +14,6 @@ package com.jc02.wuwenjie;
 public class Lianxi3 {
 
     public static void main(String[] args) {
-        System.out.println("");
-
-
 
     }
 }
