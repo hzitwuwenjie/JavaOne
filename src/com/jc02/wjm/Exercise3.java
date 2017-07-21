@@ -22,7 +22,7 @@ public class Exercise3 {
         Random rand=new Random();
         int c=rand.nextInt(10);//产生0-10随机数
         if(b<1000||b>9999){
-            System.out.println("输入数字不符合范围");
+            System.out.println("输入数字不符合范围 ");
             return;
         }
         else {
