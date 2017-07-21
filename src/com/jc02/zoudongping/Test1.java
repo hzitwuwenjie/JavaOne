@@ -13,6 +13,10 @@ package com.jc02.zoudongping;
  */
 public class Test1 {
     public static void main(String[] args){
-        System.out.println("我是邹东平！！！");
+        double a=380;
+        double b=1000;
+        double c;
+        c=(a+b)*0.8;
+        System.out.println("消费金额:"+c);
     }
 }
