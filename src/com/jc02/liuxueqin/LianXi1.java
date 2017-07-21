@@ -13,11 +13,11 @@ import java.util.Random;
 import java.util.Scanner;
 public class LianXi1 {
     public static void main(String[] args) {
-        Scanner i=new Scanner(System.in);
-        Random rand=new Random();
-        int num=rand.nextInt(10);
+        Scanner i=new Scanner(System.in);//从键盘上输入一个四位数
+        Random rand=new Random();//产生一个随机数
+        int num=rand.nextInt(10);//调用随机函数，随机产生0-10之类的一个数字
         System.out.println("请输入一个四位数：");
-        int j=i.nextInt();
+        int j=i.nextInt();//调用Scanner函数
         if(j<1000||j>9999)
         {
             System.out.println("数字输入范围不正确，请重新输入。");
