@@ -19,6 +19,6 @@ public class Lianxi4 {
             sum =sum+i;
             i= i+2;
         }
-        System.out.println("1~100间所有偶数之和："+sum);
+        System.out.println(" 1~100间所有偶数之和："+sum);
     }
 }
