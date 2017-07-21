@@ -14,6 +14,7 @@ package com.jc02.tong;
 public class Practice1 {
     public static void main(String[] args) {
 
+
             int a=380;
             int b=1000;
             double c=0.8*(a+b);

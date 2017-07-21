@@ -34,16 +34,16 @@ public class Tong {
             double g = 1500 - (b + c + d) * 0.8;
 
             System.out.println("-------" + "*消费单*" + "--------");
-            System.out.println("购买物品" + "单价" + "个数" + "金额");
-            System.out.println("黄金战衣" + "245"  + "2"   +  b);
-            System.out.println("死亡之弩" + "570"  + "1"   +  c);
-            System.out.println("水杖"     + "320"  + "1"   +  d);
+            System.out.println("购买物品  " + "单价" + "个数" + "金额");
+            System.out.println("黄金战衣  " + "245"  + "2"   +  b);
+            System.out.println("死亡之弩  " + "570"  + "1"   +  c);
+            System.out.println("水杖  "     + "320"  + "1"   +  d);
 
-            System.out.println("折扣"       + "8折");
-            System.out.println("消费总金额" + 'f'    + f);
-            System.out.println("实际交费"   + "1500");
-            System.out.println("找钱"       + g);
-            System.out.println("积分"       + e);
+            System.out.println("折扣  "       + "8折");
+            System.out.println("消费总金额  " + 'f'    + f);
+            System.out.println("实际交费   "   + "1500");
+            System.out.println("找钱   "       + g);
+            System.out.println("积分  "       + e);
         }
 
 }
