@@ -11,7 +11,7 @@ package com.jc02.huangkangming;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Demo2 {
+public class Test2 {
     public static void main(String[] args) {
         int a = 380;
         int b = 1000;
