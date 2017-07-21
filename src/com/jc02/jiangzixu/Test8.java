@@ -16,25 +16,24 @@ public class Test8 {
         do {
             System.out.print("请输入商品编号：");
             id = input.nextInt();
+            System.out.print("请输入购买的数量：");
+            num = input.nextInt();
             switch (id){
                 case 1:
                     price=245;
-                    System.out.print("请输入购买的数量：");
-                    num = input.nextInt();
+
                     sum=num*price;
                     System.out.println("黄金战甲￥245\t"+"数量:"+num+"\t"+"合计:"+sum);
                     break;
                 case 2:
                     price=570;
-                    System.out.print("请输入购买的数量：");
-                    num = input.nextInt();
+
                     sum=num*price;
                     System.out.println("手杖￥570\t"+"数量:"+num+"\t"+"合计:"+sum);
                     break;
                 case 3:
                     price=320;
-                    System.out.print("请输入购买的数量：");
-                    num = input.nextInt();
+
                     sum=num*price;
                     System.out.println("死亡之弩￥320\t"+"数量:"+num+"\t"+"合计:"+sum);
                     break;
@@ -47,10 +46,10 @@ public class Test8 {
 
 
         System.out.println("折扣："+"8折");
-        System.out.println("应付金额："+total);
+        System.out.println("应付金额："+total*0.8);
 
         System.out.print("实付金额：");
         shifu=input.nextInt();
-        System.out.println("找钱："+(shifu-total));
+        System.out.println("找钱："+(shifu-total)*0.8);
     }
 }
