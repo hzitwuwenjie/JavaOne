@@ -14,7 +14,7 @@ import java.util.Scanner;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Test1 {
+public class Test3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         Random random = new Random();
