@@ -1,33 +1,30 @@
-package com.jc02.zoudongping;
+package com.jc02.yangyoufeng;
 
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
  * 　　　　　  　(　 .@.@　)
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
- * |　@author 邹东平　　　　　　                                                                 　|
- * |　@author 江西财经大学                                                   |
- * |　@create 2017年07月21日 - 11:38
- * |    @description
+ * |　@author 杨有峰　　　　　　                                                                 　|
+ * |　@author ×××                                                   |
+ * |　@create 2017年07月21日 - 11:49
+ * |    @description循环打印1-150
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Test6 {
+public class Test5 {
     public static void main(String[] args) {
-        for(int i=1;i<=150;i++)
-        {
-            System.out.println(" ");
+        for(int i=1;i<=150;i++){
             System.out.print(i);
-            if(i%3==0)
-            {
+            for(int j=i;j%3==0;j++){
                 System.out.print("foo");
             }
-            if(i%5==0)
-            {
+            for(int j=i;j%5==0;j++){
                 System.out.print("biz");
             }
-            if(i%7==0){
+            for(int j=i;j%7==0;j++){
                 System.out.print("baz");
             }
+            System.out.println();
         }
     }
 }
