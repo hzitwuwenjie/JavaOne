@@ -34,8 +34,8 @@ public class Test3 {
             System.out.println("您输入的数字是：" + i);
             System.out.println("随机数字是：" + num);
         }
-        if (i / 100 % 10 == num) {
-
+        if (i / 100 % 10 == num)
+        {
             System.out.println("恭喜您中奖了");
         } else {
             System.out.println("很遗憾您未中奖。谢谢参与");
