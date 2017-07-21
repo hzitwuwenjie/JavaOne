@@ -14,16 +14,8 @@ import java.util.Scanner;
  * +---------------------------------Oooo---------------------------------------+
  */
 public class LianXi2{
-    public static void main(String[] args) {
-        int menu1=0, menu2=0, menu3=0, menu4=0;
-        System.out.println("\t\t魔界饰品分发系统");
-        System.out.println("\t\t\t1.系统登录");
-        System.out.println("\t\t\t2.退出");
-        System.out.println("* * * * * * * * * * * * * * * * * * * * * * * *");
-        System.out.println("请输入数字来选择");
-        Scanner input1=new Scanner(System.in);
-        menu1=input1.nextInt();
-        switch (menu1){
+    public static void sw1tch1(int a1) {
+        switch (a1) {
             case 1:
                 System.out.println("\t\t魔界饰品分发系统");
                 System.out.println("* * * * * * * * * * * * * * * * * * * * * * * *");
@@ -33,38 +25,59 @@ public class LianXi2{
                 System.out.println("\t\t\t4.注销");
                 System.out.println("* * * * * * * * * * * * * * * * * * * * * * * *");
                 System.out.println("请输入数字来选择");
-                Scanner input2=new Scanner(System.in);
-                menu2=input2.nextInt();
-                switch (menu2){
-                    case 1:
-                        System.out.println("\t\t魔界饰品分发系统");
-                        System.out.println("* * * * * * * * * * * * * * * * * * * * * * * *");
-                        System.out.println("\t\t\t1.显示所有会员信息");
-                        System.out.println("\t\t\t2.添加会员信息");
-                        System.out.println("\t\t\t3.修改会员信息");
-                        System.out.println("\t\t\t4.查询会员信息");
-                        System.out.println("* * * * * * * * * * * * * * * * * * * * * * * *");
-                        System.out.println("请输入数字来选择");
-                        Scanner input3=new Scanner(System.in);
-                        menu3=input3.nextInt();
-                        switch (menu3){
-                            case 1:
-                                System.out.println("所有的会员信息如下："); break;
-                            case 2:
-                                System.out.println("请输入你要添加的会员信息"); break;
-                            case 3:
-                                System.out.println("请输入你要修改的会员信息"); break;
-                            case 4:
-                                System.out.println("请输入你要查询的会员信息"); break;
-                        } break;
-                    case 2:
-                        System.out.println("购物已结算好，请自己查询！"); break;
-                    case 3:
-                        System.out.println("装备返点中"); break;
-                    case 4:
-                        System.out.println("已注销！"); break;
-                }
-                break;
+                Scanner input2 = new Scanner(System.in);
+                int menu2 = input2.nextInt();
+                LianXi2.sw1tch2(menu2); break;
+            case 2:
+                System.out.println("已退出"); break;
+        }
+    }
+    public static void sw1tch2(int a2) {
+        switch (a2) {
+            case 1:
+                System.out.println("\t\t魔界饰品分发系统");
+                System.out.println("* * * * * * * * * * * * * * * * * * * * * * * *");
+                System.out.println("\t\t\t1.显示所有会员信息");
+                System.out.println("\t\t\t2.添加会员信息");
+                System.out.println("\t\t\t3.修改会员信息");
+                System.out.println("\t\t\t4.查询会员信息");
+                System.out.println("* * * * * * * * * * * * * * * * * * * * * * * *");
+                System.out.println("请输入数字来选择");
+                Scanner input3=new Scanner(System.in);
+                int menu3=input3.nextInt();
+                LianXi2.sw1tch3(menu3); break;
+            case 2:
+                System.out.println("购物已结算好，请自己查询！"); break;
+            case 3:
+                System.out.println("装备返点中"); break;
+            case 4:
+                System.out.println("已注销！"); break;
+        }
+    }
+
+    public static void sw1tch3(int a3) {
+        switch (a3) {
+            case 1:
+                System.out.println("所有的会员信息如下："); break;
+            case 2:
+                System.out.println("请输入你要添加的会员信息"); break;
+            case 3:
+                System.out.println("请输入你要修改的会员信息"); break;
+            case 4:
+                System.out.println("请输入你要查询的会员信息"); break;
+        }
+    }
+    public static void main(String[] args) {
+        System.out.println("\t\t魔界饰品分发系统");
+        System.out.println("\t\t\t1.系统登录");
+        System.out.println("\t\t\t2.退出");
+        System.out.println("* * * * * * * * * * * * * * * * * * * * * * * *");
+        System.out.println("请输入数字来选择");
+        Scanner input1=new Scanner(System.in);
+        int menu1=input1.nextInt();
+        switch (menu1){
+            case 1:
+                LianXi2.sw1tch1(menu1); break;
             case 2:
                 System.out.println("已退出");  break;
         }
