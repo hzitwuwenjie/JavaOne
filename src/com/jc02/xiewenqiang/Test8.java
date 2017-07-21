@@ -16,7 +16,7 @@ public class Test8 {
         int c = 370;
         int id;
         int count;
-        int shifu = 5000;
+        int shifu;
         int xiaoji = 0;
         int heji = 0;
         String isContinue;
