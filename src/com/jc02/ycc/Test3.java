@@ -19,12 +19,11 @@ public class Test3 {
         Scanner input=new Scanner(System.in);
         Random random = new Random();
 
-        int num=random.nextInt(10);//调用random函数，并赋值
+        int num=random.nextInt(10);// 调用random函数，并赋值
         System.out.println("请输入一个4位整数 ：");
         int i=input.nextInt();//接受键盘输入的整数
         if(i<1000 || i>9999){
             System.out.println("输入的范围不正确！");
-            return;
         }else {
             //判断用户输入的百位和随机数字相等
             System.out.println("您输入的数字是："+ i);
