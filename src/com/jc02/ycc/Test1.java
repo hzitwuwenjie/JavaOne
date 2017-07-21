@@ -13,7 +13,7 @@ package com.jc02.ycc;
  */
 public class Test1 {
     public static void main(String[] args) {
-        int a=380;  // 黄金战衣单价
+        int a=380;  //黄金战衣单价
         int b=1000;// 地狱咆哮的尖刀单价
 
 

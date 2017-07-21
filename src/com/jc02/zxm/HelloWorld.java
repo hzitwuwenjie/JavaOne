@@ -1,5 +1,6 @@
 package com.jc02.zxm;
-
+import java.util.Random;
+import java.util.Scanner;
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -13,7 +14,20 @@ package com.jc02.zxm;
  */
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello,My name is 曾宪明");
+
+        System.out.println("please input a num:");
+        Scanner input=new Scanner(System.in);
+        Random rand=new Random(10);
+        int b =input.nextInt();
+
+        int c;
+        for (int i=0;i<6;i++)
+        {
+            int a =rand.nextInt(100);
+            c=a+b;
+            System.out.println(c);
+            System.out.println("Hello,My name is 曾宪明");
+        }
     }
 }
 
