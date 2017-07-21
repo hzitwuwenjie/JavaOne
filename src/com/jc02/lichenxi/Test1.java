@@ -2,7 +2,7 @@ package com.jc02.lichenxi;
 
 /**
  * Created by 李晨曦 on 2017/7/20.
- */
+  */
 public class Test1 {
     public static void main(String[] args) {
         int a = 380;

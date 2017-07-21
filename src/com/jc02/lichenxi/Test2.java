@@ -1,15 +1,7 @@
 package com.jc02.lichenxi;
 
 /**
- * 　　  　  　           \\\|///
- * 　　　 　  　   \\　.-.-　//
- * 　　　　　  　(　 .@.@　)
- * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
- * |　@author 李晨曦　　　　　　                                                                 　|
- * |　@author 江西财经大学                                                   |
- * |　@create 2017年07月20日 - 17:26
- * |    @description
- * +---------------------------------Oooo---------------------------------------+
+ Created by 李晨曦 on 2017/7/20.
  */
 public class Test2 {
     public static void main(String[] args){
