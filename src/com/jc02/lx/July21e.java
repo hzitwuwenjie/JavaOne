@@ -28,7 +28,7 @@ public class July21e {
             else
             zheng++;
         }while(num!= 0);
-        System.out.println("正数的个数为"+ zheng);
-        System.out.println("负数的个数为"+ fu );
+        System.out.println("正数的个数为 "+ zheng);
+        System.out.println("负数的个数为 "+ fu );
     }
 }
