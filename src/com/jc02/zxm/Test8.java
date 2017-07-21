@@ -41,20 +41,23 @@ public class Test8 {
                 case 1:
                     scount=a*B;
                     System.out.println("黄金战甲:"+a +"\t"+"数量:"+B +"\t" +"合计:"+scount);
-                    System.out.println("是否继续（y/n）:");
+                    System.out.print("是否继续（y/n）:");
                     flag=input.next();
+                    System.out.println("\n");
                     break;
                 case 2:
                     scount=b*B;
                     System.out.println("水仗:"+b +"\t"+"数量:"+B +"\t" +"合计:"+scount);
-                    System.out.println("是否继续（y/n）:");
+                    System.out.print("是否继续（y/n）:");
                     flag=input.next();
+                    System.out.println("\n");
                     break;
                 case 3:
                     scount=c*B;
                     System.out.println("死亡之弩:"+c +"\t"+"数量:"+B +"\t" +"合计:"+scount);
-                    System.out.println("是否继续（y/n）:");
+                    System.out.print("是否继续（y/n）:");
                     flag=input.next();
+                    System.out.println("\n");
                     break;
             }
             count=count+scount;
