@@ -20,15 +20,15 @@ public class Test2
         double  num4=(num1*2+num2+num3)*0.8;
         int num5=(int) (num4/100)*3;
         System.out.println("************消费单**************");
-        System.out.println("购买物品    " + "单价     "+"个数    " +"金额");
-        System.out.println("黄金战衣    " + "$"+num1+"      "+2+"      $"  +  2*num1);
-        System.out.println("死亡之杖    " + "$"+num2+"      "+1+"      $"  +  1*num1);
-        System.out.println("水杖        " + "$"+num3+"      "+1+"      $"  +  1*num1);
+        System.out.println("购买物品\t" + "单价\t"+"个数\t" +"金额");
+        System.out.println("黄金战衣\t" + "$"+num1+"\t"+2+" $"  +  2*num1);
+        System.out.println("死亡之杖\t" + "$"+num2+"\t"+1+"$"  +  1*num1);
+        System.out.println("水杖\t" + "$"+num3+"\t"+1+"$"  +  1*num1);
         System.out.println("\n");
-        System.out.println("折扣             " + "8折 ");
-        System.out.println("消费总金额      " + "￥"+num4);
-        System.out.println("实际缴费        " + "￥"+1500);
-        System.out.println("找零            " +"￥"+(1500-num4));
-        System.out.println("积分            " +num5);
+        System.out.println("折扣\t" + "8折 ");
+        System.out.println("消费总金额\t " + "￥"+num4);
+        System.out.println("实际缴费\t " + "￥"+1500);
+        System.out.println("找零\t" +"￥"+(1500-num4));
+        System.out.println("积分\t" +num5);
     }
 }
