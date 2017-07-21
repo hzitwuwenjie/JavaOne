@@ -22,7 +22,7 @@ public class LianXi1 {
         System.out.println("请输入四位数字");
         int i=input.nextInt();
         if(i<1000||i>9999){
-            System.out.println("输入的数字超出范围，不正确，请输入1000到9999之间的数字");
+            System.out.println("输入的数字不在范围，不正确，请输入1000到9999之间的数字");
             return;
         }else {
                 System.out.println("你输入的数字是："+i);
