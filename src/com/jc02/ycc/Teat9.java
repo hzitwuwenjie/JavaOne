@@ -21,7 +21,7 @@ public class Teat9 {
         int downcount=0;
 
         for (int i = 0; i <10 ; i++) {
-            System.out.println("请输入第"+i+"位顾客的年龄");
+            System.out.println("请输入第 "+i+"位顾客的年龄");
             age=input.nextInt();
             if(age>30){
                 upcount++;
