@@ -33,7 +33,7 @@ public class Lianxi1 {
             if (a/100%10==num ) {
                 System.out.println("恭喜您中奖了");
             }else{
-                System.out.println("蟹蟹参与");
+                System.out.println("蟹蟹 参与");
             }
             }
         }
