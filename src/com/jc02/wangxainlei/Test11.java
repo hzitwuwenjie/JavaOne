@@ -16,7 +16,7 @@ public class Test11 {
         }
         d=c*10;
         System.out.println("30岁以下的比例为："+(100-d)+"%");
-        System.out.println("30岁以上的比例为："+d+"%");
+        System.out.println("30岁以上的比 例为："+d+"%");
     }
 }
 
