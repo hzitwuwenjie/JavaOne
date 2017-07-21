@@ -14,7 +14,7 @@ import java.util.Scanner;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Test1 {
+public class Test3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         Random random = new Random();
@@ -28,7 +28,7 @@ public class Test1 {
             System.out.println("您输入的数字是："+a);
             System.out.println("随机数字是："+b);
             if ((a / 100) % 10 == b) {
-                System.out.println("恭喜您中奖了，获得外星人电脑一台！");
+                System.out.println("恭喜您中奖了 ，获得外星人电脑一台！");
             } else {
                 System.out.println("谢谢参与");
             }
