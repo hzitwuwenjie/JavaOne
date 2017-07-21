@@ -1,5 +1,4 @@
 package com.jc02.wangxainlei;
-/* mwmwmwmwmwmwmmmwmmwmwmwmwangxianleiwmwmwmwmwmwmwmmwmwmwmwmwmw                     */
 import java.util.Scanner;
 public class Test12 {
     public static void main (String[] args){
