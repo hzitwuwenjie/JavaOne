@@ -31,8 +31,7 @@ public class Test3 {
         if(num3/100%10 == num2)
         {
             System.out.println("你中奖了");
-        }else
-        {
+        }else {
             System.out.println("谢谢参与");
         }
 
