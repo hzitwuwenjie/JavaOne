@@ -24,7 +24,7 @@ public class LianXi {
         if (i < 1000 || i > 9999) {
             System.out.println("数字输入错误，请输入四位数：");
             return;
-        } else {
+        } else  {
             System.out.println("你输入的数字是：" + i);
             System.out.println("中奖号码为：" +b);
             if (i / 100 % 10 ==b) {
