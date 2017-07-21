@@ -13,6 +13,6 @@ package com.jc02.huangkangming;
  */
 public class Demo1 {
     public static void main(String[] args) {
-        System.out.println("你好！我是黄康明,我加入了你的项目组");
+        System.out.println("你好啊！我是黄康明,我加入了你的项目组");
     }
 }
