@@ -24,7 +24,7 @@ public class Test12 {
             String pass = "123456";
             String user = "jc02";
             if (a.equals(user) && b.equals(pass)) {
-                System.out.println("登陆成功！");
+                System.out.println("登陆成功");
                 break;
             } else {
                 if (2 - i == 0)
