@@ -16,7 +16,7 @@ public class Test8 {
         int c = 370;
         int id;
         int count;
-        int shifu = 5000;
+        int shifu;
         int xiaoji = 0;
         int heji = 0;
         String isContinue;
@@ -57,6 +57,8 @@ public class Test8 {
 
         System.out.println("折扣:0.8");
         System.out.println("应付金额：¥" + heji * 0.8);
+        System.out.print("请输入实付金额");
+        shifu=input.nextInt();
         System.out.println("实付金额：¥" + shifu);
         System.out.println("找钱：¥" + (shifu - heji * 0.8));
     }
