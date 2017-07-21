@@ -1,7 +1,5 @@
 package com.jc02.yankaixin;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -16,7 +14,7 @@ import java.util.Scanner;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Lianxi01 {
+public class Test03 {
 
     public static void main(String[] args) {
 
