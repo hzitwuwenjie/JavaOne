@@ -29,17 +29,20 @@ public class July21f {
         int amount;
         double money= 0;
         double moneyamount= 0;
+        String string="";
         do{
             System.out.println("1`黄金战衣\t\t\t2`死亡之女\t\t\t3`水杖");
-        System.out.println("ENTER THE GOODSNUMBER END BY N: ");
-            goodsnum= input.nextLine();
-            int i = Integer.parseInt(goodsnum);
+            System.out.println("ENTER THE GOODSNUMBER END BY N: ");
+            int i =input.nextInt();
             System.out.println("ENTER THE AMOUNT: ");
             amount= input.nextInt();
-             money=price[i+1] * amount;
+             money=price[i-1] * amount;
             moneyamount+= money;
+            System.out.println(menu[i-1]+" 数量 "+ amount+ "件\t\t\t\t\t\t价格 "+ money+ "元");
             System.out.println("continue? ");
-        }while(goodsnum!= "n");
+            System.out.println("ENTER THE GOODSNUMBER END BY N: ");
+            string= input.next();
+        }while(!string.equals("n"));
         double finalmoney= 0.8* moneyamount;
 
         System.out.println("折扣：0.8\n应付金额 "+ finalmoney+"\n");
