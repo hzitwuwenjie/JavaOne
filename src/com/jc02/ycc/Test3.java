@@ -19,7 +19,7 @@ public class Test3 {
         Scanner input=new Scanner(System.in);
         Random random = new Random();
 
-        int num=random.nextInt(10);// 调用random函数，并赋值
+        int num=random.nextInt(10);// 调用 random函数，并赋值
         System.out.println("请输入一个4位整数 ：");
         int i=input.nextInt();//接受键盘输入的整数
         if(i<1000 || i>9999){
