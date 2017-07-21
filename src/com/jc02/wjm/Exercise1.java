@@ -1,18 +1,20 @@
-package com.jc02.huangkangming;
+package com.jc02.wjm;
 
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
  * 　　　　　  　(　 .@.@　)
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
- * |　@author 黄康明　　　　　                                                                 　|
+ * |　@author 万家明　　　　　                                                                 　|
  * |　@author 江西财经大学                                                  |
- * |　@create 2017年07月20日 - 15:53
+ * |　@create 2017年07月20日 - 17:24
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Demo1 {
+public class Exercise1 {
     public static void main(String[] args) {
-        System.out.println("你好啊！我是黄康明,我加入了你的项目组");
+        int a=380,b=1000,c;
+        c=a+b;
+        System.out.println("消费总金额"+c*0.8);
     }
 }
