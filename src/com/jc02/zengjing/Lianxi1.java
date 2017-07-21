@@ -21,7 +21,7 @@ public class Lianxi1 {
     public static void main(String[] args) {
         Scanner i = new Scanner(System.in);
         Random rand = new Random();
-        int num = rand.nextInt(9);
+        int num = rand.nextInt(10);
         System.out.println("请输入一个四位数字");
         int a = i.nextInt();
         if (a<1000 || a>9999) {
