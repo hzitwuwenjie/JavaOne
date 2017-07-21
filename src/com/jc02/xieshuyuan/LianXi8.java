@@ -8,7 +8,7 @@ package com.jc02.xieshuyuan;
  * |　@author 谢树源　　　　　                                                                 　|
  * |　@author 深圳合众艾特信息技术有限公司                                                   |
  * |　@create 2017年07月21日 - 15:20
- * |    @description   循环打印出由雪花符号组成的菱形或直角三角形
+ * |    @description   循环打印出由符号组成的菱形或直角三角形
  * +---------------------------------Oooo---------------------------------------+
  */
 public class LianXi8 {
@@ -21,7 +21,7 @@ public class LianXi8 {
 
             System.out.print("   ");
             for(int b=0; b<a; b++){
-                System.out.print("* ");//循环打印*
+                System.out.print("+ ");//循环打印+
             }
             System.out.println("");
         }
@@ -33,7 +33,7 @@ public class LianXi8 {
                 System.out.print("  ");
             }
             for (int b=0; b<2*a-1; b++) {
-                System.out.print("* ");
+                System.out.print("+ ");
             }
             System.out.println("");
         }
@@ -43,7 +43,7 @@ public class LianXi8 {
                 System.out.print("  ");
             }
             for (int b=0; b<20-2*a-1; b++) {
-                System.out.print("* ");
+                System.out.print("+ ");
             }
             System.out.println("");
         }
