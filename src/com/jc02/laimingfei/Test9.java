@@ -12,7 +12,6 @@ public class Test9 {
         Scanner input=new Scanner(System.in);
         String username;
         String password;
-
         for (int i = 0; i <3 ; i++) {
             System.out.println("请输入用户名 ");
             username=input.next();
