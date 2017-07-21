@@ -18,10 +18,10 @@ import java.util.Scanner;
 public class Test3 {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
-        Random rand=new Random(10);
-        System.out.println("请输入一个四位数：\t");
+        Random rand=new Random();
+        System.out.println("请输入一个四位数：\t");//提示用户输入四位数
         int i=input.nextInt();
-        int num=rand.nextInt(1);
+        int num=rand.nextInt(2);
         if (i<1000 || i>9999)
         {
             System.out.println("您输入的数字不正确,请重新输入：");
