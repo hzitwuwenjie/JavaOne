@@ -20,8 +20,10 @@ public class Task3 {
         Scanner input=new Scanner(System.in);
         System.out.println("请输入你的会员号：");
         int vipNum=input.nextInt();
-        if(vipNum<1000||vipNum>9999)
-            System.out.println("会员号输入错误,请重试！");
+        if(vipNum<1000||vipNum>9999) {
+            System.out.print("会员号输入错误,请重试！");
+            return;
+        }
         else
             System.out.println("你的会员号为："+vipNum);
         Random rand=new Random();
