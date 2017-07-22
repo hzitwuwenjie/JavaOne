@@ -87,17 +87,17 @@ public static void test4() {
 public static void test5() {
 
     for(int i=1; i<10; i++) {
-        //控制前面的空格
+
         for (int j = 1; j < 10 - i; j++) {
             System.out.print(" ");
         }
-        //控制*的输出
+
         for (int k = 1; k <= 2 * i - 1; k++) {
 
-            if (i == 1 || i == 9) {//控制第一行和最后一行打印*
+            if (i == 1 || i == 9) {
                 System.out.print("*");
             } else {
-                //第一个位置和最后一个位置输出*
+
                 if (k == 1 || k == 2 * i - 1) {
                     System.out.print("*");
                 } else {
@@ -116,24 +116,24 @@ public static void test6() {
 
         for(int i=1;i<=10;i++)
         {
-            //将空格和*分开看，看" "的变化i=1时，他是4 ，2的时候是3找规律
+
             for(int j=1;j<=10-i;j++)
                 System.out.print(" ");
-            for(int k=1;k<=2*i-1;k++)//找规律，i是 1 3 5 7 基数嘛
+            for(int k=1;k<=2*i-1;k++)
                 System.out.print('*');
-            //换一行
+
             System.out.println();
         }
 //打印下半部分
         for(int i=1;i<=10;i++)
         {
-            for(int j=1;j<=i;j++)//空格 1 2 3 4 so
+            for(int j=1;j<=i;j++)
                 System.out.print(" ");
-            for(int k=2*10;k>2*i+1;k--)//* 7 5 3 1倒着来的基数
+            for(int k=2*10;k>2*i+1;k--)
                 System.out.print('*');
             System.out.println();
         }
 
-}
+  }
 }
 
