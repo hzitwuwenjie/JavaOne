@@ -13,7 +13,7 @@ package com.jc02.huangkangming;
  */
 public class ArrayTools {
     //选择排序
-    public static void selectSort(int [] arr){
+    public void selectSort(int [] arr){
         for (int i = 0; i < arr.length-1; i++)
         {
             for (int j = i; j <arr.length ; j++)
@@ -28,7 +28,7 @@ public class ArrayTools {
         }
     }
     //冒泡排序
-    public static void bubbleSort(int []arr){
+    public  void bubbleSort(int []arr){
         /*for (int i = arr.length-1; i >0 ; i--) {
             for (int j = 0; j <i; j++)
             {
@@ -51,6 +51,19 @@ public class ArrayTools {
                     arr[j+1]=temp;
                 }
             }
+        }
+    }
+    public   void insertSort(int arr[]) {
+        for(int i=1;i<arr.length;i++)
+        {
+            int insertVal=arr[i];
+            int index=i-1;
+            while(index>=0 && insertVal<arr[index])
+            {
+                arr[index+1]=arr[index];
+                index--;
+            }
+            arr[index+1]=insertVal;
         }
     }
 }
