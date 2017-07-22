@@ -15,7 +15,7 @@ package com.jc02.xieshikai;
 public class Task13 {
 
     public static void main(String[] args) {
-            shape6();
+        shape6();
         }
     public static void shape1() {
         for (int i = 1; i <= 9; i++) {//i:行  j:列
@@ -60,6 +60,11 @@ public class Task13 {
         }
     }
 
+    public static void shape5(String[] args) {
+
+
+    }
+
     public static void shape6() {//i:行  j:列
         for (int i = 1; i <=9; i++) {
             for(int j=1;j<=9-i;j++){
@@ -71,10 +76,10 @@ public class Task13 {
             System.out.println();
         }
         for (int i = 9; i >=1; i--) {
-            for(int j=1;j<=9-i;j++){
+            for(int j=1;j<=10-i;j++){
                 System.out.print(" ");
             }
-            for (int j = 1;j<=2*i-1;j++){
+            for (int j = 1;j<=2*(i-1)-1;j++){
                 System.out.print("*");
             }
 
