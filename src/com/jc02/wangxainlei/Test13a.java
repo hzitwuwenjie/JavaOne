@@ -3,7 +3,7 @@ package com.jc02.wangxainlei;
 /**
  * Created by THINK on 2017/7/21.
  */
-public class Test14 {      // 正直角
+public class Test13a {      // 正直角
     public static void main (String[] args){
 
         int  i=0;
