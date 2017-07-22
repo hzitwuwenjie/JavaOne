@@ -8,6 +8,6 @@ package com.jc02.xiewenqiang;
  * +---------------------------------Oooo---------------------------------------+
  */
 public class Pritimive {
-        boolean[] t = new boolean[3];
+    boolean[] t = new boolean[3];
 
 }
