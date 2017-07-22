@@ -17,7 +17,9 @@ public class ArrayTest1 {
     public static void main(String[] args) {
         Scanner in =new Scanner(System.in);
         int [] arr={99,85,82,63,60};
-        selectSort(arr);
+        bubbleSort(arr);
+        printArray(arr);
+       /* selectSort(arr);
         System.out.println("插入前的成绩信息：");
         printArray(arr);
 
@@ -37,7 +39,7 @@ public class ArrayTest1 {
         System.out.println("插入后的成绩信息");
         printArray(arr2);
 
-
+*/
     }
 
    //打印数组
@@ -80,7 +82,7 @@ public class ArrayTest1 {
     }
     //冒泡排序
     public static void bubbleSort(int []arr){
-        for (int i = arr.length-1; i >0 ; i--) {
+        /*for (int i = arr.length-1; i >0 ; i--) {
             for (int j = 0; j <i; j++)
             {
                 if(arr[j]>arr[j+1])
@@ -90,6 +92,32 @@ public class ArrayTest1 {
                     arr[j+1]=temp;
                 }
             }
+        }*/
+        for (int i = 0; i <arr.length-1 ; i++)
+        {
+            for (int j = 0; j <arr.length-1-i ; j++)
+            {
+                if(arr[j]>arr[j+1])
+                {
+                    int temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+        }
+    }
+    //插入排序
+    public  static void insertSort(int arr[]) {
+        for(int i=1;i<arr.length;i++)
+        {
+            int insertVal=arr[i];
+            int index=i-1;
+            while(index>=0 && insertVal<arr[index])
+            {
+                arr[index+1]=arr[index];
+                index--;
+            }
+            arr[index+1]=insertVal;
         }
     }
 }
