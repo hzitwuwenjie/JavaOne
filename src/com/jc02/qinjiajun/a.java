@@ -18,7 +18,6 @@ package com.jc02.qinjiajun;
             boom(b);
             insert(72, b);
             insert(100, b);
-
         }
 
         public static void insert(int a, int[] b) {
