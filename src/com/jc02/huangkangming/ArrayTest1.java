@@ -22,8 +22,10 @@ public class ArrayTest1 {
         printArray(arr);
 
         System.out.println();
+
         System.out.println("请输入新增成绩：");
         int score=in.nextInt();
+
         int [] arr2=new int[arr.length+1];
 
         for (int i = 0; i <arr2.length-1 ; i++) {
@@ -31,14 +33,19 @@ public class ArrayTest1 {
         }
         arr2[arr2.length-1]=score;
         selectSort2(arr2);
+
         System.out.println("插入后的成绩信息");
         printArray(arr2);
+
+
     }
 
-    //打印数组
+   //打印数组
     public static void printArray(int [] arr){
         for (int i = 0; i <arr.length ; i++) {
-            System.out.print(arr[i] + ",");
+            System.out.print(arr[i]);
+            if(i<arr.length-1)
+            System.out.print(",");
         }
     }
     //选择排序(升序）
