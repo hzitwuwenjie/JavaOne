@@ -132,7 +132,7 @@ public class Test13 {
             }
             for (int j = 1; j <= i; j++) {
                 if(i==j)
-                System.out.print("*");
+                System.out.print(" *");
             }
             for (int j = 1; j <= i-2; j++) {
                     System.out.print(" ");
@@ -151,7 +151,7 @@ public class Test13 {
             }
             System.out.println("");
         }
-        for(int j=1;j<11;j++)
+        for(int j=1;j<13;j++)
             System.out.print("* ");
     }
 
