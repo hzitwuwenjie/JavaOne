@@ -24,7 +24,7 @@ public class LX21_1 {
         System.out.println("Please enter a number:");
         int num= input.nextInt();
         String string= "";
-        while(num!= 0){
+        while(num!= 0 ){
             string= string+ num% 2;
             num/= 2;
         }
