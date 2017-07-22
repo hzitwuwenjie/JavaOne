@@ -29,7 +29,7 @@ public class Teat9 {
                 downcount++;
             }
 
-        }System.out.println("30岁以上的比例"+(upcount/10.0)*100+"%");
+        }System.out.println("30岁以上 的比例"+(upcount/10.0)*100+"%");
         System.out.println("30岁以上的比例"+(downcount/10.0)*100+"%");
     }
 }
