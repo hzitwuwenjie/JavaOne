@@ -66,18 +66,18 @@ public class Exercise13 {
               System.out.print("*");
     }
     public static void ff6(){
-        for(int i=9;i>0;i--){
-            for(int j=0;j<=i;j++)
+        for(int i=10;i>=1;i--){
+            for(int j=0;j<i;j++)
                 System.out.print(" ");
-            for(int k=0;k<=2*(9-i);k++)
+            for(int k=1;k<=(2*(10-i)+1);k++)
                 System.out.print("*");
             System.out.println();
 
         }
-        for(int a=9;a>0;a--){
+        for(int a=8;a>=0;a--){
             for(int b=0;b<=9-a;b++)
                 System.out.print(" ");
-            for(int c=1;c<=2*a-1;c++)
+            for(int c=1;c<=2*a+1;c++)
                 System.out.print("*");
             System.out.println();
     }
