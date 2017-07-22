@@ -18,7 +18,7 @@ import java.util.Scanner;
 public class LX20 {
     public static void main(String[] args) {
         Scanner input= new Scanner(System.in);
-        double xia= 0;
+        double xia= 0 ;
         double shang= 0;
         for(int i= 0; i< 4; i++){
             System.out.println("请输入第"+(i+ 1)+"位顾客的年龄");
