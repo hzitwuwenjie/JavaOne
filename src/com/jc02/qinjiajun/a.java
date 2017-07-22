@@ -14,9 +14,11 @@ package com.jc02.qinjiajun;
 
     public class a {
         public static void main(String[] args) {
-            int[] b = {99,85,82,63,60};
+            int[] b = {76,85,98,54,60};
+            boom(b);
             insert(72, b);
-            insert(38, b);
+            insert(100, b);
+
         }
 
         public static void insert(int a, int[] b) {
@@ -52,5 +54,20 @@ package com.jc02.qinjiajun;
             System.out.println("\n");
 
         }
+          public  static  void boom(int []b)
+    {
+        int temp;
+        for (int i = 0; i <b.length-1 ; i++) {
+            for (int j = 0; j < b.length-1; j++) {
+                if(b[j]<b[j+1])
+                {
+                    temp=b[j];
+                    b[j]=b[j+1];
+                    b[j+1]=temp;
+                }
+            }
+        }
 
+
+    }
     }
