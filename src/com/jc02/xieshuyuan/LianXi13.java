@@ -66,6 +66,10 @@ public class LianXi13 {
     }
     public static void shape5(){
         System.out.println("5• shape5");
+        for(int b=0; b<9; b++){
+            System.out.print("  ");
+        }
+        System.out.print("* ");
         for(int a=0; a<8; a++){
             for(int b=0; b<9-a; b++){
                 System.out.print("  ");
