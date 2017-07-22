@@ -22,7 +22,19 @@ public class Exercise14 {
         a[2]=85;
         a[3]=63;
         a[4]=60;
+        for(int i=0;i<a.length-1;i++)
+            for(int j=i+1;j<a.length-1;j++)
+                if(a[i]>a[j])
+                {
+                    b=a[i];
+                    a[i]=a[j];
+                    a[j]=b;
+                }
+        System.out.print("升序排序成绩信息为：");
+        for(int k=0;k<a.length-1;k++)
+            System.out.print(a[k] + "\t");
         Scanner input=new Scanner(System.in);
+        System.out.println("");
         System.out.println("请输入新增成绩：");
         c=input.nextInt();
         a[5]=c;
@@ -35,8 +47,8 @@ public class Exercise14 {
                     a[j]=b;
                 }
         for(int l=0;l<a.length;l++)
-            if (a[l]==88) System.out.println("插入后的下标为："+l);
-        System.out.println("插入后的成绩信息为：");
+            if (a[l]==c) System.out.println("插入后的下标为："+l);
+        System.out.println("插入后的降序成绩信息为：");
         for(int k=0;k<a.length;k++)
             System.out.print(a[k] + "\t");
 
