@@ -113,15 +113,15 @@ public class LianXi16 {
     }
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
-        System.out.println("选择年份(注必须大于1900年):");
+        System.out.println("选择年份(注必须大于等于1900年):");
         int year=input.nextInt();
         int month=1;
         rili(year,month);
-        System.out.println("\n选项：P\tN\tALL\t（P表示显示上一个月|N表示显示下一个月|ALL表示显示该年的所有月份）");
+        System.out.println("\n选项：P\tN\tALL\t（P表示显示上一个月 | N表示显示下一个月 | ALL表示显示该年的所有月份）");
         String menu1="P";
         String menu2="N";
         String menu3="ALL";
-        System.out.println("请输入以上三个选项来选择显示该年月份：");
+        System.out.println("请输入以上三个选项来选择显示选项：");
         String menu=input.next();
         if(menu.equals(menu1)){
             year=year-1;
