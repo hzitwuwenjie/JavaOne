@@ -3,7 +3,7 @@ package com.jc02.wangxainlei;
 /**
  * Created by THINK on 2017/7/21.
  */
-public class Test13 {
+public class Test13d {
     public static void main (String[] args){
 
         int  i=0;
