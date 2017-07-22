@@ -16,7 +16,7 @@ public class Test01 {
         double a = 380;
         double b = 1000;
         double result = (a+b)*0.8;
-        System.out.println("消费总金额:  " + result);
+        System.out.println("消费总金额:" + result);
 
     }
 }
