@@ -50,6 +50,7 @@ package com.jc02.qinjiajun;
                 System.out.print(" "+ c[i]);
             }
             System.out.println("\n");
+
         }
 
     }
