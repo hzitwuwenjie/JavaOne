@@ -48,7 +48,7 @@ public class Exercise14 {
                 }
         for(int l=0;l<a.length;l++)
             if (a[l]==c) System.out.println("插入后的下标为："+l);
-        System.out.println("插入后的降序成绩信息为：");
+        System.out.print("插入后的降序成绩信息为：");
         for(int k=0;k<a.length;k++)
             System.out.print(a[k] + "\t");
 
