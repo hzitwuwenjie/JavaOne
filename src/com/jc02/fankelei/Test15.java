@@ -69,7 +69,7 @@ public class Test15 {
 
         }
 
-        System.out.print("插入成绩后为");
+        System.out.print("插入成绩后为 ");
         for (int g = 0; g < score.length; g++)
             System.out.print("\t" + score[g]);
 
