@@ -25,7 +25,7 @@ public class Array2 {
         System.out.println("请输入成绩：");
         int a =input.nextInt();
         result[5]=a;
-        int b =0;
+        int b =5;
         int n =0;
         for (int i = 1; i < result.length; i++) {
             for (int j = i; j > 0; j--) {
