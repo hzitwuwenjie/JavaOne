@@ -34,8 +34,18 @@ public class LX22 {
             System.out.println("");
 
         }
+        for (int i = 1; i <10 ; i++) {
+            for (int l = 0; l <10- i; l++) {
+                System.out.print(" ");
+            }
+            for (int j = 10; j > 10-i; j--) {
+                System.out.print("*");
 
-        for (int i = 0; i < 8; i++) {
+            }
+            System.out.println("");
+
+        }
+        for (int i = 0; i < 8; i++ ) {
 
             for (int j = 0; j <= 8 - i; j++) {
                 System.out.print(" ");
@@ -57,37 +67,42 @@ public class LX22 {
             if(i>0)
             {System.out.print("*");}
             System.out.println("");
-
         }
         for (int g = 0; g <10 ; g++) {
             System.out.print("* ");
         }
-        int i = 0;
-        int j = 0;
-        int row = 10;
-        int col = 10;
-        System.out.println("");
-        while (true) {
-            if (i > row && j > col) {
-                break;
+        for (int m = 1; m <= 10; m++)
+        {
+            for (int n = 9; n >= m ;n--)
+            {
+                System.out.print(" ");
             }
-            if (i < row && j > col) {
-                System.out.println("");
-                j = 0;
-                i++;
-                continue;
-
+            for (int n = 1; n <= m; n++)
+            {
+                System.out.print("*");
             }
-            if (i < row && j < col) {
-                if (j > i && j < row - i) {
-                    System.out.print("*");
-                } else {
-                    System.out.print(" ");
-                }
+            for (int n = 1; n < m; n++)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int m = 1; m <= 9; m++)
+        {
+            for (int n = 1; n <= m ;n++)
+            {
+                System.out.print(" ");
+            }
+            for (int n = 9; n >= m; n--)
+            {
+                System.out.print("*");
             }
 
-            j++;
-
+            for (int n = 9; n > m; n--)
+            {
+                System.out.print("*");
+            }
+            System.out.println();
         }
     }
 }
