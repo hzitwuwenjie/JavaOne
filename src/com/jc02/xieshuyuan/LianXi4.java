@@ -8,7 +8,7 @@ package com.jc02.xieshuyuan;
  * |　@author 谢树源　　　　　                                                                 　|
  * |　@author 深圳合众艾特信息技术有限公司                                                   |
  * |　@create 2017年07月21日 - 11:39
- * |    @description   for语句输出相关倍数行对应字符
+ * |    @description   for语句分别输出3、5、7的倍数行对应字符
  * +---------------------------------Oooo---------------------------------------+
  */
 public class LianXi4 {
