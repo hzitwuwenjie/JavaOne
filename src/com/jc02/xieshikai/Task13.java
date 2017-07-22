@@ -62,6 +62,7 @@ public class Task13 {
 
     public static void shape5(String[] args) {
 
+
     }
 
     public static void shape6() {//i:行  j:列
