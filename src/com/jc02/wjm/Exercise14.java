@@ -16,7 +16,7 @@ import java.util.Scanner;
 public class Exercise14 {
     public static void main(String[] args) {
         int a[]=new int[6];
-        int b,c;
+        int b,c,d,e=0;
         a[0]=82;
         a[1]=99;
         a[2]=85;
@@ -38,16 +38,24 @@ public class Exercise14 {
         System.out.println("请输入新增成绩：");
         c=input.nextInt();
         a[5]=c;
-        for(int i=0;i<a.length;i++)
-            for(int j=i+1;j<a.length;j++)
+        for(int i=0;i<a.length-1;i++)
+            for(int j=i+1;j<a.length-1;j++)
                 if(a[i]<a[j])
                 {
                     b=a[i];
                     a[i]=a[j];
                     a[j]=b;
                 }
-        for(int l=0;l<a.length;l++)
-            if (a[l]==c) System.out.println("插入后的下标为："+l);
+        for(int l=a.length-2;l>=0;l--)
+            if (c>a[l])
+            {
+                d=a[l];
+                a[l]=c;
+                a[l+1]=d;
+                e=l;
+
+            }
+        System.out.println("插入的下标为："+e);
         System.out.print("插入后的降序成绩信息为：");
         for(int k=0;k<a.length;k++)
             System.out.print(a[k] + "\t");
