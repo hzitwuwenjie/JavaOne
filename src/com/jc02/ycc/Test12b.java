@@ -13,21 +13,14 @@ package com.jc02.ycc;
  */
 public class Test12b {
     public static void main(String[] args) {
-
-        int i;
-        int j;
-        for ( i = 0; i<=10; i++) {
-            for ( j = 0; j<=10 ; j++) {
-                if(j>i)
-                { System.out.print("*");}
-                else
-                {
-                    System.out.print(" ");
-                }
+        for(int i=1;i<=9;i++){
+            for(int k=0;k<i-1;k++){
+                System.out.print(" ");
             }
-            System.out.println();
+            for(int j=9;j>=i;j--){
+                System.out.print("*");
+            }
+            System.out.println(" ");
         }
-
-
     }
 }
