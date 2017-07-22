@@ -7,29 +7,25 @@ package com.jc02.dengzhiyu;/*
 
 public class Test18 {
     public static void main(String[] args) {
-        int row=9;
-        for (int i = 1; i <=row; i++) {
-            for (int j = row; j >= i; j--) {
+        for (int i = 1; i <=10; i++) {
+
+            for (int j = 10; j >= i; j--) {
                 System.out.print("  ");
             }
             for(int k=1;k<=(2*i-1);k++) {
                 System.out.print("* ");
             }
             System.out.println();
+
         }
-
+        int row=9;
         for (int i = 1; i <=row; i++) {
-
             for (int j = 0; j <= i; j++) {
                 System.out.print("  ");
             }
-         /*  for(int k=18;k>2*i-1;k--) {
-                System.out.print("* ");
-            }*/
-            for (int j = 1; j <=2*(row-i)-1 ; j++) {
+            for(int k=1;k<=2*(row-i)+1;k++) {
                 System.out.print("* ");
             }
-
             System.out.println();
 
         }
