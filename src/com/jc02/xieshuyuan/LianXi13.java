@@ -69,8 +69,8 @@ public class LianXi13 {
         for(int b=0; b<9; b++){
             System.out.print("  ");
         }
-        System.out.print("* ");
-        for(int a=0; a<8; a++){
+        System.out.println("* ");
+        for(int a=1; a<8; a++){
             for(int b=0; b<9-a; b++){
                 System.out.print("  ");
             }
