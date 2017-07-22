@@ -103,7 +103,6 @@ public class Test11 {
         System.out.println("第一题");
        test.Graphical(10);
         System.out.println("第二题");
-
        test.Graphical2(10,10);
         System.out.println("第三题");
        test.Graphical3(10,10);
@@ -111,6 +110,7 @@ public class Test11 {
        test.Graphical4(10);
         System.out.println("第五题");
        test.Graphical5(10);
+        System.out.println(" ");
         System.out.println("第六题");
         test.Graphical6();
 
