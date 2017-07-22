@@ -26,6 +26,7 @@ public class Test8 {
         double money=0;//实付金额
         String flag=null;
         Scanner input=new Scanner(System.in);
+
         System.out.println("*****************************");
         System.out.println("请选择要购买的商品编号");
         System.out.println("1.黄金战甲\t2.水仗\t3.死亡之弩");
@@ -41,27 +42,23 @@ public class Test8 {
                 case 1:
                     scount=a*B;
                     System.out.println("黄金战甲:"+a +"\t"+"数量:"+B +"\t" +"合计:"+scount);
-                    System.out.print("是否继续（y/n）:");
-                    flag=input.next();
-                    System.out.println("\n");
+
                     break;
                 case 2:
                     scount=b*B;
                     System.out.println("水仗:"+b +"\t"+"数量:"+B +"\t" +"合计:"+scount);
-                    System.out.print("是否继续（y/n）:");
-                    flag=input.next();
-                    System.out.println("\n");
+
                     break;
                 case 3:
                     scount=c*B;
                     System.out.println("死亡之弩:"+c +"\t"+"数量:"+B +"\t" +"合计:"+scount);
-                    System.out.print("是否继续（y/n）:");
-                    flag=input.next();
-                    System.out.println("\n");
+
                     break;
             }
+            System.out.print("是否继续（y/n）:");
+            flag=input.next();
+            System.out.println("\n");
             count=count+scount;
-
         }
         while (flag.equals("y"));
         System.out.println("商家折扣8折");
