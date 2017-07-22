@@ -11,16 +11,15 @@ package com.jc02.fjx;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class LianXi11{
+public class LianXi11 {
     public static void main(String[] args) {
-        int max=9;
-        for ( int i=1;i<=max;i++){
-            System.out.println("  ");
-            for(int k=1;k<=i;k++ )
-                System.out.print("* ");
+        String bin="";
+        for (int j =1; j <=9; j++) {
+           bin=bin+"* ";
+            System.out.println(bin);
+
         }
     }
 }
-
 
 
