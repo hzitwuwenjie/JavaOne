@@ -39,7 +39,7 @@ public class Array2 {
         }
         System.out.println("插入的下标为："+b);
         for (int i = 0; i < 6; i++) {
-            System.out.println(result[i]);
+            System.out.print(result[i]+" ");
         }
 
 
