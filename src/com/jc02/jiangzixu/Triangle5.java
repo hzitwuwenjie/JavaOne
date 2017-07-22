@@ -11,7 +11,6 @@ public class Triangle5 {
             for (int j = i; j <10 ; j++) {
                 System.out.print("  ");
             }
-            
 
             System.out.print("* ");
             for (int j = 11-i; j <10 ; j++) {
