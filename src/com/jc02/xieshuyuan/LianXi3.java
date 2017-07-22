@@ -14,7 +14,7 @@ import java.util.Scanner;
  * +---------------------------------Oooo---------------------------------------+
  */
 public class LianXi3 {
-    public static void sw1tch1(int a1) {
+    public static void switch1(int a1) {
         switch (a1) {
             case 1:
                 System.out.println("\t\t魔界饰品分发系统");
@@ -27,12 +27,12 @@ public class LianXi3 {
                 System.out.println("请输入数字来选择");
                 Scanner input2 = new Scanner(System.in);
                 int menu2 = input2.nextInt();
-                LianXi3.sw1tch2(menu2); break;
+                LianXi3.switch2(menu2); break;
             case 2:
                 System.out.println("已退出"); break;
         }
     }
-    public static void sw1tch2(int a2) {
+    public static void switch2(int a2) {
         switch (a2) {
             case 1:
                 System.out.println("\t\t魔界饰品分发系统");
@@ -45,7 +45,7 @@ public class LianXi3 {
                 System.out.println("请输入数字来选择");
                 Scanner input3=new Scanner(System.in);
                 int menu3=input3.nextInt();
-                LianXi3.sw1tch3(menu3); break;
+                LianXi3.switch3(menu3); break;
             case 2:
                 System.out.println("购物已结算好，请自己查询！"); break;
             case 3:
@@ -55,7 +55,7 @@ public class LianXi3 {
         }
     }
 
-    public static void sw1tch3(int a3) {
+    public static void switch3(int a3) {
         switch (a3) {
             case 1:
                 System.out.println("所有的会员信息如下："); break;
@@ -77,7 +77,7 @@ public class LianXi3 {
         int menu1=input1.nextInt();
         switch (menu1){
             case 1:
-                LianXi3.sw1tch1(menu1); break;
+                LianXi3.switch1(menu1); break;
             case 2:
                 System.out.println("已退出");  break;
         }
