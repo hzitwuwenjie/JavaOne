@@ -7,7 +7,7 @@ public class Array1 {
     public static void main(String[] args) {
         Pritimive object = new Pritimive();
         for (int i = 0; i <3 ; i++) {
-            System.out.println(object.t[i]+" ");
+            System.out.println(object.t[i]+"  ");
         }
         Pritimive d = new Pritimive();
         for (int i = 0; i <3 ; i++) {
