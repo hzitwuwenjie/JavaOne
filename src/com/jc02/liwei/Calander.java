@@ -2,6 +2,8 @@ package com.jc02.liwei;/**
  * Created by 熊不举 on 2017/7/24.
  */
 
+import com.sun.org.apache.xpath.internal.SourceTree;
+
 import java.util.Scanner;
 
 /**
@@ -40,7 +42,34 @@ public class Calander {
     }
 
 
+    public int getALLdays(int year,int month){
+        int sum=0;
+        for (int i = 1900; i <year ; i++) {
+            sum+=leapYear(i)?366:365;
+        }
+        for (int i = 1; i <month ; i++) {
+            sum+=getSumDays(year,i);
+        }
+        return sum;
+    }
 
-
+    public void showCalander(int year,int month){
+        int sumday=getALLdays(year,month);
+        int kongge=sumday%7+1;
+        System.out.println("\n=============================================");
+        System.out.println("\t\t\t\t"+year+"年"+month+"月");
+        System.out.println("===============================================");
+        System.out.println("星期日\t星期一\t星期二\t星期三\t星期四\t星期五\t星期六\t");
+        for(int i=0;i<kongge;i++){
+            System.out.print(" \t\t");
+        }
+        if (kongge==7)
+            System.out.println();
+        for (int i = 1; i <=getSumDays(year, month) ; i++) {
+            System.out.print(i+"\t\t");
+            if((i+kongge)%7==0)
+                System.out.println();
+        }
+    }
 
 }
