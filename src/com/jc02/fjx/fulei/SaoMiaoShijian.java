@@ -7,27 +7,27 @@ package com.jc02.fjx.fulei;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 付嘉星　　(σ｀д′)σ　　　                                                                 　|
  * |　@author 都TM闪开，星爷要开始写程序了                                                   |
- * |　@create 2017年07月24日 - 16:15
+ * |　@create 2017年07月24日 - 16:51
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class wenben extends message {
-    private String content;
-    private int msgId;
+public class SaoMiaoShijian extends ShiJianXiaoxi {
+    private int eventKey;
+    private String  ticket;
 
-    public int getMsgId() {
-        return msgId;
+    public int getEventKey() {
+        return eventKey;
     }
 
-    public void setMsgId(int msgId) {
-        this.msgId = msgId;
+    public void setEventKey(int eventKey) {
+        this.eventKey = eventKey;
     }
 
-    public String getContent() {
-        return content;
+    public String getTicket() {
+        return ticket;
     }
 
-    public void setContent(String content) {
-        content = content;
+    public void setTicket(String ticket) {
+        this.ticket = ticket;
     }
 }

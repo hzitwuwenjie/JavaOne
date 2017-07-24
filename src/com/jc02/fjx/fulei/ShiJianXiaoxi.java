@@ -8,10 +8,10 @@ package com.jc02.fjx.fulei;
  * |　@author 付嘉星　　(σ｀д′)σ　　　                                                                 　|
  * |　@author 都TM闪开，星爷要开始写程序了                                                   |
  * |　@create 2017年07月24日 - 16:45
- * |    @description
+ * |    @description 事件消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class GuanQu extends message {
+public class ShiJianXiaoxi extends XiaoXi {
     private String event ;
 
     public String getEvent() {
