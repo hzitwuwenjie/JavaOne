@@ -27,9 +27,9 @@ public class Test_11
                 System.out.println("欢迎登陆MyShopping系统");
                 break;
             }
-            else if (i == 2) {
+            else if (i == 2)
                 System.out.println("对不起，三次机会均输入错误");
-            } else
+             else
                 System.out.println("用户名或密码输入错误，您还有" + (2 - i) + "次机会");
 
         }
