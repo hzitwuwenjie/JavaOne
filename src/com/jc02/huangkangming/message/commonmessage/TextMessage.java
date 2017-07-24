@@ -1,7 +1,5 @@
 package com.jc02.huangkangming.message.commonmessage;
 
-import com.jc02.huangkangming.message.commonmessage.Message;
-
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -13,7 +11,7 @@ import com.jc02.huangkangming.message.commonmessage.Message;
  * |  @description   文本信息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class TextMessage  extends Message1 {
+public class TextMessage extends CommonMessage {
     private String content;
 
     public String getContent() {

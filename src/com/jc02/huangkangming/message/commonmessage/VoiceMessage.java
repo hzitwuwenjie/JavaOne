@@ -1,7 +1,5 @@
 package com.jc02.huangkangming.message.commonmessage;
 
-import com.jc02.huangkangming.message.commonmessage.Message;
-
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -13,7 +11,7 @@ import com.jc02.huangkangming.message.commonmessage.Message;
  * |  @description   语音消息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class VoiceMessage extends Message1 {
+public class VoiceMessage extends CommonMessage {
     private String mediaId;
     private String format;
 

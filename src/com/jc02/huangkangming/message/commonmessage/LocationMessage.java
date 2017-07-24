@@ -1,7 +1,5 @@
 package com.jc02.huangkangming.message.commonmessage;
 
-import com.jc02.huangkangming.message.commonmessage.Message;
-
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -13,7 +11,7 @@ import com.jc02.huangkangming.message.commonmessage.Message;
  * |  @description   地理位置信息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class LocationMessage extends Message1 {
+public class LocationMessage extends CommonMessage {
     private String location_x;
     private String location_y;
     private String scale;

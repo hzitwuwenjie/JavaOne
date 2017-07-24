@@ -10,10 +10,10 @@ import com.jc02.huangkangming.message.commonmessage.Message;
  * |　@author 黄康明　　　　　                                                                 　|
  * |　@author 江西财经大学                                                  |
  * |　@create 2017年07月24日 - 16:10
- * |  @description   消息类
+ * |  @description   事件消息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Message2 extends Message {
+public class EventMessage extends Message {
     private String event;
 
     public String getEvent() {

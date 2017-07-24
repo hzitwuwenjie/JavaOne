@@ -1,8 +1,5 @@
 package com.jc02.huangkangming.message.eventmessage;
 
-import com.jc02.huangkangming.message.commonmessage.Message;
-import com.jc02.huangkangming.message.eventmessage.Message2;
-
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -14,7 +11,7 @@ import com.jc02.huangkangming.message.eventmessage.Message2;
  * |  @description   扫描带参数的二维码事件类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class BPQrCodeMessage  extends Message2 {
+public class ScanEventMessage extends EventMessage {
     private  String eventKey;
     private  String ticket;
 

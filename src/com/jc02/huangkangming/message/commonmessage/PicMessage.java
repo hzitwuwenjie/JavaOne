@@ -1,7 +1,5 @@
 package com.jc02.huangkangming.message.commonmessage;
 
-import com.jc02.huangkangming.message.commonmessage.Message;
-
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -13,7 +11,7 @@ import com.jc02.huangkangming.message.commonmessage.Message;
  * |  @description   图片信息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class PicMessage extends Message1 {
+public class PicMessage extends CommonMessage {
     private String picURL;
     private String mediaId;
 
