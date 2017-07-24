@@ -33,26 +33,20 @@ public class LianXi16 {
         }
         //记录当月的天数
         int day=0;
-        switch (month){
-            case 1:day=31;break;
-            //case 2:day=28 or 29;break;
-            case 3:day=31;break;
-            case 4:day=30;break;
-            case 5:day=31;break;
-            case 6:day=30;break;
-            case 7:day=31;break;
-            case 8:day=31;break;
-            case 9:day=30;break;
-            case 10:day=31;break;
-            case 11:day=30;break;
-            case 12:day=31;break;
-            default:if(Renyear){
-                day=29;
-            }
-            else{
-                day=28;
-            }
-                break;
+        switch (month) {
+            case 1:day = 31;break;
+            case 2:day = Renyear ? 29 : 28;break;
+            case 3:day = 31;break;
+            case 4:day = 30;break;
+            case 5:day = 31;break;
+            case 6:day = 30;break;
+            case 7:day = 31;break;
+            case 8:day = 31;break;
+            case 9:day = 30;break;
+            case 10:day = 31;break;
+            case 11:day = 30;break;
+            case 12:day = 31;break;
+            default:return;
         }
         System.out.print(year+"年"+month+"月"+"有"+day+"天"+"\t");
         System.out.println(month+"月份的万年历如下：");
@@ -123,39 +117,43 @@ public class LianXi16 {
         String menu3="ALL";
         System.out.println("请输入以上三个选项来选择显示选项：");
         String menu=input.next();
-        if(menu.equals(menu1)){
+        if(menu.equalsIgnoreCase(menu1)){
             year=year-1;
             month=12;
-            System.out.println("\n"+year+"是平年");
-            System.out.print(year+"年"+month+"月"+"有"+31+"天"+"\t");
-            System.out.println(month+"月份的万年历如下：");
-            int sum=31;
-            int blank=sum%7+1;//blank开始输出的空格数 +1是从星期五开始；
-            System.out.println("星期一\t星期二\t星期三\t星期四\t星期五\t星期六\t星期天");
+            if(year>1899){
+                rili(year,month);
+            }else{
+                System.out.println("\n"+year+"是平年");
+                System.out.print(year+"年"+month+"月"+"有"+31+"天"+"\t");
+                System.out.println(month+"月份的万年历如下：");
+                int sum=31;
+                int blank=sum%7+1;//blank开始输出的空格数 +1是从星期五开始；
+                System.out.println("星期一\t星期二\t星期三\t星期四\t星期五\t星期六\t星期天");
 
-            int num=1;
-            for(int i=0;i<blank;i++){
-                System.out.print("\t\t");
-                num++;
-            }
-            if(num>7){
-                System.out.println("");
-                num=1;
-            }
-            for(int i=1;i<=sum;i++){
-                if(num%7==0){
-                    System.out.print("\t"+i+"\n");//控制换行
-                    num=1;
-                }
-                else{
-                    System.out.print("\t"+i+"\t");
+                int num=1;
+                for(int i=0;i<blank;i++){
+                    System.out.print("\t\t");
                     num++;
                 }
+                if(num>7){
+                    System.out.println("");
+                    num=1;
+                }
+                for(int i=1;i<=sum;i++){
+                    if(num%7==0){
+                        System.out.print("\t"+i+"\n");//控制换行
+                        num=1;
+                    }
+                    else{
+                        System.out.print("\t"+i+"\t");
+                        num++;
+                    }
+                }
             }
-        }else if(menu.equals(menu2)){
+        }else if(menu.equalsIgnoreCase(menu2)){
             month=month+1;
             rili(year,month);
-        }else if(menu.equals(menu3)){
+        }else if(menu.equalsIgnoreCase(menu3)){
             for(int k=1;k<=12;k++){
                 month=k;
                 rili(year,month);
