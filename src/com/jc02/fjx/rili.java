@@ -57,10 +57,21 @@ public class rili {
         return sum;
     }
     public void shuchu(int year,int month){
+        int kongge=tian(year,month)%7+1;
         System.out.println("\t\t\t"+year+"年"+month+"月");
         System.out.println("***********************************");
         System.out.println("日\t一\t二\t三\t四\t五\t六\t");
-
+        for(int k=0;k<kongge;k++) {
+            System.out.print(" \t");
+        }
+        if(kongge==7){
+            System.out.println();
+        }
+        for (int i=1;i<=yue(year,month);i++){
+            System.out.print(i + "\t");
+            if((i+kongge)%7==0)
+                System.out.println();
+        }
     }
-    }
+}
 
