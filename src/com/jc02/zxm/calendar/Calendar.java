@@ -32,10 +32,11 @@ public class Calendar {
             if (select.equalsIgnoreCase("all")) {
                 for (int i = 1; i <12; i++) {
 
-                    out.outPutCalendar(year, month);
-                    month++;
+                    out.outPutCalendar(year, i);
+
                     System.out.println();
                 }
+                month=12;
                 out.outPutCalendar(year,month);
             } else if (select.equalsIgnoreCase("n")) {
                 month++;
