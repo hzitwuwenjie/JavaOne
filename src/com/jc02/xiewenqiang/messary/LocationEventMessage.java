@@ -14,6 +14,7 @@ public class LocationEventMessage extends EventMessage {
 
     public String getLatitude() {
         return latitude;
+
     }
 
     public void setLatitude(String latitude) {

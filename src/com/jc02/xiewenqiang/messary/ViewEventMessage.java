@@ -14,7 +14,7 @@ public class ViewEventMessage extends EventMessage {
         return eventKey;
     }
 
-    public void setEventKey(String eventKey) {
+    public void setEventKey( String eventKey) {
         this.eventKey = eventKey;
     }
 }

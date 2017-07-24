@@ -23,7 +23,7 @@ public class SubscribeEventMessage extends EventMessage {
         return ticket;
     }
 
-    public void setTicket(String ticket) {
+    public void setTicket( String ticket) {
         this.ticket = ticket;
     }
 }

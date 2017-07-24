@@ -15,7 +15,7 @@ public class VedioMessage extends CommonMessage {
         return mediaId;
     }
 
-    public void setMediaId(String mediaId) {
+    public void setMediaId(String mediaId ) {
         this.mediaId = mediaId;
     }
 

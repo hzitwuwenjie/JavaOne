@@ -29,7 +29,7 @@ public class VoiceMessage extends Message {
     }
 
     public String getRecognition() {
-        return recognition;
+        return recognition ;
     }
 
     public void setRecognition(String recognition) {
