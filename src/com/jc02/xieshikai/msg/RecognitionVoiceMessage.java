@@ -13,7 +13,7 @@ package com.jc02.xieshikai.msg;
  * +-------------（づ￣3￣）づ╭❤～------╭∩╮（￣▽￣）╭∩╮ ---------+
  */
 public class RecognitionVoiceMessage extends VoiceMessage{
-    private String recognition;
+    private String recognition;//语音识别结果，UTF8编码
 
     public String getRecognition() {
         return recognition;

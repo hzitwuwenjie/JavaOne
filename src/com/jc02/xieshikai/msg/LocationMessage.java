@@ -13,10 +13,10 @@ package com.jc02.xieshikai.msg;
  * +-------------（づ￣3￣）づ╭❤～------╭∩╮（￣▽￣）╭∩╮ ---------+
  */
 public class LocationMessage extends CommonMessage{
-    private double location_X;//维度
-    private double location_y;//经度
-    private double scale;
-    private String label;
+    private double location_X;  //地理位置维度
+    private double location_y;  //地理位置经度
+    private double scale;       //地理缩放大小
+    private String label;       //地理位置信息
 
     public double getLocation_X() {
         return location_X;
