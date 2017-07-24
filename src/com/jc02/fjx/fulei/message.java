@@ -20,7 +20,7 @@ public class message {
         return toUserName;
     }
 
-    public void setToUserName(String toUserName) {
+    public void  setToUserName(String toUserName) {
         this.toUserName = toUserName;
     }
 
