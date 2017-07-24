@@ -14,7 +14,6 @@ package com.jc02.pengmeiqian.message;
 public class CommonMessage extends Message{
     private String msgId;
 
-
     public String getMsgId() {
         return msgId;
     }
