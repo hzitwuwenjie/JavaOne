@@ -5,15 +5,15 @@ package com.jc02.dengzhiyu.message;/*
  *  |    @description   　　　　　　　　　　　　　                                                              　
  */
 
-public class Message1 extends Message {
+public class CommonMessage extends Message {
     private String msgId;//	消息id，64位整型
 
-    @Override
+
     public String getMsgId() {
         return msgId;
     }
 
-    @Override
+
     public void setMsgId(String msgId) {
         this.msgId = msgId;
     }

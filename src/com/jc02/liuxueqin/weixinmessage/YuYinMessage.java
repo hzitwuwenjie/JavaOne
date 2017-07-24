@@ -7,7 +7,7 @@ package com.jc02.liuxueqin.weixinmessage;/*
  *  +---------------------------------Oooo---------------------------------------+
  */
 
-public class YuYinMessage extends Message{
+public class YuYinMessage extends CommentMessage{
     private int mediaId;//语音消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private String format;//语音格式，如amr，speex等
     private String recognition;//语音识别结果，UTF8编码
