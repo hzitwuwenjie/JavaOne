@@ -23,7 +23,7 @@ int e,f;
         int m=1;
         do {
             c.showCalander(y,m);
-            System.out.println("\n请选择n显示接下来一个月,p显示前一个月，all显示当年所有月：");
+            System.out.println("\n请选择n显示接下来一个月,p显示前一个月，all显示当年所有月,其他键退出");
             String d=input.next();
 
            if(d.equalsIgnoreCase("n")) {
