@@ -20,7 +20,7 @@ public class Calendar {
             printMonthTitle(year, month);
             printMonthBody(year, month);
             input=new Scanner(System.in);
-            System.out.println("请输入N/P");
+            System.out.println("请输入大写的N/P，显示这一年上一月或下一月的日历 ，或输入其它则显示一年的日历");
             String number=input.next();
             for(int i=0;i<12;i++){
              if(number.equals("N")){
@@ -29,7 +29,7 @@ public class Calendar {
                     month=12;
               printMonthTitle(year, month);
               printMonthBody(year, month);
-                 System.out.println("请输入N/P");
+                 System.out.println("请输入大写的N/P，显示这一年上一月或下一月的日历 ，或输入其它则显示一年的日历 ");
                  input=new Scanner(System.in);
                   number=input.next();
              }else if(number.equals("P")){
@@ -38,7 +38,7 @@ public class Calendar {
                      month=1;
                  printMonthTitle(year, month);
                  printMonthBody(year, month);
-                 System.out.println("请输入N/P");
+                 System.out.println("请输入大写的N/P，显示这一年上一月或下一月的日历 ，或输入其它则显示一年的日历");
                  input=new Scanner(System.in);
                  number=input.next();
              }else {
