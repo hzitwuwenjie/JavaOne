@@ -3,7 +3,7 @@ package com.jc02.lichenxi.message;
 /**
  * Created by 李晨曦 2017年07月24日
  */
-public class LocaMessage extends EventMessage{
+public class LocaEventMessage extends EventMessage{
     private String Latitude;	//地理位置纬度
     private String Longitude;	//地理位置经度
     private String Precision;	//地理位置精度
