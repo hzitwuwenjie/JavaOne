@@ -13,7 +13,7 @@ package com.jc02.xieshikai.msg;
  * +-------------（づ￣3￣）づ╭❤～------╭∩╮（￣▽￣）╭∩╮ ---------+
  */
 public class EventMessage extends Message{
-    private String event;          //事件类型，subscribe(订阅)、unsubscribe(取消订阅)
+    private String event;          //事件类型
 
     public String getEvent() {
         return event;

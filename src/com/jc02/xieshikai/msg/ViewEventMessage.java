@@ -8,12 +8,12 @@ package com.jc02.xieshikai.msg;
  * +----------------------------Ψ(￣∀￣)Ψ--------------------------+
  * |　@author 谢士凯　^_^　                                                                 　|
  * |　@adress 江西财经大学
- * |　@create 2017年07月24日 - 17:03
- * |  @description   自定义菜单事件消息类
+ * |　@create 2017年07月24日 - 17:07
+ * |  @description   点击菜单跳转链接时的事件推送消息类
  * +-------------（づ￣3￣）づ╭❤～------╭∩╮（￣▽￣）╭∩╮ ---------+
  */
-public class ClickMessage extends EventMessage{
-    private String eventKey;//事件KEY值，与自定义菜单接口中KEY值对应
+public class ViewEventMessage extends EventMessage{
+    private String eventKey;//事件KEY值，设置的跳转URL
 
     public String getEventKey() {
         return eventKey;

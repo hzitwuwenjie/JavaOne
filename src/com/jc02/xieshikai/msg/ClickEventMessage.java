@@ -8,10 +8,17 @@ package com.jc02.xieshikai.msg;
  * +----------------------------Ψ(￣∀￣)Ψ--------------------------+
  * |　@author 谢士凯　^_^　                                                                 　|
  * |　@adress 江西财经大学
- * |　@create 2017年07月24日 - 16:33
- * |  @description   小视频消息类
+ * |　@create 2017年07月24日 - 17:03
+ * |  @description   自定义菜单事件消息类
  * +-------------（づ￣3￣）づ╭❤～------╭∩╮（￣▽￣）╭∩╮ ---------+
  */
-public class ShortVideoMessage extends VoiceMessage{
+public class ClickEventMessage extends EventMessage{
+    private String eventKey;//事件KEY值，与自定义菜单接口中KEY值对应
+    public String getEventKey() {
+        return eventKey;
+    }
 
+    public void setEventKey(String eventKey) {
+        this.eventKey = eventKey;
+    }
 }
