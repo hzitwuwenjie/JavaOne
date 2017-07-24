@@ -5,7 +5,7 @@ package com.jc02.dengzhiyu.message;/*
  *  |    @description   　　　　　　　　　　　　　                                                              　
  */
 
-public class TextMessage extends Message1 {
+public class TextMessage extends CommonMessage {
    private String content;//	文本消息内容
 
     public String getContent() {
