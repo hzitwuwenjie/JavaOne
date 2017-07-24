@@ -48,9 +48,9 @@ public class Calendar {
     public void showCalendar(int year,int month){
         int sumday=getAllDays(year,month);
         int kong=sumday%7+1;
-        System.out.println("\n==========================================");
+        System.out.println("\n======================================================");
         System.out.println("\t\t\t\t"+year+"年"+month+"月");
-        System.out.println("==========================================");
+        System.out.println("======================================================");
         System.out.println("星期日\t星期一\t星期二\t星期三\t星期四\t星期五\t星期六\t");
         for (int i = 0; i < kong; i++) {
             System.out.print("\t\t");
