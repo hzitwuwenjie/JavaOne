@@ -16,11 +16,6 @@ public class QrSceneMessage extends EventMessage{
     private String eventKey;
     private String ticket;
 
-    public QrSceneMessage(String eventKey, String ticket) {
-        this.eventKey = eventKey;
-        this.ticket = ticket;
-    }
-
     public String getEventKey() {
         return eventKey;
     }
