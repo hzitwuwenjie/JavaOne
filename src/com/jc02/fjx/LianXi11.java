@@ -17,7 +17,6 @@ public class LianXi11 {
         for (int j =1; j <=9; j++) {
            bin=bin+"* ";
             System.out.println(bin);
-
         }
     }
 }

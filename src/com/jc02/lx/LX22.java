@@ -45,7 +45,7 @@ public class LX22 {
             System.out.println("");
 
         }
-        for (int i = 0; i < 8; i++ ) {
+        for (int i = 0; i < 8; i++) {
 
             for (int j = 0; j <= 8 - i; j++) {
                 System.out.print(" ");
@@ -67,26 +67,33 @@ public class LX22 {
             if(i>0)
             {System.out.print("*");}
             System.out.println("");
+
         }
         for (int g = 0; g <10 ; g++) {
             System.out.print("* ");
         }
         for (int m = 1; m <= 10; m++)
         {
+            //输出空格
             for (int n = 9; n >= m ;n--)
             {
                 System.out.print(" ");
             }
+            //输出* 左上
             for (int n = 1; n <= m; n++)
             {
                 System.out.print("*");
             }
+
+            //右上
             for (int n = 1; n < m; n++)
             {
                 System.out.print("*");
             }
+
             System.out.println();
         }
+
         for (int m = 1; m <= 9; m++)
         {
             for (int n = 1; n <= m ;n++)
@@ -102,6 +109,7 @@ public class LX22 {
             {
                 System.out.print("*");
             }
+
             System.out.println();
         }
     }
