@@ -11,17 +11,11 @@ package com.jc02.yankaixin.message;
  * |  @description   语音消息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class VoiceMessage extends TextMessage{
+public class VoiceMessage extends CommonMessage{
 
     private int mediaId;
     private String format;
     private String recognition;
-
-    public VoiceMessage(int mediaId, String format, String recognition) {
-        this.mediaId = mediaId;
-        this.format = format;
-        this.recognition = recognition;
-    }
 
     public int getMediaId() {
         return mediaId;
