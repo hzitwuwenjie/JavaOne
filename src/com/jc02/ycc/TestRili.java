@@ -16,9 +16,9 @@ import java.util.Scanner;
 public class TestRili {
     public static void main(String[] args) {
         Rili m=new Rili();
-        //获得当前时间的月份，月份从0开始所以结果要加1
+        //获得当前时间的月份， 月份从0开始所以结果要加1
         Scanner input=new Scanner(System.in);
-        System.out.println("请输入年份：");
+        System.out.println("请输入年份 ：");
         int year=input.nextInt();
         //System.out.println("请输入月份：");
         int month=1;
