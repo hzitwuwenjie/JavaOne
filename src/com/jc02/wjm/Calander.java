@@ -16,7 +16,7 @@ public class Calander {
     int month;
     /*润年*/
     public boolean leapYear(int year){
-        return year%4==0&&year%100!=0||year%400==0;
+        return year % 4 == 0 && year % 100 !=0|| year % 400 == 0;
     }
     /*一个月多少天*/
     public int sumdays(int year,int month){
@@ -35,7 +35,7 @@ public class Calander {
     public int alldays(int year,int month){
         int sum=0;
         for(int i=1900;i<year;i++){
-            sum+=leapYear(year)?366:365;
+            sum+=leapYear(i)?366:365;
         }
         for(int i=1;i<month;i++){
             sum+=sumdays(year,i);
