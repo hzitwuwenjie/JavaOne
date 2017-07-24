@@ -11,7 +11,7 @@ package com.jc02.xiongzairen.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class VoiceMessage extends Message2 {
+public class VoiceMessage extends CommonMessage {
 
     private long mediaId;
     private String format;

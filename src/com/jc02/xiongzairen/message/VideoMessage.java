@@ -11,7 +11,7 @@ package com.jc02.xiongzairen.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class VideoMessage extends Message2 {
+public class VideoMessage extends CommonMessage {
     private long mediaId;
     private String  thumbMediaId;
     public String getThumbMediaId() {

@@ -11,7 +11,7 @@ package com.jc02.xiongzairen.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class TextMessage extends Message2{
+public class TextMessage extends CommonMessage {
     private String	text;
     private String content;
     public String getContent() {
