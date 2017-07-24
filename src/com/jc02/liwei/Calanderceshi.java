@@ -23,6 +23,7 @@ public class Calanderceshi {
         Calander m=new Calander();
         System.out.println("请输入年份：");
         year=k.nextInt();
+        m.leapYear(year);
         System.out.println("该年是闰年么"+m.leapYear(year));
 
         Calander a=new Calander();
@@ -30,6 +31,7 @@ public class Calanderceshi {
         year=k.nextInt();
         System.out.println("请输入月份：");
         month=k.nextInt();
+        a.getSumDays(year,month);
         System.out.println("天数是"+a.getSumDays(year,month));
     }
 }
