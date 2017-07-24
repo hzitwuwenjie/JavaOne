@@ -17,8 +17,8 @@ public class Test14 {
     public static void main(String[] args) {
         int[] a = {60, 99, 63, 85, 83};
         System.out.println("排序前数组为：");
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i] + " ");
+        for (int i:a) {
+            System.out.print(i + " ");
         }
         for (int i = 0; i < a.length - 1; i++) {
             for (int j = 0; j < a.length - 1 - i; j++) {
@@ -31,8 +31,8 @@ public class Test14 {
         }
         System.out.println();
         System.out.println("排序后的数组为：");
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i] + " ");
+        for (int i:a) {
+            System.out.print(i + " ");
         }
         int[] c = new int[6];
         Scanner b = new Scanner(System.in);
@@ -49,6 +49,7 @@ public class Test14 {
                         c[m + 1] = a[m];
                     }
                     System.out.println("插入成绩的下标为：" + (i + 1));
+                    break;
                 }
 
             }
@@ -67,8 +68,8 @@ public class Test14 {
                 System.out.println("插入的下标是：" + 5);
             }
             System.out.println("插入后的成绩信息是：");
-            for (int i = 0; i < c.length; i++) {
-                System.out.print(c[i] + " ");
+            for (int i:c) {
+                System.out.print(i+" ");
             }
         }
 }
