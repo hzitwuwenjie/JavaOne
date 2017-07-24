@@ -17,12 +17,6 @@ public class ReportLocationMessage extends EventMessage{
     private double longitude;
     private double precision;
 
-    public ReportLocationMessage(double latitude, double longitude, double precision) {
-        this.latitude = latitude;
-        this.longitude = longitude;
-        this.precision = precision;
-    }
-
     public double getLatitude() {
         return latitude;
     }
