@@ -4,31 +4,31 @@ package com.jc02.lichenxi.message;
  * Created by 李晨曦 2017年07月24日
  */
 public class LinkMessage extends CommonMessage {
-    private String Title;	//消息标题
-    private String Description;	//消息描述
-    private String Url;	//消息链接
+    private String title;	//消息标题
+    private String description;	//消息描述
+    private String url;	//消息链接
 
     public String getTitle() {
-        return Title;
+        return title;
     }
 
     public void setTitle(String title) {
-        Title = title;
+        this.title = title;
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
 
     public void setDescription(String description) {
-        Description = description;
+        this.description = description;
     }
 
     public String getUrl() {
-        return Url;
+        return url;
     }
 
     public void setUrl(String url) {
-        Url = url;
+        this.url = url;
     }
 }

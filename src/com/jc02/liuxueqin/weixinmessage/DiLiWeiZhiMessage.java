@@ -7,7 +7,7 @@ package com.jc02.liuxueqin.weixinmessage;/*
  *  +---------------------------------Oooo---------------------------------------+
  */
 
-public class DiLiWeiZhiMessage extends Message{
+public class DiLiWeiZhiMessage extends CommentMessage{
     private double location_X;//地理位置维度
     private double location_Y;//地理位置经度
     private String  scale;//地图缩放大小

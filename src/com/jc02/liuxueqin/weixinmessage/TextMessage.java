@@ -7,7 +7,7 @@ package com.jc02.liuxueqin.weixinmessage;/*
  *  +---------------------------------Oooo---------------------------------------+
  */
 
-public class TextMessage extends Message{
+public class TextMessage extends CommentMessage{
     private String content;//文本消息内容
 
     public String getContent() {
