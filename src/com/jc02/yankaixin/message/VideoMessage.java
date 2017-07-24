@@ -11,14 +11,24 @@ package com.jc02.yankaixin.message;
  * |  @description   视频消息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class VideoMessage extends TextMessage{
+public class VideoMessage extends Message{
 
+    private long msgId;
     private int mediaId;
     private int thumbMediaId;
 
-    public VideoMessage(int mediaId, int thumbMediaId) {
+    public VideoMessage(long msgId, int mediaId, int thumbMediaId) {
+        this.msgId = msgId;
         this.mediaId = mediaId;
         this.thumbMediaId = thumbMediaId;
+    }
+
+    public long getMsgId() {
+        return msgId;
+    }
+
+    public void setMsgId(long msgId) {
+        this.msgId = msgId;
     }
 
     public int getMediaId() {
