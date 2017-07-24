@@ -1,9 +1,9 @@
-package com.jc02.lichenxi.message.commonmessage;
+package com.jc02.lichenxi.message;
 
 /**
  * Created by 李晨曦 2017年07月24日
  */
-public class LinkMessage extends SecMessage {
+public class LinkMessage extends CommonMessage {
     private String Title;	//消息标题
     private String Description;	//消息描述
     private String Url;	//消息链接

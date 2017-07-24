@@ -1,9 +1,9 @@
-package com.jc02.lichenxi.message.commonmessage;
+package com.jc02.lichenxi.message;
 
 /**
  * Created by 李晨曦 2017年07月24日
  */
-public class LocationMessage extends SecMessage {
+public class LocationMessage extends CommonMessage {
     private String Location_X;	//地理位置维度
     private String Location_Y;	//地理位置经度
     private String Scale;	//地图缩放大小
