@@ -7,8 +7,8 @@ package com.jc02.lwj.message;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 李文俊　　　　　　                                                                 　|
  * |　@author 江西财经大学                                                   |
- * |　@create 2017年07月24日 - 16:16
- * |    @description   图片消息
+ * |　@create 2017年07月24日 - 18:06
+ * |    @description   图片信息
  * +---------------------------------Oooo---------------------------------------+
  */
 public class PicMessage extends Message {

@@ -1,4 +1,4 @@
-package com.jc02.lwj;
+package com.jc02.lwj.message;
 
 /**
  * 　　  　  　           \\\|///
@@ -7,18 +7,21 @@ package com.jc02.lwj;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 李文俊　　　　　　                                                                 　|
  * |　@author 江西财经大学                                                   |
- * |　@create 2017年07月24日 - 17:07
- * |    @description   事件4
+ * |　@create 2017年07月24日 - 18:01
+ * |    @description   事件消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Event4 extends EventMessage {
-    private String eventKey;
+public class EventMessage extends Message {
 
-    public String getEventKey() {
-        return eventKey;
+        private String event;
+
+        public String getEvent() {
+            return event;
+        }
+
+        public void setEvent(String event) {
+            this.event = event;
+        }
     }
 
-    public void setEventKey(String eventKey) {
-        this.eventKey = eventKey;
-    }
-}
+

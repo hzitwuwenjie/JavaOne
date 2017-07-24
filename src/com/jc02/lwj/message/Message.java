@@ -7,8 +7,8 @@ package com.jc02.lwj.message;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 李文俊　　　　　　                                                                 　|
  * |　@author 江西财经大学                                                   |
- * |　@create 2017年07月24日 - 16:10
- * |    @description   父类
+ * |　@create 2017年07月24日 - 18:19
+ * |    @description   消息
  * +---------------------------------Oooo---------------------------------------+
  */
 public class Message {
@@ -48,9 +48,4 @@ public class Message {
         this.msgType = msgType;
     }
 
-
 }
-
-
-
-
