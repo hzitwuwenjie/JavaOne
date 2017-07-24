@@ -1,4 +1,4 @@
-package com.jc02.lichenxi;
+package com.jc02.lichenxi.test;
 
 /**
  * Created by 李晨曦 on 2017/7/20.

@@ -1,4 +1,4 @@
-package com.jc02.lichenxi;
+package com.jc02.lichenxi.test;
 
 import java.util.Random;
 import java.util.Scanner;
