@@ -32,7 +32,7 @@ public class message {
         this.fromUserName = fromUserName;
     }
 
-    public long getCreateTime() {
+    public long  getCreateTime() {
         return createTime;
     }
 
