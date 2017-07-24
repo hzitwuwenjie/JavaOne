@@ -1,4 +1,4 @@
-package com.jc02.xiewenqiang.messary;
+package com.jc02.xiewenqiang.message;
 
 /**
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
@@ -7,14 +7,14 @@ package com.jc02.xiewenqiang.messary;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ViewEvent extends Event {
+public class ViewEventMessage extends EventMessage {
     private String eventKey;//	事件KEY值，设置的跳转URL
 
     public String getEventKey() {
         return eventKey;
     }
 
-    public void setEventKey(String eventKey) {
+    public void setEventKey( String eventKey) {
         this.eventKey = eventKey;
     }
 }

@@ -1,26 +1,22 @@
-package com.jc02.xiewenqiang.messary;
+package com.jc02.lwj.message;
 
 /**
+ * 　　  　  　           \\\|///
+ * 　　　 　  　   \\　.-.-　//
+ * 　　　　　  　(　 .@.@　)
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
- * |　@author 谢文强　　　　　　                                                                 　|
- * |　@create 2017年07月24日 - 16:29
- * |  @description
+ * |　@author 李文俊　　　　　　                                                                 　|
+ * |　@author 江西财经大学                                                   |
+ * |　@create 2017年07月24日 - 18:14
+ * |    @description   地理位置
  * +---------------------------------Oooo---------------------------------------+
  */
-public class locationMessage extends Message {
-    private String location_X;//	地理位置维度
-    private String location_Y;//	地理位置经度
-    private String scale;//	地图缩放大小
-    private String label;//	地理位置信息
-    private long msgId;//	消息id，64位整型
-
-    public long getMsgId() {
-        return msgId;
-    }
-
-    public void setMsgId(long msgId) {
-        this.msgId = msgId;
-    }
+public class LocationMessage extends Message {
+    private String location_X;
+    private String location_Y;
+    private String scale;
+    private String label;
+    private String msgId;
 
     public String getLocation_X() {
         return location_X;
@@ -52,5 +48,13 @@ public class locationMessage extends Message {
 
     public void setLabel(String label) {
         this.label = label;
+    }
+
+    public String getMsgId() {
+        return msgId;
+    }
+
+    public void setMsgId(String msgId) {
+        this.msgId = msgId;
     }
 }

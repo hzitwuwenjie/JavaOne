@@ -1,10 +1,14 @@
-package com.jc02.xiewenqiang.messary;
+package com.jc02.fankelei.massage;
 
 /**
+ * 　　  　  　           \\\|///
+ * 　　　 　  　   \\　.-.-　//
+ * 　　　　　  　(　 .@.@　)
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
- * |　@author 谢文强　　　　　　                                                                 　|
- * |　@create 2017年07月24日 - 16:11
- * |  @description
+ * |　@author 范珂磊　　　　　　                                                                 　|
+ * |　@author 江西财经大学                                                   |
+ * |　@create 2017年07月20日 - 16:55
+ * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
 public class Message {

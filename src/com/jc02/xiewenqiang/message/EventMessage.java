@@ -1,4 +1,4 @@
-package com.jc02.xiewenqiang.messary;
+package com.jc02.xiewenqiang.message;
 
 /**
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
@@ -7,7 +7,8 @@ package com.jc02.xiewenqiang.messary;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Event extends Message{
+public class EventMessage extends Message{
+
     private String event;
 
     public String getEvent() {

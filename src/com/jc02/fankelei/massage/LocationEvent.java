@@ -1,13 +1,17 @@
-package com.jc02.xiewenqiang.messary;
+package com.jc02.fankelei.massage;
 
 /**
+ * 　　  　  　           \\\|///
+ * 　　　 　  　   \\　.-.-　//
+ * 　　　　　  　(　 .@.@　)
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
- * |　@author 谢文强　　　　　　                                                                 　|
- * |　@create 2017年07月24日 - 16:51
- * |  @description
+ * |　@author 范珂磊　　　　　　                                                                 　|
+ * |　@author 江西财经大学                                                   |
+ * |　@create 2017年07月20日 - 16:55
+ * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class LocationEvent extends Event{
+public class LocationEvent extends Event {
     private String latitude;//	地理位置纬度
     private String longitude;//	地理位置经度
     private String precision;//	地理位置精度

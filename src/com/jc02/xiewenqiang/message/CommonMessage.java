@@ -1,14 +1,15 @@
-package com.jc02.xiewenqiang.messary;
+package com.jc02.xiewenqiang.message;
 
 /**
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 谢文强　　　　　　                                                                 　|
- * |　@create 2017年07月24日 - 16:15
+ * |　@create 2017年07月24日 - 17:18
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class TextMessage extends Message{
-    private String content;//	文本消息内容
+public class CommonMessage extends Message {
+
+
     private long msgId;//	消息id，64位整型
 
     public long getMsgId() {
@@ -17,13 +18,5 @@ public class TextMessage extends Message{
 
     public void setMsgId(long msgId) {
         this.msgId = msgId;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
     }
 }
