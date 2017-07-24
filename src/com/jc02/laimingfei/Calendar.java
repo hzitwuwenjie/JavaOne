@@ -140,6 +140,7 @@ public class Calendar {
                 case 9:
                 case 11:
                     monthDays=30;
+                    break;
                 case 2:
                     if(isleapYear(year))
                         monthDays=28;
