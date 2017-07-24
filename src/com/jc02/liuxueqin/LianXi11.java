@@ -52,5 +52,46 @@ public class LianXi11 {
         }
         */
 
+        for (int i = 1; i <= 9; i++) {
+            for (int j = 1; j <= 9 - i; j++) {
+                System.out.print("  ");
+            }
+            if (i != 9) {
+                for (int k = 1; k <= 2 * i - 1; k++) {
+                    if (k == 1 || k == 2 * i - 1) {
+                        System.out.print("* ");
+                    } else {
+                        System.out.print("  ");
+                    }
+                }
+            } else {
+                for (int k = 1; k <= 2 * i - 1; k++) {
+                    System.out.print("* ");
+                }
+            }
+            System.out.println();
+        }
+
+        /*
+        int row=10;
+        for (int i = 1; i <=row ; i++) {
+            for (int k = row-1; k >=i ; k--) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <=2*i-1 ; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = 1; i <=row-1 ; i++) {
+            for (int k = 1; k <=i ; k++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <=2*(row-i)-1 ; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        */
     }
 }
