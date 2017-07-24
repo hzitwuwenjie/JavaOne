@@ -11,18 +11,9 @@ package com.jc02.wjm.message;
  * |  @description   视频消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class VideoMessage extends  Message{
-    private String msgType;//	视频为video
-    private String mediaId;//	视频消息媒体id，可以调用多媒体文件下载接口拉取数据。
+public class VideoMessage extends  CommonMessage{
+    private  String mediaId;//	视频消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private String thumbMediaId;//	视频消息缩略图的媒体id，可以调用多媒体文件下载接口拉取数据。
-
-    public String getMsgType() {
-        return msgType;
-    }
-
-    public void setMsgType(String msgType) {
-        this.msgType = msgType;
-    }
 
     public String getMediaId() {
         return mediaId;

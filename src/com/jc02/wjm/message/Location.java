@@ -11,12 +11,11 @@ package com.jc02.wjm.message;
  * |  @description   地理位置
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Location extends Message {
-    private String msgType;//	location
+public class Location extends CommonMessage {
     private String location_X;//	地理位置维度
-    private String location_Y;//	地理位置经度
-    private String scale;//	地图缩放大小
-    private String label;//	地理位置信息
+    private String location_Y;	//地理位置经度
+    private String scale;	//地图缩放大小
+    private String label;	//地理位置信息
 
     public String getLocation_X() {
         return location_X;
@@ -48,13 +47,5 @@ public class Location extends Message {
 
     public void setLabel(String label) {
         this.label = label;
-    }
-
-    public String getMsgType() {
-        return msgType;
-    }
-
-    public void setMsgType(String msgType) {
-        this.msgType = msgType;
     }
 }

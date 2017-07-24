@@ -12,10 +12,9 @@ package com.jc02.wjm.message;
  * +---------------------------------Oooo---------------------------------------+
  */
 public class Location2 extends EventMessage {
-    private String event;//	事件类型，LOCATION
-    private String  latitude;//	地理位置纬度
+    private String latitude;//	地理位置纬度
     private String longitude;//	地理位置经度
-    private String  precision;// 	地理位置精度
+    private String precision;//	地理位置精度
 
     public String getLatitude() {
         return latitude;
@@ -33,14 +32,6 @@ public class Location2 extends EventMessage {
         this.longitude = longitude;
     }
 
-    public String getEvent() {
-        return event;
-    }
-
-    public void setEvent(String event) {
-        this.event = event;
-    }
-
     public String getPrecision() {
         return precision;
     }
@@ -49,3 +40,4 @@ public class Location2 extends EventMessage {
         this.precision = precision;
     }
 }
+

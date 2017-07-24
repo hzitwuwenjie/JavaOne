@@ -11,18 +11,17 @@ package com.jc02.wjm.message;
  * |  @description   链接消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class UrlMessage extends Message{
-    private String msgType;//	消息类型，link
-    private String title;//	消息标题
-    private String description;//	消息描述
-    private String url;//	消息链接
+public class UrlMessage extends CommonMessage{
+    private String title;	//消息标题
+    private String description;	//消息描述
+    private String url;	//消息链接
 
-    public String getMsgType() {
-        return msgType;
+    public String getDescription() {
+        return description;
     }
 
-    public void setMsgType(String msgType) {
-        this.msgType = msgType;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getTitle() {
@@ -31,14 +30,6 @@ public class UrlMessage extends Message{
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public String getUrl() {

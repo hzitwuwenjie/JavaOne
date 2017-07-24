@@ -11,44 +11,17 @@ package com.jc02.wjm.message;
  * |  @description   取消关注事件
  * +---------------------------------Oooo---------------------------------------+
  */
-public class EventMessage  {
-    private String toUserName;//	开发者微信号
-    private String  fromUserName;//	发送方帐号（一个OpenID）
-    private String  createTime;//	消息创建时间 （整型）
-    private String msgType;//	消息类型，event
+public class EventMessage extends Message {
+    private String event;//	事件类型，
 
 
-    public String getFromUserName() {
-        return fromUserName;
+    public String getEvent() {
+        return event;
     }
 
-    public void setFromUserName(String fromUserName) {
-        this.fromUserName = fromUserName;
-    }
 
-    public String getCreateTime() {
-        return createTime;
+    public void setEvent(String event) {
+        this.event = event;
     }
-
-    public void setCreateTime(String createTime) {
-        this.createTime = createTime;
-    }
-
-    public String getToUserName() {
-        return toUserName;
-    }
-
-    public void setToUserName(String toUserName) {
-        this.toUserName = toUserName;
-    }
-
-    public String getMsgType() {
-        return msgType;
-    }
-
-    public void setMsgType(String msgType) {
-        this.msgType = msgType;
-    }
-
 
 }

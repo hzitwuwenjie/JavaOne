@@ -15,8 +15,11 @@ public class Message {
     private String toUserName;//	开发者微信号
     private String fromUserName;//	发送方帐号（一个OpenID）
     private String createTime;//	消息创建时间 （整型）
-    /**/
-    private String msgId;//	消息id，64位整型
+    private String msgType;//
+
+
+
+
 
     public String getToUserName() {
         return toUserName;
@@ -42,11 +45,13 @@ public class Message {
         this.createTime = createTime;
     }
 
-    public String getMsgId() {
-        return msgId;
+    public String getMsgType() {
+        return msgType;
     }
 
-    public void setMsgId(String msgId) {
-        this.msgId = msgId;
+    public void setMsgType(String msgType) {
+        this.msgType = msgType;
     }
+
+
 }

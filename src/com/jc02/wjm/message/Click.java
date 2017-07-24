@@ -12,25 +12,13 @@ package com.jc02.wjm.message;
  * +---------------------------------Oooo---------------------------------------+
  */
 public class Click extends EventMessage {
-    private String  Event;//		事件类型，CLICK
-
-
-    public String getEvent() {
-        return Event;
-    }
-
-
-    public void setEvent(String event) {
-        Event = event;
-    }
+    private String eventKey;//	事件KEY值，与自定义菜单接口中KEY值对应
 
     public String getEventKey() {
-        return EventKey;
+        return eventKey;
     }
 
     public void setEventKey(String eventKey) {
-        EventKey = eventKey;
+        this.eventKey = eventKey;
     }
-
-    private String  EventKey;//		事件KEY值，与自定义菜单接口中KEY值对应
 }

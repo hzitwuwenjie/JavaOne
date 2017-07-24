@@ -7,18 +7,18 @@ package com.jc02.wjm.message;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 万家明　　　　　                                                                 　|
  * |　@author 江西财经大学                                                  |
- * |　@create 2017年07月24日 - 16:15
- * |  @description   文本消息
+ * |　@create 2017年07月24日 - 17:17
+ * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class TextMessage extends CommonMessage {
-    private String content;//	文本消息内容
+public class CommonMessage extends Message {
+    private String msgId;//	消息id，64位整型
 
-    public String getContent() {
-        return content;
+    public String getMsgId() {
+        return msgId;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setMsgId(String msgId) {
+        this.msgId = msgId;
     }
 }

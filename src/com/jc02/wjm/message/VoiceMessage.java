@@ -11,18 +11,10 @@ package com.jc02.wjm.message;
  * |  @description   语音消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class VoiceMessage extends Message{
-    private String msgType;//	语音为voice
-    private String mediaId;//	语音消息媒体id，可以调用多媒体文件下载接口拉取数据。
-    private String format;//	语音格式，如amr，speex等
+public class VoiceMessage extends CommonMessage{
+    private  String mediaId;//	语音消息媒体id，可以调用多媒体文件下载接口拉取数据。
+    private  String format;//	语音格式，如amr，speex等
 
-    public String getMsgType() {
-        return msgType;
-    }
-
-    public void setMsgType(String msgType) {
-        this.msgType = msgType;
-    }
 
     public String getMediaId() {
         return mediaId;
