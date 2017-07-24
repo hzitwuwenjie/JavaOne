@@ -159,7 +159,7 @@ public class Test13 {
 
     public static void main(String[] args) {
         Test13 as =new Test13();
-        as.A1();
+        as.g();
     }
 }
 
