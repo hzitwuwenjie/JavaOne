@@ -24,7 +24,9 @@ public class Test_10
         {
             flag=flag+num%2;
             num=num/2;
+
         }
+
 
         System.out.print("该数字转换成二进制为:");
 
