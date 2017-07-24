@@ -8,6 +8,7 @@ package com.jc02.xiewenqiang.messary;
  * +---------------------------------Oooo---------------------------------------+
  */
 public class CommonMessage extends Message {
+
     private long msgId;//	消息id，64位整型
 
     public long getMsgId() {

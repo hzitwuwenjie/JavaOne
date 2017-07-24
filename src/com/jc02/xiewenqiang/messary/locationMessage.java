@@ -17,7 +17,6 @@ public class locationMessage extends CommonMessage {
         return location_X;
 
     }
-
     public void setLocation_X(String location_X) {
         this.location_X = location_X;
     }

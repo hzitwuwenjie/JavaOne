@@ -16,7 +16,6 @@ public class LocationEventMessage extends EventMessage {
         return latitude;
 
     }
-
     public void setLatitude(String latitude) {
         this.latitude = latitude;
     }

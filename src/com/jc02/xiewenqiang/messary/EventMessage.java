@@ -9,7 +9,6 @@ package com.jc02.xiewenqiang.messary;
  */
 public class EventMessage extends Message{
     private String event;
-
     public String getEvent() {
         return event;
     }

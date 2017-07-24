@@ -9,7 +9,6 @@ package com.jc02.xiewenqiang.messary;
  */
 public class ViewEventMessage extends EventMessage {
     private String eventKey;//	事件KEY值，设置的跳转URL
-
     public String getEventKey() {
         return eventKey;
     }
