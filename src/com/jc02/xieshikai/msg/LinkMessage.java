@@ -13,9 +13,9 @@ package com.jc02.xieshikai.msg;
  * +-------------（づ￣3￣）づ╭❤～------╭∩╮（￣▽￣）╭∩╮ ---------+
  */
 public class LinkMessage extends CommonMessage{
-    private String title;
-    private String description;
-    private String url;
+    private String title;       //消息标题
+    private String description; //消息描述
+    private String url;         //消息链接
 
     public String getTitle() {
         return title;

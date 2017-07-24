@@ -9,14 +9,42 @@ package com.jc02.liuxueqin.weixinmessage;/*
 
 import java.security.PublicKey;
 
-public class Message extends ShiJian{
-    public long msgId;//消息id，64位整型
-
-    public long getMsgId() {
-        return msgId;
+public class Message {
+    private String toUserName;//开发者微信号
+    private String fromUserName;//发送方帐号（一个OpenID）
+    private long createTime;//消息创建时间 （整型）
+    private String msgType;//text
+    private String getToUserName() {
+        return toUserName;
     }
 
-    public void setMsgId(long msgId) {
-        this.msgId = msgId;
+    public void setToUserName(String toUserName) {
+        this.toUserName = toUserName;
     }
+
+    public long getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(long createTime) {
+        this.createTime = createTime;
+    }
+
+    public String getMsgType() {
+        return msgType;
+    }
+
+    public void setMsgType(String msgType) {
+        this.msgType = msgType;
+    }
+
+    public String getFromUserName() {
+        return fromUserName;
+    }
+
+    public void setFromUserName(String fromUserName) {
+        this.fromUserName = fromUserName;
+    }
+
+
 }
