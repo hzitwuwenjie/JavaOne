@@ -11,7 +11,7 @@ package com.jc02.yankaixin.message;
  * |  @description   关注或取消事件消息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class SubscribeMessage extends Message{
+public class EventMessage extends Message{
 
     private String event;
 

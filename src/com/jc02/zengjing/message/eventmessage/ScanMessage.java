@@ -1,6 +1,6 @@
 package com.jc02.zengjing.message.eventmessage;
 
-import com.jc02.zengjing.message.eventmessage.QrMessage;
+import com.jc02.zengjing.message.eventmessage.EventMessage;
 
 /**
  * 　　  　  　    \\\|///
@@ -13,7 +13,7 @@ import com.jc02.zengjing.message.eventmessage.QrMessage;
  * |  @description扫描带参数二维码事件
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ScanMessage extends QrMessage {
+public class ScanMessage extends EventMessage {
     private String eventKey;
     private String ticket;
 
