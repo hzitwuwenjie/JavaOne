@@ -5,20 +5,10 @@ package com.jc02.dengzhiyu.message;/*
  *  |    @description   　　　　　　　　　　　　　                                                              　
  */
 
-public class VoiceMessage extends Message {
-    private  String msgType;//	语音为voice
+public class VoiceMessage extends CommonMessage {
     private  String mediaId;//	语音消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private  String format;//	语音格式，如amr，speex等
 
-    @Override
-    public String getMsgType() {
-        return msgType;
-    }
-
-    @Override
-    public void setMsgType(String msgType) {
-        msgType = msgType;
-    }
 
     public String getMediaId() {
         return mediaId;
