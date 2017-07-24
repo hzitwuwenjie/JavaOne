@@ -1,4 +1,4 @@
-package com.jc02.xiewenqiang.messary;
+package com.jc02.xiewenqiang.message;
 
 /**
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+

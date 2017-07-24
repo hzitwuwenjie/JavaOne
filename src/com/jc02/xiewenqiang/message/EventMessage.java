@@ -1,19 +1,19 @@
-package com.jc02.xiewenqiang.messary;
+package com.jc02.xiewenqiang.message;
 
 /**
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 谢文强　　　　　　                                                                 　|
- * |　@create 2017年07月24日 - 16:15
+ * |　@create 2017年07月24日 - 16:37
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class TextMessage extends CommonMessage{
-    private String content;//	文本消息内容
-    public String getContent() {
-        return content;
+public class EventMessage extends Message{
+    private String event;
+    public String getEvent() {
+        return event;
     }
 
-    public void setContent(String content ) {
-        this.content = content;
+    public void setEvent(String event) {
+        this.event = event;
     }
 }
