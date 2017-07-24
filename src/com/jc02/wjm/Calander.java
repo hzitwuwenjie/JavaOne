@@ -56,7 +56,7 @@ public class Calander {
             for(int i=1;i<=sumdays(year,month);i++){
                 System.out.print(i + "\t\t");
             if((i+kg)%7==0)
-                System.out.println();
+                System.out.println( );
             }
 
     }
