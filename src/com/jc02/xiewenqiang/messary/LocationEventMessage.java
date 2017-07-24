@@ -7,7 +7,7 @@ package com.jc02.xiewenqiang.messary;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class LocationEvent extends Event{
+public class LocationEventMessage extends EventMessage {
     private String latitude;//	地理位置纬度
     private String longitude;//	地理位置经度
     private String precision;//	地理位置精度

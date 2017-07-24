@@ -7,7 +7,7 @@ package com.jc02.xiewenqiang.messary;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ClickEvent extends Event {
+public class ClickEventMessage extends EventMessage {
     private String eventKey;//	事件KEY值，与自定义菜单接口中KEY值对应
 
     public String getEventKey() {

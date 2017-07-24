@@ -7,18 +7,9 @@ package com.jc02.xiewenqiang.messary;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ImageMessage extends Message{
+public class ImageMessage extends CommonMessage{
     private String picUrl;//	图片链接（由系统生成）
     private String pediaId;//	图片消息媒体id，可以调用多媒体文件下载接口拉取数据。
-    private long msgId;//	消息id，64位整型
-
-    public long getMsgId() {
-        return msgId;
-    }
-
-    public void setMsgId(long msgId) {
-        this.msgId = msgId;
-    }
 
     public String getPicUrl() {
         return picUrl;

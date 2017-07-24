@@ -7,20 +7,11 @@ package com.jc02.xiewenqiang.messary;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class locationMessage extends Message {
+public class locationMessage extends CommonMessage {
     private String location_X;//	地理位置维度
     private String location_Y;//	地理位置经度
     private String scale;//	地图缩放大小
     private String label;//	地理位置信息
-    private long msgId;//	消息id，64位整型
-
-    public long getMsgId() {
-        return msgId;
-    }
-
-    public void setMsgId(long msgId) {
-        this.msgId = msgId;
-    }
 
     public String getLocation_X() {
         return location_X;

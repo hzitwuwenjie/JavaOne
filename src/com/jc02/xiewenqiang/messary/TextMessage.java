@@ -7,17 +7,8 @@ package com.jc02.xiewenqiang.messary;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class TextMessage extends Message{
+public class TextMessage extends CommonMessage{
     private String content;//	文本消息内容
-    private long msgId;//	消息id，64位整型
-
-    public long getMsgId() {
-        return msgId;
-    }
-
-    public void setMsgId(long msgId) {
-        this.msgId = msgId;
-    }
 
     public String getContent() {
         return content;
