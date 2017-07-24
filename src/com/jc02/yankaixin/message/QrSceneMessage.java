@@ -11,7 +11,7 @@ package com.jc02.yankaixin.message;
  * |  @description   扫描带参数二维码事件消息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class QrSceneMessage extends SubscribeMessage{
+public class QrSceneMessage extends EventMessage{
 
     private String eventKey;
     private String ticket;
