@@ -1,5 +1,7 @@
 package com.jc02.fjx;
 
+import java.util.Scanner;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -13,10 +15,36 @@ package com.jc02.fjx;
  */
 public class riliceshi {
     public static void main(String[] args) {
+        String b="";
         rili m = new rili();
-      //  System.out.println("该年是闰年"+m.nian(1900) );
-      //  System.out.println("该月有"+m.yue(1900,2)+"天");
-       // System.out.println("距1900年有"+m.tian(1901,1)+"天");
-        m.shuchu(2017,7);
+        Scanner w =new Scanner(System.in);
+        System.out.print("请输入一个年份：");
+        int a= w.nextInt() ;
+        int month=1;
+        m.shuchu(a,month);
+        System.out.print("\n输入n显示下一个月日历，输入p显示上一个月日历，输入all可显示全年日历:");
+        b =w.next();
+        do{
+        if(b.equalsIgnoreCase("n")) {
+            month++;
+            if(month>12){
+                month=1;a++;
+            }
+
+        }
+       else if(b.equalsIgnoreCase("p")) {
+            month--;
+            if(month<1){
+                month=12;a--;
+                }
+           }else if(b.equalsIgnoreCase("all")){
+                for(int i=0;i<=11;i++){
+                     m.shuchu(a,month);
+            }
+            month=12;
+        }
+            else
+            break;
+        }while (true);
     }
 }
