@@ -1,18 +1,17 @@
-package com.jc02.wjm;
+package com.jc02.yankaixin;
 
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
  * 　　　　　  　(　 .@.@　)
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
- * |　@author 万家明　　　　　                                                                 　|
- * |　@author 江西财经大学                                                  |
- * |　@create 2017年07月22日 - 9:09
+ * |　@author 严凯新　　　　　　                                                                 　|
+ * |　@author 江西财经大学软件工程                                                |
+ * |　@create 2017年07月22日 - 9:00
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
 public class Pritimive {
 
-        boolean t[] =new boolean[3];
-
+    boolean[] t = new boolean[3];
 }
