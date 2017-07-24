@@ -14,7 +14,7 @@ package com.jc02.zxm.calendar;
  */
 public class OutputCalendar {
     //输出一月份日历
-    public static void OutputCalendarOne(int year){
+    public static void outPutCalendarOne(int year){
 
         int sum=1;//因为1900年1月1日是星期一，需要打印一个空格，用来保存总天数；
         int days=0;//用来存储输入月份的天数；
@@ -69,6 +69,9 @@ public class OutputCalendar {
         }
 
         //打印日历格式
+        System.out.println("*************************");
+        System.out.println(year+"年1月日历为");
+        System.out.println("*************************");
         System.out.println("日\t一\t二\t三\t四\t五\t六");
         if (sum==1)//如果输入的是1900年份，则需要在第一行打印一个空格；
         {
@@ -94,7 +97,7 @@ public class OutputCalendar {
 
     }
     //输出任意年任意月份日历
-    public static void OutputCalendar(int year,int month){
+    public static void outPutCalendar(int year,int month){
 
         int sum=1;//因为1900年1月1日是星期一，需要打印一个空格，用来保存总天数；
         int days=0;//用来存储输入月份的天数；
@@ -148,6 +151,9 @@ public class OutputCalendar {
         }
 
         //打印日历格式
+        System.out.println("*************************");
+        System.out.println(year+"年"+month+"月日历为");
+        System.out.println("*************************");
         System.out.println("日\t一\t二\t三\t四\t五\t六");
         if (sum==1)//如果输入的是1900年份，则需要在第一行打印一个空格；
         {
@@ -170,7 +176,6 @@ public class OutputCalendar {
             }
             sum=sum+1;
         }
-
+        System.out.println();
     }
 }
-

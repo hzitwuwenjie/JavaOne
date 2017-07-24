@@ -22,30 +22,42 @@ public class Calendar {
         System.out.println("请输入一个年份:");
         int year=input.nextInt();
         int month=1;
-        out.OutputCalendarOne(year);
+        out.outPutCalendarOne(year);
         System.out.println();
-        System.out.println("p\t\tn\t\tall\t\t");
-        System.out.println("请输入您的选择");
-        String select=input.next();
-        if(select.equals("all")){
-            for (int i=1;i<=12;i++)
-            {
-                System.out.println(year+"年"+i+"月份的日历为：");
-                out.OutputCalendar(year, i);
-                System.out.println();
+
+        do {
+            System.out.println("\np(上一个月)\t\tn（下一个月）\t\tall（整年日历）\t\t");
+            System.out.println("请输入您的选择");
+            String select=input.next();
+            if (select.equalsIgnoreCase("all")) {
+                for (int i = 1; i <12; i++) {
+
+                    out.outPutCalendar(year, month);
+                    month++;
+                    System.out.println();
+                }
+                out.outPutCalendar(year,month);
+            } else if (select.equalsIgnoreCase("n")) {
+                month++;
+                if (month>12){
+                    month=1;
+                    year++;
+                }
+
+                System.out.println("\n下一月份的日历为：" + year + "年" + month  + "月份");
+                out.outPutCalendar(year, month );
+
+            } else if (select.equalsIgnoreCase("p")) {
+                month--;
+                if (month<1){
+                    month=12;
+                    year--;
+                }
+
+                System.out.println("\n上一月份的日历为：" + year + "年 "+month+"月份");
+                out.outPutCalendar(year, month);
+
             }
-        }
-        else if (select.equals("n")){
-
-                System.out.println("下一月份的日历为："+year+"年" +(month+1)+"月份");
-                out.OutputCalendar(year, month + 1);
-
-        }
-             else if(select.equals("p")){
-
-                System.out.println("上一月份的日历为："+(year-1)+"年 12月份");
-            out.OutputCalendar(year - 1, 12);
-
-        }
+        }while(true);
     }
 }
