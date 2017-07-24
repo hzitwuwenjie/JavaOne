@@ -1,9 +1,9 @@
-package com.jc02.lichenxi.message.commonmessage;
+package com.jc02.lichenxi.message;
 
 /**
  * Created by 李晨曦 2017年07月24日
  */
-public class VoiceMessage extends SecMessage {
+public class VoiceMessage extends CommonMessage {
     private String MediaId;	//语音消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private String Format;	//语音格式，如amr，speex等
     private String Recognition;	//语音识别结果，UTF8编码
