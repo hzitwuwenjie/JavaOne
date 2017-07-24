@@ -9,7 +9,7 @@ import java.util.Scanner;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Test {
+public class TestCalendar {
     public static void main(String[] args) {
         Calendar c = new Calendar();
         Scanner input = new Scanner(System.in);
