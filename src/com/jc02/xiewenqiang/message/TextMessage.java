@@ -9,6 +9,7 @@ package com.jc02.xiewenqiang.message;
  */
 public class TextMessage extends CommonMessage{
     private String content;//	文本消息内容
+
     public String getContent() {
         return content;
     }

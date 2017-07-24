@@ -11,6 +11,7 @@ public class VoiceMessage extends Message {
     private String mediaId;//	语音消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private String format;//	语音格式，如amr，speex等
     private String recognition;//	语音识别结果，UTF8编码
+
     public String getMediaId() {
         return mediaId;
     }
