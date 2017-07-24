@@ -2,6 +2,8 @@ package com.jc02.lx;/**
  * Created by 响 on 2017/7/22.
  */
 
+import com.jc02.zxm.calendar.Calendar;
+
 import java.util.Scanner;
 
 /**
@@ -27,27 +29,67 @@ import java.util.Scanner;
  */
 public class July22 {
     public static void main(String[] args) {
-        Scanner input= new Scanner(System.in);
-        System.out.print("Enter an year number after 1900: ");
-        int year= input.nextInt();
-        System.out.println("Tue Wed Thu Fri Sat Sun Mon");
+        July22 m = new July22();
+        Scanner input = new Scanner(System.in);
+        System.out.println("请输入年份：");
+        int year = input.nextInt();
+        int month = 1;
+        String msg = "";
+        do {
+            m.showCalandar(year, month);
+            System.out.println("\n输入N继续显示下一个月，输入P显示上一个月，ALL显示全年，其他字符结束");
+            msg = input.next();
+            if (msg.equalsIgnoreCase("n")) {
+                month++;
+                if (month > 12) {
+                    month = 1;
+                    year++;
+                } else if (msg.equalsIgnoreCase("p")) {
+                    month--;
+                    if (month < 1) {
+                        month = 12;
+                        year--;
+                    }
+                } else if (msg.equalsIgnoreCase("all")) {
+                    for (int i = 0; i < 11; i++) {
+                        m.showCalandar(year, i);
+                    }
+                    month = 12;
+                } else {
+                    break;
+                }
+            }
+
+        }while (true) ;
+
     }
-    public static String week(int year){
-        int day= 0;
-        for (int i= 0; i< year- 1900; i++){
-            if (i% 4== 0&& i% 100!= 0){
-                day+= 366;
-            }
-            else if (i% 100== 0&& i% 4== 0){
-                day+= 366;
-            }
-            else
-                day+= 365;
+
+    public void showCalandar(int year, int month) {
+        int sumday= getAllDays(year, month);
+        int kongge= sumday% 7+ 1;
+
+
+        System.out.print("\n========================================");
+
+        System.out.println("\t\t\t\t" + year + "年" + month + "月");
+
+        System.out.print("\n========================================");
+        System.out.print("Sun\tMon\tTue\tWed\tThu\tFri\tSat\t");
+        for (int i= 0; i< kongge; i++){
+            System.out.print(i + "\t\t");
+            if ((i+ kongge)% 7== 0)
+                System.out.println();
         }
-        String[] weekend= {"Tue","Wed","Thu","Fri","Sat","Sun","Mon"};
-        int index= day% 7;
-        String week= weekend[index];
-        return week;
+    }
+    public int getAllDays(int year, int month){
+        int sum= 0;
+        for (int i= 1900; i< year; i++){
+            sum+= pr(i)?366:365;
+        }
+        for (int i= 1;i<month; i++){
+            sum+= getSumDays(year, i);
+        }
+        return sum;
     }
     public  static boolean pr(int year){
         boolean pr;
@@ -61,7 +103,25 @@ public class July22 {
             pr= false;
         return  pr;
     }
-    public static void printmonth(int year){
-
+    public int getSumDays(int year, int month) {
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                return 31;
+            case 2:
+                return pr(year) ?29:28;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                return  30;
+        default: return 0;
+        }
     }
+
 }
