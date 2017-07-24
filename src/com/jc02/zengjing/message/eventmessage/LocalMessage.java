@@ -11,7 +11,7 @@ package com.jc02.zengjing.message.eventmessage;
  * |  @description上传位置事件
  * +---------------------------------Oooo---------------------------------------+
  */
-public class LocalMessage extends QrMessage{
+public class LocalMessage extends EventMessage{
     private String latitude;
     private String longitude;
     private String precision;

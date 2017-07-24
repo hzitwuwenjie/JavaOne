@@ -1,0 +1,24 @@
+package com.jc02.xieshuyuan.lianxi.entity.message;
+
+/**
+ * 　　  　  　           \\\|///
+ * 　　　 　  　   \\　.-.-　//
+ * 　　　　　  　(　 .@.@　)
+ * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
+ * |　@author 谢树源　　　　　                                                                 　|
+ * |　@author 深圳合众艾特信息技术有限公司                                                   |
+ * |　@create 2017年07月24日 - 16:48
+ * |    @description   普通消息父类
+ * +---------------------------------Oooo---------------------------------------+
+ */
+public class CommMessage  extends Message{
+    private String msgId; //    消息id，64位整型
+
+    public String getMsgId() {
+        return msgId;
+    }
+
+    public void setMsgId(String msgId) {
+        this.msgId = msgId;
+    }
+}
