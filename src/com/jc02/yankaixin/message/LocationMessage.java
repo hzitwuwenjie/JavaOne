@@ -11,29 +11,12 @@ package com.jc02.yankaixin.message;
  * |  @description   地理位置消息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class LocationMessage extends Message{
+public class LocationMessage extends CommonMessage{
 
-    private long msgId;
     private double location_X;
     private double location_Y;
     private double scale;
     private String label;
-
-    public LocationMessage(long msgId, double location_X, double location_Y, double scale, String label) {
-        this.msgId = msgId;
-        this.location_X = location_X;
-        this.location_Y = location_Y;
-        this.scale = scale;
-        this.label = label;
-    }
-
-    public long getMsgId() {
-        return msgId;
-    }
-
-    public void setMsgId(long msgId) {
-        this.msgId = msgId;
-    }
 
     public double getLocation_X() {
         return location_X;

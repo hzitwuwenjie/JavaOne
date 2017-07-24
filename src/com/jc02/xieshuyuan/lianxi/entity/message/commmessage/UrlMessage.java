@@ -1,21 +1,22 @@
-package com.jc02.yankaixin.message;
+package com.jc02.xieshuyuan.lianxi.entity.message.commmessage;
+
+import com.jc02.xieshuyuan.lianxi.entity.message.CommMessage;
 
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
  * 　　　　　  　(　 .@.@　)
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
- * |　@author 严凯新　　　　　　                                                                 　|
- * |　@author 江西财经大学软件工程                                                |
- * |　@create 2017年07月24日 - 16:34
- * |  @description   链接消息
+ * |　@author 谢树源　　　　　                                                                 　|
+ * |　@author 深圳合众艾特信息技术有限公司                                                   |
+ * |　@create 2017年07月24日 - 16:35
+ * |    @description   链接消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class LinkMessage extends CommonMessage{
-
-    private String title;
-    private String description;
-    private String url;
+public class UrlMessage extends CommMessage {
+    private String title;	//消息标题
+    private String description;	//消息描述
+    private String url;	//消息链接
 
     public String getTitle() {
         return title;

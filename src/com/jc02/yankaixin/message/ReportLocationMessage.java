@@ -11,7 +11,7 @@ package com.jc02.yankaixin.message;
  * |  @description   上报地理位置事件消息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ReportLocationMessage extends SubscribeMessage{
+public class ReportLocationMessage extends EventMessage{
 
     private double latitude;
     private double longitude;
