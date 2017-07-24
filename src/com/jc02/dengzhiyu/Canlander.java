@@ -6,13 +6,13 @@ package com.jc02.dengzhiyu;/*
  */
 
 public class Canlander {
-
+    //判断输入年份是否为闰年
     public boolean leapYear(int year){
         return (year%4==0&&year%100!=0||year%400==0);
     }
 
 
-
+   //判断输入月份的天数
     public int getMonthDays(int year,int month){
         switch (month){
             case 1:
@@ -38,8 +38,7 @@ public class Canlander {
     }
 
 
-
-
+    //判断输入时间与1990年1月1日间隔的天数
     public int getAllDays(int year,int month){
         int sum=0;
         for(int i=1990;i<year;i++){
@@ -54,9 +53,9 @@ public class Canlander {
     }
 
 
-
+    //输出日历
     public void showCanlander(int year,int month){
-        int sum=getMonthDays(year,month);
+        int sum=getAllDays(year,month);
         int kong=sum%7+1;
         System.out.println("\n===============================================");
         System.out.println("\t\t\t\t\t"+year+"年"+month+"月");
