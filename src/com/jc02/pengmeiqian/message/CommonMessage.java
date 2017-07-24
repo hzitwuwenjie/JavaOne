@@ -7,18 +7,19 @@ package com.jc02.pengmeiqian.message;
  * +-------oOOo-----( ~ )-----oOOo--------------------------------------+
  * |　   @author 彭美倩
  * |   　@author 江西财经大学
- * |   　@create 2017年07月24日 - 16:30
+ * |   　@create 2017年07月24日 - 16:10
  * |    @description
  * +---------------------------------Oooo-----------------------------+
  */
-public class EventMessage extends Message{
-    private String event;
+public class CommonMessage extends Message{
+    private String msgId;
 
-    public String getEvent() {
-        return event;
+
+    public String getMsgId() {
+        return msgId;
     }
 
-    public void setEvent(String event) {
-        this.event = event;
+    public void setMsgId(String msgId) {
+        this.msgId = msgId;
     }
 }

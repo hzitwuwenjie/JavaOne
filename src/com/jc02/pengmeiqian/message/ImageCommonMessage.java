@@ -11,7 +11,7 @@ package com.jc02.pengmeiqian.message;
  * |    @description
  * +---------------------------------Oooo-----------------------------+
  */
-public class ImageMessage extends Message {
+public class ImageCommonMessage extends CommonMessage {
     private String picUrl;
     private String mediaId;
 

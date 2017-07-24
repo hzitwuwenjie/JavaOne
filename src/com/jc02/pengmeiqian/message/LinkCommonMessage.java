@@ -11,7 +11,7 @@ package com.jc02.pengmeiqian.message;
  * |    @description
  * +---------------------------------Oooo-----------------------------+
  */
-public class LinkMessage extends Message {
+public class LinkCommonMessage extends CommonMessage {
     private String title;
     private String description;
     private String url;

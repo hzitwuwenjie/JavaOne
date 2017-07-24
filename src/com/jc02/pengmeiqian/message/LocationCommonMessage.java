@@ -11,7 +11,7 @@ package com.jc02.pengmeiqian.message;
  * |    @description
  * +---------------------------------Oooo-----------------------------+
  */
-public class LocationMessage extends Message {
+public class LocationCommonMessage extends CommonMessage {
     private String location_X;
     private String Location_Y;
     private String scale;

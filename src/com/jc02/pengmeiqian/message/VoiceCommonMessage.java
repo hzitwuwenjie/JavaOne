@@ -7,19 +7,19 @@ package com.jc02.pengmeiqian.message;
  * +-------oOOo-----( ~ )-----oOOo--------------------------------------+
  * |　   @author 彭美倩
  * |   　@author 江西财经大学
- * |   　@create 2017年07月24日 - 16:17
+ * |   　@create 2017年07月24日 - 16:14
  * |    @description
  * +---------------------------------Oooo-----------------------------+
  */
-public class VideoMessage extends Message {
+public class VoiceCommonMessage extends CommonMessage {
     private String mediaId;
-    private String thumbMediaId;
-    public String getThumbMediaId() {
-        return thumbMediaId;
+    private String format;
+    public String getFormat() {
+        return format;
     }
 
-    public void setThumbMediaId(String thumbMediaId) {
-        this.thumbMediaId = thumbMediaId;
+    public void setFormat(String format) {
+        this.format = format;
     }
 
     public String getMediaId() {
@@ -29,6 +29,5 @@ public class VideoMessage extends Message {
     public void setMediaId(String mediaId) {
         this.mediaId = mediaId;
     }
-
 
 }

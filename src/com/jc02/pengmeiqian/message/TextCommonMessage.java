@@ -11,7 +11,7 @@ package com.jc02.pengmeiqian.message;
  * |    @description
  * +---------------------------------Oooo-----------------------------+
  */
-public class TextMessage extends Message {
+public class TextCommonMessage extends CommonMessage {
     private String content;
 
     public String getContent() {
