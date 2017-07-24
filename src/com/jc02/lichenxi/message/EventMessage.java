@@ -1,6 +1,4 @@
-package com.jc02.lichenxi.message.eventmessage;
-
-import com.jc02.lichenxi.message.commonmessage.Message;
+package com.jc02.lichenxi.message;
 
 /**
  * Created by 李晨曦 2017年07月24日

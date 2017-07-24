@@ -1,4 +1,4 @@
-package com.jc02.lichenxi;
+package com.jc02.lichenxi.test;
 
 
 /**

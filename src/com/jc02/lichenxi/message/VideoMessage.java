@@ -1,9 +1,9 @@
-package com.jc02.lichenxi.message.commonmessage;
+package com.jc02.lichenxi.message;
 
 /**
  * Created by 李晨曦 2017年07月24日
  */
-public class VideoMessage extends SecMessage {
+public class VideoMessage extends CommonMessage {
     private String MediaId;	//视频消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private String ThumbMediaId;	//视频消息缩略图的媒体id，可以调用多媒体文件下载接口拉取数据。
 
