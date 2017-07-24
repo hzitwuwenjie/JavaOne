@@ -11,5 +11,5 @@ package com.jc02.zengjing.message.eventmessage;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class FollowMessage extends QrMessage {
+public class FollowMessage extends EventMessage {
 }
