@@ -16,7 +16,7 @@ public class Test {
         int month = input.nextInt();
         do {
             Ca.showCalendar(year,month);
-            System.out.print("输入y返回后一个月的值，输入n返回前一个月的值，输入all返回这一年的所有月份，输入其他值退出： ");
+            System.out.print("输入y返回后一个月的值， 输入n返回前一个月的值，输入all返回这一年的所有月份，输入其他值退出： ");
             value = input.next();
             if(value.equalsIgnoreCase("y")){
                 month++;
