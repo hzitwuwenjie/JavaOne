@@ -13,10 +13,16 @@ import com.jc02.xieshuyuan.lianxi.entity.message.CommMessage;
  * |    @description   视频消息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class MediaMessage extends CommMessage {
+public class VideoMessage extends CommMessage {
     private String mediaId;	//视频消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private String thumbMediaId;	//视频消息缩略图的媒体id，可以调用多媒体文件下载接口拉取数据。
-
+    /*
+       这个类型是两种值video或shortvideo
+       @param type
+     */
+    public VideoMessage(String msgType){
+        super("video");
+    }
     public String getMediaId() {
         return mediaId;
     }

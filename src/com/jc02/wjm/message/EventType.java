@@ -1,4 +1,4 @@
-package com.jc02.fjx.fulei;
+package com.jc02.wjm.message;
 
 /**
  * 　　  　  　           \\\|///
@@ -7,20 +7,12 @@ package com.jc02.fjx.fulei;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 　༺༺超༒神༻༻
  * |　@author 深圳合众艾特信息技术有限公司
- * |　@create 2017年07月24日 - 17:33
- * |    @description   普通消息
+ * |　@create 2017年07月25日 - 11:00
+ * |    @description 创建了一个枚举类型
  * +---------------------------------Oooo---------------------------------------+
  */
-public class PuTongXiaoxi extends XiaoXi {
-    private String msgid;
-    public PuTongXiaoxi(String type){
-        super(type);
-    }
-    public String getMsgid() {
-        return msgid;
-    }
-
-    public void setMsgid(String msgid) {
-        this.msgid = msgid;
-    }
+public enum EventType {
+    SCAN,
+    subscribe,
+    unsubscribe
 }
