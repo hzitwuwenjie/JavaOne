@@ -12,18 +12,9 @@ package com.jc02.zxm.message;
  * |    @description   图片消息　　　　　　　　　　　　　                   |
  * +---------------------------------Oooo--------------------------------------+
  */
-public class PicMessage extends Message {
+public class PicMessage extends CommonMsg{
     private String picUrl;//	图片链接（由系统生成）
     private String mediaId;//	图片消息媒体id，可以调用多媒体文件下载接口拉取数据。
-    private String msgId;//	消息id，64位整型
-
-    public String getMsgId() {
-        return msgId;
-    }
-
-    public void setMsgId(String msgId) {
-        this.msgId = msgId;
-    }
 
     public String getPicUrl() {
         return picUrl;

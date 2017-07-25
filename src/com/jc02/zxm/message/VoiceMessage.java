@@ -12,20 +12,11 @@ package com.jc02.zxm.message;
  * |    @description   语音消息　　　　　　　　　　　　　                   |
  * +---------------------------------Oooo--------------------------------------+
  */
-public class VoiceMessage extends  Message{
+public class VoiceMessage extends  CommonMsg{
 
     private String mediaId;//	语音消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private String format;//	语音格式，如amr，speex等
     private  String recognition;
-    private String msgId;//	消息id，64位整型
-
-    public String getMsgId() {
-        return msgId;
-    }
-
-    public void setMsgId(String msgId) {
-        this.msgId = msgId;
-    }
 
     public String getRecognition() {
         return recognition;

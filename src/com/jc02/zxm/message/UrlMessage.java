@@ -12,20 +12,11 @@ package com.jc02.zxm.message;
  * |    @description   链接消息　　　　　　　　　　　　　                   |
  * +---------------------------------Oooo--------------------------------------+
  */
-public class UrlMessage extends Message {
+public class UrlMessage extends CommonMsg {
 
     private String title;//	消息标题
     private String description;//	消息描述
     private String url;//	消息链接
-    private String msgId;//	消息id，64位整型
-
-    public String getMsgId() {
-        return msgId;
-    }
-
-    public void setMsgId(String msgId) {
-        this.msgId = msgId;
-    }
 
     public String getTitle() {
         return title;
