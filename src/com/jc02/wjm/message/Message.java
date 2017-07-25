@@ -1,5 +1,7 @@
 package com.jc02.wjm.message;
 
+import com.jc02.qinjiajun.message.message.Mess;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -21,7 +23,7 @@ public class Message {
         this.msgType=msgType;
     }
 
-
+    public Message(){}
 
 
     public String getToUserName() {
