@@ -17,6 +17,9 @@ public class Huifu extends Event{
     private String eventkey;
     private String ticket;
 
+    public Huifu(String event){
+        super("subscribe");
+    }
     public String getEventkey() {
         return eventkey;
     }

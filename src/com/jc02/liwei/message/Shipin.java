@@ -16,6 +16,9 @@ package com.jc02.liwei.message;/**
 public class Shipin extends Fulei{
     private String mediald;
     private String thumbmediald;
+    public Shipin(){
+        super("viode");
+    }
 
     public String getMediald() {
         return mediald;

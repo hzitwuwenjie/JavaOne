@@ -16,6 +16,9 @@ package com.jc02.liwei.message;/**
 public class Xiaoshipin extends Fulei{
     private String mediald;
     private String thumbmediald;
+    public Xiaoshipin(){
+        super("shortvideo");
+    }
 
     public String getMediald() {
         return mediald;
