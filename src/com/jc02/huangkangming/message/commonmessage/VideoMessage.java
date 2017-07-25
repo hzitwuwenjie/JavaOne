@@ -1,5 +1,7 @@
 package com.jc02.huangkangming.message.commonmessage;
 
+import com.jc02.huangkangming.message.type.VideoType;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -15,8 +17,9 @@ public class VideoMessage extends CommonMessage {
     private String mediaId;
     private String thumbMediaId;
 
-    public VideoMessage(String msgType) {
-        super(msgType);
+    public VideoMessage(VideoType msgType)
+    {
+        super(msgType.toString());
     }
 
     public String getMediaId() {
