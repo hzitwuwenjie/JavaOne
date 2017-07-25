@@ -13,7 +13,7 @@ import com.jc02.qinjiajun.message.message.Mess;
  * |  @description   消息父类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Message {
+public abstract class Message {
     private String toUserName;//	开发者微信号
     private String fromUserName;//	发送方帐号（一个OpenID）
     private String createTime;//	消息创建时间 （整型）
@@ -53,7 +53,7 @@ public class Message {
     public String getMsgType() {
         return msgType;
     }
-
+    public abstract void showXml();
 
 
 }

@@ -45,5 +45,10 @@ public class LocationEventMessage extends EventMessage {
     public void setPrecision(String precision) {
         this.precision = precision;
     }
+
+    @Override
+    public void showXml() {
+
+    }
 }
 

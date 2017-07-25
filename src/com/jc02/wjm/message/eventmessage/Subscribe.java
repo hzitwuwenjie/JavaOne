@@ -37,4 +37,9 @@ public class Subscribe extends EventMessage {
     public void setTicket(String ticket) {
         this.ticket = ticket;
     }
+
+    @Override
+    public void showXml() {
+
+    }
 }

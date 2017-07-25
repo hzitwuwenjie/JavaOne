@@ -11,7 +11,7 @@ package com.jc02.wjm.message;
  * |  @description   取消关注事件
  * +---------------------------------Oooo---------------------------------------+
  */
-public class EventMessage extends Message {
+public abstract class EventMessage extends Message {
 
     private String event;//	事件类型，
 
@@ -29,5 +29,6 @@ public class EventMessage extends Message {
     public void setEvent(String event) {
         this.event = event;
     }
-
+    @Override
+    public abstract void showXml();
 }

@@ -1,4 +1,6 @@
-package com.jc02.wjm.message;
+package com.jc02.wjm.message.eventmessage;
+
+import com.jc02.wjm.message.EventMessage;
 
 /**
  * 　　  　  　           \\\|///
@@ -7,24 +9,27 @@ package com.jc02.wjm.message;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 万家明　　　　　                                                                 　|
  * |　@author 江西财经大学                                                  |
- * |　@create 2017年07月24日 - 17:17
+ * |　@create 2017年07月24日 - 16:52
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public abstract class CommonMessage extends Message {
-    private String msgId;//	消息id，64位整型
+public class Click extends EventMessage {
+    private String eventKey;//	事件KEY值，与自定义菜单接口中KEY值对应
 
-    public CommonMessage(String msgType) {
-        super(msgType);
+    public Click() {
+        super("click");
     }
 
-    public String getMsgId() {
-        return msgId;
+    public String getEventKey() {
+        return eventKey;
     }
 
-    public void setMsgId(String msgId) {
-        this.msgId = msgId;
+    public void setEventKey(String eventKey) {
+        this.eventKey = eventKey;
     }
+
     @Override
-    public abstract void showXml();
+    public void showXml() {
+
+    }
 }
