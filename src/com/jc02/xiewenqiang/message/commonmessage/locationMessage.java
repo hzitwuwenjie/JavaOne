@@ -1,4 +1,6 @@
-package com.jc02.xiewenqiang.message;
+package com.jc02.xiewenqiang.message.commonmessage;
+
+import com.jc02.xiewenqiang.message.CommonMessage;
 
 /**
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
@@ -12,6 +14,10 @@ public class locationMessage extends CommonMessage {
     private String location_Y;//	地理位置经度
     private String scale;//	地图缩放大小
     private String label;//	地理位置信息
+
+    public locationMessage() {
+        super("location");
+    }
 
     public String getLocation_X() {
         return location_X;
