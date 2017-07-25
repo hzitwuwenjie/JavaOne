@@ -14,6 +14,11 @@ package com.jc02.huangkangming.message.commonmessage;
 public class LinkMessage extends CommonMessage {
     private String title;
     private String description;
+
+    @Override
+    public void showXml() {
+    }
+
     private String url;
 
     public LinkMessage() {
