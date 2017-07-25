@@ -20,7 +20,7 @@ public class VideoMessage extends CommMessage {
        这个类型是两种值video或shortvideo
        @param type
      */
-    public VideoMessage(String msgType){
+    public VideoMessage(){
         super("video");
     }
     public String getMediaId() {
