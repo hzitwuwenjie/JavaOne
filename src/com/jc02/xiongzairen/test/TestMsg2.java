@@ -1,6 +1,6 @@
 package com.jc02.xiongzairen.test;
 
-import com.jc02.xiongzairen.message.TextMessage;
+import com.jc02.xiongzairen.message.*;
 
 /**
  * 　　  　  　    可乐
@@ -21,6 +21,35 @@ public class TestMsg2 {
         text.setContent("yh你好！");
         text.setCreateTime(System.currentTimeMillis());
         text.setMsgId("");
+
+        VideoMessage vd=new VideoMessage(VideoType.video);
+        vd.setToUserName("熊再仁");
+        vd.setFromUserName("hkm");
+        vd.setCreateTime(System.currentTimeMillis());
+        vd.setMediaId(1);
+        vd.setThumbMediaId("你好");
+        vd.setMsgId("");
+
+        ImgMessage ig=new ImgMessage();
+        ig.setToUserName("xzr");
+        ig.setFromUserName("yh");
+        ig.setCreateTime(System.currentTimeMillis());
+        ig.setPicUrl("http://www.baidu.com/baidu.gif");
+        ig.setMediaId(1);
+        ig.setMsgId("");
+
+        VoiceMessage vi=new VoiceMessage();
+        vi.setToUserName("熊再仁");
+        vi.setFromUserName("hkm");
+        vi.setCreateTime(System.currentTimeMillis());
+        vi.setMediaId(1);
+        vi.setFormat("arm");
+        vi.setMsgId("");
+
+
+
+
+
 
     }
 
