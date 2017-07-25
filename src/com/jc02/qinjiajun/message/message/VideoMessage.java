@@ -18,6 +18,19 @@ public class VideoMessage extends Message {
         super("Video");
     }
 
+    public void showXml(){
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+ getToUserName()   +"]]></ToUserName>");
+        System.out.println("<FromUserName><![CDATA[" +  getFromUserName()    +       "]]></FromUserName>");
+        System.out.println("<CreateTime>"   +getCreateTime() +   "  </CreateTime>");
+        System.out.println("<MsgType><![CDATA["+ getMsgType() +"]]></MsgType>");
+        System.out.println("<thumbMediaId><![CDATA["+ getThumbMediaId() +" ]]></thumbMediaId>");
+        System.out.println("<mediaId><![CDATA["+ getMediaId()+" ]]></mediaId>");
+        System.out.println("<MsgId> " + getMsgId() +"</MsgId>");
+        System.out.println("<xml>");
+
+    }
+
     public String getMediaId() {
         return mediaId;
     }

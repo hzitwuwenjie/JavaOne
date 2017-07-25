@@ -16,13 +16,13 @@ public abstract class Message extends Mess{
         super(msgType);
     }
 
-    public long  msgId;
+    private String   msgId;
 
-    public long getMsgId() {
+    public String getMsgId() {
         return msgId;
     }
 
-    public void setMsgId(long msgId) {
+    public void setMsgId(String msgId) {
         this.msgId = msgId;
     }
 

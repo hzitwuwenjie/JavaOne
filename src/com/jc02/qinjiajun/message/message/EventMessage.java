@@ -12,7 +12,7 @@ package com.jc02.qinjiajun.message.message;
  * +---------------------------------Oooo---------------------------------------+
  */
 public abstract class EventMessage extends  Mess {
-    public String  event;
+    private String  event;
     public EventMessage(String event){
         this.event=event;
     }

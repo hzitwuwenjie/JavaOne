@@ -1,6 +1,8 @@
 package com.jc02.qinjiajun.message.test;
 import com.jc02.qinjiajun.message.message.*;
 
+import java.util.UUID;
+
 /**
  * 　　  　  　     \\\|///
  * 　　　 　    \\　.-.-　//
@@ -36,7 +38,12 @@ public class Test {
 */
 
 
-        TextMassage me = new TextMassage();
-        me.ShowXml(me);
+            TextMassage me = new TextMassage();
+            me.setToUserName("周星驰");
+            me.setFromUserName("刘德华");
+            me.setContent("扎心了老铁");
+            me.setMsgId(UUID.randomUUID().toString());
+            me.setCreateTime(System.currentTimeMillis());
+            me.showXml();
     }
 }

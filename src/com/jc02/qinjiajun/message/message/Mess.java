@@ -1,8 +1,6 @@
 package com.jc02.qinjiajun.message.message;
 
 
-import java.util.UUID;
-
 /**
  * 　　  　  　     \\\|///
  * 　　　 　    \\　.-.-　//
@@ -15,10 +13,10 @@ import java.util.UUID;
  * +---------------------------------Oooo---------------------------------------+
  */
 public abstract  class Mess {
-    public String toUserName;
-    public String fromUserName;
-    public int createTime;
-    public String msgType;
+    private String toUserName;
+    private String fromUserName;
+    private long createTime;
+    private String msgType;
 
     public Mess(String msgType){
         this.msgType=msgType;
@@ -36,17 +34,7 @@ public abstract  class Mess {
     <MsgId>1234567890123456</MsgId>
     </xml>
      */
-    public void ShowXml(Mess mess){
-        System.out.println("<xml>");
-        System.out.println("<ToUserName><![CDATA["+ mess.toUserName   +"]]></ToUserName>");
-        System.out.println("<FromUserName><![CDATA[" + mess.fromUserName      +       "]]></FromUserName>");
-        System.out.println("<CreateTime>"   +mess.createTime+   "  </CreateTime>");
-        System.out.println("<MsgType><![CDATA["+      mess.msgType +"]]></MsgType>");
-        System.out.println("<Content><![CDATA["+ mess.toString()   +" ]]></Content>");
-        System.out.println("<MsgId> " + UUID.randomUUID() +"</MsgId>");
-        System.out.println("<xml>");
 
-    }
 
     public String getToUserName() {
         return toUserName;
@@ -64,11 +52,11 @@ public abstract  class Mess {
         this.fromUserName = fromUserName;
     }
 
-    public int getCreateTime() {
+    public long getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(int createTime) {
+    public void setCreateTime(long createTime) {
         this.createTime = createTime;
     }
 
@@ -79,4 +67,6 @@ public abstract  class Mess {
     public void setMsgType(String msgType) {
         this.msgType = msgType;
     }
+
+    public  abstract  void showXml();
 }
