@@ -39,7 +39,7 @@ public class Human implements SoftWare,Driver{
 
     @Override
     public void drive() {
-        System.out.println("驾驶能力");
+        System.out.println("驾驶能力 ");
 
     }
     public String toString() {
