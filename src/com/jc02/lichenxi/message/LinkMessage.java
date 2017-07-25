@@ -8,8 +8,8 @@ public class LinkMessage extends CommonMessage {
     private String description;	//消息描述
     private String url;	//消息链接
 
-    public LinkMessage(String msgType) {
-        super(msgType);
+    public LinkMessage() {
+        super("link");
     }
 
     public String getTitle() {

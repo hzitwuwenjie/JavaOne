@@ -6,8 +6,9 @@ package com.jc02.lichenxi.message;
 public class EventMessage extends Message {
     private String event;	//事件类型，subscribe(订阅)、unsubscribe(取消订阅)
 
-    public EventMessage(String msgType) {
-        super(msgType);
+    public EventMessage(String event) {
+        super("event");
+        this.event=event;
     }
 
     public String getEvent() {

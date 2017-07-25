@@ -8,8 +8,8 @@ public class VoiceMessage extends CommonMessage {
     private String format;	//语音格式，如amr，speex等
     private String recognition;	//语音识别结果，UTF8编码
 
-    public VoiceMessage(String msgType) {
-        super(msgType);
+    public VoiceMessage() {
+        super("voice");
     }
 
     public String getMediaId() {

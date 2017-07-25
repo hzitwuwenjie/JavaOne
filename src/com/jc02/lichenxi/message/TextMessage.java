@@ -6,8 +6,8 @@ package com.jc02.lichenxi.message;
 public class TextMessage extends CommonMessage {
     private String content;	//文本消息内容
 
-    public TextMessage(String msgType) {
-        super(msgType);
+    public TextMessage() {
+        super("text");
     }
 
     public String getContent() {

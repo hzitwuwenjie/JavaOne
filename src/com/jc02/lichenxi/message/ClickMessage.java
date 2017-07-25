@@ -6,8 +6,8 @@ package com.jc02.lichenxi.message;
 public class ClickMessage extends EventMessage{
     private String eventKey;	//事件KEY值，与自定义菜单接口中KEY值对应
 
-    public ClickMessage(String msgType) {
-        super(msgType);
+    public ClickMessage() {
+        super("click");
     }
 
     public String getEventKey() {

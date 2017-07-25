@@ -8,8 +8,8 @@ public class LocaEventMessage extends EventMessage{
     private String longitude;	//地理位置经度
     private String precision;	//地理位置精度
 
-    public LocaEventMessage(String msgType) {
-        super(msgType);
+    public LocaEventMessage() {
+        super("LOCATION");
     }
 
     public String getLatitude() {

@@ -40,7 +40,4 @@ public class Message {
         return msgType;
     }
 
-    public void setMsgType(String msgType) {
-        this.msgType = msgType;
-    }
 }
