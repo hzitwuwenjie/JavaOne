@@ -17,6 +17,13 @@ public class Mess {
     public int createTime;
     public String msgType;
 
+    public Mess(String msgType){
+        this.msgType=msgType;
+    }
+    public Mess(){
+
+    }
+
     public String getToUserName() {
         return toUserName;
     }
