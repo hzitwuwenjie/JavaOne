@@ -21,6 +21,7 @@ public class TestMessage {
         TextMessage tm=new TextMessage();
         System.out.println(tm.getMsgType());
 
+
         PicMessage pm=new PicMessage();
         System.out.println(pm.getMsgType());
 
@@ -50,6 +51,7 @@ public class TestMessage {
         MenuEventMessage mem1=new MenuEventMessage("VIEW");
         System.out.println(mem1.getMsgType());
         System.out.println(mem1.getEvent());
+
 
         ScanEventMessage sem=new ScanEventMessage("subsctibe");
         System.out.println(sem.getMsgType());
