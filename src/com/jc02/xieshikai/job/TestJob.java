@@ -19,6 +19,5 @@ public class TestJob {
         man1.setName("谢士凯");
         SoftwareCompany company1=new SoftwareCompany();
         System.out.println(company1.hiring(man1));
-
     }
 }
