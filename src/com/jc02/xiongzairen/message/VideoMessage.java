@@ -14,6 +14,11 @@ package com.jc02.xiongzairen.message;
 public class VideoMessage extends CommonMessage {
     private long mediaId;
     private String  thumbMediaId;
+
+    public VideoMessage(String type) {
+        super(type);
+    }
+
     public String getThumbMediaId() {
         return thumbMediaId;
     }

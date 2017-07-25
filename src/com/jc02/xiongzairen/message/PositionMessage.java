@@ -16,6 +16,11 @@ public class PositionMessage extends CommonMessage {
     private long location_Y;
     private String scale;
     private String label;
+
+    public PositionMessage() {
+        super("location");
+    }
+
     public String getScale() {
         return scale;
     }

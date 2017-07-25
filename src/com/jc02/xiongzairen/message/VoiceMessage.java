@@ -15,6 +15,11 @@ public class VoiceMessage extends CommonMessage {
 
     private long mediaId;
     private String format;
+
+    public VoiceMessage() {
+        super("voice");
+    }
+
     public String getFormat() {
         return format;
     }

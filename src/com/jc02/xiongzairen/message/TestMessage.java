@@ -27,6 +27,24 @@ public class TestMessage {
         System.out.println(lk.getMsgType());
         PositionMessage p=new PositionMessage();
         System.out.println(p.getMsgType());
+        PrecisionMessage pr=new PrecisionMessage();
+        System.out.println(pr.getEvent());
+        System.out.println(pr.getMsgType());
+
+        QrCodeMessage qr=new QrCodeMessage("subscribe");
+        System.out.println(qr.getEvent());
+        System.out.println(qr.getMsgType());
+        QrCodeMessage qr2=new QrCodeMessage("unsubscribe");
+        System.out.println(qr.getEvent());
+        System.out.println(qr.getMsgType());
+        QrCodeMessage qr3=new QrCodeMessage("Scan");
+        System.out.println(qr.getEvent());
+        System.out.println(qr.getMsgType());
+
+        CustomMessage cu=new CustomMessage("CLICK");
+        System.out.println(cu.getEvent());
+        System.out.println(cu.getMsgType());
+
 
 
 
