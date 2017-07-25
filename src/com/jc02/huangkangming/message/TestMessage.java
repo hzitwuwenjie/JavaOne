@@ -1,6 +1,7 @@
 package com.jc02.huangkangming.message;
 
 import com.jc02.huangkangming.message.commonmessage.*;
+import com.jc02.huangkangming.message.eventmessage.FollowEventMessage;
 import com.jc02.huangkangming.message.eventmessage.LocationEventMessage;
 import com.jc02.huangkangming.message.eventmessage.MenuEventMessage;
 import com.jc02.huangkangming.message.eventmessage.ScanEventMessage;
@@ -53,12 +54,20 @@ public class TestMessage {
         System.out.println(mem1.getEvent());
 
 
-        ScanEventMessage sem=new ScanEventMessage("subsctibe");
+        ScanEventMessage sem=new ScanEventMessage("subscribe");
         System.out.println(sem.getMsgType());
         System.out.println(sem.getEvent());
 
         ScanEventMessage sem1=new ScanEventMessage("SCAN");
         System.out.println(sem1.getMsgType());
         System.out.println(sem1.getEvent());
+
+        FollowEventMessage fem=new FollowEventMessage("subscribe");
+        System.out.println(fem.getMsgType());
+        System.out.println(fem.getEvent());
+
+        FollowEventMessage fem1=new FollowEventMessage("unsubscribe");
+        System.out.println(fem1.getMsgType());
+        System.out.println(fem1.getEvent());
     }
 }
