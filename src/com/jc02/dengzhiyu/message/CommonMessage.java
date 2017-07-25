@@ -5,10 +5,12 @@ package com.jc02.dengzhiyu.message;/*
  *  |    @description   　　　　　　　　　　　　　                                                              　
  */
 
-public class CommonMessage extends Message {
+public abstract class CommonMessage extends Message {
     public CommonMessage(String msgtype){
         super(msgtype);
     }
+    public abstract void showxml();
+
     private String msgId;//	消息id，64位整型
 
 

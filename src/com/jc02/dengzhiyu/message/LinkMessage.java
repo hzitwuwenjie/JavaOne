@@ -5,6 +5,8 @@ package com.jc02.dengzhiyu.message;/*
  *  |    @description   　　　　　　　　　　　　　                                                              　
  */
 
+import java.util.UUID;
+
 public class LinkMessage extends CommonMessage {
     private String title;	//消息标题
     private String description;	//消息描述
@@ -12,7 +14,19 @@ public class LinkMessage extends CommonMessage {
     public LinkMessage(){
         super("Link");
     }
+    public void showxml(){
+        System.out.println("<xml>");
+        System.out.println(" <ToUserName>"+getToUserName()+" </ToUserName>");
+        System.out.println(" <FromUserName>"+getFromUserName()+" </ToUserName>");
+        System.out.println(" <CreateTime>"+ System.currentTimeMillis()+" </CreateTime>");
+        System.out.println(" <Title>"+ getTitle()+" </Title>");
+        System.out.println(" <Description>"+ getDescription()+" </Description>");
+        System.out.println(" <Url>"+ getUrl()+" </Url>");
+        System.out.println(" <MagType>"+ getMsgType()+" </MagType>");
+        System.out.println(" <MsgId>"+ UUID.randomUUID()+" </MsgId>");
+        System.out.println("</xml>");
 
+    }
     public String getTitle() {
         return title;
     }

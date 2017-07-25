@@ -20,6 +20,18 @@ public class ScanningQrEventMessage extends EventMessage{
     public ScanningQrEventMessage(){
         super("event","LOCATION");
     }
+    @Override
+    public void showXml(){
+        System.out.println("<xml>");
+        System.out.println("\t<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("\t<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("\t<CreateTime><![CDATA["+getCreateTime()+"]]></CreateTime>");
+        System.out.println("\t<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("\t<Event><![CDATA["+getEvent()+"]]></Event>");
+        System.out.println("\t<EventKey><![CDATA["+getEventKey()+"]]></EventKey>");
+        System.out.println("\t<Ticket><![CDATA["+getTicket()+"]]></Ticket>");
+        System.out.println("</xml>");
+    }
     public String getEventKey() {
         return eventKey;
     }
