@@ -1,6 +1,6 @@
-package com.jc02.wjm.message;
+package com.jc02.wjm.test;
 
-import java.util.UUID;
+import com.jc02.wjm.message.commonmessage.TextMessage;
 
 /**
  * 　　  　  　           \\\|///
@@ -9,26 +9,19 @@ import java.util.UUID;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 万家明　　　　　                                                                 　|
  * |　@author 江西财经大学                                                  |
- * |　@create 2017年07月24日 - 17:17
+ * |　@create 2017年07月25日 - 14:50
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public abstract class CommonMessage extends Message {
-    private String msgId;//	消息id，64位整型
+public class TestMessage2 {
+    public static void main(String[] args) {
+        TextMessage tx = new TextMessage();
+        tx.setToUserName("万家明");
+        tx.setFromUserName("范珂磊");
+        tx.setCreateTime(System.currentTimeMillis());
+        tx.setContent("吃点");
+        tx.showXml();
 
-    public CommonMessage(String msgType) {
 
-        super(msgType);
-        this.msgId=UUID.randomUUID().toString();
     }
-
-    public String getMsgId() {
-        return msgId;
-    }
-
-    public void setMsgId(String msgId) {
-        this.msgId = msgId;
-    }
-    @Override
-    public abstract void showXml();
 }
