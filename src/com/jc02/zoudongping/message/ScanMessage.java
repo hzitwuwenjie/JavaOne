@@ -15,6 +15,12 @@ public class ScanMessage extends ShijianMessage{
     private int eventkey;
     private String ticket;
 
+    public ScanMessage(String tousername, String event,int eventkey) {
+        super(tousername,event);this.eventkey=eventkey;
+    }
+    public ScanMessage(){
+        eventkey=1234;ticket="124213";
+    }
     public int getEventkey() {
         return eventkey;
     }

@@ -14,6 +14,12 @@ package com.jc02.zoudongping.message;
 public class TextMessage extends Message {
     private String content;
 
+    public TextMessage(){
+        content="111222333";
+    }
+    public TextMessage(String content,String tousername){
+        super(tousername);this.content=content;
+    }
     public String getContent() {
         return content;
     }

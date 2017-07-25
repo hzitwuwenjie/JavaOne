@@ -17,7 +17,12 @@ public class Message {
     private long createtime;
     private String msgtype;
 
-
+    public Message(){
+        tousername="a";
+    }
+    public Message(String tousername){
+        this.tousername=tousername;
+    }
 
     public long getCreatetime() {
         return createtime;
