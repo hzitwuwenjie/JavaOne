@@ -1,7 +1,5 @@
 package com.jc02.zxm.message.event;
 
-import com.jc02.zxm.message.EventMessage;
-
 /**
  * 　　  　  　      \\\|///
  * 　　　 　  　 \\　.-.-　//
@@ -46,6 +44,10 @@ public class LocationEvent extends EventMessage {
 
     public void setPrecision(String precision) {
         this.precision = precision;
+    }
+    public void showXml()
+    {
+
     }
 }
 

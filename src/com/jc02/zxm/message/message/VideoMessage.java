@@ -1,6 +1,4 @@
-package com.jc02.zxm.message.messageType;
-
-import com.jc02.zxm.message.CommonMsg;
+package com.jc02.zxm.message.message;
 
 /**
  * 　　  　  　      \\\|///
@@ -37,6 +35,10 @@ public class VideoMessage extends CommonMsg {
 
     public void setMediaId(String mediaId) {
         this.mediaId = mediaId;
+    }
+    public void showXml()
+    {
+
     }
 }
 

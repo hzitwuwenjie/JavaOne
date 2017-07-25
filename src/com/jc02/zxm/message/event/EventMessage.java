@@ -1,4 +1,6 @@
-package com.jc02.zxm.message;
+package com.jc02.zxm.message.event;
+
+import com.jc02.zxm.message.message.Message;
 
 /**
  * 　　  　  　      \\\|///
@@ -12,7 +14,7 @@ package com.jc02.zxm.message;
  * |    @description   接受与取消关注事件消息　　　　　　　　　　　　　                   |
  * +---------------------------------Oooo--------------------------------------+
  */
-public class EventMessage extends Message {
+public abstract class EventMessage extends Message {
      private String event;
 
 

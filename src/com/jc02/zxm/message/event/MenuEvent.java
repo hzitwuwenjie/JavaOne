@@ -1,7 +1,5 @@
 package com.jc02.zxm.message.event;
 
-import com.jc02.zxm.message.EventMessage;
-
 /**
  * 　　  　  　      \\\|///
  * 　　　 　  　 \\　.-.-　//
@@ -28,6 +26,10 @@ public class MenuEvent extends EventMessage {
 
     public void setEventKey(String eventKey) {
         this.eventKey = eventKey;
+    }
+    public void showXml()
+    {
+
     }
 }
 

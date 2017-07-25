@@ -1,4 +1,4 @@
-package com.jc02.zxm.message.messageType;
+package com.jc02.zxm.message.message;
 
 /**
  * 　　  　  　      \\\|///

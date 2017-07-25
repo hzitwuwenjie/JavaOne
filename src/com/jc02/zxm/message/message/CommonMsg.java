@@ -1,4 +1,4 @@
-package com.jc02.zxm.message;
+package com.jc02.zxm.message.message;
 
 /**
  * 　　  　  　      \\\|///
@@ -12,13 +12,12 @@ package com.jc02.zxm.message;
  * |    @description   共同·属性　　　　　　　　　　　　　                   |
  * +---------------------------------Oooo--------------------------------------+
  */
-public class CommonMsg extends Message {
+public abstract class CommonMsg extends Message {
     private String msgId;//	消息id，64位整型
 
 public CommonMsg(String msgtype){
     super(msgtype);
 }
-
     public String getMsgId() {
         return msgId;
     }

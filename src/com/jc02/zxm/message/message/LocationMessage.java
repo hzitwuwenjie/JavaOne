@@ -1,6 +1,4 @@
-package com.jc02.zxm.message.messageType;
-
-import com.jc02.zxm.message.CommonMsg;
+package com.jc02.zxm.message.message;
 
 /**
  * 　　  　  　      \\\|///
@@ -54,6 +52,10 @@ public class LocationMessage extends CommonMsg {
 
     public void setLabel(String label) {
         this.label = label;
+    }
+    public void showXml()
+    {
+
     }
 }
 

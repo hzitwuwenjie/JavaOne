@@ -1,10 +1,12 @@
-package com.jc02.zxm.message;
+package com.jc02.zxm.message.test;
 
 import com.jc02.zxm.message.event.LocationEvent;
 import com.jc02.zxm.message.event.MenuEvent;
 import com.jc02.zxm.message.event.QrcodeEvent;
 import com.jc02.zxm.message.event.QrcodeType;
-import com.jc02.zxm.message.messageType.*;
+import com.jc02.zxm.message.message.*;
+
+import java.util.UUID;
 
 /**
  * 　　  　  　      \\\|///
@@ -20,7 +22,7 @@ import com.jc02.zxm.message.messageType.*;
  */
 public class TestMain {
     public static void main(String[] args) {
-        TextMessage text=new TextMessage();
+       /* TextMessage text=new TextMessage();
         System.out.println(text.getMsgType());
         LocationMessage lo=new LocationMessage();
         System.out.println(lo.getMsgType());
@@ -35,8 +37,7 @@ public class TestMain {
         VoiceMessage vo=new VoiceMessage();
         System.out.println(vo.getMsgType());
 
-         EventMessage ev=new EventMessage("event");
-         System.out.println(ev.getMsgType());
+
         MenuEvent me=new MenuEvent();
         System.out.println("菜单点击事件事件类型："+me.getEvent());
         System.out.println("菜单点击事件消息类型："+me.getMsgType());
@@ -46,6 +47,20 @@ public class TestMain {
         QrcodeEvent qrcodeEvent=new QrcodeEvent(QrcodeType.SCAN);
         System.out.println("扫码点击事件事件类型：" + qrcodeEvent.getEvent());
         System.out.println("扫码点击事件消息类型：" + qrcodeEvent.getMsgType());
+*/
+        TextMessage textMessage=new TextMessage();
+        textMessage.setFromUserName("曾宪明");
+        textMessage.setToUserName("李文俊");
+        textMessage.setContent("今晚一起去打撸！");
+        textMessage.setCreateTime(System.currentTimeMillis());
+        textMessage.setMsgId(UUID.randomUUID().toString());
+        System.out.println(textMessage.toString());
+
+        PicMessage picMessage=new PicMessage();
+        picMessage.setFromUserName("李文俊");
+        picMessage.setToUserName("曾宪明");
+        picMessage.setPicUrl("http://www.cnblogs.com/100thMountain/p/5402004.html");
+        System.out.println(picMessage.toString());
 
 
 

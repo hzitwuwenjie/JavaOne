@@ -1,6 +1,4 @@
-package com.jc02.zxm.message.messageType;
-
-import com.jc02.zxm.message.CommonMsg;
+package com.jc02.zxm.message.message;
 
 /**
  * 　　  　  　      \\\|///
@@ -17,7 +15,15 @@ import com.jc02.zxm.message.CommonMsg;
 public class PicMessage extends CommonMsg {
     private String picUrl;//	图片链接（由系统生成）
     private String mediaId;//	图片消息媒体id，可以调用多媒体文件下载接口拉取数据。
+    @Override
+    public String toString(){
+        return getFromUserName()+"给"+getToUserName()+"发了一条消息"+"消息内容是："+getPicUrl();
+    }
 
+    public void showXml()
+    {
+
+    }
     public PicMessage() {
         super("image");
     }

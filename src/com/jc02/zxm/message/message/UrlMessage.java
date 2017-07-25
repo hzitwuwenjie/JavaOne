@@ -1,6 +1,4 @@
-package com.jc02.zxm.message.messageType;
-
-import com.jc02.zxm.message.CommonMsg;
+package com.jc02.zxm.message.message;
 
 /**
  * 　　  　  　      \\\|///
@@ -46,6 +44,10 @@ public class UrlMessage extends CommonMsg {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+    public void showXml()
+    {
+
     }
 }
 

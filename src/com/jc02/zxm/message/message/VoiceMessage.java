@@ -1,6 +1,4 @@
-package com.jc02.zxm.message.messageType;
-
-import com.jc02.zxm.message.CommonMsg;
+package com.jc02.zxm.message.message;
 
 /**
  * 　　  　  　      \\\|///
@@ -46,6 +44,10 @@ public class VoiceMessage extends CommonMsg {
 
     public void setFormat(String format) {
         this.format = format;
+    }
+    public void showXml()
+    {
+
     }
 }
 

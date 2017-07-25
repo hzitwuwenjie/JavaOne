@@ -1,7 +1,5 @@
 package com.jc02.zxm.message.event;
 
-import com.jc02.zxm.message.EventMessage;
-
 /**
  * 　　  　  　      \\\|///
  * 　　　 　  　 \\　.-.-　//
@@ -35,6 +33,10 @@ public class QrcodeEvent extends EventMessage {
 
     public void setTicket(String ticket) {
         this.ticket = ticket;
+    }
+    public void showXml()
+    {
+
     }
 }
 
