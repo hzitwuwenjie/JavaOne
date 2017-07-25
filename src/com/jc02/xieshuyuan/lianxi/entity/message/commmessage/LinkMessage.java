@@ -17,7 +17,7 @@ public class LinkMessage extends CommMessage {
     private String title;	//消息标题
     private String description;	//消息描述
     private String url;	//消息链接
-    public LinkMessage(String msgType){
+    public LinkMessage(){
         super("link");
     }
 

@@ -11,15 +11,21 @@ package com.jc02.xieshuyuan.lianxi.entity.message;
  * |    @description   消息父类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Message {
+public abstract class Message {
     private String toUserName; //	开发者微信号
     private String fromUserName; //	发送方帐号（一个OpenID）
-    private String createTime; //	消息创建时间 （整型）
+    private long createTime; //	消息创建时间 （整型）
     private String msgType; //	text
     public Message(String msgType){
         this.msgType=msgType;
     }
+    public String toString(){
+        return getFromUserName()+"发了一个消息给"+getToUserName();
+    }
 
+    public void showXml(){
+
+    }
     public String getToUserName() {
         return toUserName;
     }
@@ -36,11 +42,11 @@ public class Message {
         this.fromUserName = fromUserName;
     }
 
-    public String getCreateTime() {
+    public long getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(String createTime) {
+    public void setCreateTime(long createTime) {
         this.createTime = createTime;
     }
 

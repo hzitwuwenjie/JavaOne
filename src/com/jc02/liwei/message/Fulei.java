@@ -19,6 +19,9 @@ public class Fulei {
     private  int creattime;
     private String msgtype;
     private  long msgid;
+    public Fulei(String msgtype){
+        this.msgtype=msgtype;
+    }
 
     public String getTousername() {
         return tousername;

@@ -19,8 +19,25 @@ public class ImageMessage extends CommMessage {
     private String picUrl; //	图片链接（由系统生成）
     private String mediaId; //	图片消息媒体id，可以调用多媒体文件下载接口拉取数据。
 
-    public ImageMessage(String msgType){
+    public ImageMessage(){
         super("image");
+    }
+    public String toString(){
+        return getToUserName()+"发一张图片给"+getFromUserName()+" 图片地址为："+getPicUrl();
+    }
+
+    @Override
+    public void showXml(){
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("<CreateTime><![CDATA["+getCreateTime()+"]]></CreateTime>");
+        System.out.println("<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("<PicUrl><![CDATA["+getPicUrl()+"]]></PicUrl>");
+        System.out.println("<MediaId><![CDATA["+getMediaId()+"]]></MediaId>");
+        System.out.println("<MsgId><![CDATA["+getMsgId()+"]]></MsgId>");
+        System.out.println("</xml>");
+
     }
     public String getPicUrl() {
         return picUrl;

@@ -19,7 +19,7 @@ public class LocationMessage extends CommMessage {
     private String scale;	//地图缩放大小
     private String label;	//地理位置信息
 
-    public LocationMessage(String msgType){
+    public LocationMessage(){
         super("location");
     }
     public String getLocation_X() {
