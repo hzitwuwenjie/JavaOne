@@ -28,6 +28,6 @@ public class CeShi {
         ShangBao sha=new ShangBao();
         System.out.println(sha.getEvent());
         ZiDingYi z=new ZiDingYi("view");
-        System.out.println(z.getEvent());
+        System.out.println(z.getEvent() );
     }
 }
