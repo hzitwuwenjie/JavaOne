@@ -22,5 +22,6 @@ public class Test03 {
         p.setName("严凯新");
         p.setAge(22);
         SoftwareCompany.recruitDeveloper(p);
+        SoftwareCompany.recruitDriver(p);
     }
 }
