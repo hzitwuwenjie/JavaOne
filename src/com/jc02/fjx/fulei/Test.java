@@ -13,11 +13,11 @@ package com.jc02.fjx.fulei;
  */
 public class Test {
     public static void main(String[] args) {
-   /*  WenBenXiaoxi wen=new WenBenXiaoxi();
+    WenBenXiaoxi wen=new WenBenXiaoxi();
         wen.setToUserName("星哥");
         wen.setFromUserName("星爷");
         wen.setContent("给爷滚过来");
-        wen.ShowXml();*/
+        wen.ShowXml();
 
         TuPian t=new TuPian();
         t.setToUserName("星哥");
