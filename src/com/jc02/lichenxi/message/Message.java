@@ -4,40 +4,43 @@ package com.jc02.lichenxi.message;
  * Created by 李晨曦 2017年07月24日
  */
 public class Message {
-    private String ToUserName;    //开发者微信号
-    private String FromUserName;    //发送方帐号（一个OpenID）
-    private int CreateTime;    //消息创建时间 （整型）
-    private String MsgType;
+    private String toUserName;    //开发者微信号
+    private String fromUserName;    //发送方帐号（一个OpenID）
+    private int createTime;    //消息创建时间 （整型）
+    private String msgType;
+    public Message(String msgType){
+        this.msgType=msgType;
+    }
 
     public String getToUserName() {
-        return ToUserName;
+        return toUserName;
     }
 
     public void setToUserName(String toUserName) {
-        ToUserName = toUserName;
+        this.toUserName = toUserName;
     }
 
     public String getFromUserName() {
-        return FromUserName;
+        return fromUserName;
     }
 
     public void setFromUserName(String fromUserName) {
-        FromUserName = fromUserName;
+        this.fromUserName = fromUserName;
     }
 
     public int getCreateTime() {
-        return CreateTime;
+        return createTime;
     }
 
     public void setCreateTime(int createTime) {
-        CreateTime = createTime;
+        this.createTime = createTime;
     }
 
     public String getMsgType() {
-        return MsgType;
+        return msgType;
     }
 
     public void setMsgType(String msgType) {
-        MsgType = msgType;
+        this.msgType = msgType;
     }
 }
