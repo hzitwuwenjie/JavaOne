@@ -1,4 +1,4 @@
-package com.jc02.huangkangming.message;
+package com.jc02.huangkangming.message.test;
 
 import com.jc02.huangkangming.message.commonmessage.*;
 import com.jc02.huangkangming.message.eventmessage.FollowEventMessage;

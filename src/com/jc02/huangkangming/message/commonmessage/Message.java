@@ -11,7 +11,7 @@ package com.jc02.huangkangming.message.commonmessage;
  * |  @description   消息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Message {
+public  abstract class Message {
     private String toUserName;//开发者微信号
     private String fromUserName;//发送方帐号
     private long createTime;//消息创建时间
@@ -20,6 +20,8 @@ public class Message {
     public Message(String msgType) {
         this.msgType = msgType;
     }
+
+    public abstract void showXml();
 
     public String getToUserName() {
         return toUserName;

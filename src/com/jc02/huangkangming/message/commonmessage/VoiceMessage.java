@@ -19,6 +19,10 @@ public class VoiceMessage extends CommonMessage {
         super("voice");
     }
 
+    @Override
+    public void showXml() {
+    }
+
     public String getMediaId() {
         return mediaId;
     }

@@ -18,4 +18,8 @@ public class FollowEventMessage extends EventMessage {
     public FollowEventMessage(FollowEventType event) {
         super(event.toString());
     }
+
+    @Override
+    public void showXml() {
+    }
 }
