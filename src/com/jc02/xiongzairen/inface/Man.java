@@ -12,6 +12,8 @@ package com.jc02.xiongzairen.inface;
  * +---------------------------------Oooo---------------------------------------+
  */
 public class Man implements SoftWareDrive,SoftWareDevelopment{
+    private  String name;
+    private int age;
     public String getName() {
         return name;
     }
@@ -20,7 +22,7 @@ public class Man implements SoftWareDrive,SoftWareDevelopment{
         this.name = name;
     }
 
-    private  String name;
+
 
     public int getAge() {
         return age;
@@ -30,16 +32,15 @@ public class Man implements SoftWareDrive,SoftWareDevelopment{
         this.age = age;
     }
 
-    private int age;
-
 
     @Override
     public void delelopment() {
-
+        System.out.println("具有开发能力");
     }
 
     @Override
     public void drive() {
+        System.out.println("具有驾驶能力");
 
     }
     public String toString(){

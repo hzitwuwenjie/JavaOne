@@ -12,7 +12,7 @@ package com.jc02.huangkangming.exercise;
  * +---------------------------------Oooo---------------------------------------+
  */
 public class SoftwareCom {
-    public void recruitDeveloper(Person p){
-        System.out.println(p);
+    public void recruitDeveloper(SoftwareDeve s){
+        System.out.println(s);
     }
 }

@@ -21,7 +21,6 @@ public class TestMsg2 {
         text.setToUserName("黄康明");
         text.setContent("yh你好！");
         text.setCreateTime(System.currentTimeMillis());
-        text.setMsgId("");
         text.showxml();
 
         VideoMessage vd=new VideoMessage(VideoType.video);
@@ -31,7 +30,6 @@ public class TestMsg2 {
         vd.setCreateTime(System.currentTimeMillis());
         vd.setMediaId(1);
         vd.setThumbMediaId("你好");
-        vd.setMsgId("");
         vd.showxml();
 
         ImgMessage ig=new ImgMessage();
@@ -41,7 +39,6 @@ public class TestMsg2 {
         ig.setCreateTime(System.currentTimeMillis());
         ig.setPicUrl("http://www.baidu.com/baidu.gif");
         ig.setMediaId(1);
-        ig.setMsgId("");
         ig.showxml();
 
         VoiceMessage vi=new VoiceMessage();
@@ -51,7 +48,6 @@ public class TestMsg2 {
         vi.setCreateTime(System.currentTimeMillis());
         vi.setMediaId(2);
         vi.setFormat("arm");
-        vi.setMsgId("");
         ig.showxml();
 
         PositionMessage ps=new PositionMessage();
@@ -63,7 +59,6 @@ public class TestMsg2 {
         ps.setLocation_Y(9);
         ps.setScale("1");
         ps.setLabel("江西省");
-        ps.setMsgId("");
         ps.showxml();
 
 
@@ -75,7 +70,6 @@ public class TestMsg2 {
         lk.setTitle("标题");
         lk.setDescription("没有");
         lk.setUrl("http://www.baidu.com");
-        lk.setMsgId("");
         lk.showxml();
 
 

@@ -14,7 +14,6 @@ package com.jc02.xiongzairen.inface;
 public class Company  {
     public static void recruit(SoftWareDevelopment s){
         System.out.println(s);
-
     }
 
 
