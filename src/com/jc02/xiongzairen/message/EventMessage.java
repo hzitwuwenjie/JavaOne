@@ -11,7 +11,7 @@ package com.jc02.xiongzairen.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class EventMessage extends Message {
+public abstract class EventMessage extends Message {
     private String event;
     public EventMessage(String event){
         super("event");
