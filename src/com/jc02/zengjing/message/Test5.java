@@ -75,8 +75,8 @@ public class Test5 {
         s.showXml();
         System.out.println("------------发送位置事件消息------------");
         LocalMessage l =new LocalMessage();
-        l.setToUserName("呼韩邪");
-        l.setFromUserName("王昭君");
+        l.setToUserName("项羽");
+        l.setFromUserName("虞姬");
         l.setCreateTime(System.currentTimeMillis());
         l.setLatitude("121.1");
         l.setLongitude("95.1");
