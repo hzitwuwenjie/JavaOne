@@ -14,6 +14,10 @@ package com.jc02.huangkangming.message.eventmessage;
 public class MenuEventMessage extends EventMessage {
     private String eventKey;
 
+    public MenuEventMessage(String event) {
+        super(event);
+    }
+
     public String getEventKey() {
         return eventKey;
     }
