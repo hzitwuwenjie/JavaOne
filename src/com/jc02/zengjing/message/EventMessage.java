@@ -13,7 +13,7 @@ import com.jc02.zengjing.message.Message;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class EventMessage extends Message{
+public abstract class EventMessage extends Message{
     private String event;
     public EventMessage(String event){
         super("event");
@@ -26,4 +26,8 @@ public class EventMessage extends Message{
     public void setEvent(String event) {
         this.event = event;
     }
+    public String toString(){
+        return getFromUserName()+"发送了一条事件信息给"+getToUserName();
+    }
+    public abstract void showXml();
 }
