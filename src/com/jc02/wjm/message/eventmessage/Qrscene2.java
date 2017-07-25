@@ -40,6 +40,15 @@ public class Qrscene2 extends EventMessage {
 
     @Override
     public void showXml() {
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+getToUserName()+"]]</ToUserName>");
+        System.out.println("<FromUserName><![CDATA["+getFromUserName()+"]]</FromUserName>");
+        System.out.println("<CreateTime>"+getCreateTime()+"</CreateTime>");
+        System.out.println("<MsgType><![CDATA["+getMsgType()+"]]</MsgType>");
+        System.out.println("<Event><![CDATA["+getEvent()+"]]</Event>");
+        System.out.println("<EventKey><![CDATA["+getEventKey()+"]]</EventKey>");
+        System.out.println("<Ticket><![CDATA["+getTicket() + "]]</Ticket>");
+        System.out.println("</xml>");
 
     }
 }

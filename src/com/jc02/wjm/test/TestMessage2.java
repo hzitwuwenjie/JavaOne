@@ -1,8 +1,12 @@
 package com.jc02.wjm.test;
 
 import com.jc02.weiyilun.entity.commonmessage.Voice;
+import com.jc02.wjm.message.EventType;
 import com.jc02.wjm.message.VideoType;
 import com.jc02.wjm.message.commonmessage.*;
+import com.jc02.wjm.message.eventmessage.Click;
+import com.jc02.wjm.message.eventmessage.LocationEventMessage;
+import com.jc02.wjm.message.eventmessage.Qrscene2;
 
 /**
  * 　　  　  　           \\\|///
@@ -73,6 +77,35 @@ public class TestMessage2 {
         System.out.println("=============链接消息================");
         url.showXml();
         System.out.println("====================================");
+        Qrscene2 qr=new Qrscene2(EventType.unsubscribe);
+        qr.setToUserName("万万万");
+        qr.setFromUserName("小小小");
+        qr.setCreateTime(System.currentTimeMillis());
+        qr.setEventKey("key1");
+        qr.setTicket("二维码");
+        System.out.println("=============二维码事件消息================");
+        qr.showXml();
+        System.out.println("====================================");
+        Click cl=new Click();
+        cl.setToUserName("小婉");
+        cl.setFromUserName("小小小");
+        cl.setCreateTime(System.currentTimeMillis());
+        cl.setEventKey("www.baidu.com");
+        System.out.println("=============菜单事件消息================");
+        cl.showXml();
+        System.out.println("====================================");
+        LocationEventMessage loe=new LocationEventMessage();
+        loe.setToUserName("小婉小");
+        loe.setFromUserName("小饭小");
+        loe.setCreateTime(System.currentTimeMillis());
+        loe.setLatitude("23.123");
+        loe.setLongitude("66.145");
+        loe.setPrecision("6.786");
+        System.out.println("=============地址事件消息================");
+        loe.showXml();
+        System.out.println("====================================");
+
+
 
 
 
