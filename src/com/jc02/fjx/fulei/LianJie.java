@@ -11,19 +11,13 @@ package com.jc02.fjx.fulei;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class LianJie extends  message {
+public class LianJie extends PuTongXiaoxi {
     private String title;
     private String description;
     private String url;
-    private int msgId;
 
-    public int getMsgId() {
-        return msgId;
-    }
 
-    public void setMsgId(int msgId) {
-        this.msgId = msgId;
-    }
+
 
     public String getTitle() {
         return title;

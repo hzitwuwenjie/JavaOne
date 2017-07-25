@@ -12,20 +12,11 @@ package com.jc02.zxm.message;
  * |    @description   地理消息　　　　　　　　　　　　　                   |
  * +---------------------------------Oooo--------------------------------------+
  */
-public class LocationMessage extends Message {
+public class LocationMessage extends CommonMsg {
     private String location_X;//	地理位置维度
     private String location_Y;//	地理位置经度
     private String  scale;//	地图缩放大小
     private String label;//	地理位置信息
-    private String msgId;//	消息id，64位整型
-
-    public String getMsgId() {
-        return msgId;
-    }
-
-    public void setMsgId(String msgId) {
-        this.msgId = msgId;
-    }
 
     public String getLocation_X() {
         return location_X;

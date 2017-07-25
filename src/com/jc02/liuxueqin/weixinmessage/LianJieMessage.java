@@ -7,7 +7,7 @@ package com.jc02.liuxueqin.weixinmessage;/*
  *  +---------------------------------Oooo---------------------------------------+
  */
 
-public class LianJieMessage extends Message{
+public class LianJieMessage extends CommentMessage{
     private String title;//消息标题
     private String description;//消息描述
     private String url;//消息链接

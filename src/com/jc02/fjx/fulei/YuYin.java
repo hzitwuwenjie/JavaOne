@@ -11,10 +11,10 @@ package com.jc02.fjx.fulei;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class YuYin extends message {
+public class YuYin extends PuTongXiaoxi {
     private  String mediaId;
     private  String format;
-    private int msgId;
+
     private  String recognition;
 
     public String getRecognition() {
@@ -25,13 +25,7 @@ public class YuYin extends message {
         this.recognition = recognition;
     }
 
-    public int getMsgId() {
-        return msgId;
-    }
 
-    public void setMsgId(int msgId) {
-        this.msgId = msgId;
-    }
 
     public String getMediaId() {
         return mediaId;

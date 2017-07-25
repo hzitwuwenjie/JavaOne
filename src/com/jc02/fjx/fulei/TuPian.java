@@ -11,18 +11,11 @@ package com.jc02.fjx.fulei;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class TuPian extends message {
+public class TuPian extends PuTongXiaoxi {
     private String picUrl;
     private String mediaId;
-    private int msgId;
 
-    public int getMsgId() {
-        return msgId;
-    }
 
-    public void setMsgId(int msgId) {
-        this.msgId = msgId;
-    }
 
 
     public String getPicUrl() {
