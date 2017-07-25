@@ -15,6 +15,10 @@ public class PicMessage extends CommonMessage {
     private String picURL;
     private String mediaId;
 
+    public PicMessage() {
+        super("image");
+    }
+
     public String getMediaId() {
         return mediaId;
     }

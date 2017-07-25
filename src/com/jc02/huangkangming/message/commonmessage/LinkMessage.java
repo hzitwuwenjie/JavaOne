@@ -16,6 +16,10 @@ public class LinkMessage extends CommonMessage {
     private String description;
     private String url;
 
+    public LinkMessage() {
+        super("link");
+    }
+
     public String getTitle() {
         return title;
     }

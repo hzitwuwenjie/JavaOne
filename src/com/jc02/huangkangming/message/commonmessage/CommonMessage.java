@@ -14,6 +14,10 @@ package com.jc02.huangkangming.message.commonmessage;
 public class CommonMessage extends Message {
     private String msgId;
 
+    public CommonMessage(String msgType) {
+        super(msgType);
+    }
+
     public String getMsgId() {
         return msgId;
     }

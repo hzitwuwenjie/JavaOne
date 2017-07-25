@@ -14,6 +14,10 @@ package com.jc02.huangkangming.message.commonmessage;
 public class TextMessage extends CommonMessage {
     private String content;
 
+    public TextMessage() {
+        super("text");
+    }
+
     public String getContent() {
         return content;
     }
