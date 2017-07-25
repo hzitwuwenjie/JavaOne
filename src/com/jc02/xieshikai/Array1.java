@@ -15,10 +15,10 @@ package com.jc02.xieshikai;
 public class Array1 {
     public static void main(String[] args) {
 //未赋值输出
-        Pritimive d=new Pritimive();
-        for (int i = 0; i <d.t.length ; i++) {
-            System.out.println(d.t[i]);
-        }
+// Pritimive d=new Pritimive();
+     //   for (int i = 0; i <d.t.length ; i++) {
+      //      System.out.println(d.t[i]);
+      //  }
 //赋值输出
 //        Pritimive d=new Pritimive();
 //        for (int i = 0; i <d.t.length ; i++) {

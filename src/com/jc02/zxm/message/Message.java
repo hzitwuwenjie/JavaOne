@@ -17,6 +17,12 @@ public class Message {
     private  String fromUserName;//	发送方帐号（一个OpenID）
     private  String createTime;//	消息创建时间 （整型）
     private String msgType;//消息类型
+    public Message(String msgType){
+        this.msgType=msgType;
+        System.out.println("有参构造方法执行了");
+
+
+    }
 
     public String getMsgType() {
         return msgType;

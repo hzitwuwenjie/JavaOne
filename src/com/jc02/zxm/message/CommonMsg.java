@@ -15,6 +15,10 @@ package com.jc02.zxm.message;
 public class CommonMsg extends Message {
     private String msgId;//	消息id，64位整型
 
+public CommonMsg(String msgtype){
+    super(msgtype);
+}
+
     public String getMsgId() {
         return msgId;
     }

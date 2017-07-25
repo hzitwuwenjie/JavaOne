@@ -1,4 +1,6 @@
-package com.jc02.zxm.message;
+package com.jc02.zxm.message.messageType;
+
+import com.jc02.zxm.message.CommonMsg;
 
 /**
  * 　　  　  　      \\\|///
@@ -8,26 +10,21 @@ package com.jc02.zxm.message;
  * |　@author 曾宪明　　　　　　                                                  |
  * |　@author 江西财经大学                                                       |
  * |  @state 版权所有，不得外传                                                  |
- * |　@create 2017年07月24日 - 16:45　                           |
- * |    @description   接受与取消关注事件消息　　　　　　　　　　　　　                   |
+ * |　@create 2017年07月24日 - 16:16　                           |
+ * |    @description   文本消息　　　　　　　　　　　　　                   |
  * +---------------------------------Oooo--------------------------------------+
  */
-public class EventMessage extends Message {
-     private String event;
-
-
-    public EventMessage(String event){
-        super("event");
-        this.event=event;
-
+public class TextMessage extends CommonMsg {
+    public TextMessage(){
+        super("text");
+    }
+    private String content;//	文本消息内容
+    public String getContent() {
+        return content;
     }
 
-    public String getEvent() {
-        return event;
-    }
-
-    public void setEvent(String event) {
-        this.event = event;
+    public void setContent(String content) {
+        this.content = content;
     }
 }
 
