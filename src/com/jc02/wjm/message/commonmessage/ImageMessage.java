@@ -1,4 +1,6 @@
-package com.jc02.wjm.message;
+package com.jc02.wjm.message.commonmessage;
+
+import com.jc02.wjm.message.CommonMessage;
 
 /**
  * 　　  　  　           \\\|///
@@ -11,7 +13,7 @@ package com.jc02.wjm.message;
  * |  @description   图片消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ImageMessage extends CommonMessage{
+public class ImageMessage extends CommonMessage {
 
     private String picUrl;//	图片链接（由系统生成）
     private String mediaId;//	图片消息媒体id，可以调用多媒体文件下载接口拉取数据。
@@ -34,5 +36,19 @@ public class ImageMessage extends CommonMessage{
 
     public void setMediaId(String mediaId) {
         this.mediaId = mediaId;
+    }
+
+    @Override
+    public void showXml() {
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+getToUserName()+"]]</ToUserName>");
+        System.out.println("<FromUserName><![CDATA["+getFromUserName()+"]]</FromUserName>");
+        System.out.println("<CreateTime>"+getCreateTime()+"</CreateTime>");
+        System.out.println("<MsgType><![CDATA["+getMsgType()+"]]</MsgType>");
+        System.out.println("<PicUrl><![CDATA["+getPicUrl()+"]]</PicUrl>");
+        System.out.println("<MsgId>"+getMsgId()+"</MsgId>");
+        System.out.println("<MediaId><![CDATA["+getMediaId()+"]]</MediaId>>");
+        System.out.println("</xml>");
+
     }
 }

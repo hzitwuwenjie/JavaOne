@@ -1,4 +1,6 @@
-package com.jc02.zoudongping.message;
+package com.jc02.zoudongping.message.commonmessage;
+
+import com.jc02.zoudongping.message.CommonMessage;
 
 /**
  * 　　  　  　           \\\|///
@@ -11,18 +13,15 @@ package com.jc02.zoudongping.message;
  * |    @description   视频消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class MediaMessage extends Message {
+public class MediaMessage extends CommonMessage {
     private String mediaid;
     private String thumbmediaid;
-    private long msgid;
 
-    public long getMsgid() {
-        return msgid;
+
+    public MediaMessage(VideoType msgType) {
+        super(msgType.toString());
     }
 
-    public void setMsgid(long msgid) {
-        this.msgid = msgid;
-    }
 
     public String getThumbmediaid() {
         return thumbmediaid;
@@ -38,5 +37,15 @@ public class MediaMessage extends Message {
 
     public void setMediaid(String mediaid) {
         this.mediaid = mediaid;
+    }
+    public void showXml(){
+        System.out.println("<xml><ToUserName><![CDATA["+getTousername()+"]]></ToUserName>");
+        System.out.println("\t<FromUserName><![CDATA["+getFromusername()+"]]></FromUserName>");
+        System.out.println("\t<CreateTime>"+getCreatetime()+"</CreateTime>");
+        System.out.println("\t<MsgType><![CDATA["+getMsgtype()+"]]></MsgType>");
+        System.out.println("\t<ThumbMediaId><![CDATA["+getThumbmediaid()+"]]></ThumbMediaId>");
+        System.out.println("\t<MediaId>"+getMediaid()+"</MediaId>");
+        System.out.println("\t<MsgId>"+getMsgid()+"</MsgId>");
+        System.out.println("</xml>");
     }
 }

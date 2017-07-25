@@ -1,4 +1,6 @@
-package com.jc02.zoudongping.message;
+package com.jc02.zoudongping.message.commonmessage;
+
+import com.jc02.zoudongping.message.CommonMessage;
 
 /**
  * 　　  　  　           \\\|///
@@ -11,18 +13,15 @@ package com.jc02.zoudongping.message;
  * |    @description   语音消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class VoiceMessage extends Message {
+public class VoiceMessage extends CommonMessage {
     private String mediaid;
     private String format;
-    private long msgid;
 
-    public long getMsgid() {
-        return msgid;
+    public VoiceMessage() {
+        super("voice");
     }
 
-    public void setMsgid(long msgid) {
-        this.msgid = msgid;
-    }
+
 
     public String getMediaid() {
         return mediaid;
@@ -38,5 +37,16 @@ public class VoiceMessage extends Message {
 
     public void setFormat(String format) {
         this.format = format;
+    }
+
+    public void showXml(){
+        System.out.println("<xml><ToUserName><![CDATA["+getTousername()+"]]></ToUserName>");
+        System.out.println("\t<FromUserName><![CDATA["+getFromusername()+"]]></FromUserName>");
+        System.out.println("\t<CreateTime>"+getCreatetime()+"</CreateTime>");
+        System.out.println("\t<MsgType><![CDATA["+getMsgtype()+"]]></MsgType>");
+        System.out.println("\t<MediaId><![CDATA["+getMediaid()+"]]></MediaId>");
+        System.out.println("\t<Format>"+getFormat()+"</Format>");
+        System.out.println("\t<MsgId>"+getMsgid()+"</MsgId>");
+        System.out.println("</xml>");
     }
 }

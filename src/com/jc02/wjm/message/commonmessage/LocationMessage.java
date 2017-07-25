@@ -1,4 +1,6 @@
-package com.jc02.wjm.message;
+package com.jc02.wjm.message.commonmessage;
+
+import com.jc02.wjm.message.CommonMessage;
 
 /**
  * 　　  　  　           \\\|///
@@ -51,5 +53,22 @@ public class LocationMessage extends CommonMessage {
 
     public void setLabel(String label) {
         this.label = label;
+    }
+
+    @Override
+    public void showXml() {
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+getToUserName()+"]]</ToUserName>");
+        System.out.println("<FromUserName><![CDATA["+getFromUserName()+"]]</FromUserName>");
+        System.out.println("<CreateTime>"+getCreateTime()+"</CreateTime>");
+        System.out.println("<MsgType><![CDATA["+getMsgType()+"]]</MsgType>");
+        System.out.println("<Location_X()>"+getLocation_X()+"</Location_X()>");
+        System.out.println("<Location_Y()>"+getLocation_Y()+"</Location_Y()>");
+        System.out.println("<Scale>"+getScale()+"</Scale>");
+        System.out.println("<Label><![CDATA["+getLabel()+"]]</Label>>");
+        System.out.println("<MsgId>"+getMsgId()+"</MsgId>");
+        System.out.println("</xml>");
+
+
     }
 }

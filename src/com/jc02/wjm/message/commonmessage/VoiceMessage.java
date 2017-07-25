@@ -1,4 +1,6 @@
-package com.jc02.wjm.message;
+package com.jc02.wjm.message.commonmessage;
+
+import com.jc02.wjm.message.CommonMessage;
 
 /**
  * 　　  　  　           \\\|///
@@ -11,7 +13,7 @@ package com.jc02.wjm.message;
  * |  @description   语音消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class VoiceMessage extends CommonMessage{
+public class VoiceMessage extends CommonMessage {
     private  String mediaId;//	语音消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private  String format;//	语音格式，如amr，speex等
 
@@ -34,5 +36,17 @@ public class VoiceMessage extends CommonMessage{
 
     public void setFormat(String format) {
         this.format = format;
+    }
+    @Override
+    public void showXml() {
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+getToUserName()+"]]</ToUserName>");
+        System.out.println("<FromUserName><![CDATA["+getFromUserName()+"]]</FromUserName>");
+        System.out.println("<CreateTime>"+getCreateTime()+"</CreateTime>");
+        System.out.println("<MsgType><![CDATA["+getMsgType()+"]]</MsgType>");
+        System.out.println("<Format><![CDATA["+getFormat()+"]]</Format>");
+        System.out.println("<MsgId>"+getMsgId()+"</MsgId>");
+        System.out.println("<MediaId><![CDATA["+getMediaId()+"]]</MediaId>>");
+        System.out.println("</xml>");
     }
 }
