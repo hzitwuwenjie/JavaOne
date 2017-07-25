@@ -17,6 +17,9 @@ public class Message {
     private String createTime;//	消息创建时间 （整型）
     private String msgType;//
 
+    public Message(String msgType){
+        this.msgType=msgType;
+    }
 
 
 
