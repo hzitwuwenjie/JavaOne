@@ -52,6 +52,7 @@ public class TestMsg {
         System.out.println(scan1.getMsgType());
         System.out.println(scan1.getEvent());
         //
+
         ScanEventMessage scan2=new ScanEventMessage(ScanEventType.subscribe);
         System.out.println(scan2.getMsgType());
         System.out.println(scan2.getEvent());
