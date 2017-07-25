@@ -21,5 +21,6 @@ public class TestMain {
         System.out.println(scan.getTousername()+"\t\t"+scan.getEvent()+"\t\t"+"\t\t"+scan.getEventkey());
         ScanMessage sc=new ScanMessage();
         System.out.println(sc.getTousername()+"\t\t"+sc.getEvent()+"\t\t"+sc.getEventkey()+"\t\t"+sc.getTicket());
+
     }
 }
