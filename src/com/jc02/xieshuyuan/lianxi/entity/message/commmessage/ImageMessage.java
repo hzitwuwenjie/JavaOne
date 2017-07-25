@@ -29,15 +29,14 @@ public class ImageMessage extends CommMessage {
     @Override
     public void showXml(){
         System.out.println("<xml>");
-        System.out.println("<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
-        System.out.println("<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
-        System.out.println("<CreateTime><![CDATA["+getCreateTime()+"]]></CreateTime>");
-        System.out.println("<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
-        System.out.println("<PicUrl><![CDATA["+getPicUrl()+"]]></PicUrl>");
-        System.out.println("<MediaId><![CDATA["+getMediaId()+"]]></MediaId>");
-        System.out.println("<MsgId><![CDATA["+getMsgId()+"]]></MsgId>");
+        System.out.println("\t<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("\t<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("\t<CreateTime><![CDATA["+getCreateTime()+"]]></CreateTime>");
+        System.out.println("\t<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("\t<PicUrl><![CDATA["+getPicUrl()+"]]></PicUrl>");
+        System.out.println("\t<MediaId><![CDATA["+getMediaId()+"]]></MediaId>");
+        System.out.println("\t<MsgId><![CDATA["+getMsgId()+"]]></MsgId>");
         System.out.println("</xml>");
-
     }
     public String getPicUrl() {
         return picUrl;
