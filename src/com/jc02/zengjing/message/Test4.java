@@ -7,6 +7,8 @@ import com.jc02.zengjing.message.commenmessage.VideoMessage;
 import com.jc02.zengjing.message.commenmessage.VideoType;
 import com.jc02.zengjing.message.eventmessage.DiyMessage;
 import com.jc02.zengjing.message.eventmessage.DiyType;
+import com.jc02.zengjing.message.eventmessage.EventType;
+import com.jc02.zengjing.message.eventmessage.ScanMessage;
 
 /**
  * 　　  　  　    \\\|///
@@ -28,6 +30,9 @@ public class Test4 {
         DiyMessage d=new DiyMessage(DiyType.clink);
         System.out.println(d.getMsgType());
         System.out.println(d.getEvent());
+        ScanMessage s =new ScanMessage(EventType.scan);
+        System.out.println(s.getMsgType());
+        System.out.println(s.getEvent());
 
     }
 }
