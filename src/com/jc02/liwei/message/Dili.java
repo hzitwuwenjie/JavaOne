@@ -19,6 +19,10 @@ public class Dili extends Fulei{
     private int scale;
     private String label;
 
+    public Dili(){
+        super("LOCATION");
+    }
+
     public String getLabel() {
         return label;
     }

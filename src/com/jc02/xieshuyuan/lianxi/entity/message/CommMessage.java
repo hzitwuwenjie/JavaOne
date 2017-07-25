@@ -13,6 +13,9 @@ package com.jc02.xieshuyuan.lianxi.entity.message;
  */
 public class CommMessage  extends Message{
     private String msgId; //    消息id，64位整型
+    public CommMessage(String msgType){
+        super(msgType);
+    }
 
     public String getMsgId() {
         return msgId;

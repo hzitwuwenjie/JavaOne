@@ -16,6 +16,10 @@ public class LocationEventMessage extends EventMessage{
     private String longitude;
     private String precision;
 
+    public LocationEventMessage() {
+        super("location");
+    }
+
     public String getLatitude() {
         return latitude;
     }

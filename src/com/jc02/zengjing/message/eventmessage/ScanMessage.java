@@ -1,6 +1,6 @@
 package com.jc02.zengjing.message.eventmessage;
 
-import com.jc02.zengjing.message.eventmessage.EventMessage;
+import com.jc02.zengjing.message.EventMessage;
 
 /**
  * 　　  　  　    \\\|///
@@ -16,6 +16,10 @@ import com.jc02.zengjing.message.eventmessage.EventMessage;
 public class ScanMessage extends EventMessage {
     private String eventKey;
     private String ticket;
+
+    public ScanMessage(EventType event) {
+        super(event.toString());
+    }
 
     public String getEventKey() {
         return eventKey;

@@ -10,6 +10,9 @@ public class LocationMessage extends CommonMessage {
     private String location_Y;	//地理位置经度
     private String scale;	//地图缩放大小
     private String label;	//地理位置信息
+    public LocationMessage(){
+        super("Location");
+    }
 
     public String getLocation_X() {
         return location_X;

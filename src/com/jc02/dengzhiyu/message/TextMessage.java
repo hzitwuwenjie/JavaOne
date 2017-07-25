@@ -6,6 +6,9 @@ package com.jc02.dengzhiyu.message;/*
  */
 
 public class TextMessage extends CommonMessage {
+    public TextMessage(){
+        super("text");
+    }
    private String content;//	文本消息内容
 
     public String getContent() {

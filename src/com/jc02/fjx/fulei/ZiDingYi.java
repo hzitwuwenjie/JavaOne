@@ -14,6 +14,10 @@ package com.jc02.fjx.fulei;
 public class ZiDingYi extends ShiJianXiaoxi {
     private String eventKey;
 
+    public ZiDingYi(String event) {
+        super(event);
+    }
+
     public String getEventKey() {
         return eventKey;
     }

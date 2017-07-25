@@ -14,6 +14,10 @@ package com.jc02.pengmeiqian.message;
 public class TextCommonMessage extends CommonMessage {
     private String content;
 
+    public TextCommonMessage() {
+        super("text");
+    }
+
     public String getContent() {
         return content;
     }

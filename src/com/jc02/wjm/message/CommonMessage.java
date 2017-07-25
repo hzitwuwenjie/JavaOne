@@ -14,6 +14,10 @@ package com.jc02.wjm.message;
 public class CommonMessage extends Message {
     private String msgId;//	消息id，64位整型
 
+    public CommonMessage(String msgType) {
+        super(msgType);
+    }
+
     public String getMsgId() {
         return msgId;
     }

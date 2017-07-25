@@ -15,6 +15,12 @@ import com.jc02.xieshuyuan.lianxi.entity.message.CommMessage;
  */
 public class TextMassage extends CommMessage {
     private String content;  //文本消息内容
+    public TextMassage(){
+        super("text");
+    }
+    public String toString(){
+        return getFromUserName()+"发了一个消息给"+getToUserName()+"说："+getContent();
+    }
 
     public String getContent() {
         return content;

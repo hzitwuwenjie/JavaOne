@@ -12,6 +12,9 @@ package com.jc02.qinjiajun.message.message;
  * +---------------------------------Oooo---------------------------------------+
  */
 public class Message extends Mess{
+    public Message(String msgType){
+        super(msgType);
+    }
 
     public long  msgId;
 

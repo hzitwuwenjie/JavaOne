@@ -15,6 +15,10 @@ package com.jc02.liwei.message;/**
  */
 public class Wenben extends Fulei {
     private String content;
+    public Wenben(){
+        super("text");
+
+    }
 
     public String getContent() {
         return content;
