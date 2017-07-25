@@ -11,11 +11,11 @@ package com.jc02.wjm.jiekou;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Company implements SoftWare{
+public class Company {
 
 
-    @Override
-    public String work() {
-       return ("公司招收具有开发能力的人");
+
+    public void human(SoftWare softWare){
+        System.out.println(softWare);
     }
 }

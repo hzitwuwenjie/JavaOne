@@ -15,7 +15,8 @@ public class TestInterFace {
     public static void main(String[] args) {
         Human h=new Human();
         h.setName("万家明");
-        System.out.println(h.getName()+"具有 "+h.work()+"和"+h.drive());
+        Company c=new Company();
+        c.human(h);
 
     }
 }

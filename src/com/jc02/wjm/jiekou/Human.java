@@ -33,13 +33,16 @@ public class Human implements SoftWare,Driver{
     }
 
     @Override
-    public String work() {
-        return("开发能力") ;
+    public void work() {
+        System.out.println("开发能力");
     }
 
     @Override
-    public String drive() {
-        return("驾驶能力");
+    public void drive() {
+        System.out.println("驾驶能力");
 
+    }
+    public String toString() {
+        return getName()+"具有软件开发能力和驾驶能力";
     }
 }
