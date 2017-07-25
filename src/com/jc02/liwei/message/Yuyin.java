@@ -16,8 +16,8 @@ package com.jc02.liwei.message;/**
 public class Yuyin extends Fulei{
     private String mediald;
     private String format;
-    public Yuyin(String msgtype){
-        super(voice.toString);
+    public Yuyin(Meiju type){
+        super(type.toString());
     }
 
     public String getMediald() {

@@ -18,7 +18,7 @@ public class Shangbaodili extends Event{
     private double longitude;
     private String precision;
 
-    public Shangbaodili(String event){
+    public Shangbaodili(){
         super("LOCATION");
     }
 

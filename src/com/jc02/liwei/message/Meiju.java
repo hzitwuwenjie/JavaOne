@@ -5,5 +5,5 @@ package com.jc02.liwei.message;
  */
 public enum Meiju {
     voice,
-    event;
+    video;
 }
