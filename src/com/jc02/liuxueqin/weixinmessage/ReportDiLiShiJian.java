@@ -10,7 +10,7 @@ package com.jc02.liuxueqin.weixinmessage;/*
 public class ReportDiLiShiJian extends ShiJian{
     private String latitude;//地理位置纬度
     private String longitude;//地理位置经度
-    private String precisionl;//地理位置精度
+    private String precision;//地理位置精度
 
     public ReportDiLiShiJian() {
         super("location");
@@ -32,11 +32,25 @@ public class ReportDiLiShiJian extends ShiJian{
         this.longitude = longitude;
     }
 
-    public String getPrecisionl() {
-        return precisionl;
+    public String getPrecision() {
+        return precision;
     }
 
-    public void setPrecisionl(String precisionl) {
-        this.precisionl = precisionl;
+    public void setPrecision(String precision) {
+        this.precision = precision;
+    }
+
+    @Override
+    public void showXml() {
+        System.out.println("<xml>");
+        System.out.println("\t<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("\t<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("\t<CreateTime><![CDATA["+getCreateTime()+"]]></CreateTime>");
+        System.out.println("\t<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("\t<Event><![CDATA["+getEvent()+"]]></Event>");
+        System.out.println("\t<Latitude><![CDATA["+getLatitude()+"]]></Latitude>");
+        System.out.println("\t<Longitude><![CDATA["+getLongitude()+"]]></Longitude>");
+        System.out.println("\t<Precision><![CDATA["+getPrecision()+"]]></Precision>");
+        System.out.println("</xml>");
     }
 }

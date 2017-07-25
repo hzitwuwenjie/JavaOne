@@ -7,7 +7,7 @@ package com.jc02.liuxueqin.weixinmessage;/*
  *  +---------------------------------Oooo---------------------------------------+
  */
 
-public class ShiJian extends Message{
+public abstract  class ShiJian extends Message{
 
     private String event;//事件类型，
 

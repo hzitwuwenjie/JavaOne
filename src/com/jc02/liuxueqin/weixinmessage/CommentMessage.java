@@ -7,18 +7,22 @@ package com.jc02.liuxueqin.weixinmessage;/*
  *  +---------------------------------Oooo---------------------------------------+
  */
 
-public class CommentMessage extends Message{
-    private long msgId;//消息id，64位整型
+import java.util.UUID;
+
+public abstract class CommentMessage extends Message{
+    private String  msgId;//消息id，64位整型
+
 
     public CommentMessage(String msgType) {
         super(msgType);
+        this.msgId= UUID.randomUUID().toString();
     }
 
-    public long getMsgId() {
+    public String getMsgId() {
         return msgId;
     }
 
-    public void setMsgId(long msgId) {
+    public void setMsgId(String msgId) {
         this.msgId = msgId;
     }
 }

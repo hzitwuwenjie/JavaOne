@@ -9,7 +9,7 @@ package com.jc02.liuxueqin.weixinmessage;/*
 
 import java.security.PublicKey;
 
-public class Message {
+public abstract  class Message {
     private String toUserName;//开发者微信号
     private String fromUserName;//发送方帐号（一个OpenID）
     private long createTime;//消息创建时间 （整型）
@@ -45,5 +45,5 @@ public class Message {
         this.fromUserName = fromUserName;
     }
 
-
+    public abstract  void  showXml();
 }
