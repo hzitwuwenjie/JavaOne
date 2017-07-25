@@ -12,7 +12,7 @@ package com.jc02.xieshikai.msg;
  * |  @description   普通消息类
  * +-------------（づ￣3￣）づ╭❤～------╭∩╮（￣▽￣）╭∩╮ ---------+
  */
-public class CommonMessage extends Message{
+public abstract class CommonMessage extends Message{
     private int msgId;
     public CommonMessage(String msgType){
         super(msgType);
@@ -25,4 +25,6 @@ public class CommonMessage extends Message{
     public void setMsgId(int msgId) {
         this.msgId = msgId;
     }
+
+    public abstract void showXml();
 }

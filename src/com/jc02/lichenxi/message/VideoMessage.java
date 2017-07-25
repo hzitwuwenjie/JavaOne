@@ -4,22 +4,26 @@ package com.jc02.lichenxi.message;
  * Created by 李晨曦 2017年07月24日
  */
 public class VideoMessage extends CommonMessage {
-    private String MediaId;	//视频消息媒体id，可以调用多媒体文件下载接口拉取数据。
-    private String ThumbMediaId;	//视频消息缩略图的媒体id，可以调用多媒体文件下载接口拉取数据。
+    private String mediaId;	//视频消息媒体id，可以调用多媒体文件下载接口拉取数据。
+    private String thumbMediaId;	//视频消息缩略图的媒体id，可以调用多媒体文件下载接口拉取数据。
 
-    public String getMediaId() {
-        return MediaId;
-    }
-
-    public void setMediaId(String mediaId) {
-        MediaId = mediaId;
+    public VideoMessage(VideoType msgType) {
+        super(msgType.toString());
     }
 
     public String getThumbMediaId() {
-        return ThumbMediaId;
+        return thumbMediaId;
     }
 
     public void setThumbMediaId(String thumbMediaId) {
-        ThumbMediaId = thumbMediaId;
+        this.thumbMediaId = thumbMediaId;
+    }
+
+    public String getMediaId() {
+        return mediaId;
+    }
+
+    public void setMediaId(String mediaId) {
+        this.mediaId = mediaId;
     }
 }
