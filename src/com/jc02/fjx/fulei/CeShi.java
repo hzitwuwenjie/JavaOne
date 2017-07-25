@@ -25,7 +25,7 @@ public class CeShi {
         System.out.println("视频消息类型："+s.getMsgType());
         s=new ShiPin(MeiJu.video);
         System.out.println("视频消息类型："+s.getMsgType());
-        System.out.println("*****************************");
+        System.out.println("***************************** ");
         SaoMiaoShijian sh=new SaoMiaoShijian(MeiJv.SCAN);
         System.out.println("扫描消息类型："+sh.getEvent());
          sh=new SaoMiaoShijian(MeiJv.subscribe);
