@@ -48,9 +48,9 @@ public abstract class Message {
         this.fromUserName = fromUserName;
     }
 
-    public void showxml(){
+    public abstract  void showxml();
 
-    }
+
 
 
 }
