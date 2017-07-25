@@ -24,7 +24,6 @@ public abstract class Message {
     }
 
     public void showXml(){
-
     }
     public String getToUserName() {
         return toUserName;
