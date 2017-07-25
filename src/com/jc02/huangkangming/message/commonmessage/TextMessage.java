@@ -35,5 +35,6 @@ public class TextMessage extends CommonMessage {
         System.out.println("<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
         System.out.println("<Content><![CDATA["+getContent()+"]></Content>");
         System.out.println("<MsgId><![CDATA["+getMsgId()+"]></MsgId>");
+        System.out.println("</xml>");
     }
 }
