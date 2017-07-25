@@ -1,4 +1,4 @@
-package com.jc02.zxm.message;
+package com.jc02.zxm.message.message;
 
 /**
  * 　　  　  　      \\\|///
@@ -17,6 +17,10 @@ public class LocationMessage extends CommonMsg {
     private String location_Y;//	地理位置经度
     private String  scale;//	地图缩放大小
     private String label;//	地理位置信息
+
+    public LocationMessage() {
+        super("location");
+    }
 
     public String getLocation_X() {
         return location_X;
@@ -48,6 +52,10 @@ public class LocationMessage extends CommonMsg {
 
     public void setLabel(String label) {
         this.label = label;
+    }
+    public void showXml()
+    {
+
     }
 }
 

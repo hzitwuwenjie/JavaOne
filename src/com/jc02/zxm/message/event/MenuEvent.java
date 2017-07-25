@@ -1,4 +1,4 @@
-package com.jc02.zxm.message;
+package com.jc02.zxm.message.event;
 
 /**
  * 　　  　  　      \\\|///
@@ -15,12 +15,21 @@ package com.jc02.zxm.message;
 public class MenuEvent extends EventMessage {
    private String eventKey;//	事件KEY值，与自定义菜单接口中KEY值对应
 
+    public MenuEvent() {
+        super("CLICK");
+    }
+
+
     public String getEventKey() {
         return eventKey;
     }
 
     public void setEventKey(String eventKey) {
         this.eventKey = eventKey;
+    }
+    public void showXml()
+    {
+
     }
 }
 
