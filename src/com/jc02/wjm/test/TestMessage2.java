@@ -19,7 +19,7 @@ public class TestMessage2 {
         tx.setToUserName("万家明");
         tx.setFromUserName("范珂磊");
         tx.setCreateTime(System.currentTimeMillis());
-        tx.setContent("吃点");
+        tx.setContent("吃点东西");
         tx.showXml();
 
 
