@@ -12,6 +12,10 @@ package com.jc02.pengmeiqian.message;
  * +---------------------------------Oooo-----------------------------+
  */
 public class CommonMessage extends Message{
+
+    public CommonMessage(String msgType) {
+        super(msgType);
+    }
     private String msgId;
 
     public String getMsgId() {
