@@ -1,4 +1,4 @@
-package com.jc02.zengjing.message;
+package com.jc02.zengjing.message.test;
 
 import com.jc02.zengjing.message.commenmessage.*;
 import com.jc02.zengjing.message.eventmessage.*;
