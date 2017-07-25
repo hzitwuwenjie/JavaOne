@@ -1,4 +1,4 @@
-package com.jc02.zxm.message;
+package com.jc02.zxm.message.event;
 
 /**
  * 　　  　  　      \\\|///
@@ -16,6 +16,11 @@ public class LocationEvent extends EventMessage {
     private String latitude;//	地理位置纬度
     private String longitude;//	地理位置经度
     private String precision;//	地理位置精度
+
+    public LocationEvent() {
+        super("LOCATION");
+    }
+
 
     public String getLatitude() {
         return latitude;
@@ -39,6 +44,10 @@ public class LocationEvent extends EventMessage {
 
     public void setPrecision(String precision) {
         this.precision = precision;
+    }
+    public void showXml()
+    {
+
     }
 }
 

@@ -1,4 +1,4 @@
-package com.jc02.zxm.message;
+package com.jc02.zxm.message.message;
 
 /**
  * 　　  　  　      \\\|///
@@ -13,8 +13,18 @@ package com.jc02.zxm.message;
  * +---------------------------------Oooo--------------------------------------+
  */
 public class TextMessage extends CommonMsg {
+    public TextMessage(){
+        super("text");
+    }
     private String content;//	文本消息内容
+    @Override
+    public String toString(){
+        return getFromUserName()+"给"+getToUserName()+"发了一条消息"+"消息内容是："+getContent();
+    }
+    public void showXml()
+    {
 
+    }
     public String getContent() {
         return content;
     }

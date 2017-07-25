@@ -1,4 +1,4 @@
-package com.jc02.yankaixin.message;
+package com.jc02.yankaixin.jiekou;
 
 /**
  * 　　  　  　           \\\|///
@@ -7,21 +7,19 @@ package com.jc02.yankaixin.message;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 严凯新　　　　　　                                                                 　|
  * |　@author 江西财经大学软件工程                                                |
- * |　@create 2017年07月24日 - 16:37
- * |  @description   关注或取消事件消息类
+ * |　@create 2017年07月25日 - 19:23
+ * |  @description   软件公司
  * +---------------------------------Oooo---------------------------------------+
  */
-public abstract class EventMessage extends Message {
+public class SoftwareCompany {
 
-    private String event;
+    public void recruitDeveloper(SoftwareDesigning s){
 
-    public EventMessage(String event){
-        super("event");
-        this.event = event;
+        s.programme();
     }
 
-    public String getEvent() {
-        return event;
-    }
+    public void recruitDriver(Drive d){
 
+        d.drive();
+    }
 }

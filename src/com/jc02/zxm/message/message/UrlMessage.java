@@ -1,4 +1,4 @@
-package com.jc02.zxm.message;
+package com.jc02.zxm.message.message;
 
 /**
  * 　　  　  　      \\\|///
@@ -17,6 +17,10 @@ public class UrlMessage extends CommonMsg {
     private String title;//	消息标题
     private String description;//	消息描述
     private String url;//	消息链接
+
+    public UrlMessage() {
+        super("link");
+    }
 
     public String getTitle() {
         return title;
@@ -40,6 +44,10 @@ public class UrlMessage extends CommonMsg {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+    public void showXml()
+    {
+
     }
 }
 
