@@ -14,6 +14,11 @@ package com.jc02.pengmeiqian.message;
 public class VoiceCommonMessage extends CommonMessage {
     private String mediaId;
     private String format;
+
+    public VoiceCommonMessage() {
+        super("voice");
+    }
+
     public String getFormat() {
         return format;
     }
