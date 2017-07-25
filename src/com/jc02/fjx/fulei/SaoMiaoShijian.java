@@ -15,6 +15,11 @@ public class SaoMiaoShijian extends ShiJianXiaoxi {
     private int eventKey;
     private String  ticket;
 
+    public SaoMiaoShijian(MeiJv event) {
+        super(event.toString());
+    }
+
+
     public int getEventKey() {
         return eventKey;
     }

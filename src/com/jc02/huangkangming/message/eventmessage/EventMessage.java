@@ -16,7 +16,7 @@ import com.jc02.huangkangming.message.commonmessage.Message;
 public class EventMessage extends Message {
     private String event;
 
-    public EventMessage(String event){
+    public EventMessage(String event) {
         super("event");
         this.event=event;
     }

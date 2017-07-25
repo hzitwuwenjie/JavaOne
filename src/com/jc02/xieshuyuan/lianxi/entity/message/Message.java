@@ -16,6 +16,9 @@ public class Message {
     private String fromUserName; //	发送方帐号（一个OpenID）
     private String createTime; //	消息创建时间 （整型）
     private String msgType; //	text
+    public Message(String msgType){
+        this.msgType=msgType;
+    }
 
     public String getToUserName() {
         return toUserName;

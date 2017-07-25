@@ -7,6 +7,9 @@ package com.jc02.dengzhiyu.message;/*
 
 public class CarteMessage extends EventMessage {
     private String eventKey;//	事件KEY值，与自定义菜单接口中KEY值对应
+    public CarteMessage(String event){
+        super(event);
+    }
 
     public String getEventKey() {
         return eventKey;
