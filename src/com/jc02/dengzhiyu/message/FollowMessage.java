@@ -17,7 +17,7 @@ public class FollowMessage extends EventMessage {
     }
 
     public void setEventKey(String eventKey) {
-        eventKey = eventKey;
+        this.eventKey = eventKey;
     }
 
     public String getTicket() {
@@ -25,7 +25,13 @@ public class FollowMessage extends EventMessage {
     }
 
     public void setTicket(String ticket) {
-        ticket = ticket;
+        this.ticket = ticket;
+    }
+
+    @Override
+    public void showxml() {
+
+
     }
 }
 
