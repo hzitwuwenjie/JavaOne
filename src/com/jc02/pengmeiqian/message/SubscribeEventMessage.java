@@ -15,6 +15,10 @@ public class SubscribeEventMessage extends EventMessage{
     private String eventKey;
     private String ticket;
 
+    public SubscribeEventMessage(String event) {
+        super(event);
+    }
+
     public String getEventKey() {
         return eventKey;
     }

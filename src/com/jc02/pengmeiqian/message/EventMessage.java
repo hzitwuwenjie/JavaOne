@@ -14,6 +14,10 @@ package com.jc02.pengmeiqian.message;
 public class EventMessage extends Message{
     private String event;
 
+    public EventMessage(String event) {
+        super(event);
+    }
+
     public String getEvent() {
         return event;
     }
