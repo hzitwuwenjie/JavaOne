@@ -27,4 +27,8 @@ public class TextMessage extends CommonMessage {
     public void setContent(String content) {
         this.content = content;
     }
+    @Override
+    public void showXml() {
+
+    }
 }

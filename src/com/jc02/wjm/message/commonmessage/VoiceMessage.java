@@ -37,4 +37,8 @@ public class VoiceMessage extends CommonMessage {
     public void setFormat(String format) {
         this.format = format;
     }
+    @Override
+    public void showXml() {
+
+    }
 }

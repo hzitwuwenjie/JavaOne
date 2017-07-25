@@ -37,4 +37,9 @@ public class VideoMessage extends CommonMessage {
     public void setThumbMediaId(String thumbMediaId) {
         this.thumbMediaId = thumbMediaId;
     }
+
+    @Override
+    public void showXml() {
+
+    }
 }
