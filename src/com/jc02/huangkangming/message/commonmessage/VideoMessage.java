@@ -22,6 +22,10 @@ public class VideoMessage extends CommonMessage {
         super(msgType.toString());
     }
 
+    @Override
+    public void showXml() {
+    }
+
     public String getMediaId() {
         return mediaId;
     }

@@ -20,6 +20,10 @@ public class MenuEventMessage extends EventMessage {
         super(event.toString());
     }
 
+    @Override
+    public void showXml() {
+    }
+
     public String getEventKey() {
         return eventKey;
     }

@@ -19,7 +19,7 @@ public class ReportLocationEventMessage extends EventMessage{
     private String precision;	//地理位置精度
 
     public ReportLocationEventMessage(){
-        super("event");
+        super("event","subscribe");
     }
     public String getLatitude() {
         return latitude;

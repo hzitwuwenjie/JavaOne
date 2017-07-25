@@ -19,6 +19,10 @@ public class PicMessage extends CommonMessage {
         super("image");
     }
 
+    @Override
+    public void showXml() {
+    }
+
     public String getMediaId() {
         return mediaId;
     }

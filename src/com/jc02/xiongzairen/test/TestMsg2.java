@@ -1,4 +1,6 @@
-package com.jc02.xiongzairen.message;
+package com.jc02.xiongzairen.test;
+
+import com.jc02.xiongzairen.message.TextMessage;
 
 /**
  * 　　  　  　    可乐
@@ -7,22 +9,19 @@ package com.jc02.xiongzairen.message;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 熊再仁　　　　　　                                                                 　|
  * |　@author 江西财经大学                                                   |
- * |　@create 2017年07月24日 - 16:34
+ * |　@create 2017年07月25日 - 14:38
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public abstract class EventMessage extends Message {
-    private String event;
-    public EventMessage(String event){
-        super("event");
-        this.event=event;
+public class TestMsg2 {
+    public static void main(String[] args) {
+        TextMessage text=new TextMessage();
+        text.setFromUserName("熊再仁");
+        text.setToUserName("黄康明");
+        text.setContent("yh你好！");
+        text.setCreateTime(System.currentTimeMillis());
+        text.setMsgId("");
+
     }
-
-    public String getEvent() {
-        return event;
-    }
-
-
-
 
 }
