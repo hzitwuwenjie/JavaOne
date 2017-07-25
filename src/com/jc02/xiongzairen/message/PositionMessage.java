@@ -20,6 +20,22 @@ public class PositionMessage extends CommonMessage {
     public PositionMessage() {
         super("location");
     }
+    public void showxml(){
+        System.out.println("<xml>");
+
+        System.out.println("<toUserName><![CDATA["+getToUserName()+"]]></toUserName>");
+        System.out.println("<toFromUserName><![CDATA["+getFromUserName()+"]]></toFromUserName>");
+        System.out.println("<toLocation_X><![CDATA["+getLocation_X()+"]]><toLocation_X>");
+        System.out.println("<toCreateTime><![CDATA["+getCreateTime()+")]]><toCreateTime>");
+        System.out.println("<toMsgType><![CDATA["+getMsgType()+"]]></toMsgType>");
+        System.out.println("<toLocation_Y><![CDATA["+getLocation_Y()+"]]></toLocation_Y>");
+        System.out.println("<toMsgId><![CDATA["+getMsgId()+")]]></toMsgId>");
+        System.out.println("<toLabel><![CDATA["+getLabel()+")]]></toLabel>");
+        System.out.println("<toScale><![CDATA["+getScale()+")]]></toScale>");
+        System.out.println("</xml>");
+
+
+    }
 
     public String getScale() {
         return scale;

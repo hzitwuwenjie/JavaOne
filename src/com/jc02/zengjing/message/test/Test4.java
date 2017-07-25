@@ -1,4 +1,4 @@
-package com.jc02.zengjing.message;
+package com.jc02.zengjing.message.test;
 
 import com.jc02.fankelei.massage.VedioMessage;
 import com.jc02.pengmeiqian.message.ImageCommonMessage;
@@ -33,6 +33,7 @@ public class Test4 {
         ScanMessage s =new ScanMessage(EventType.scan);
         System.out.println(s.getMsgType());
         System.out.println(s.getEvent());
+
 
     }
 }
