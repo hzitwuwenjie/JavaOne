@@ -7,6 +7,10 @@ package com.jc02.dengzhiyu.message;/*
 
 public class EventMessage extends Message {
     private String event;//	事件类型，
+    public EventMessage (){
+        super("event");
+
+    }
 
 
     public String getEvent() {
