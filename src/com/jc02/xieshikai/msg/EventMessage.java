@@ -12,9 +12,13 @@ package com.jc02.xieshikai.msg;
  * |  @description   基础事件消息类
  * +-------------（づ￣3￣）づ╭❤～------╭∩╮（￣▽￣）╭∩╮ ---------+
  */
-public class EventMessage extends Message{
+public abstract class EventMessage extends Message{
     private String event;          //事件类型
 
+    public EventMessage(String event){
+        super("event");
+        this.event=event;
+    }
     public String getEvent() {
         return event;
     }
@@ -22,4 +26,6 @@ public class EventMessage extends Message{
     public void setEvent(String event) {
         this.event = event;
     }
+
+    public abstract void showXml();
 }

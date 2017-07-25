@@ -16,8 +16,19 @@ import com.jc02.xieshuyuan.lianxi.entity.message.EventMessage;
 public class CustomMenuEventMessage extends EventMessage{
     private String eventKey;	//事件KEY值，与自定义菜单接口中KEY值对应
 
-    public CustomMenuEventMessage(String msgType){
-        super("event");
+    public CustomMenuEventMessage(){
+        super("event","CLICK");
+    }
+    @Override
+    public void showXml(){
+        System.out.println("<xml>");
+        System.out.println("\t<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("\t<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("\t<CreateTime><![CDATA["+getCreateTime()+"]]></CreateTime>");
+        System.out.println("\t<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("\t<Event><![CDATA["+getEvent()+"]]></Event>");
+        System.out.println("\t<EventKey><![CDATA["+getEventKey()+"]]></EventKey>");
+        System.out.println("</xml>");
     }
     public String getEventKey() {
         return eventKey;
@@ -26,4 +37,5 @@ public class CustomMenuEventMessage extends EventMessage{
     public void setEventKey(String eventKey) {
         this.eventKey = eventKey;
     }
+
 }

@@ -19,6 +19,20 @@ public class VoiceMessage extends CommonMessage {
     public VoiceMessage() {
         super("voice");
     }
+    public void showxml(){
+        System.out.println("<xml>");
+
+        System.out.println("<toUserName><![CDATA["+getToUserName()+"]]></toUserName>");
+        System.out.println("<toFromUserName><![CDATA["+getFromUserName()+"]]></toFromUserName>");
+        System.out.println("<toContent><![CDATA["+getMediaId()+"]]><toContent>");
+        System.out.println("<toCreateTime><![CDATA["+getCreateTime()+")]]><toCreateTime>");
+        System.out.println("<toMsgType><![CDATA["+getMsgType()+"]]></toMsgType>");
+        System.out.println("<toFormat><![CDATA["+getFormat()+")]]></toFormat>");
+        System.out.println("<toMsgId><![CDATA["+getMsgId()+")]]></toMsgId>");
+        System.out.println("</xml>");
+    }
+
+
 
     public String getFormat() {
         return format;

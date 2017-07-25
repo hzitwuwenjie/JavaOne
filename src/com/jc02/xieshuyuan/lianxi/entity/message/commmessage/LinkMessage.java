@@ -17,10 +17,23 @@ public class LinkMessage extends CommMessage {
     private String title;	//消息标题
     private String description;	//消息描述
     private String url;	//消息链接
-    public LinkMessage(String msgType){
+    public LinkMessage(){
         super("link");
     }
 
+    @Override
+    public void showXml(){
+        System.out.println("<xml>");
+        System.out.println("\t<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("\t<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("\t<CreateTime><![CDATA["+getCreateTime()+"]]></CreateTime>");
+        System.out.println("\t<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("\t<Title><![CDATA["+getTitle()+"]]></Title>");
+        System.out.println("\t<Description><![CDATA["+getDescription()+"]]></Description>");
+        System.out.println("\t<Url><![CDATA["+getUrl()+"]]></Url>");
+        System.out.println("\t<MsgId><![CDATA["+getMsgId()+"]]></MsgId>");
+        System.out.println("</xml>");
+    }
     public String getTitle() {
         return title;
     }

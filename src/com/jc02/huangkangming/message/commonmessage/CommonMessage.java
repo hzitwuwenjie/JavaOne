@@ -1,5 +1,7 @@
 package com.jc02.huangkangming.message.commonmessage;
 
+import java.util.UUID;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -11,11 +13,12 @@ package com.jc02.huangkangming.message.commonmessage;
  * |  @description 普通消息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class CommonMessage extends Message {
+public  abstract  class CommonMessage extends Message {
     private String msgId;
 
     public CommonMessage(String msgType) {
         super(msgType);
+        this.msgId= UUID.randomUUID().toString();
     }
 
     public String getMsgId() {

@@ -7,9 +7,14 @@ package com.jc02.liuxueqin.weixinmessage;/*
  *  +---------------------------------Oooo---------------------------------------+
  */
 
-public class ShiJian extends Message{
+public abstract  class ShiJian extends Message{
 
-    private String event;//事件类型，subscribe(订阅)、unsubscribe(取消订阅)
+    private String event;//事件类型，
+
+    public ShiJian(String event) {
+        super("event");
+        this.event=event;
+    }
 
     public String getEvent() {
         return event;
