@@ -5,7 +5,7 @@ package com.jc02.dengzhiyu.message;/*
  *  |    @description   　　　　　　　　　　　　　                                                              　
  */
 
-public class CarteMessage extends Message1 {
+public class CarteMessage extends EventMessage {
     private String eventKey;//	事件KEY值，与自定义菜单接口中KEY值对应
 
     public String getEventKey() {

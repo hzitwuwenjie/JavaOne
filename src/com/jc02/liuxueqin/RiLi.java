@@ -50,12 +50,12 @@ public class RiLi {
         int sum=0;
         //计算过了几年的总天数
         for(int i=1900;i<year;i++){
-            sum+=leapYear(year)?366:365;
+            sum+=leapYear(i)?366:365;
         }
 
         //计算后面几月的总天数
         for(int i=1;i<month;i++){
-            sum+=getMonthDays(year,month);
+            sum+=getMonthDays(year,i);
         }
         return  sum;
     }
@@ -69,17 +69,17 @@ public class RiLi {
         int alldays=sumDays(year, month);
         int kongge=alldays%7+1;
         System.out.println("\n===============================================================");
-        System.out.println("\t\t\t"+year + "年" + month + "月");
+        System.out.println("\t\t\t\t"+year + "年" + month + "月");
         System.out.println("===============================================================");
         System.out.println("星期日\t星期一\t星期二\t星期三\t星期四\t星期五\t星期六\t");
         for (int i = 0; i <kongge ; i++) {
-            System.out.println("\t\t");
+            System.out.print("\t\t");
         }
         if (kongge==7){
             System.out.println();
         }
         for (int i = 1; i <getMonthDays(year,month) ; i++) {
-            System.out.println(i+"\t\t");
+            System.out.print(i+"\t\t");
             if ((i+kongge)%7==0) {
                 System.out.println();
             }
