@@ -17,6 +17,10 @@ public class YuYin extends PuTongXiaoxi {
 
     private  String recognition;
 
+    public YuYin() {
+        super("voice");
+    }
+
     public String getRecognition() {
         return recognition;
     }

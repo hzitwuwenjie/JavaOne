@@ -17,6 +17,10 @@ public class Message {
     private long createTime;//消息创建时间
     private String msgType;//消息类型
 
+    public Message(String msgType) {
+        this.msgType = msgType;
+    }
+
     public String getToUserName() {
         return toUserName;
     }
@@ -44,10 +48,4 @@ public class Message {
     public String getMsgType() {
         return msgType;
     }
-
-    public void setMsgType(String msgType) {
-        this.msgType = msgType;
-    }
-
-
 }

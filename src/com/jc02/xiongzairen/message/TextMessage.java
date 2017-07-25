@@ -11,9 +11,14 @@ package com.jc02.xiongzairen.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class TextMessage extends Message2{
+public class TextMessage extends CommonMessage {
     private String	text;
     private String content;
+
+    public TextMessage() {
+        super("text");
+    }
+
     public String getContent() {
         return content;
     }
@@ -22,9 +27,6 @@ public class TextMessage extends Message2{
 
         this.content = content;
     }
-
-
-
     public String getText() {
         return text;
     }
