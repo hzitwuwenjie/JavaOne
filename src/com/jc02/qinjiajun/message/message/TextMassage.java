@@ -13,6 +13,9 @@ package com.jc02.qinjiajun.message.message;
  */
 public class TextMassage extends Message {
     public String content;
+    public TextMassage(){
+        super("text");
+    }
 
 
     public String getContent() {

@@ -14,6 +14,11 @@ package com.jc02.pengmeiqian.message;
 public class VideoCommonMessage extends CommonMessage {
     private String mediaId;
     private String thumbMediaId;
+
+    public VideoCommonMessage(String msgType) {
+        super(msgType);
+    }
+
     public String getThumbMediaId() {
         return thumbMediaId;
     }

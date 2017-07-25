@@ -15,6 +15,9 @@ public class VoiceMessage extends Message{
     public String mediaId;
     public String format;
     public String recognition;
+    public VoiceMessage(){
+        super("Voice");
+    }
 
     public String getRecognition() {
         return recognition;

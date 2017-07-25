@@ -1,4 +1,6 @@
-package com.jc02.xiewenqiang.message;
+package com.jc02.xiewenqiang.message.eventmessage;
+
+import com.jc02.xiewenqiang.message.EventMessage;
 
 /**
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
@@ -11,6 +13,10 @@ public class LocationEventMessage extends EventMessage {
     private String latitude;//	地理位置纬度
     private String longitude;//	地理位置经度
     private String precision;//	地理位置精度
+
+    public LocationEventMessage() {
+        super("LOCATION");
+    }
 
     public String getLatitude() {
         return latitude;

@@ -12,6 +12,10 @@ public class CommonMessage extends Message {
 
     private long msgId;//	消息id，64位整型
 
+    public CommonMessage(String type) {
+        super(type);
+    }
+
     public long getMsgId() {
         return msgId;
     }

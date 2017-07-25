@@ -9,6 +9,9 @@ public class LinkMessage extends CommonMessage {
     private String title;	//消息标题
     private String description;	//消息描述
     private String url;	//消息链接
+    public LinkMessage(){
+        super("Link");
+    }
 
     public String getTitle() {
         return title;

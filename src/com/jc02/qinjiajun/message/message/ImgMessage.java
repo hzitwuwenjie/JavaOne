@@ -13,6 +13,9 @@ package com.jc02.qinjiajun.message.message;
  */
 public class ImgMessage extends  Message{
     public String picUrl;
+    public ImgMessage(){
+        super("Img");
+    }
 
     public String getPicUrl() {
         return picUrl;
