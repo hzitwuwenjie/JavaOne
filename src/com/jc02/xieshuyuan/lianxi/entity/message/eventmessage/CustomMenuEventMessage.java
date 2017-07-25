@@ -16,7 +16,7 @@ import com.jc02.xieshuyuan.lianxi.entity.message.EventMessage;
 public class CustomMenuEventMessage extends EventMessage{
     private String eventKey;	//事件KEY值，与自定义菜单接口中KEY值对应
 
-    public CustomMenuEventMessage(String msgType){
+    public CustomMenuEventMessage(){
         super("event");
     }
     public String getEventKey() {

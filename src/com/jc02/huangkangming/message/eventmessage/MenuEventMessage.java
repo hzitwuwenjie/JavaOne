@@ -1,5 +1,7 @@
 package com.jc02.huangkangming.message.eventmessage;
 
+import com.jc02.huangkangming.message.type.MenuEventType;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -14,8 +16,8 @@ package com.jc02.huangkangming.message.eventmessage;
 public class MenuEventMessage extends EventMessage {
     private String eventKey;
 
-    public MenuEventMessage(String event) {
-        super(event);
+    public MenuEventMessage(MenuEventType event) {
+        super(event.toString());
     }
 
     public String getEventKey() {
