@@ -1,5 +1,7 @@
 package com.jc02.zoudongping.message;
 
+import com.jc02.zoudongping.message.Message;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -7,24 +9,26 @@ package com.jc02.zoudongping.message;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 邹东平　　　　　　                                                                 　|
  * |　@author 江西财经大学                                                   |
- * |　@create 2017年07月24日 - 16:16
- * |    @description   文本消息
+ * |　@create 2017年07月24日 - 16:33
+ * |    @description   时间消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class TextMessage extends Message {
-    private String content;
+public abstract class EventMessage extends Message {
+    private String event;
 
-    public TextMessage(){
-        content="111222333";
+    public EventMessage(String event) {
+        super("event");
+        this.event=event;
     }
-    public TextMessage(String content,String tousername){
-        super(tousername);this.content=content;
-    }
-    public String getContent() {
-        return content;
+    public String getEvent() {
+        return event;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setEvent(String event) {
+        this.event = event;
     }
+
+    public abstract void showXml();
+
+
 }

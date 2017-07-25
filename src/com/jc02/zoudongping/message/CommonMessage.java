@@ -1,5 +1,7 @@
 package com.jc02.zoudongping.message;
 
+import com.jc02.zoudongping.message.Message;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -7,18 +9,26 @@ package com.jc02.zoudongping.message;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 邹东平　　　　　　                                                                 　|
  * |　@author 江西财经大学                                                   |
- * |　@create 2017年07月24日 - 16:54
- * |    @description   自定义菜单事件
+ * |　@create 2017年07月25日 - 14:20
+ * |    @description   普通消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class CustomMessage extends ShijianMessage {
-    private long eventkey;
+public abstract class CommonMessage extends Message {
+    private int msgid;
 
-    public long getEventkey() {
-        return eventkey;
+    public CommonMessage(String msgType) {
+        super(msgType);
     }
 
-    public void setEventkey(long eventkey) {
-        this.eventkey = eventkey;
+
+    public int getMsgid() {
+        return msgid;
     }
+
+    public void setMsgid(int msgid) {
+        this.msgid = msgid;
+    }
+
+    public abstract void showXml();
+
 }

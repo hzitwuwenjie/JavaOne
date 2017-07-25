@@ -1,4 +1,6 @@
-package com.jc02.zoudongping.message;
+package com.jc02.zoudongping.message.eventmessage;
+
+import com.jc02.zoudongping.message.EventMessage;
 
 /**
  * 　　  　  　           \\\|///
@@ -11,16 +13,16 @@ package com.jc02.zoudongping.message;
  * |    @description   扫描带参数二维码事件
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ScanMessage extends ShijianMessage{
+public class ScanMessage extends EventMessage {
     private int eventkey;
     private String ticket;
 
-    public ScanMessage(String tousername, String event,int eventkey) {
-        super(tousername,event);this.eventkey=eventkey;
+
+    public ScanMessage(ScanType event) {
+        super(event.toString());
     }
-    public ScanMessage(){
-        eventkey=1234;ticket="124213";
-    }
+
+
     public int getEventkey() {
         return eventkey;
     }
@@ -35,5 +37,16 @@ public class ScanMessage extends ShijianMessage{
 
     public void setTicket(String ticket) {
         this.ticket = ticket;
+    }
+
+    public void showXml(){
+        System.out.println("<xml><ToUserName><![CDATA["+getTousername()+"]]></ToUserName>");
+        System.out.println("\t<FromUserName><![CDATA["+getFromusername()+"]]></FromUserName>");
+        System.out.println("\t<CreateTime>"+getCreatetime()+"</CreateTime>");
+        System.out.println("\t<MsgType><![CDATA["+getMsgtype()+"]]></MsgType>");
+        System.out.println("\t<Event><![CDATA["+getEvent()+"]]></Event>");
+        System.out.println("\t<EventKey>"+getEventkey()+"</EventKey>");
+        System.out.println("\t<Ticket>"+getTicket()+"</Ticket>");
+        System.out.println("</xml>");
     }
 }
