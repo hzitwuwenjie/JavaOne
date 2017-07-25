@@ -13,7 +13,9 @@ package com.jc02.fjx.fulei;
  */
 public class WenBenXiaoxi extends PuTongXiaoxi {
     private String content;
-
+    public WenBenXiaoxi(){
+        super("text");
+    }
 
 
 
