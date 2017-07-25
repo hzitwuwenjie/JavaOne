@@ -29,15 +29,15 @@ public class TestMessage {
         System.out.println(voice.getMsgType());
 
         VideoCommonMessage video = new VideoCommonMessage("video");
-        System.out.println(video);
+        System.out.println(video.getMsgType());
 
         LocationEventMessage locationEventMessage = new LocationEventMessage();
         System.out.println(locationEventMessage.getEvent());
 
         MenuEventMessage menuEventMessage = new MenuEventMessage("click");
-        System.out.println(menuEventMessage);
+        System.out.println(menuEventMessage.getEvent());
 
         SubscribeEventMessage subscribeEventMessage = new SubscribeEventMessage("scan");
-        System.out.println(subscribeEventMessage);
+        System.out.println(subscribeEventMessage.getEvent());
     }
 }
