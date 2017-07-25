@@ -24,6 +24,14 @@ public class Test5 {
         i.setPicUrl("http://baidu.com");
         i.setMediaId("1101");
         i.showXml();
+        System.out.println("------------语音消息------------");
+        SoundMessage a=new SoundMessage();
+        a.setToUserName("狄仁杰");
+        a.setFromUserName("李元芳");
+        a.setCreateTime(System.currentTimeMillis());
+        a.setMediaId("1100");
+        a.setFormat("amr");
+        a.showXml();
         System.out.println("------------视频消息------------");
         VideoMessage v=new VideoMessage(VideoType.shortvideo);
         v.setToUserName("孙策");
@@ -60,8 +68,8 @@ public class Test5 {
         p.showXml();
         System.out.println("------------自定义菜单事件消息------------");
         DiyMessage d =new DiyMessage(DiyType.clink);
-        d.setToUserName("齐宣王");
-        d.setFromUserName("钟无艳");
+        d.setToUserName("曹操");
+        d.setFromUserName("甄姬");
         d.setCreateTime(System.currentTimeMillis());
         d.setEventkey("key值");
         d.showXml();
