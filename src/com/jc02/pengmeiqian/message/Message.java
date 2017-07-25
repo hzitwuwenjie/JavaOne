@@ -12,6 +12,9 @@ package com.jc02.pengmeiqian.message;
  * +---------------------------------Oooo-----------------------------+
  */
 public class Message {
+    public Message(String msgType){
+        this.msgType=msgType;
+    }
     private String toUserName;
     private String fromUserName;
     private String createTime;
