@@ -14,6 +14,9 @@ package com.jc02.qinjiajun.message.message;
 public class VideoMessage extends Message {
     public String thumbMediaId;
     public String mediaId;
+    public VideoMessage(){
+        super("Video");
+    }
 
     public String getMediaId() {
         return mediaId;

@@ -15,6 +15,10 @@ public class QrEventMessage extends EventMessage {
     public String eventKey;
     public String ticket;
 
+    public QrEventMessage(){
+        super("QrEvent");
+    }
+
     public String getEventKey() {
         return eventKey;
     }
