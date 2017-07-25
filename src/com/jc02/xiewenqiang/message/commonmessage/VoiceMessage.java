@@ -1,4 +1,6 @@
-package com.jc02.xiewenqiang.message;
+package com.jc02.xiewenqiang.message.commonmessage;
+
+import com.jc02.xiewenqiang.message.Message;
 
 /**
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
@@ -10,7 +12,10 @@ package com.jc02.xiewenqiang.message;
 public class VoiceMessage extends Message {
     private String mediaId;//	语音消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private String format;//	语音格式，如amr，speex等
-    private String recognition;//	语音识别结果，UTF8编码
+
+    public VoiceMessage() {
+        super("voice");
+    }
 
     public String getMediaId() {
         return mediaId;
@@ -26,13 +31,5 @@ public class VoiceMessage extends Message {
 
     public void setFormat(String format) {
         this.format = format;
-    }
-
-    public String getRecognition() {
-        return recognition ;
-    }
-
-    public void setRecognition(String recognition) {
-        this.recognition = recognition;
     }
 }

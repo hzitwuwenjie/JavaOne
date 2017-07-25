@@ -15,6 +15,9 @@ public class UpLocationEventMessage extends  EventMessage {
     public String latitude;
     public String longitude;
     public String precision;
+    public UpLocationEventMessage(){
+        super("Location");
+    }
 
     public String getLatitude() {
         return latitude;

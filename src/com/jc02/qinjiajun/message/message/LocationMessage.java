@@ -17,6 +17,10 @@ public class LocationMessage extends  Message {
     public String scale;
     public String label;
 
+    public LocationMessage(){
+        super("Location");
+    }
+
     public String getLocation_X() {
         return location_X;
     }

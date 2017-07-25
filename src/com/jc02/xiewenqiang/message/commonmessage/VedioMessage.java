@@ -1,4 +1,6 @@
-package com.jc02.xiewenqiang.message;
+package com.jc02.xiewenqiang.message.commonmessage;
+
+import com.jc02.xiewenqiang.message.CommonMessage;
 
 /**
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
@@ -10,6 +12,10 @@ package com.jc02.xiewenqiang.message;
 public class VedioMessage extends CommonMessage {
     private String mediaId;//	视频消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private String thumbMediaId;//	视频消息缩略图的媒体id，可以调用多媒体文件下载接口拉取数据。
+
+    public VedioMessage(String type) {
+        super(type);
+    }
 
     public String getMediaId() {
         return mediaId;

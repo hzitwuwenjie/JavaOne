@@ -1,4 +1,6 @@
-package com.jc02.xiewenqiang.message;
+package com.jc02.xiewenqiang.message.eventmessage;
+
+import com.jc02.xiewenqiang.message.EventMessage;
 
 /**
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
@@ -7,9 +9,13 @@ package com.jc02.xiewenqiang.message;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class SubscribeEventMessage extends EventMessage {
+public class QrCodeEventMessage extends EventMessage {
     private String eventKey;//	事件KEY值，qrscene_为前缀，后面为二维码的参数值
     private String ticket;//	二维码的ticket，可用来换取二维码图片
+
+    public QrCodeEventMessage(String event) {
+        super(event);
+    }
 
     public String getEventKey() {
         return eventKey;

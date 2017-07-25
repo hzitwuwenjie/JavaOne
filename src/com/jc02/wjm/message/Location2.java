@@ -16,6 +16,10 @@ public class Location2 extends EventMessage {
     private String longitude;//	地理位置经度
     private String precision;//	地理位置精度
 
+    public Location2() {
+        super("event");
+    }
+
     public String getLatitude() {
         return latitude;
     }
