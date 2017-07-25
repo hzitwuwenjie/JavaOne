@@ -26,5 +26,6 @@ public class Test4 {
         DiyMessage d=new DiyMessage("clink");
         System.out.println(d.getMsgType());
         System.out.println(d.getEvent());
+
     }
 }
