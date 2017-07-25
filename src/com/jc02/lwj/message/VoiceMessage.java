@@ -11,12 +11,14 @@ package com.jc02.lwj.message;
  * |    @description   语音消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class VoiceMessage extends Message {
+public class VoiceMessage extends CommonMessage {
     private String mediaId;
     private String format;
-    private String msgId;
-    private String recognition;
 
+    private String recognition;
+    public VoiceMessage(){
+        super("voice");
+    }
     public String getRecognition() {
         return recognition;
     }
@@ -41,11 +43,5 @@ public class VoiceMessage extends Message {
         this.format = format;
     }
 
-    public String getMsgId() {
-        return msgId;
-    }
 
-    public void setMsgId(String msgId) {
-        this.msgId = msgId;
-    }
 }

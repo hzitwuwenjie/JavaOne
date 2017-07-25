@@ -11,10 +11,15 @@ package com.jc02.lwj.message;
  * |    @description   事件3
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Event3 extends EventMessage {
+public class LocationEvent extends EventMessage {
     private String latitude;
     private String longitude;
     private String precision;
+
+    public LocationEvent() {
+        super("location");
+    }
+
     public String getPrecision() {
         return precision;
     }

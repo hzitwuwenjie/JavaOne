@@ -12,10 +12,10 @@ package com.jc02.xieshikai.msg;
  * |  @description   文本消息类
  * +-------------（づ￣3￣）づ╭❤～------╭∩╮（￣▽￣）╭∩╮ ---------+
  */
-public class ContentMessage extends CommonMessage{
+public class TextMessage extends CommonMessage{
     private String content;//文本消息内容
 
-    public ContentMessage(){
+    public TextMessage(){
         super("text");
     }
 
@@ -25,5 +25,17 @@ public class ContentMessage extends CommonMessage{
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    @Override
+    public void showXml() {
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("<CreateTime>"+getCreateTime()+"</CreateTime>");
+        System.out.println("<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println(" <Content><![CDATA["+getContent()+"]]></Content>");
+        System.out.println("<MsgId>"+getMsgId()+"</MsgId>");
+        System.out.println("</xml>");
     }
 }
