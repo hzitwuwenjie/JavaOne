@@ -11,20 +11,14 @@ package com.jc02.fjx.fulei;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class WeiZhi extends  message {
+public class WeiZhi extends PuTongXiaoxi {
     private String location_X;
     private  String location_Y;
     private  String scale;
     private  String label;
-    private int msgId;
 
-    public int getMsgId() {
-        return msgId;
-    }
 
-    public void setMsgId(int msgId) {
-        this.msgId = msgId;
-    }
+
 
     public String getLocation_X() {
         return location_X;

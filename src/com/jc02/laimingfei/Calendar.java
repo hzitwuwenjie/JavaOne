@@ -27,6 +27,7 @@ public class Calendar {
                 month=month-1;
                 if(month<=0)
                     month=12;
+                   year--;
               printMonthTitle(year, month);
               printMonthBody(year, month);
                  System.out.println("请输入大写的N/P，显示这一年上一月或下一月的日历 ，或输入其它则显示一年的日历 ");
@@ -36,6 +37,7 @@ public class Calendar {
                  month=month+1;
                  if(month>12)
                      month=1;
+                    year++;
                  printMonthTitle(year, month);
                  printMonthBody(year, month);
                  System.out.println("请输入大写的N/P，显示这一年上一月或下一月的日历 ，或输入其它则显示一年的日历");
@@ -101,8 +103,6 @@ public class Calendar {
                     break;
             }
             return monthName;
-
-
         }
         public static int getStartDay(int year,int month) {
             int startMonth=1;
