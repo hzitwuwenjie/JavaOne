@@ -14,6 +14,11 @@ package com.jc02.fjx.fulei;
 public class ShiJianXiaoxi extends XiaoXi {
     private String event ;
 
+    public ShiJianXiaoxi(String event) {
+        super("event");
+        this.event=event;
+    }
+
     public String getEvent() {
         return event;
     }

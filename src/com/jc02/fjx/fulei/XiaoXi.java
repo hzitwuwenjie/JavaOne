@@ -16,6 +16,9 @@ public class XiaoXi {
     private String fromUserName;//发送方帐号（一个OpenID）
     private long createTime;//	消息创建时间 （整型）
     private String msgType;
+    public XiaoXi(String type){
+        this.msgType=type;
+    }
     public String  getToUserName() {
         return toUserName;
     }
