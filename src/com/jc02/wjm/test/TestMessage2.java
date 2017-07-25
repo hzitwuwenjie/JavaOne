@@ -2,10 +2,7 @@ package com.jc02.wjm.test;
 
 import com.jc02.weiyilun.entity.commonmessage.Voice;
 import com.jc02.wjm.message.VideoType;
-import com.jc02.wjm.message.commonmessage.ImageMessage;
-import com.jc02.wjm.message.commonmessage.TextMessage;
-import com.jc02.wjm.message.commonmessage.VideoMessage;
-import com.jc02.wjm.message.commonmessage.VoiceMessage;
+import com.jc02.wjm.message.commonmessage.*;
 
 /**
  * 　　  　  　           \\\|///
@@ -55,6 +52,29 @@ public class TestMessage2 {
         System.out.println("=============视频消息================");
         vi.showXml();
         System.out.println("====================================");
+        LocationMessage lo=new LocationMessage();
+        lo.setToUserName("万小");
+        lo.setFromUserName("小魏");
+        lo.setCreateTime(System.currentTimeMillis());
+        lo.setLocation_X("66");
+        lo.setLocation_Y("88");
+        lo.setLabel("0.8");
+        lo.setScale("南昌");
+        System.out.println("=============地址消息================");
+        lo.showXml();
+        System.out.println("====================================");
+        UrlMessage url=new UrlMessage();
+        url.setToUserName("笑笑");
+        url.setFromUserName("呵呵");
+        url.setCreateTime(System.currentTimeMillis());
+        url.setTitle("震惊，男默女泪");
+        url.setDescription("身为一个学生他竟然做出这种事");
+        url.setUrl("www.4399.com");
+        System.out.println("=============链接消息================");
+        url.showXml();
+        System.out.println("====================================");
+
+
 
     }
 }
