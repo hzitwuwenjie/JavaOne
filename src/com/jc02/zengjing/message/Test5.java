@@ -67,8 +67,8 @@ public class Test5 {
         d.showXml();
         System.out.println("------------扫描二维码事件消息------------");
         ScanMessage s =new ScanMessage(EventType.subscribe);
-        s.setToUserName("李治");
-        s.setFromUserName("武则天");
+        s.setToUserName("纣王");
+        s.setFromUserName("妲己");
         s.setCreateTime(System.currentTimeMillis());
         s.setEventKey("key值");
         s.setTicket("http://baidu.com");
