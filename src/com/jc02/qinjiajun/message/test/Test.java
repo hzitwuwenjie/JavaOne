@@ -1,6 +1,4 @@
 package com.jc02.qinjiajun.message.test;
-
-import  com.jc02.qinjiajun.message.message.Mess;
 import com.jc02.qinjiajun.message.message.*;
 
 /**
