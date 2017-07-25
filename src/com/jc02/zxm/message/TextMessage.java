@@ -12,17 +12,8 @@ package com.jc02.zxm.message;
  * |    @description   文本消息　　　　　　　　　　　　　                   |
  * +---------------------------------Oooo--------------------------------------+
  */
-public class TextMessage extends Message {
+public class TextMessage extends CommonMsg {
     private String content;//	文本消息内容
-    private String msgId;//	消息id，64位整型
-
-    public String getMsgId() {
-        return msgId;
-    }
-
-    public void setMsgId(String msgId) {
-        this.msgId = msgId;
-    }
 
     public String getContent() {
         return content;
