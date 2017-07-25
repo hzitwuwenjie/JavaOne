@@ -22,12 +22,12 @@ public class TextMessage extends CommonMessage {
     public void showxml(){
         System.out.println("<xml>");
 
-        System.out.println("<toUserName><![CDATA[getToUserName]]></toUserName>");
-        System.out.println("<toFromUserName><![CDATA[getFromUserName]]></toFromUserName>");
-        System.out.println("<toContent><![CDATA[getContent]]><toContent>");
-        System.out.println("<toCreateTime><![CDATA[getCreateTime]]><toCreateTime>");
-        System.out.println("<toMsgType><![CDATA[text]]></toMsgType>");
-        System.out.println("<toMsgId><![CDATA[getMsgId]]></toMsgId>");
+        System.out.println("<toUserName><![CDATA["+getToUserName()+"]]></toUserName>");
+        System.out.println("<toFromUserName><![CDATA["+getFromUserName()+"]]></toFromUserName>");
+        System.out.println("<toContent><![CDATA["+getContent()+"]]><toContent>");
+        System.out.println("<toCreateTime><![CDATA["+getCreateTime()+")]]><toCreateTime>");
+        System.out.println("<toMsgType><![CDATA["+getMsgType()+"]]></toMsgType>");
+        System.out.println("<toMsgId><![CDATA["+getMsgId()+")]]></toMsgId>");
         System.out.println("</xml>");
     }
     public String getContent() {

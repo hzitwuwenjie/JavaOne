@@ -12,7 +12,6 @@ package com.jc02.xieshikai;
  * |  @description   数组练习2
  * +-------------（づ￣3￣）づ╭❤～------╭∩╮（￣▽￣）╭∩╮ ---------+
  */
-/*
 public class Array1 {
     public static void main(String[] args) {
 //未赋值输出
@@ -20,7 +19,6 @@ public class Array1 {
         for (int i = 0; i <d.t.length ; i++) {
             System.out.println(d.t[i]);
         }
-*/
 //赋值输出
 //        Pritimive d=new Pritimive();
 //        for (int i = 0; i <d.t.length ; i++) {
@@ -28,6 +26,5 @@ public class Array1 {
 //            System.out.println(d.t[i]);
 //        }
 
- /*   }
+    }
 }
-*/

@@ -53,4 +53,9 @@ public class LocationMessage extends CommonMessage{
     public void setLabel(String label) {
         this.label = label;
     }
+
+    @Override
+    public void showXml() {
+
+    }
 }

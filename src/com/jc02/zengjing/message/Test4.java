@@ -34,5 +34,6 @@ public class Test4 {
         System.out.println(s.getMsgType());
         System.out.println(s.getEvent());
 
+
     }
 }

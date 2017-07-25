@@ -22,14 +22,14 @@ public class TestSendMessage {
         message.setFromUserName("美女");
         message.setContent("帅哥，你真帅！(❤ ω ❤)");
         message.setCreateTime(System.currentTimeMillis());
-        System.out.println("消息内容:"+message.toString());
+        //System.out.println("消息内容:"+message.toString());
 
         ImageMessage message1=new ImageMessage();
         message1.setToUserName("谢树源");
         message1.setFromUserName("大神");
         message1.setPicUrl("http://img1.gtimg.com/ninja/1/2017/07/ninja150012654723524.jpg");
         message.setCreateTime(System.currentTimeMillis());
-        System.out.println("消息内容:"+message.toString());
+        System.out.println("消息内容:"+message1.toString());
         MessageServices m=new MessageServices();
         m.senMag(message);
     }
