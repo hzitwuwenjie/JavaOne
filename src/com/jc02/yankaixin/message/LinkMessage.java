@@ -11,27 +11,11 @@ package com.jc02.yankaixin.message;
  * |  @description   链接消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class LinkMessage extends Message{
+public class LinkMessage extends CommonMessage{
 
-    private long msgId;
     private String title;
     private String description;
     private String url;
-
-    public LinkMessage(long msgId, String title, String description, String url) {
-        this.msgId = msgId;
-        this.title = title;
-        this.description = description;
-        this.url = url;
-    }
-
-    public long getMsgId() {
-        return msgId;
-    }
-
-    public void setMsgId(long msgId) {
-        this.msgId = msgId;
-    }
 
     public String getTitle() {
         return title;

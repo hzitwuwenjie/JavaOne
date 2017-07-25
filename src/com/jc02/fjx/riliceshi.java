@@ -21,10 +21,11 @@ public class riliceshi {
         System.out.print("请输入一个年份：");
         int a= w.nextInt() ;
         int month=1;
-        m.shuchu(a,month);
-        System.out.print("\n输入n显示下一个月日历，输入p显示上一个月日历，输入all可显示全年日历:");
-        b =w.next();
+
         do{
+            m.shuchu(a,month);
+            System.out.print("\n输入n显示下一个月日历，输入p显示上一个月日历，输入all可显示全年日历:");
+            b =w.next();
         if(b.equalsIgnoreCase("n")) {
             month++;
             if(month>12){

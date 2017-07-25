@@ -11,25 +11,10 @@ package com.jc02.yankaixin.message;
  * |  @description   图片消息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ImageMessage extends Message{
+public class ImageMessage extends CommonMessage{
 
-    private long msgId;
     private String picUrl;
     private int mediaId;
-
-    public ImageMessage(long msgId, String picUrl, int mediaId) {
-        this.msgId = msgId;
-        this.picUrl = picUrl;
-        this.mediaId = mediaId;
-    }
-
-    public long getMsgId() {
-        return msgId;
-    }
-
-    public void setMsgId(long msgId) {
-        this.msgId = msgId;
-    }
 
     public String getPicUrl() {
         return picUrl;

@@ -7,7 +7,7 @@ package com.jc02.liuxueqin.weixinmessage;/*
  *  +---------------------------------Oooo---------------------------------------+
  */
 
-public class ShiPinMessage extends Message{
+public class ShiPinMessage extends CommentMessage{
     private int mediaId;//视频消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private int thumbMediaId;//视频消息缩略图的媒体id，可以调用多媒体文件下载接口拉取数据。
 
