@@ -15,6 +15,10 @@ package com.jc02.xieshikai.msg;
 public class ContentMessage extends CommonMessage{
     private String content;//文本消息内容
 
+    public ContentMessage(){
+        super("text");
+    }
+
     public String getContent() {
         return content;
     }

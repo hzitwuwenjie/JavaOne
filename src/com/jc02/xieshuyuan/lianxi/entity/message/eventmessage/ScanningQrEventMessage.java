@@ -18,7 +18,7 @@ public class ScanningQrEventMessage extends EventMessage{
     private String ticket;  //二维码的ticket，可用来换取二维码图片
 
     public ScanningQrEventMessage(){
-        super("event");
+        super("event","LOCATION");
     }
     public String getEventKey() {
         return eventKey;

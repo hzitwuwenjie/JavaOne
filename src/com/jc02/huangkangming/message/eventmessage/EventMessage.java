@@ -13,7 +13,7 @@ import com.jc02.huangkangming.message.commonmessage.Message;
  * |  @description   事件消息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class EventMessage extends Message {
+public abstract class EventMessage extends Message {
     private String event;
 
     public EventMessage(String event) {

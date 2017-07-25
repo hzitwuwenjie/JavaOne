@@ -14,9 +14,13 @@ package com.jc02.xieshikai.msg;
  */
 public class Message {
     private String toUserName;  //开发者微信号
-    private String FromUserName;//发送方帐号（一个OpenID）
-    private int CreateTime;     //消息创建时间（整型）
-    private String MsgType;     //消息类型
+    private String fromUserName;//发送方帐号（一个OpenID）
+    private int createTime;     //消息创建时间（整型）
+    private String msgType;     //消息类型
+
+    public Message(String msgType) {
+        this.msgType=msgType;
+    }
 
     public String getToUserName() {
         return toUserName;
@@ -27,27 +31,26 @@ public class Message {
     }
 
     public String getFromUserName() {
-        return FromUserName;
+        return fromUserName;
     }
 
     public void setFromUserName(String fromUserName) {
-        FromUserName = fromUserName;
+        this.fromUserName = fromUserName;
     }
 
     public int getCreateTime() {
-        return CreateTime;
+        return createTime;
     }
 
     public void setCreateTime(int createTime) {
-        CreateTime = createTime;
+        this.createTime = createTime;
     }
 
     public String getMsgType() {
-        return MsgType;
+        return msgType;
     }
 
     public void setMsgType(String msgType) {
-        MsgType = msgType;
+        this.msgType = msgType;
     }
-
 }

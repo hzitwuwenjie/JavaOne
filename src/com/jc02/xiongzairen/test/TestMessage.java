@@ -1,17 +1,11 @@
 package com.jc02.xiongzairen.test;
 
-import com.jc02.huangkangming.message.commonmessage.*;
-import com.jc02.huangkangming.message.commonmessage.LinkMessage;
-import com.jc02.huangkangming.message.commonmessage.TextMessage;
-import com.jc02.huangkangming.message.commonmessage.VideoMessage;
-import com.jc02.huangkangming.message.commonmessage.VoiceMessage;
-import com.jc02.huangkangming.message.eventmessage.LocationEventMessage;
-import com.jc02.huangkangming.message.eventmessage.MenuEventMessage;
-import com.jc02.huangkangming.message.eventmessage.ScanEventMessage;
+
+
 import com.jc02.xiongzairen.message.*;
 
 /**
- * 　　  　  　    可乐
+ * 　　  　  　    可
  * 　　　 　  　   @yh@
  *
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
@@ -39,7 +33,7 @@ public class TestMessage {
         VideoMessage vm2=new VideoMessage(VideoType.video);
         System.out.println(vm2.getMsgType());
 
-        LocationMessage lm=new LocationMessage();
+        PositionMessage lm=new PositionMessage();
         System.out.println(lm.getMsgType());
 
         LinkMessage lm1=new LinkMessage();
