@@ -1,5 +1,7 @@
 package com.jc02.huangkangming.message.eventmessage;
 
+import com.jc02.huangkangming.message.type.FollowEventType;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -13,7 +15,7 @@ package com.jc02.huangkangming.message.eventmessage;
  */
 public class FollowEventMessage extends EventMessage {
 
-    public FollowEventMessage(String event) {
-        super(event);
+    public FollowEventMessage(FollowEventType event) {
+        super(event.toString());
     }
 }
