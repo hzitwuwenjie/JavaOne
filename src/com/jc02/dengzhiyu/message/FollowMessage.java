@@ -27,7 +27,7 @@ public class FollowMessage extends EventMessage {
     public void setTicket(String ticket) {
         this.ticket = ticket;
     }
-
+//
     @Override
     public void showxml() {
 
