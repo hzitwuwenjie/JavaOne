@@ -1,4 +1,7 @@
-package com.jc02.wjm.message;
+package com.jc02.wjm.message.commonmessage;
+
+import com.jc02.wjm.message.CommonMessage;
+import com.jc02.wjm.message.VideoType;
 
 /**
  * 　　  　  　           \\\|///
@@ -11,7 +14,7 @@ package com.jc02.wjm.message;
  * |  @description   视频消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class VideoMessage extends  CommonMessage{
+public class VideoMessage extends CommonMessage {
     private  String mediaId;//	视频消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private String thumbMediaId;//	视频消息缩略图的媒体id，可以调用多媒体文件下载接口拉取数据。
 

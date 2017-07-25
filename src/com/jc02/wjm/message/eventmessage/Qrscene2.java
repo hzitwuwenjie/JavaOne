@@ -1,4 +1,7 @@
-package com.jc02.wjm.message;
+package com.jc02.wjm.message.eventmessage;
+
+import com.jc02.wjm.message.EventMessage;
+import com.jc02.wjm.message.EventType;
 
 /**
  * 　　  　  　           \\\|///
@@ -11,7 +14,7 @@ package com.jc02.wjm.message;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Qrscene2 extends  EventMessage{
+public class Qrscene2 extends EventMessage {
     private String eventKey;//	事件KEY值，是一个32位无符号整数，即创建二维码时的二维码scene_id
     private String ticket;//	二维码的ticket，可用来换取二维码图片
 

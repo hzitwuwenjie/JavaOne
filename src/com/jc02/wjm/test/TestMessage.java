@@ -1,6 +1,10 @@
 package com.jc02.wjm.test;
 
 import com.jc02.wjm.message.*;
+import com.jc02.wjm.message.commonmessage.*;
+import com.jc02.wjm.message.eventmessage.Click;
+import com.jc02.wjm.message.eventmessage.LocationEventMessage;
+import com.jc02.wjm.message.eventmessage.Qrscene2;
 
 /**
  * 　　  　  　           \\\|///

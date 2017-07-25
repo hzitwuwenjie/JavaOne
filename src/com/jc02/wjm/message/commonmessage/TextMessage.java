@@ -1,4 +1,6 @@
-package com.jc02.wjm.message;
+package com.jc02.wjm.message.commonmessage;
+
+import com.jc02.wjm.message.CommonMessage;
 
 /**
  * 　　  　  　           \\\|///

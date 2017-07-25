@@ -1,4 +1,6 @@
-package com.jc02.wjm.message;
+package com.jc02.wjm.message.commonmessage;
+
+import com.jc02.wjm.message.CommonMessage;
 
 /**
  * 　　  　  　           \\\|///
@@ -7,26 +9,18 @@ package com.jc02.wjm.message;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 万家明　　　　　                                                                 　|
  * |　@author 江西财经大学                                                  |
- * |　@create 2017年07月24日 - 16:17
- * |  @description   图片消息
+ * |　@create 2017年07月24日 - 16:19
+ * |  @description   语音消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ImageMessage extends CommonMessage{
+public class VoiceMessage extends CommonMessage {
+    private  String mediaId;//	语音消息媒体id，可以调用多媒体文件下载接口拉取数据。
+    private  String format;//	语音格式，如amr，speex等
 
-    private String picUrl;//	图片链接（由系统生成）
-    private String mediaId;//	图片消息媒体id，可以调用多媒体文件下载接口拉取数据。
-
-    public ImageMessage() {
-        super("image");
+    public VoiceMessage() {
+        super("voice");
     }
 
-    public String getPicUrl() {
-        return picUrl;
-    }
-
-    public void setPicUrl(String picUrl) {
-       this.picUrl = picUrl;
-    }
 
     public String getMediaId() {
         return mediaId;
@@ -34,5 +28,13 @@ public class ImageMessage extends CommonMessage{
 
     public void setMediaId(String mediaId) {
         this.mediaId = mediaId;
+    }
+
+    public String getFormat() {
+        return format;
+    }
+
+    public void setFormat(String format) {
+        this.format = format;
     }
 }
