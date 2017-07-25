@@ -1,6 +1,10 @@
 package com.jc02.wjm.test;
 
 import com.jc02.wjm.message.*;
+import com.jc02.wjm.message.commonmessage.*;
+import com.jc02.wjm.message.eventmessage.Click;
+import com.jc02.wjm.message.eventmessage.LocationEventMessage;
+import com.jc02.wjm.message.eventmessage.Qrscene2;
 
 /**
  * 　　  　  　           \\\|///
@@ -27,7 +31,7 @@ public class TestMessage {
         VoiceMessage vo=new VoiceMessage();
         System.out.println("消息类型:"+vo.getMsgType());
         UrlMessage url=new UrlMessage();
-        System.out.println("消息类型:"+url.getMsgType());
+        System.out.println("消息类型 :"+url.getMsgType());
         ImageMessage im=new ImageMessage();
         System.out.println("消息类型:"+im.getMsgType());
         LocationMessage loc=new LocationMessage();

@@ -11,12 +11,15 @@ package com.jc02.zengjing.message;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Message {
+public abstract class Message {
     private String toUserName;
     private String fromUserName;
     private long createTime;
     private String msgType;
-
+    public Message(String msgType){
+        this.msgType=msgType;
+    }
+    public Message(){}
     public String getToUserName() {
         return toUserName;
     }
@@ -45,7 +48,11 @@ public class Message {
         return msgType;
     }
 
-    public void setMsgType(String msgType) {
-        this.msgType = msgType;
+    public String toString(){
+        return getFromUserName()+"发送了一条信息给"+getToUserName();
     }
+
+    public abstract void showXml();
+
+
 }

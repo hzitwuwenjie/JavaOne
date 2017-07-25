@@ -1,6 +1,6 @@
 package com.jc02.zengjing.message.eventmessage;
 
-import com.jc02.zengjing.message.eventmessage.EventMessage;
+import com.jc02.zengjing.message.EventMessage;
 
 /**
  * 　　  　  　    \\\|///
@@ -17,6 +17,10 @@ public class ScanMessage extends EventMessage {
     private String eventKey;
     private String ticket;
 
+    public ScanMessage(EventType event) {
+        super(event.toString());
+    }
+
     public String getEventKey() {
         return eventKey;
     }
@@ -31,5 +35,16 @@ public class ScanMessage extends EventMessage {
 
     public void setTicket(String ticket) {
         this.ticket = ticket;
+    }
+    public  void showXml(){
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("<CreateTime><![CDATA["+getCreateTime()+"]]></CreateTime>");
+        System.out.println("<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("<Event><![CDATA["+getEvent()+"]]></Event>");
+        System.out.println("<EventKey><![CDATA["+getEventKey()+"]]></EventKey>");
+        System.out.println("<Ticket><![CDATA["+getTicket()+"]]></Ticket>");
+        System.out.println("</xml>");
     }
 }

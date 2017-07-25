@@ -11,15 +11,19 @@ package com.jc02.yankaixin.message;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class CommonMessage extends Message{
+public abstract class  CommonMessage extends Message {
 
-    private long msgId;
+    private String msgId;
 
-    public long getMsgId() {
+    public CommonMessage(String msgType){
+        super(msgType);
+    }
+
+    public String getMsgId() {
         return msgId;
     }
 
-    public void setMsgId(long msgId) {
+    public void setMsgId(String msgId) {
         this.msgId = msgId;
     }
 }

@@ -16,6 +16,11 @@ package com.jc02.liwei.message;/**
 public class Zidingyi extends Event{
     private String Eventkey;
 
+    public Zidingyi(Mj event){
+        super(event.toString());
+
+    }
+
     public String getEventkey() {
         return Eventkey;
     }

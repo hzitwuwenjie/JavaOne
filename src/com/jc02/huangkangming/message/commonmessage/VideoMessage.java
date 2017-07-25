@@ -1,5 +1,7 @@
 package com.jc02.huangkangming.message.commonmessage;
 
+import com.jc02.huangkangming.message.type.VideoType;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -15,8 +17,22 @@ public class VideoMessage extends CommonMessage {
     private String mediaId;
     private String thumbMediaId;
 
-    public VideoMessage(String msgType) {
-        super(msgType);
+    public VideoMessage(VideoType msgType)
+    {
+        super(msgType.toString());
+    }
+
+    @Override
+    public void showXml() {
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("<CreateTime><![CDATA["+getCreateTime()+"]]></CreateTime>");
+        System.out.println("<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("<MediaId><![CDATA["+getMediaId()+"]></MediaId>");
+        System.out.println("<ThumbMediaId><![CDATA["+getThumbMediaId()+"]></ThumbMediaId>");
+        System.out.println("<MsgId><![CDATA["+getMsgId()+"]></MsgId>");
+        System.out.println("</xml>");
     }
 
     public String getMediaId() {

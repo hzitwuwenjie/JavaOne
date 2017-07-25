@@ -11,15 +11,17 @@ package com.jc02.yankaixin.message;
  * |  @description   关注或取消事件消息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class EventMessage extends Message{
+public abstract class EventMessage extends Message {
 
     private String event;
+
+    public EventMessage(String event){
+        super("event");
+        this.event = event;
+    }
 
     public String getEvent() {
         return event;
     }
 
-    public void setEvent(String event) {
-        this.event = event;
-    }
 }

@@ -12,16 +12,16 @@ package com.jc02.xieshuyuan.lianxi.entity.message;
  * +---------------------------------Oooo---------------------------------------+
  */
 public class CommMessage  extends Message{
-    private String msgId; //    消息id，64位整型
+    private long msgId; //    消息id，64位整型
     public CommMessage(String msgType){
         super(msgType);
     }
-
-    public String getMsgId() {
+    public long getMsgId() {
         return msgId;
     }
+    public void showXml(){};
 
-    public void setMsgId(String msgId) {
+    public void setMsgId(long msgId) {
         this.msgId = msgId;
     }
 }

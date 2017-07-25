@@ -19,6 +19,10 @@ public class LocationEventMessage extends EventMessage{
     private String Longitude;   //地理位置经度
     private String Precision;   //地理位置精度
 
+    public LocationEventMessage() {
+        super("LOCATION");
+    }
+
     public String getLatitude() {
         return latitude;
     }
@@ -41,5 +45,10 @@ public class LocationEventMessage extends EventMessage{
 
     public void setPrecision(String precision) {
         Precision = precision;
+    }
+
+    @Override
+    public void showXml() {
+
     }
 }

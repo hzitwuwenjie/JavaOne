@@ -15,11 +15,20 @@ package com.jc02.xieshikai.msg;
 public class ViewEventMessage extends EventMessage{
     private String eventKey;//事件KEY值，设置的跳转URL
 
+    public ViewEventMessage() {
+        super("VIEW");
+    }
+
     public String getEventKey() {
         return eventKey;
     }
 
     public void setEventKey(String eventKey) {
         this.eventKey = eventKey;
+    }
+
+    @Override
+    public void showXml() {
+
     }
 }

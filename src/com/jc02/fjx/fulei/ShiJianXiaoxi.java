@@ -11,7 +11,7 @@ package com.jc02.fjx.fulei;
  * |    @description 事件消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ShiJianXiaoxi extends XiaoXi {
+public abstract class ShiJianXiaoxi extends XiaoXi {
     private String event ;
 
     public ShiJianXiaoxi(String event) {
@@ -26,4 +26,5 @@ public class ShiJianXiaoxi extends XiaoXi {
     public void setEvent(String event) {
         this.event = event;
     }
+
 }
