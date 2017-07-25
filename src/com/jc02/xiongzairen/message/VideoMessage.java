@@ -15,8 +15,8 @@ public class VideoMessage extends CommonMessage {
     private long mediaId;
     private String  thumbMediaId;
 
-    public VideoMessage(String type) {
-        super(type);
+    public VideoMessage(VideoType type) {
+        super(type.toString());
     }
 
     public String getThumbMediaId() {
