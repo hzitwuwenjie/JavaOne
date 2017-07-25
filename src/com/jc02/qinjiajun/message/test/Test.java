@@ -16,8 +16,6 @@ import com.jc02.qinjiajun.message.message.*;
  */
 public class Test {
     public static void main(String[] args) {
-        EventMessage  e = new EventMessage();
-        System.out.println(e.getEvent());
         ImgMessage i = new ImgMessage();
         System.out.println(i.getMsgType());
         ItemEventMessage it = new ItemEventMessage();
