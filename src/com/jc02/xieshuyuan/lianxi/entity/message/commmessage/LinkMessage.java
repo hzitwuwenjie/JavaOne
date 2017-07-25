@@ -13,10 +13,13 @@ import com.jc02.xieshuyuan.lianxi.entity.message.CommMessage;
  * |    @description   链接消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class UrlMessage extends CommMessage {
+public class LinkMessage extends CommMessage {
     private String title;	//消息标题
     private String description;	//消息描述
     private String url;	//消息链接
+    public LinkMessage(String msgType){
+        super("link");
+    }
 
     public String getTitle() {
         return title;
