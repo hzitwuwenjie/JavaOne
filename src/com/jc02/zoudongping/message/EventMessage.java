@@ -28,7 +28,6 @@ public abstract class EventMessage extends Message {
         this.event = event;
     }
 
-    public abstract void showXml();
 
 
 }
