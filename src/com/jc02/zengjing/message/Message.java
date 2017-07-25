@@ -16,7 +16,10 @@ public class Message {
     private String fromUserName;
     private long createTime;
     private String msgType;
-
+    public Message(String msgType){
+        this.msgType=msgType;
+    }
+    public Message(){}
     public String getToUserName() {
         return toUserName;
     }
@@ -45,7 +48,5 @@ public class Message {
         return msgType;
     }
 
-    public void setMsgType(String msgType) {
-        this.msgType = msgType;
-    }
+
 }

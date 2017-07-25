@@ -1,4 +1,4 @@
-package com.jc02.wjm;
+package com.jc02.wjm.exercise;
 
 /**
  * 　　  　  　           \\\|///
@@ -7,14 +7,21 @@ package com.jc02.wjm;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 万家明　　　　　                                                                 　|
  * |　@author 江西财经大学                                                  |
- * |　@create 2017年07月20日 - 17:24
- * |  @description
+ * |　@create 2017年07月21日 - 11:37
+ * |  @description   for语句
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Exercise1 {
+public class Exercise5 {
     public static void main(String[] args) {
-        int a=380,b=1000,c;
-        c=a+b;
-        System.out.println("消费总金额"+c*0.8);
+        for(int i=1;i<=150;i++) {
+            System.out.print(i);
+            if (i % 3 == 0)
+                System.out.print("foo");
+            if (i % 5 == 0)
+                System.out.print("biz");
+            if (i % 7 == 0)
+                System.out.print("baz");
+            System.out.println();
+        }
     }
 }

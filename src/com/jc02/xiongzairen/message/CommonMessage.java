@@ -1,5 +1,7 @@
 package com.jc02.xiongzairen.message;
 
+import java.util.UUID;
+
 /**
  * 　　  　  　    可乐
  * 　　　 　  　   @yh@
@@ -11,16 +13,20 @@ package com.jc02.xiongzairen.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class CommonMessage extends Message {
-    private long msgId;
+public abstract  class CommonMessage extends Message {
+
+
+    private String msgId;
     public CommonMessage(String type){
         super(type);
+        this.msgId= UUID.randomUUID().toString();
+
     }
-    public long getMsgId() {
+    public String getMsgId() {
         return msgId;
     }
 
-    public void setMsgId(long msgId) {
+    public void setMsgId(String msgId) {
         this.msgId = msgId;
     }
 

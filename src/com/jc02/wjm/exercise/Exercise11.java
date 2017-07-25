@@ -1,4 +1,4 @@
-package com.jc02.wjm;
+package com.jc02.wjm.exercise;
 
 import java.util.Scanner;
 
@@ -9,25 +9,23 @@ import java.util.Scanner;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 万家明　　　　　                                                                 　|
  * |　@author 江西财经大学                                                  |
- * |　@create 2017年07月21日 - 15:20
- * |  @description   氤氲
+ * |　@create 2017年07月21日 - 15:40
+ * |  @description   二进制
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Exercise9 {
+public class Exercise11 {
     public static void main(String[] args) {
-        System.out.println("*******魔界饰品分发系统**********");
-        System.out.println("\t\t1.账号信息管理系统");
-        System.out.println("\t\t2.购物结算");
-        System.out.println("\t\t3.装备返点");
-        System.out.println("\t\t4.注销");
+        int a;
+        String b="";
         Scanner input=new Scanner(System.in);
-        System.out.println("请选择，输入数字:");
-        int b=input.nextInt();
-        while(b>4||b<1) {
-            System.out.println("输入错误，请重新输入：");
-            b=input.nextInt();
+        System.out.println("请输入一个十进制数字");
+        a=input.nextInt();
+        while (a!=0){
+
+            b=b+a%2;
+            a=a/2;
         }
+        for(int i=b.length()-1;i>=0;i--)
+        System.out.print(b.charAt(i));
     }
-
-
 }

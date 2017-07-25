@@ -11,7 +11,7 @@ package com.jc02.xiongzairen.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Message {
+public abstract class Message {
      private String toUserName;
      private String fromUserName;
      private long  createTime;
@@ -48,7 +48,9 @@ public class Message {
         this.fromUserName = fromUserName;
     }
 
+    public void showxml(){
 
+    }
 
 
 }

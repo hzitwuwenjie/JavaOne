@@ -16,7 +16,6 @@ public class CommMessage  extends Message{
     public CommMessage(String msgType){
         super(msgType);
     }
-
     public String getMsgId() {
         return msgId;
     }
