@@ -45,4 +45,16 @@ public class LocalMessage extends EventMessage {
     public void setPrecision(String precision) {
         this.precision = precision;
     }
+    public  void showXml(){
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("<CreateTime><![CDATA["+getCreateTime()+"]]></CreateTime>");
+        System.out.println("<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("<Event><![CDATA["+getEvent()+"]]></Event>");
+        System.out.println("<Latitude><![CDATA["+getLatitude()+"]]></Latitude>");
+        System.out.println("<Longitude><![CDATA["+getLongitude()+"]]></Longitude>");
+        System.out.println("<Precision><![CDATA["+getPrecision()+"]]></Precision>");
+        System.out.println("</xml>");
+    }
 }

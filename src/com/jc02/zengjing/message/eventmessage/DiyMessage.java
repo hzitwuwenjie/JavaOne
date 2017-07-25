@@ -27,4 +27,14 @@ public class DiyMessage extends EventMessage {
     public void setEventkey(String eventkey) {
         this.eventkey = eventkey;
     }
+    public  void showXml(){
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("<CreateTime><![CDATA["+getCreateTime()+"]]></CreateTime>");
+        System.out.println("<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("<Event><![CDATA["+getEvent()+"]]></Event>");
+        System.out.println("<EventKey><![CDATA["+getEventkey()+"]]></EventKey>");
+        System.out.println("</xml>");
+    }
 }

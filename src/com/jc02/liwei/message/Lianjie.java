@@ -18,6 +18,10 @@ public class Lianjie extends Fulei{
     private int description;
     private String url;
 
+    public Lianjie(){
+        super("link");
+    }
+
     public int getTitle() {
         return title;
     }

@@ -11,11 +11,12 @@ package com.jc02.lwj.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class VideoMessage extends Message {
+public class VideoMessage extends CommonMessage {
     private String mediaId;
     private String tehumbMediaId;
-    private String msgId;
 
+public VideoMessage(VideoType msgType){
+        super(msgType.toString());}
     public String getMediaId() {
         return mediaId;
     }
@@ -32,11 +33,5 @@ public class VideoMessage extends Message {
         this.tehumbMediaId = tehumbMediaId;
     }
 
-    public String getMsgId() {
-        return msgId;
-    }
 
-    public void setMsgId(String msgId) {
-        this.msgId = msgId;
-    }
 }

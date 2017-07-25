@@ -1,5 +1,7 @@
 package com.jc02.wjm.message;
 
+import java.util.UUID;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -11,11 +13,13 @@ package com.jc02.wjm.message;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class CommonMessage extends Message {
+public abstract class CommonMessage extends Message {
     private String msgId;//	消息id，64位整型
 
     public CommonMessage(String msgType) {
+
         super(msgType);
+        this.msgId=UUID.randomUUID().toString();
     }
 
     public String getMsgId() {
@@ -25,4 +29,6 @@ public class CommonMessage extends Message {
     public void setMsgId(String msgId) {
         this.msgId = msgId;
     }
+    @Override
+    public abstract void showXml();
 }

@@ -19,6 +19,10 @@ public class PrecisionMessage extends EventMessage{
     public PrecisionMessage() {
         super("LOCATION");
     }
+    public void showxml(){
+
+
+    }
 
     public String getLongitude() {
         return longitude;
