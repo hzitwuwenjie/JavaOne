@@ -11,13 +11,15 @@ package com.jc02.zoudongping.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Message {
+public abstract class Message {
     private String tousername;
     private String fromusername;
     private long createtime;
     private String msgtype;
 
-
+    public Message(String msgType){
+        this.msgtype=msgType;
+    }
 
     public long getCreatetime() {
         return createtime;
@@ -51,4 +53,9 @@ public class Message {
         this.tousername = tousername;
     }
 
+    public String toString(){
+        return getFromusername()+"向"+getTousername()+"发了一条消息";
+    }
+
+    public abstract void showXml();
 }

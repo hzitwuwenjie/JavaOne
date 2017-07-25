@@ -16,7 +16,7 @@ public abstract class Message {
      private String fromUserName;
      private long  createTime;
      private String  msgType;
-    public Message(String msgType){
+     public Message(String msgType){
         this.msgType=msgType;
 
     }
@@ -48,9 +48,9 @@ public abstract class Message {
         this.fromUserName = fromUserName;
     }
 
-    public void showxml(){
+    public abstract  void showxml();
 
-    }
+
 
 
 }

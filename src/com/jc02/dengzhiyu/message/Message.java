@@ -5,17 +5,16 @@ package com.jc02.dengzhiyu.message;/*
  *  |    @description   　　　　　　　　　　　　　                                                              　
  */
 
-public class Message {
+public abstract class Message {
     private String toUserName;//	开发者微信号
     private String fromUserName;//	发送方帐号（一个OpenID）
-    private String createTime;//	消息创建时间 （整型）
+    private long createTime;//	消息创建时间 （整型）
     private String msgType;//
 
     public Message(String msgType){
         this.msgType=msgType;
     }
-
-
+    public abstract void showxml();
 
 
     public String getToUserName() {
@@ -23,7 +22,7 @@ public class Message {
     }
 
     public void setToUserName(String toUserName) {
-        toUserName = toUserName;
+        this.toUserName = toUserName;
     }
 
     public String getFromUserName() {
@@ -31,15 +30,15 @@ public class Message {
     }
 
     public void setFromUserName(String fromUserName) {
-        fromUserName = fromUserName;
+        this.fromUserName = fromUserName;
     }
 
-    public String getCreateTime() {
+    public long getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(String createTime) {
-        createTime = createTime;
+    public void setCreateTime(long createTime) {
+        this.createTime = createTime;
     }
 
     public String getMsgType() {
@@ -47,9 +46,7 @@ public class Message {
     }
 
     public void setMsgType(String msgType) {
-        msgType = msgType;
+        this.msgType = msgType;
     }
-
-
 }
 

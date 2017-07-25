@@ -5,11 +5,25 @@ package com.jc02.dengzhiyu.message;/*
  *  |    @description   　　　　　　　　　　　　　                                                              　
  */
 
+import java.util.UUID;
+
 public class VideoMessage extends CommonMessage {
     private  String mediaId;//	视频消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private String thumbMediaId;//	视频消息缩略图的媒体id，可以调用多媒体文件下载接口拉取数据。
     public VideoMessage( VideoType msgtype){
         super(msgtype.toString());
+    }
+    public void showxml(){
+        System.out.println("<xml>");
+        System.out.println(" <ToUserName>"+getToUserName()+" </ToUserName>");
+        System.out.println(" <FromUserName>"+getFromUserName()+" </ToUserName>");
+        System.out.println(" <CreateTime>"+ System.currentTimeMillis()+" </CreateTime>");
+        System.out.println(" <ThumbMediaId>"+getThumbMediaId()+" </ThumbMediaId>");
+        System.out.println(" <MediaId>"+getMediaId()+" </MediaId>");
+        System.out.println(" <MagType>"+ getMsgType()+" </MagType>");
+        System.out.println(" <MsgId>"+ UUID.randomUUID()+" </MsgId>");
+        System.out.println("</xml>");
+
     }
 
     public String getMediaId() {
@@ -17,7 +31,7 @@ public class VideoMessage extends CommonMessage {
     }
 
     public void setMediaId(String mediaId) {
-        mediaId = mediaId;
+        this.mediaId = mediaId;
     }
 
     public String getThumbMediaId() {
@@ -25,7 +39,7 @@ public class VideoMessage extends CommonMessage {
     }
 
     public void setThumbMediaId(String thumbMediaId) {
-        thumbMediaId = thumbMediaId;
+        this.thumbMediaId = thumbMediaId;
     }
 }
 

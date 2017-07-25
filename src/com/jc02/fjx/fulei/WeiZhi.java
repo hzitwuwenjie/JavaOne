@@ -1,5 +1,7 @@
 package com.jc02.fjx.fulei;
 
+import java.util.UUID;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -20,6 +22,19 @@ public class WeiZhi extends PuTongXiaoxi {
         super("location");
     }
 
+    public void ShowXml() {
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA[" + getToUserName() + "]]></ToUserName>");
+        System.out.println(" <FromUserName><![CDATA[" + getFromUserName() + "]]></FromUserName>");
+        System.out.println("<CreateTime>" + System.currentTimeMillis() + "</CreateTime>");
+        System.out.println("<MsgType><![CDATA[" + getMsgType() + "]]></MsgType>");
+        System.out.println(" <Location_X>" + getLocation_X() + "</Location_X>");
+        System.out.println(" <Location_Y>" + getLocation_Y() + "</Location_Y>");
+        System.out.println(" <Scale>" + getScale() + "</Scale>");
+        System.out.println("  <Label><![CDATA[" + getLabel() + "]]></Label>");
+        System.out.println("<MsgId>" + UUID.randomUUID().toString() + "</MsgId>");
+        System.out.println("</xml>");
+    }
 
 
     public String getLocation_X() {

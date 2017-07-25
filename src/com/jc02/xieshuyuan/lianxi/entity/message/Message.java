@@ -23,8 +23,7 @@ public abstract class Message {
         return getFromUserName()+"发了一个消息给"+getToUserName();
     }
 
-    public void showXml(){
-    }
+    public abstract void showXml();
     public String getToUserName() {
         return toUserName;
     }

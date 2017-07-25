@@ -19,6 +19,18 @@ public class LinkMessage extends CommonMessage {
     public LinkMessage() {
         super("link");
     }
+    public void showxml(){
+        System.out.println("<toUserName><![CDATA["+getToUserName()+"]]></toUserName>");
+        System.out.println("<toFromUserName><![CDATA["+getFromUserName()+"]]></toFromUserName>");
+        System.out.println("<toTitle><![CDATA["+getTitle()+"]]><toTitle>");
+        System.out.println("<toCreateTime><![CDATA["+getCreateTime() + ")]]><toCreateTime>");
+        System.out.println("<toMsgType><![CDATA["+getMsgType()+"]]></toMsgType>");
+        System.out.println("<toDescription><![CDATA["+getDescription()+")]]></toDescription>");
+        System.out.println("<toUrl><![CDATA["+getUrl()+")]]></toUrl>");
+        System.out.println("<toMsgId><![CDATA["+getMsgId()+")]]></toMsgId>");
+        System.out.println("</xml>");
+
+    }
 
     public String getTitle() {
         return title;
