@@ -1,5 +1,5 @@
 package com.jc02.liwei.message;/**
- * Created by 熊不举 on 2017/7/24.
+ * Created by 熊不举 on 2017/7/25.
  */
 
 /**
@@ -9,23 +9,11 @@ package com.jc02.liwei.message;/**
  * +-------oOOo----( _ )-----oOOo--------------------------------------------+
  * |　@author 李伟　　　　　　                                                                 　|
  * |　@author 学习                                                   |
- * |　@create 2017年07月24日 - 16:55
- * |    @description   　　　自定义菜单
+ * |　@create 2017年07月25日 - 11:38
+ * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Zidingyi extends Event{
-    private String Eventkey;
-
-    public Zidingyi(Mj event){
-        super(event.toString());
-
-    }
-
-    public String getEventkey() {
-        return Eventkey;
-    }
-
-    public void setEventkey(String eventkey) {
-        Eventkey = eventkey;
-    }
+public enum Mj {
+    subscribe,
+    click;
 }

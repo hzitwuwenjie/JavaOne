@@ -1,4 +1,4 @@
-package com.jc02.wjm;
+package com.jc02.wjm.exercise;
 
 import java.util.Scanner;
 
@@ -9,23 +9,19 @@ import java.util.Scanner;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 万家明　　　　　                                                                 　|
  * |　@author 江西财经大学                                                  |
- * |　@create 2017年07月21日 - 15:40
- * |  @description   二进制
+ * |　@create 2017年07月21日 - 11:44
+ * |  @description   计数
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Exercise11 {
+public class Exercise7 {
     public static void main(String[] args) {
-        int a;
-        String b="";
-        Scanner input=new Scanner(System.in);
-        System.out.println("请输入一个十进制数字");
-        a=input.nextInt();
-        while (a!=0){
-
-            b=b+a%2;
-            a=a/2;
-        }
-        for(int i=b.length()-1;i>=0;i--)
-        System.out.print(b.charAt(i));
+        int zs=0,fs=0,a;
+        Scanner b=new Scanner(System.in);
+        do{
+            a=b.nextInt();
+            if(a<0)  fs=fs+1;
+            else if (a>0) zs=zs+1;
+       }while (a!=0);
+        System.out.println("正数个数:"+zs+"负数个数："+fs);
     }
 }

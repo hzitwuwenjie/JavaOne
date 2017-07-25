@@ -20,6 +20,10 @@ public class LocationEventMessage extends EventMessage {
         super("LOCATION");
     }
 
+    @Override
+    public void showXml() {
+    }
+
     public String getLatitude() {
         return latitude;
     }

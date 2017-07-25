@@ -16,6 +16,9 @@ package com.jc02.liwei.message;/**
 public class Tupian extends Fulei{
     private String picurl;
     private String mediald;
+    public Tupian(){
+        super("image");
+    }
 
     public String getPicurl() {
         return picurl;

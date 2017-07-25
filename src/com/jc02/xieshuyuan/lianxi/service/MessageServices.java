@@ -1,4 +1,6 @@
-package com.jc02.xieshuyuan.lianxi.entity.message;
+package com.jc02.xieshuyuan.lianxi.service;
+
+import com.jc02.xieshuyuan.lianxi.entity.message.Message;
 
 /**
  * 　　  　  　           \\\|///
@@ -7,20 +9,14 @@ package com.jc02.xieshuyuan.lianxi.entity.message;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 谢树源　　　　　                                                                 　|
  * |　@author 深圳合众艾特信息技术有限公司                                                   |
- * |　@create 2017年07月24日 - 16:48
- * |    @description   普通消息父类
+ * |　@create 2017年07月25日 - 11:57
+ * |    @description   消息业务
  * +---------------------------------Oooo---------------------------------------+
  */
-public class CommMessage  extends Message{
-    private String msgId; //    消息id，64位整型
-    public CommMessage(String msgType){
-        super(msgType);
-    }
-    public String getMsgId() {
-        return msgId;
+public class MessageServices {
+    public boolean senMag(Message txt){
+        System.out.println(txt);
+        return false;
     }
 
-    public void setMsgId(String msgId) {
-        this.msgId = msgId;
-    }
 }

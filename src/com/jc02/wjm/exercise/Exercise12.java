@@ -1,4 +1,4 @@
-package com.jc02.wjm;
+package com.jc02.wjm.exercise;
 
 import java.util.Scanner;
 
