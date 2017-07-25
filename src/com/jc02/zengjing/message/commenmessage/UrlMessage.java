@@ -1,6 +1,6 @@
 package com.jc02.zengjing.message.commenmessage;
 
-import com.jc02.zengjing.message.commenmessage.ComMessage;
+import com.jc02.zengjing.message.ComMessage;
 
 /**
  * 　　  　  　    \\\|///
@@ -17,6 +17,10 @@ public class UrlMessage extends ComMessage {
     private String title;
     private String description;
     private String url;
+
+    public UrlMessage() {
+        super("clink");
+    }
 
     public String getTitle() {
         return title;

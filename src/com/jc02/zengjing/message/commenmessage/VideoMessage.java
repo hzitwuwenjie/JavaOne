@@ -1,6 +1,6 @@
 package com.jc02.zengjing.message.commenmessage;
 
-import com.jc02.zengjing.message.commenmessage.ComMessage;
+import com.jc02.zengjing.message.ComMessage;
 
 /**
  * 　　  　  　    \\\|///
@@ -16,6 +16,10 @@ import com.jc02.zengjing.message.commenmessage.ComMessage;
 public class VideoMessage extends ComMessage {
     private String mediaId;
     private String thumbMediaId;
+
+    public VideoMessage(String msgType) {
+        super(msgType);
+    }
 
     public String getMediaId() {
         return mediaId;

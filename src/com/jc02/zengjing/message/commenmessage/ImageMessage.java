@@ -1,5 +1,7 @@
 package com.jc02.zengjing.message.commenmessage;
 
+import com.jc02.zengjing.message.ComMessage;
+
 /**
  * 　　  　  　    \\\|///
  * 　　　 　  　  \\　.-.-　//
@@ -14,6 +16,10 @@ package com.jc02.zengjing.message.commenmessage;
 public class ImageMessage extends ComMessage {
     private String picUrl;
     private String mediaId;
+
+    public ImageMessage() {
+        super("image");
+    }
 
     public String getPicUrl() {
         return picUrl;

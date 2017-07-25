@@ -1,6 +1,6 @@
 package com.jc02.zengjing.message.commenmessage;
 
-import com.jc02.zengjing.message.commenmessage.ComMessage;
+import com.jc02.zengjing.message.ComMessage;
 
 /**
  * 　　  　  　    \\\|///
@@ -15,6 +15,10 @@ import com.jc02.zengjing.message.commenmessage.ComMessage;
  */
 public class TextMessage extends ComMessage {
     private String content;
+
+    public TextMessage() {
+        super("text");
+    }
 
     public String getContent() {
         return content;
