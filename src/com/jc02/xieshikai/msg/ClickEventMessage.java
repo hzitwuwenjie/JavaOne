@@ -26,4 +26,9 @@ public class ClickEventMessage extends EventMessage{
     public void setEventKey(String eventKey) {
         this.eventKey = eventKey;
     }
+
+    @Override
+    public void showXml() {
+
+    }
 }

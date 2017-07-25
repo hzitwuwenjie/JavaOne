@@ -35,4 +35,9 @@ public class PicMessage extends CommonMessage{
     public void setMediaId(String mediaId) {
         this.mediaId = mediaId;
     }
+
+    @Override
+    public void showXml() {
+
+    }
 }
