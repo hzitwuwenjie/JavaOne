@@ -11,12 +11,17 @@ public class CarteMessage extends EventMessage {
         super(event);
     }
 
+    @Override
+    public void showxml() {
+
+    }
+
     public String getEventKey() {
         return eventKey;
     }
 
     public void setEventKey(String eventKey) {
-        eventKey = eventKey;
+        this.eventKey = eventKey;
     }
 }
 

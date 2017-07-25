@@ -11,12 +11,16 @@ package com.jc02.yankaixin.message;
  * |  @description   消息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Message {
+public abstract class Message {
 
     private String toUserName;
     private String fromUserName;
-    private int createTime;
+    private long createTime;
     private String msgType;
+
+    public Message(String msgType){
+        this.msgType = msgType;
+    }
 
     public String getToUserName() {
         return toUserName;
@@ -34,11 +38,11 @@ public class Message {
         this.fromUserName = fromUserName;
     }
 
-    public int getCreateTime() {
+    public long getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(int createTime) {
+    public void setCreateTime(long createTime) {
         this.createTime = createTime;
     }
 
@@ -46,7 +50,6 @@ public class Message {
         return msgType;
     }
 
-    public void setMsgType(String msgType) {
-        this.msgType = msgType;
-    }
+    public abstract void showXml();
+
 }

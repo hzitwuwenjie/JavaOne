@@ -8,9 +8,14 @@ package com.jc02.liuxueqin.weixinmessage;/*
  */
 
 public class SaoMiaoQrcodeShiJian extends ShiJian{
+    //subscribe(订阅)、unsubscribe(取消订阅)
     private String eventKey;//事件KEY值，qrscene_为前缀，后面为二维码的参数值
     private String ticket;//二维码的ticket，可用来换取二维码图片
-    private int eventkey;//事件KEY值，是一个32位无符号整数，即创建二维码时的二维码scene_id
+
+    public SaoMiaoQrcodeShiJian(SaoMiaoShiJianEnum event) {
+        super(event.toString());
+    }
+
     public String getTicket() {
         return ticket;
     }
@@ -27,11 +32,16 @@ public class SaoMiaoQrcodeShiJian extends ShiJian{
         this.eventKey = eventKey;
     }
 
-    public int getEventkey() {
-        return eventkey;
-    }
-
-    public void setEventkey(int eventkey) {
-        this.eventkey = eventkey;
+    @Override
+    public void showXml() {
+        System.out.println("<xml>");
+        System.out.println("\t<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("\t<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("\t<CreateTime><![CDATA["+getCreateTime()+"]]></CreateTime>");
+        System.out.println("\t<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("\t<Event><![CDATA["+getEvent()+"]]></Event>");
+        System.out.println("\t<EventKey><![CDATA["+getEventKey()+"]]></EventKey>");
+        System.out.println("\t<Ticket><![CDATA["+getTicket()+"]]></Ticket>");
+        System.out.println("</xml>");
     }
 }

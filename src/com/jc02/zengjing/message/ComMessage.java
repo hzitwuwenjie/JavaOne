@@ -2,6 +2,8 @@ package com.jc02.zengjing.message;
 
 import com.jc02.zengjing.message.Message;
 
+import java.util.UUID;
+
 /**
  * 　　  　  　    \\\|///
  * 　　　 　  　  \\　.-.-　//
@@ -13,16 +15,22 @@ import com.jc02.zengjing.message.Message;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ComMessage extends Message {
-    private String msgId;
+public abstract class ComMessage extends Message {
+
     public ComMessage(String msgType){
         super(msgType);
+        this.msgId= UUID.randomUUID().toString();
     }
+    private String msgId;
     public String getMsgId() {
         return msgId;
     }
 
     public void setMsgId(String msgId) {
-        msgId = msgId;
+        this.msgId = msgId;
     }
+    public String toString(){
+        return getFromUserName()+"发送了一条普通信息给"+getToUserName();
+    }
+    public abstract void showXml();
 }

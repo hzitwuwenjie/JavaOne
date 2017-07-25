@@ -13,10 +13,10 @@ import com.jc02.qinjiajun.message.message.Mess;
  * |  @description   消息父类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Message {
+public abstract class Message {
     private String toUserName;//	开发者微信号
     private String fromUserName;//	发送方帐号（一个OpenID）
-    private String createTime;//	消息创建时间 （整型）
+    private long createTime;//	消息创建时间 （整型）
     private String msgType;//
 
     public Message(String msgType){
@@ -42,18 +42,18 @@ public class Message {
         this.fromUserName = fromUserName;
     }
 
-    public String getCreateTime() {
+    public long getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(String createTime) {
+    public void setCreateTime(long createTime) {
         this.createTime = createTime;
     }
 
     public String getMsgType() {
         return msgType;
     }
-
+    public abstract void showXml();
 
 
 }
