@@ -26,7 +26,7 @@ public class EventMessage extends Message {
 
 
     public void setEvent(String event) {
-        this.event  = event;
+        this.event = event;
     }
 
 }
