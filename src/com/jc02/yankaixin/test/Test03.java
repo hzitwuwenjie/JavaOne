@@ -1,4 +1,7 @@
-package com.jc02.yankaixin.message;
+package com.jc02.yankaixin.test;
+
+import com.jc02.yankaixin.jiekou.Person;
+import com.jc02.yankaixin.jiekou.SoftwareCompany;
 
 /**
  * 　　  　  　           \\\|///
@@ -7,21 +10,17 @@ package com.jc02.yankaixin.message;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 严凯新　　　　　　                                                                 　|
  * |　@author 江西财经大学软件工程                                                |
- * |　@create 2017年07月24日 - 16:37
- * |  @description   关注或取消事件消息类
+ * |　@create 2017年07月25日 - 19:26
+ * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public abstract class EventMessage extends Message {
+public class Test03 {
 
-    private String event;
+    public static void main(String[] args) {
 
-    public EventMessage(String event){
-        super("event");
-        this.event = event;
+        Person p = new Person();
+        p.setName("严凯新");
+        p.setAge(22);
+        SoftwareCompany.recruitDeveloper(p);
     }
-
-    public String getEvent() {
-        return event;
-    }
-
 }

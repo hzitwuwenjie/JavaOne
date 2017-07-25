@@ -11,11 +11,15 @@ package com.jc02.yankaixin.message;
  * |  @description   链接消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class LinkMessage extends CommonMessage{
+public class LinkMessage extends CommonMessage {
 
     private String title;
     private String description;
     private String url;
+
+    public LinkMessage(){
+        super("link");
+    }
 
     public String getTitle() {
         return title;
@@ -39,5 +43,19 @@ public class LinkMessage extends CommonMessage{
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    @Override
+    public void showXml(){
+        System.out.println("<xml>");
+        System.out.println("\t<ToUserName>" + this.getToUserName() + "</ToUserName>");
+        System.out.println("\t<FromUserName>" + this.getFromUserName() + "</FromUserName>");
+        System.out.println("\t<CreateTime>" + this.getCreateTime() + "</CreateTime>");
+        System.out.println("\t<MsgType>" + this.getMsgType() + "</MsgType>");
+        System.out.println("\t<Title>" + this.getTitle() + "</Title>");
+        System.out.println("\t<Description>" + this.getDescription()+ "</Description>");
+        System.out.println("\t<Url>" + this.getUrl()+ "</Url>");
+        System.out.println("\t<MsgId>" + this.getMsgId() + "</MsgId>");
+        System.out.println("</xml>");
     }
 }
