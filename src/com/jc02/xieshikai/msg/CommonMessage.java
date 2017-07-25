@@ -14,7 +14,6 @@ package com.jc02.xieshikai.msg;
  */
 public class CommonMessage extends Message{
     private int msgId;
-
     public CommonMessage(String msgType){
         super(msgType);
     }

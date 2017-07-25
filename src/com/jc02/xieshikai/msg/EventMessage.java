@@ -15,6 +15,10 @@ package com.jc02.xieshikai.msg;
 public class EventMessage extends Message{
     private String event;          //事件类型
 
+    public EventMessage(String event){
+        super("event");
+        this.event=event;
+    }
     public String getEvent() {
         return event;
     }
