@@ -11,13 +11,13 @@ package com.jc02.wjm.message;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Location2 extends EventMessage {
+public class LocationEventMessage extends EventMessage {
     private String latitude;//	地理位置纬度
     private String longitude;//	地理位置经度
     private String precision;//	地理位置精度
 
-    public Location2() {
-        super("event");
+    public LocationEventMessage() {
+        super("LOCATION");
     }
 
     public String getLatitude() {
