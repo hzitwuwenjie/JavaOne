@@ -1,4 +1,6 @@
-package com.jc02.xiewenqiang.message;
+package com.jc02.xiewenqiang.message.commonmessage;
+
+import com.jc02.xiewenqiang.message.CommonMessage;
 
 /**
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
@@ -7,8 +9,12 @@ package com.jc02.xiewenqiang.message;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class TextMessage extends CommonMessage{
+public class TextMessage extends CommonMessage {
     private String content;//	文本消息内容
+
+    public TextMessage() {
+        super("text");
+    }
 
     public String getContent() {
         return content;
