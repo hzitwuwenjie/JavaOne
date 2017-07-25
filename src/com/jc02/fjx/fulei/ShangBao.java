@@ -20,6 +20,20 @@ public class ShangBao extends ShiJianXiaoxi {
         super("location");
     }
 
+    public void ShowXml(){
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println(" <FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("<CreateTime>"+System.currentTimeMillis()+"</CreateTime>");
+        System.out.println("<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println(" <Event><![CDATA["+getEvent()+"]]></Event>");
+        System.out.println("  <Latitude>"+getLatitude()+"</Latitude>");
+        System.out.println("<Longitude>"+getLongitude()+"</Longitude>");
+        System.out.println(" <Precision>"+getPrecision()+"</Precision>");
+        System.out.println("</xml>");
+
+    }
+
     public String getLatitude() {
         return latitude;
     }
