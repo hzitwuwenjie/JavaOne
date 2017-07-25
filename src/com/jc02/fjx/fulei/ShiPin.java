@@ -15,7 +15,9 @@ public class ShiPin extends PuTongXiaoxi {
     private  String mediaId;
     private String thumbMediaId;
 
-
+    public ShiPin(String type) {
+        super(type);
+    }
 
 
     public String getMediaId() {
