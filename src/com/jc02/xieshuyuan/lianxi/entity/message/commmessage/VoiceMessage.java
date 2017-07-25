@@ -16,6 +16,9 @@ import com.jc02.xieshuyuan.lianxi.entity.message.CommMessage;
 public class VoiceMessage extends CommMessage {
     private String mediaId;	//语音消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private String format;	//语音格式，如amr，speex等
+    public VoiceMessage(){
+            super("voice");
+    }
 
     public String getMediaId() {
         return mediaId;
