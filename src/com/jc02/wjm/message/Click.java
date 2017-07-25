@@ -14,6 +14,10 @@ package com.jc02.wjm.message;
 public class Click extends EventMessage {
     private String eventKey;//	事件KEY值，与自定义菜单接口中KEY值对应
 
+    public Click() {
+        super("event");
+    }
+
     public String getEventKey() {
         return eventKey;
     }
