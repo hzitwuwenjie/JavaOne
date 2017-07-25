@@ -16,8 +16,8 @@ import com.jc02.zengjing.message.EventMessage;
 public class DiyMessage extends EventMessage {
     private String eventkey;
 
-    public DiyMessage(String event) {
-        super(event);
+    public DiyMessage(DiyType event) {
+        super(event.toString());
     }
 
     public String getEventkey() {

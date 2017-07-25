@@ -4,7 +4,9 @@ import com.jc02.fankelei.massage.VedioMessage;
 import com.jc02.pengmeiqian.message.ImageCommonMessage;
 import com.jc02.zengjing.message.commenmessage.ImageMessage;
 import com.jc02.zengjing.message.commenmessage.VideoMessage;
+import com.jc02.zengjing.message.commenmessage.VideoType;
 import com.jc02.zengjing.message.eventmessage.DiyMessage;
+import com.jc02.zengjing.message.eventmessage.DiyType;
 
 /**
  * 　　  　  　    \\\|///
@@ -21,9 +23,9 @@ public class Test4 {
     public static void main(String[] args) {
         ImageMessage i =new ImageMessage();
         System.out.println(i.getMsgType());
-        VideoMessage v=new VideoMessage("video");
+        VideoMessage v=new VideoMessage(VideoType.shortvideo);
         System.out.println(v.getMsgType());
-        DiyMessage d=new DiyMessage("clink");
+        DiyMessage d=new DiyMessage(DiyType.clink);
         System.out.println(d.getMsgType());
         System.out.println(d.getEvent());
 

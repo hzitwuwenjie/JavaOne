@@ -17,8 +17,8 @@ public class VideoMessage extends ComMessage {
     private String mediaId;
     private String thumbMediaId;
 
-    public VideoMessage(String msgType) {
-        super(msgType);
+    public VideoMessage(VideoType msgType) {
+        super(msgType.toString());
     }
 
     public String getMediaId() {

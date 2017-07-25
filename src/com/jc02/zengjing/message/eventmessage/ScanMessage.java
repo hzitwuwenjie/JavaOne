@@ -17,8 +17,8 @@ public class ScanMessage extends EventMessage {
     private String eventKey;
     private String ticket;
 
-    public ScanMessage(String event) {
-        super(event);
+    public ScanMessage(EventType event) {
+        super(event.toString());
     }
 
     public String getEventKey() {
