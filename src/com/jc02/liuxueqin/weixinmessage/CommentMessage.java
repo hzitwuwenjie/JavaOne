@@ -10,6 +10,10 @@ package com.jc02.liuxueqin.weixinmessage;/*
 public class CommentMessage extends Message{
     private long msgId;//消息id，64位整型
 
+    public CommentMessage(String msgType) {
+        super(msgType);
+    }
+
     public long getMsgId() {
         return msgId;
     }

@@ -13,6 +13,10 @@ public class DiLiWeiZhiMessage extends CommentMessage{
     private String  scale;//地图缩放大小
     private String  label;//地理位置信息
 
+    public DiLiWeiZhiMessage() {
+        super("location");
+    }
+
     public String getLabel() {
         return label;
     }

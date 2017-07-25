@@ -12,6 +12,10 @@ public class LianJieMessage extends CommentMessage{
     private String description;//消息描述
     private String url;//消息链接
 
+    public LianJieMessage() {
+        super("link");
+    }
+
     public String getTitle() {
         return title;
     }

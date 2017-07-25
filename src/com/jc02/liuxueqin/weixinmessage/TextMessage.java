@@ -10,6 +10,10 @@ package com.jc02.liuxueqin.weixinmessage;/*
 public class TextMessage extends CommentMessage{
     private String content;//文本消息内容
 
+    public TextMessage() {
+        super("text");
+    }
+
     public String getContent() {
         return content;
     }

@@ -10,6 +10,10 @@ package com.jc02.liuxueqin.weixinmessage;/*
 public class ShiPinMessage extends CommentMessage{
     private int mediaId;//视频消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private int thumbMediaId;//视频消息缩略图的媒体id，可以调用多媒体文件下载接口拉取数据。
+    //视频为video或shortvideo
+    public ShiPinMessage() {
+        super("video");
+    }
 
     public int getMediaId() {
         return mediaId;

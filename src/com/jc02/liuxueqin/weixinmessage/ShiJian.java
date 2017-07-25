@@ -10,6 +10,12 @@ package com.jc02.liuxueqin.weixinmessage;/*
 public class ShiJian extends Message{
 
     private String event;//事件类型，subscribe(订阅)、unsubscribe(取消订阅)
+    public ShiJian(String event){
+        this.event=event;
+    }
+    public ShiJian() {
+        super("event");
+    }
 
     public String getEvent() {
         return event;
