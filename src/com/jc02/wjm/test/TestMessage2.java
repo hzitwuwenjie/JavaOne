@@ -1,7 +1,11 @@
 package com.jc02.wjm.test;
 
+import com.jc02.weiyilun.entity.commonmessage.Voice;
+import com.jc02.wjm.message.VideoType;
 import com.jc02.wjm.message.commonmessage.ImageMessage;
 import com.jc02.wjm.message.commonmessage.TextMessage;
+import com.jc02.wjm.message.commonmessage.VideoMessage;
+import com.jc02.wjm.message.commonmessage.VoiceMessage;
 
 /**
  * 　　  　  　           \\\|///
@@ -33,7 +37,24 @@ public class TestMessage2 {
         System.out.println("=============图片消息================");
         im.showXml();
         System.out.println("====================================");
-
+        VoiceMessage vo=new VoiceMessage();
+        vo.setToUserName("小万");
+        vo.setFromUserName("小曾");
+        vo.setCreateTime(System.currentTimeMillis());
+        vo.setFormat("amr");
+        vo.setMediaId("10010");
+        System.out.println("=============语音消息================");
+        vo.showXml();
+        System.out.println("====================================");
+        VideoMessage vi=new VideoMessage(VideoType.shortvideo);
+        vi.setToUserName("小万");
+        vi.setFromUserName("小魏");
+        vi.setCreateTime(System.currentTimeMillis());
+        vi.setThumbMediaId("120");
+        vi.setMediaId("10010");
+        System.out.println("=============视频消息================");
+        vi.showXml();
+        System.out.println("====================================");
 
     }
 }

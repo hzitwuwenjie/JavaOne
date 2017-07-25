@@ -58,5 +58,6 @@ public class LocationMessage extends CommonMessage {
     @Override
     public void showXml() {
 
+
     }
 }
