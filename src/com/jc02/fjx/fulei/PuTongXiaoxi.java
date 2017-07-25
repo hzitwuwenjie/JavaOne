@@ -13,7 +13,9 @@ package com.jc02.fjx.fulei;
  */
 public class PuTongXiaoxi extends XiaoXi {
     private String msgid;
-
+    public PuTongXiaoxi(String type){
+        super(type);
+    }
     public String getMsgid() {
         return msgid;
     }

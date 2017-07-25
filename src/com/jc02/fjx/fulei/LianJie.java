@@ -16,7 +16,9 @@ public class LianJie extends PuTongXiaoxi {
     private String description;
     private String url;
 
-
+    public LianJie() {
+        super("link");
+    }
 
 
     public String getTitle() {
