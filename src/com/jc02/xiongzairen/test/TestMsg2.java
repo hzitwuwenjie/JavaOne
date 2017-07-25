@@ -46,7 +46,7 @@ public class TestMsg2 {
         vi.setToUserName("熊再仁");
         vi.setFromUserName("hkm");
         vi.setCreateTime(System.currentTimeMillis());
-        vi.setMediaId(1);
+        vi.setMediaId(2);
         vi.setFormat("arm");
         vi.setMsgId("");
 
