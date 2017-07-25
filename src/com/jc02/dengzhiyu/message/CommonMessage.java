@@ -6,6 +6,9 @@ package com.jc02.dengzhiyu.message;/*
  */
 
 public class CommonMessage extends Message {
+    public CommonMessage(String msgtype){
+        super(msgtype);
+    }
     private String msgId;//	消息id，64位整型
 
 
