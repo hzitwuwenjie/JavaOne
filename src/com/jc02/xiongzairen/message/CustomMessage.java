@@ -16,6 +16,9 @@ public class CustomMessage extends EventMessage{
         super(event.toString());
 
     }
+    public void showxml(){
+
+    }
 
     public String getEventKey() {
         return eventKey;
