@@ -5,7 +5,7 @@ package com.jc02.dengzhiyu.message;/*
  *  |    @description   　　　　　　　　　　　　　                                                              　
  */
 
-public class LocationMessage extends Message1{
+public class LocationMessage extends CommonMessage {
     private String location_X;//	地理位置维度
     private String location_Y;	//地理位置经度
     private String scale;	//地图缩放大小

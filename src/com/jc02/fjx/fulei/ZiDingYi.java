@@ -11,7 +11,7 @@ package com.jc02.fjx.fulei;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ZiDingYi {
+public class ZiDingYi extends ShiJianXiaoxi {
     private String eventKey;
 
     public String getEventKey() {

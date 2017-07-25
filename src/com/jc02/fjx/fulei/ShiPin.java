@@ -11,18 +11,12 @@ package com.jc02.fjx.fulei;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ShiPin extends message {
+public class ShiPin extends PuTongXiaoxi {
     private  String mediaId;
     private String thumbMediaId;
-    private int msgId;
 
-    public int getMsgId() {
-        return msgId;
-    }
 
-    public void setMsgId(int msgId) {
-        this.msgId = msgId;
-    }
+
 
     public String getMediaId() {
         return mediaId;
