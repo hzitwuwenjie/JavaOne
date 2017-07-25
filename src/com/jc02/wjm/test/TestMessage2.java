@@ -1,5 +1,6 @@
 package com.jc02.wjm.test;
 
+import com.jc02.wjm.message.commonmessage.ImageMessage;
 import com.jc02.wjm.message.commonmessage.TextMessage;
 
 /**
@@ -20,7 +21,18 @@ public class TestMessage2 {
         tx.setFromUserName("范珂磊");
         tx.setCreateTime(System.currentTimeMillis());
         tx.setContent("吃点东西");
+        System.out.println("=============文本消息================");
         tx.showXml();
+        System.out.println("====================================");
+        ImageMessage im = new ImageMessage();
+        im.setToUserName("小碗");
+        im.setFromUserName("小范");
+        im.setCreateTime(System.currentTimeMillis());
+        im.setPicUrl("www.baidu.com");
+        im.setMediaId("10086");
+        System.out.println("=============图片消息================");
+        im.showXml();
+        System.out.println("====================================");
 
 
     }
