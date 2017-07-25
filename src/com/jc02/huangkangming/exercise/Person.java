@@ -44,4 +44,9 @@ public class Person implements Drive, SoftwareDeve{
     public void programming() {
         System.out.println("驾驶能力");
     }
+
+    @Override
+    public String toString() {
+        return getName()+"具有软件开发能力和驾驶能力";
+    }
 }
