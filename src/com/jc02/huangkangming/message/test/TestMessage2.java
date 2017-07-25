@@ -15,6 +15,7 @@ import com.jc02.huangkangming.message.commonmessage.TextMessage;
  */
 public class TestMessage2 {
     public static void main(String[] args) {
+
         TextMessage tm =new TextMessage();
         tm.setToUserName("张三");
         tm.setFromUserName("黄康明");
