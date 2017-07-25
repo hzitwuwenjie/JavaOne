@@ -1,4 +1,6 @@
-package com.jc02.xiewenqiang.message;
+package com.jc02.xiewenqiang.message.commonmessage;
+
+import com.jc02.xiewenqiang.message.CommonMessage;
 
 /**
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
@@ -7,9 +9,13 @@ package com.jc02.xiewenqiang.message;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ImageMessage extends CommonMessage{
+public class ImageMessage extends CommonMessage {
     private String picUrl;//	图片链接（由系统生成）
     private String pediaId;//	图片消息媒体id，可以调用多媒体文件下载接口拉取数据。
+
+    public ImageMessage() {
+        super("image");
+    }
 
     public String getPicUrl() {
         return picUrl;

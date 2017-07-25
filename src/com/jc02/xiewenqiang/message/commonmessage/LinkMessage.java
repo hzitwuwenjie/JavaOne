@@ -1,4 +1,6 @@
-package com.jc02.xiewenqiang.message;
+package com.jc02.xiewenqiang.message.commonmessage;
+
+import com.jc02.xiewenqiang.message.CommonMessage;
 
 /**
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
@@ -11,6 +13,10 @@ public class LinkMessage extends CommonMessage {
     private String title;//	消息标题
     private String description;//	消息描述
     private String url;//	消息链接
+
+    public LinkMessage() {
+        super("link");
+    }
 
     public String getTitle() {
         return title;
