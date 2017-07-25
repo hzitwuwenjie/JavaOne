@@ -1,5 +1,7 @@
 package com.jc02.wjm.message;
 
+import com.jc02.qinjiajun.message.message.Mess;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -17,8 +19,11 @@ public class Message {
     private String createTime;//	消息创建时间 （整型）
     private String msgType;//
 
+    public Message(String msgType){
+        this.msgType=msgType;
+    }
 
-
+    public Message(){}
 
 
     public String getToUserName() {

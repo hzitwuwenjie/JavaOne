@@ -12,7 +12,12 @@ package com.jc02.wjm.message;
  * +---------------------------------Oooo---------------------------------------+
  */
 public class EventMessage extends Message {
+
     private String event;//	事件类型，
+
+    public EventMessage(String msgType) {
+        super("event");
+    }
 
 
     public String getEvent() {
