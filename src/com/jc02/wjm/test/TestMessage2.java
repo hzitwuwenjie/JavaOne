@@ -91,7 +91,7 @@ public class TestMessage2 {
         cl.setFromUserName("小小小");
         cl.setCreateTime(System.currentTimeMillis());
         cl.setEventKey("www.baidu.com");
-        System.out.println("=============菜单事件消息================");
+        System.out.println("=============菜单事件消息=================");
         cl.showXml();
         System.out.println("====================================");
         LocationEventMessage loe=new LocationEventMessage();
