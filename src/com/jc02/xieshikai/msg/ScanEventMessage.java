@@ -35,4 +35,9 @@ public class ScanEventMessage extends EventMessage{
     public void setTicket(String ticket) {
         this.ticket = ticket;
     }
+
+    @Override
+    public void showXml() {
+
+    }
 }
