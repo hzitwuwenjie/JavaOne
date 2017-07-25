@@ -8,6 +8,9 @@ package com.jc02.dengzhiyu.message;/*
 public class VoiceMessage extends CommonMessage {
     private  String mediaId;//	语音消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private  String format;//	语音格式，如amr，speex等
+    public VoiceMessage(){
+        super("Voice");
+    }
 
 
     public String getMediaId() {
