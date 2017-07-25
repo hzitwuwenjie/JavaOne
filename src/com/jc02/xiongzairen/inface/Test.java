@@ -1,4 +1,4 @@
-package com.jc02.xiongzairen.message;
+package com.jc02.xiongzairen.inface;
 
 /**
  * 　　  　  　    可乐
@@ -7,27 +7,14 @@ package com.jc02.xiongzairen.message;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 熊再仁　　　　　　                                                                 　|
  * |　@author 江西财经大学                                                   |
- * |　@create 2017年07月24日 - 16:49
+ * |　@create 2017年07月25日 - 19:34
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class CustomMessage extends EventMessage{
-    public CustomMessage(CustomEvent event) {
-        super(event.toString());
-
+public class Test {
+    public static void main(String[] args) {
+       Man cm=new Man();
+        cm.setName("张三");
+        Company.recruit(cm);
     }
-    public void showxml(){
-        
-
-    }
-
-    public String getEventKey() {
-        return eventKey;
-    }
-
-    public void setEventKey(String eventKey) {
-        this.eventKey = eventKey;
-    }
-
-    private String eventKey;
 }

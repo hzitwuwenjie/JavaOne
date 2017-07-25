@@ -18,6 +18,10 @@ public class LocationMessage extends CommonMessage{
     private double scale;
     private String label;
 
+    public LocationMessage(){
+        super("location");
+    }
+
     public double getLocation_X() {
         return location_X;
     }
@@ -48,5 +52,20 @@ public class LocationMessage extends CommonMessage{
 
     public void setLabel(String label) {
         this.label = label;
+    }
+
+    @Override
+    public void showXml(){
+        System.out.println("<xml>");
+        System.out.println("\t<ToUserName>" + this.getToUserName() + "</ToUserName>");
+        System.out.println("\t<FromUserName>" + this.getFromUserName() + "</FromUserName>");
+        System.out.println("\t<CreateTime>" + this.getCreateTime() + "</CreateTime>");
+        System.out.println("\t<MsgType>" + this.getMsgType() + "</MsgType>");
+        System.out.println("\t<Location_X>" + this.getLocation_X() + "</Location_X>");
+        System.out.println("\t<Location_Y>" + this.getLocation_Y()+ "</Location_Y>");
+        System.out.println("\t<Scale>" + this.getScale()+ "</Scale>");
+        System.out.println("\t<Label>" + this.getLabel()+ "</Label>");
+        System.out.println("\t<MsgId>" + this.getMsgId() + "</MsgId>");
+        System.out.println("</xml>");
     }
 }
