@@ -1,5 +1,8 @@
 package com.jc02.qinjiajun.message.message;
 
+
+import java.util.UUID;
+
 /**
  * 　　  　  　     \\\|///
  * 　　　 　    \\　.-.-　//
@@ -11,7 +14,7 @@ package com.jc02.qinjiajun.message.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Mess {
+public abstract  class Mess {
     public String toUserName;
     public String fromUserName;
     public int createTime;
@@ -21,6 +24,27 @@ public class Mess {
         this.msgType=msgType;
     }
     public Mess(){
+
+    }
+    /*
+       <xml>
+    <ToUserName><![CDATA[toUser]]></ToUserName>
+    <FromUserName><![CDATA[fromUser]]></FromUserName>
+    <CreateTime>1348831860</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[this is a test]]></Content>
+    <MsgId>1234567890123456</MsgId>
+    </xml>
+     */
+    public void ShowXml(Mess mess){
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+ mess.toUserName   +"]]></ToUserName>");
+        System.out.println("<FromUserName><![CDATA[" + mess.fromUserName      +       "]]></FromUserName>");
+        System.out.println("<CreateTime>"   +mess.createTime+   "  </CreateTime>");
+        System.out.println("<MsgType><![CDATA["+      mess.msgType +"]]></MsgType>");
+        System.out.println("<Content><![CDATA["+ mess.toString()   +" ]]></Content>");
+        System.out.println("<MsgId> " + UUID.randomUUID() +"</MsgId>");
+        System.out.println("<xml>");
 
     }
 

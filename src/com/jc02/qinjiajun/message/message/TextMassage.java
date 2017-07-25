@@ -17,6 +17,11 @@ public class TextMassage extends Message {
         super("text");
     }
 
+    public String toString(){
+        return  "this is a test";
+    }
+
+
 
     public String getContent() {
         return content;

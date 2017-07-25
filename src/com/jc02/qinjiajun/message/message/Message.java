@@ -11,7 +11,7 @@ package com.jc02.qinjiajun.message.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Message extends Mess{
+public abstract class Message extends Mess{
     public Message(String msgType){
         super(msgType);
     }
