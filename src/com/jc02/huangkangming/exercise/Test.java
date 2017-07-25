@@ -14,6 +14,7 @@ package com.jc02.huangkangming.exercise;
 public class Test {
     public static void main(String[] args) {
         SoftwareCom softwareCom=new SoftwareCom();
+
         Person person=new Person("张三");
 
         softwareCom.recruitDeveloper(person);
