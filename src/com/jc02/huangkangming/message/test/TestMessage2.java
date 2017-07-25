@@ -52,6 +52,7 @@ public class TestMessage2 {
         vm1.setThumbMediaId("888888");
         vm1.showXml();
 
+
         LocationMessage lm=new LocationMessage();
         System.out.println("=================================地理位置消息=================================");
         lm.setToUserName("张三");
