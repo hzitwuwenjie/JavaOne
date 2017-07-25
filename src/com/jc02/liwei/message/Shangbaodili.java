@@ -18,6 +18,10 @@ public class Shangbaodili extends Event{
     private double longitude;
     private String precision;
 
+    public Shangbaodili(){
+        super("LOCATION");
+    }
+
     public double getLatitude() {
         return latitude;
     }

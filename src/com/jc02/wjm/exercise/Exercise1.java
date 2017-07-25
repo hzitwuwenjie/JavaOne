@@ -1,4 +1,4 @@
-package com.jc02.wjm;
+package com.jc02.wjm.exercise;
 
 /**
  * 　　  　  　           \\\|///
@@ -7,18 +7,14 @@ package com.jc02.wjm;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 万家明　　　　　                                                                 　|
  * |　@author 江西财经大学                                                  |
- * |　@create 2017年07月21日 - 11:41
- * |  @description   求和
+ * |　@create 2017年07月20日 - 17:24
+ * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Exercise6 {
+public class Exercise1 {
     public static void main(String[] args) {
-        int i=0,sum=0;
-        while (i<=100){
-            sum=sum+i;
-            i=i+2;
-        }
-        System.out.println("和为："+sum);
-
+        int a=380,b=1000,c;
+        c=a+b;
+        System.out.println("消费总金额"+c*0.8);
     }
 }

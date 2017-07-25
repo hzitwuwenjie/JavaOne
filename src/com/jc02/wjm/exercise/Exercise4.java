@@ -1,4 +1,4 @@
-package com.jc02.wjm;
+package com.jc02.wjm.exercise;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ import java.util.Scanner;
  * |  @description   月份
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Exerciser4 {
+public class Exercise4 {
     public static void main(String[] args) {
         System.out.println("*******魔界饰品分发系统**********");
         System.out.println("\t\t1.登录系统");
