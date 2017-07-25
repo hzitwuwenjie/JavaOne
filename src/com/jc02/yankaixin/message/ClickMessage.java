@@ -11,13 +11,9 @@ package com.jc02.yankaixin.message;
  * |  @description   自定义菜单事件
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ClickMessage extends SubscribeMessage{
+public class ClickMessage extends EventMessage{
 
     private String eventKey;
-
-    public ClickMessage(String eventKey) {
-        this.eventKey = eventKey;
-    }
 
     public String getEventKey() {
         return eventKey;

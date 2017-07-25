@@ -11,7 +11,7 @@ package com.jc02.zengjing.message.eventmessage;
  * |  @description自定义菜单事件
  * +---------------------------------Oooo---------------------------------------+
  */
-public class DiyMessage extends QrMessage {
+public class DiyMessage extends EventMessage {
     private String eventkey;
 
     public String getEventkey() {
