@@ -26,7 +26,6 @@ public class TestMessage {
         TextMessage tm=new TextMessage();
         System.out.println(tm.getMsgType());
 
-
         PicMessage pm=new PicMessage();
         System.out.println(pm.getMsgType());
 
