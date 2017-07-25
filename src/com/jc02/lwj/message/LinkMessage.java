@@ -11,11 +11,14 @@ package com.jc02.lwj.message;
  * |    @description   链接消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class LinkMessage extends Message {
+public class LinkMessage extends CommonMessage {
     private String title;
     private String description;
     private String url;
-    private String mssgId;
+
+    public LinkMessage() {
+        super("link");
+    }
 
     public String getTitle() {
         return title;
@@ -41,11 +44,5 @@ public class LinkMessage extends Message {
         this.url = url;
     }
 
-    public String getMssgId() {
-        return mssgId;
-    }
 
-    public void setMssgId(String mssgId) {
-        this.mssgId = mssgId;
-    }
 }

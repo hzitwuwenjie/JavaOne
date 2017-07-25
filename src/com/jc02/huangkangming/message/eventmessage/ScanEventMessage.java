@@ -21,6 +21,10 @@ public class ScanEventMessage extends EventMessage {
         super(event.toString());
     }
 
+    @Override
+    public void showXml() {
+    }
+
     public String getEventKey() {
         return eventKey;
     }
