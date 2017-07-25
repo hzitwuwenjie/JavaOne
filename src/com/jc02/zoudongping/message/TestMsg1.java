@@ -57,6 +57,7 @@ public class TestMsg1 {
         pmsg.setLabel("666");
         pmsg.setMsgid(666);
         pmsg.showXml();
+
         System.out.println("=====================链接消息==================");
         UrlMessage url=new UrlMessage();
         url.setTousername("我");
