@@ -33,6 +33,7 @@ public class TestMessage {
         LocationMessage lm=new LocationMessage();
         System.out.println(lm.getMsgType());
 
-
+        LinkMessage lm1=new LinkMessage();
+        System.out.println(lm1.getMsgType());
     }
 }
