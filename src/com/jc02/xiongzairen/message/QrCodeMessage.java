@@ -15,6 +15,11 @@ public class QrCodeMessage extends EventMessage {
 
     private String eventKey;
     private String ticket;
+
+    public QrCodeMessage(String event ) {
+        super(event);
+    }
+
     public String getTicket() {
         return ticket;
     }

@@ -1,7 +1,5 @@
 package com.jc02.huangkangming.message.commonmessage;
 
-import com.jc02.huangkangming.message.commonmessage.Message;
-
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -13,10 +11,14 @@ import com.jc02.huangkangming.message.commonmessage.Message;
  * |  @description   链接消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class LinkMessage extends Message1 {
+public class LinkMessage extends CommonMessage {
     private String title;
     private String description;
     private String url;
+
+    public LinkMessage() {
+        super("link");
+    }
 
     public String getTitle() {
         return title;

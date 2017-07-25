@@ -11,10 +11,14 @@ package com.jc02.fjx.fulei;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ShangBao {
+public class ShangBao extends ShiJianXiaoxi {
     private String  latitude;
     private String  longitude;
     private String  precision;
+
+    public ShangBao() {
+        super("location");
+    }
 
     public String getLatitude() {
         return latitude;
