@@ -7,7 +7,7 @@ package com.jc02.xiewenqiang.message;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class EventMessage extends Message{
+public abstract class EventMessage extends Message{
 
     private String event;
 

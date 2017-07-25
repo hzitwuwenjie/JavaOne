@@ -7,7 +7,7 @@ package com.jc02.xiewenqiang.message;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class CommonMessage extends Message {
+public abstract class CommonMessage extends Message {
 
 
     private long msgId;//	消息id，64位整型

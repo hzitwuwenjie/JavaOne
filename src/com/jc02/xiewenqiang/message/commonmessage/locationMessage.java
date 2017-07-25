@@ -51,4 +51,18 @@ public class locationMessage extends CommonMessage {
     public void setLabel(String label) {
         this.label = label;
     }
+
+    public void showXml() {
+        System.out.println("<xml>");
+        System.out.println("\t<ToUserName><![CDATA[" + getToUserName() + "]]></ToUserName>");
+        System.out.println("\t<FromUserName><![CDATA[" + getFromUserName() + "]]></FromUserName>");
+        System.out.println("\t<CreateTime>" + getCreateTime() + "</CreateTime>");
+        System.out.println("\t<MsgType><![CDATA[" + getMsgType() + "]]></MsgType>");
+        System.out.println("\t<Location_X>" + getLocation_X() + "</Location_X>");
+        System.out.println("\t<Location_X>" + getLocation_Y() + "</Location_X>");
+        System.out.println("\t<Scale>" + getScale() + "</Scale>");
+        System.out.println("\t<Label><![CDATA[" + getLabel() + "]]></Label>");
+        System.out.println("\t<MsgId>" + getMsgId() + "</MsgId>");
+        System.out.println("</xml>");
+    }
 }
