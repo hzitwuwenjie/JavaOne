@@ -12,6 +12,10 @@ public class ReportDiLiShiJian extends ShiJian{
     private String longitude;//地理位置经度
     private String precisionl;//地理位置精度
 
+    public ReportDiLiShiJian() {
+        super("location");
+    }
+
     public String getLatitude() {
         return latitude;
     }

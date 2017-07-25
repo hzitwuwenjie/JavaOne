@@ -9,7 +9,9 @@ package com.jc02.liuxueqin.weixinmessage;/*
 
 public class ZiDingYiCaiDanShiJian extends ShiJian{
     private String eventKey;//事件KEY值，与自定义菜单接口中KEY值对应
-
+    public ZiDingYiCaiDanShiJian(){
+        super("click");
+    }
     public String getEventKey() {
         return eventKey;
     }
