@@ -1,4 +1,6 @@
-package com.jc02.wjm.message;
+package com.jc02.wjm.message.commonmessage;
+
+import com.jc02.wjm.message.CommonMessage;
 
 /**
  * 　　  　  　           \\\|///
@@ -24,5 +26,17 @@ public class TextMessage extends CommonMessage {
 
     public void setContent(String content) {
         this.content = content;
+    }
+    @Override
+    public void showXml() {
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+getToUserName()+"]]</ToUserName>");
+        System.out.println("<FromUserName><![CDATA["+getFromUserName()+"]]</FromUserName>");
+        System.out.println("<CreateTime>"+getCreateTime()+"</CreateTime>");
+        System.out.println("<MsgType><![CDATA["+getMsgType()+"]]</MsgType>");
+        System.out.println("<Content><![CDATA["+getContent()+"]]</Content>");
+        System.out.println("<MsgId>"+getMsgId()+"</MsgId>");
+        System.out.println("</xml>");
+
     }
 }

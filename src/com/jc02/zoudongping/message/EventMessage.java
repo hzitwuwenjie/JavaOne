@@ -1,5 +1,7 @@
 package com.jc02.zoudongping.message;
 
+import com.jc02.zoudongping.message.Message;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -7,27 +9,26 @@ package com.jc02.zoudongping.message;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 邹东平　　　　　　                                                                 　|
  * |　@author 江西财经大学                                                   |
- * |　@create 2017年07月24日 - 16:37
- * |    @description   扫描带参数二维码事件
+ * |　@create 2017年07月24日 - 16:33
+ * |    @description   时间消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ScanMessage extends ShijianMessage{
-    private int eventkey;
-    private String ticket;
+public abstract class EventMessage extends Message {
+    private String event;
 
-    public int getEventkey() {
-        return eventkey;
+    public EventMessage(String event) {
+        super("event");
+        this.event=event;
+    }
+    public String getEvent() {
+        return event;
     }
 
-    public void setEventkey(int eventkey) {
-        this.eventkey = eventkey;
+    public void setEvent(String event) {
+        this.event = event;
     }
 
-    public String getTicket() {
-        return ticket;
-    }
+    public abstract void showXml();
 
-    public void setTicket(String ticket) {
-        this.ticket = ticket;
-    }
+
 }

@@ -18,7 +18,7 @@ public class LocaEventMessage extends EventMessage {
     }
 
     public void setLatitude(String latitude) {
-        latitude = latitude;
+        this.latitude = latitude;
     }
 
     public String getLongitude() {
@@ -26,7 +26,7 @@ public class LocaEventMessage extends EventMessage {
     }
 
     public void setLongitude(String longitude) {
-        longitude = longitude;
+        this.longitude = longitude;
     }
 
     public String getPrecision() {
@@ -34,7 +34,12 @@ public class LocaEventMessage extends EventMessage {
     }
 
     public void setPrecision(String precision) {
-        precision = precision;
+        this.precision = precision;
+    }
+
+    @Override
+    public void showxml() {
+
     }
 }
 

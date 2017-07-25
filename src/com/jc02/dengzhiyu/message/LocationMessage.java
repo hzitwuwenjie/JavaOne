@@ -5,6 +5,8 @@ package com.jc02.dengzhiyu.message;/*
  *  |    @description   　　　　　　　　　　　　　                                                              　
  */
 
+import java.util.UUID;
+
 public class LocationMessage extends CommonMessage {
     private String location_X;//	地理位置维度
     private String location_Y;	//地理位置经度
@@ -13,13 +15,27 @@ public class LocationMessage extends CommonMessage {
     public LocationMessage(){
         super("Location");
     }
+    public void showxml(){
+        System.out.println("<xml>");
+        System.out.println(" <ToUserName>"+getToUserName()+" </ToUserName>");
+        System.out.println(" <FromUserName>"+getFromUserName()+" </ToUserName>");
+        System.out.println(" <CreateTime>"+ System.currentTimeMillis()+" </CreateTime>");
+        System.out.println(" <Location_X>"+getLocation_X()+" </Location_X>");
+        System.out.println("< Location_Y>"+getLocation_Y()+" </Location_Y>");
+        System.out.println(" <Scale>"+getScale()+" </Scale>");
+        System.out.println("<Label> "+getLabel()+" </Label>");
+        System.out.println(" <MagType>"+ getMsgType()+" </MagType>");
+        System.out.println(" <MsgId>"+ UUID.randomUUID()+" </MsgId>");
+        System.out.println("</xml>");
+
+    }
 
     public String getLocation_X() {
         return location_X;
     }
 
     public void setLocation_X(String location_X) {
-        location_X = location_X;
+        this.location_X = location_X;
     }
 
     public String getLocation_Y() {
@@ -27,7 +43,7 @@ public class LocationMessage extends CommonMessage {
     }
 
     public void setLocation_Y(String location_Y) {
-        location_Y = location_Y;
+        this.location_Y = location_Y;
     }
 
     public String getScale() {
@@ -35,7 +51,7 @@ public class LocationMessage extends CommonMessage {
     }
 
     public void setScale(String scale) {
-        scale = scale;
+        this.scale = scale;
     }
 
     public String getLabel() {
@@ -43,7 +59,7 @@ public class LocationMessage extends CommonMessage {
     }
 
     public void setLabel(String label) {
-        label = label;
+        this.label = label;
     }
 }
 

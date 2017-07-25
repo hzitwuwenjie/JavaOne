@@ -1,4 +1,7 @@
-package com.jc02.zoudongping.message;
+package com.jc02.zoudongping.message.commonmessage;
+
+import com.jc02.zoudongping.message.CommonMessage;
+import com.jc02.zoudongping.message.Message;
 
 /**
  * 　　  　  　           \\\|///
@@ -11,11 +14,13 @@ package com.jc02.zoudongping.message;
  * |    @description   链接消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class UrlMessage extends Message {
+public class UrlMessage extends CommonMessage {
     private String title;
     private String description;
     private String url;
-
+    public UrlMessage() {
+        super("link");
+    }
     public String getDescription() {
         return description;
     }
@@ -38,5 +43,16 @@ public class UrlMessage extends Message {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public void showXml(){
+        System.out.println("<xml><ToUserName><![CDATA["+getTousername()+"]]></ToUserName>");
+        System.out.println("\t<FromUserName><![CDATA["+getFromusername()+"]]></FromUserName>");
+        System.out.println("\t<CreateTime>"+getCreatetime()+"</CreateTime>");
+        System.out.println("\t<MsgType><![CDATA["+getMsgtype()+"]]></MsgType>");
+        System.out.println("\t<Title><![CDATA["+getTitle()+"]]></Title>");
+        System.out.println("\t<Url>"+getUrl()+"</Url>");
+        System.out.println("\t<MsgId>"+getMsgid()+"</MsgId>");
+        System.out.println("</xml>");
     }
 }
