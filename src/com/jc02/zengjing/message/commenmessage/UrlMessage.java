@@ -1,6 +1,6 @@
 package com.jc02.zengjing.message.commenmessage;
 
-import com.jc02.zengjing.message.commenmessage.ComMessage;
+import com.jc02.zengjing.message.ComMessage;
 
 /**
  * 　　  　  　    \\\|///
@@ -17,6 +17,10 @@ public class UrlMessage extends ComMessage {
     private String title;
     private String description;
     private String url;
+
+    public UrlMessage() {
+        super("clink");
+    }
 
     public String getTitle() {
         return title;
@@ -40,5 +44,17 @@ public class UrlMessage extends ComMessage {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+    public  void showXml(){
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("<CreateTime><![CDATA["+getCreateTime()+"]]></CreateTime>");
+        System.out.println("<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("<Title><![CDATA["+getTitle()+"]]></Title>");
+        System.out.println("<Description><![CDATA["+getDescription() +"]]></Description>");
+        System.out.println("<Url><![CDATA["+getUrl()+"]]></Url>");
+        System.out.println("<MsgId><![CDATA["+getMsgId()+"]]></MsgId>");
+        System.out.println("</xml>");
     }
 }

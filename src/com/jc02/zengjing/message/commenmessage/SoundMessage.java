@@ -1,6 +1,6 @@
 package com.jc02.zengjing.message.commenmessage;
 
-import com.jc02.zengjing.message.commenmessage.ComMessage;
+import com.jc02.zengjing.message.ComMessage;
 
 /**
  * 　　  　  　    \\\|///
@@ -17,6 +17,10 @@ public class SoundMessage extends ComMessage {
     private String mediaId;
     private String format;
 
+    public SoundMessage() {
+        super("voice");
+    }
+
     public String getMediaId() {
         return mediaId;
     }
@@ -31,5 +35,16 @@ public class SoundMessage extends ComMessage {
 
     public void setFormat(String format) {
         this.format = format;
+    }
+    public  void showXml(){
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("<CreateTime><![CDATA["+getCreateTime()+"]]></CreateTime>");
+        System.out.println("<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("<MediaId><![CDATA["+getMediaId()+"]]></MediaId>");
+        System.out.println("<Format><![CDATA["+getFormat()+"]]></Format>");
+        System.out.println("<MsgId><![CDATA["+getMsgId()+"]]></MsgId>");
+        System.out.println("</xml>");
     }
 }

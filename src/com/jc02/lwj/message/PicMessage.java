@@ -11,18 +11,15 @@ package com.jc02.lwj.message;
  * |    @description   图片信息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class PicMessage extends Message {
+public class PicMessage extends CommonMessage {
     private String picUrl;
     private String mediaID;
-    private String msgId;
 
-    public String getMsgId() {
-        return msgId;
+
+    public PicMessage() {
+        super("image");
     }
 
-    public void setMsgId(String msgId) {
-        this.msgId = msgId;
-    }
 
     public String getPicUrl() {
         return picUrl;

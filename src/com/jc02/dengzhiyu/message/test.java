@@ -15,7 +15,7 @@ public class test {
         System.out.println(im.getMsgType());
         System.out.println();
 
-        VideoMessage vi=new VideoMessage("shortvideo");
+        VideoMessage vi=new VideoMessage(VideoType.shortvideo);
         System.out.println(vi.getMsgType());
         System.out.println();
 
@@ -38,7 +38,7 @@ public class test {
 
 
 
-        FollowMessage fo=new FollowMessage("subcribe");
+        FollowMessage fo=new FollowMessage(Followtype.scan);
         System.out.println(fo.getMsgType());
         System.out.println(fo.getEvent());
         System.out.println();

@@ -18,8 +18,8 @@ public class ReportLocationEventMessage extends EventMessage{
     private String longitude;	//地理位置经度
     private String precision;	//地理位置精度
 
-    public ReportLocationEventMessage(String msgType){
-        super("event");
+    public ReportLocationEventMessage(){
+        super("event","subscribe");
     }
     public String getLatitude() {
         return latitude;

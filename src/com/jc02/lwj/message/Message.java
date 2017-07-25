@@ -16,6 +16,11 @@ public class Message {
     private String fromUserName;
     private String createTime;
     private String msgType;
+    public Message(String msgType){
+        this.msgType=msgType;
+    }
+
+
     public String getToUserName() {
         return toUserName;
     }

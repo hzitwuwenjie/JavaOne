@@ -16,6 +16,11 @@ package com.jc02.liwei.message;/**
 public class Event extends Fulei{
     private String event;
 
+    public Event(String event){
+        super("event");
+        this.event=event;
+    }
+
     public String getEvent() {
         return event;
     }

@@ -11,8 +11,12 @@ package com.jc02.lwj.message;
  * |    @description   文本消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ContentMessage extends Message {
+public class ContentMessage extends CommonMessage {
     private String content;
+
+    public ContentMessage() {
+        super("text");
+    }
 
     public String getContent() {
         return content;

@@ -1,5 +1,7 @@
 package com.jc02.huangkangming.message.eventmessage;
 
+import com.jc02.huangkangming.message.type.ScanEventType;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -15,8 +17,12 @@ public class ScanEventMessage extends EventMessage {
     private  String eventKey;
     private  String ticket;
 
-    public ScanEventMessage(String event) {
-        super(event);
+    public ScanEventMessage(ScanEventType event) {
+        super(event.toString());
+    }
+
+    @Override
+    public void showXml() {
     }
 
     public String getEventKey() {
