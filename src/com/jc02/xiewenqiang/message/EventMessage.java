@@ -12,7 +12,8 @@ public class EventMessage extends Message{
     private String event;
 
     public EventMessage(String event) {
-        super(event);
+        super("event");
+        this.event=event;
     }
 
     public String getEvent() {

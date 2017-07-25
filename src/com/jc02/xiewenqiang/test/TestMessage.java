@@ -14,27 +14,27 @@ import com.jc02.xiewenqiang.message.eventmessage.MenuEventMessage;
 public class TestMessage {
     public static void main(String[] args) {
         ImageMessage imageMessage=new ImageMessage();
-        System.out.println(imageMessage);
+        System.out.println(imageMessage.getMsgType());
 
         LinkMessage linkMessage=new LinkMessage();
-        System.out.println(linkMessage);
+        System.out.println(linkMessage.getMsgType());
 
         locationMessage locationMessage =new locationMessage();
-        System.out.println(locationMessage);
+        System.out.println(locationMessage.getMsgType());
 
         TextMessage textMessage = new TextMessage();
-        System.out.println(textMessage);
+        System.out.println(textMessage.getMsgType());
 
         VedioMessage vedioMessage= new VedioMessage("shortVedio");
-        System.out.println(vedioMessage);
+        System.out.println(vedioMessage.getMsgType());
 
         VoiceMessage voiceMessage =new VoiceMessage();
-        System.out.println(voiceMessage);
+        System.out.println(voiceMessage.getMsgType());
 
         LocationEventMessage locaEventMessage =new LocationEventMessage();
-        System.out.println(locaEventMessage);
+        System.out.println(locaEventMessage.getEvent());
 
         MenuEventMessage menuEventMessage=new MenuEventMessage("CLICK");
-        System.out.println(menuEventMessage);
+        System.out.println(menuEventMessage.getEvent());
     }
 }
