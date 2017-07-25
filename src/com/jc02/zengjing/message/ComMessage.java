@@ -27,7 +27,7 @@ public abstract class ComMessage extends Message {
     }
 
     public void setMsgId(String msgId) {
-        msgId = msgId;
+        this.msgId = msgId;
     }
     public String toString(){
         return getFromUserName()+"发送了一条普通信息给"+getToUserName();
