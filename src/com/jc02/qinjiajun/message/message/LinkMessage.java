@@ -16,6 +16,10 @@ public class LinkMessage extends  Message {
     public String description;
     public String url;
 
+    public LinkMessage() {
+        super("Link");
+    }
+
     public String getTitle() {
         return title;
     }

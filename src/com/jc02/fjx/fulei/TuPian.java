@@ -14,7 +14,9 @@ package com.jc02.fjx.fulei;
 public class TuPian extends PuTongXiaoxi {
     private String picUrl;
     private String mediaId;
-
+    public TuPian(){
+        super("image");
+    }
 
 
 

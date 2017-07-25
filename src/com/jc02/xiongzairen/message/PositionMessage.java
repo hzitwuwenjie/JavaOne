@@ -11,11 +11,16 @@ package com.jc02.xiongzairen.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class PositionMessage extends Message2 {
+public class PositionMessage extends CommonMessage {
     private long location_X;
     private long location_Y;
     private String scale;
     private String label;
+
+    public PositionMessage() {
+        super("location");
+    }
+
     public String getScale() {
         return scale;
     }

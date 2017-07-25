@@ -16,6 +16,10 @@ public class UrlMessage extends CommonMessage{
     private String description;	//消息描述
     private String url;	//消息链接
 
+    public UrlMessage() {
+        super("link");
+    }
+
     public String getDescription() {
         return description;
     }

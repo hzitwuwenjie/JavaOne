@@ -11,10 +11,14 @@ package com.jc02.xiongzairen.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class ImgMessage extends Message2 {
+public class ImgMessage extends CommonMessage {
    
     private String picUrl;
     private long mediaId;
+
+    public ImgMessage() {
+        super("image");
+    }
 
     public long getMediaId() {
         return mediaId;

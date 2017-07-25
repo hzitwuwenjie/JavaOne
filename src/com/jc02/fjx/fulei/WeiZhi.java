@@ -16,7 +16,9 @@ public class WeiZhi extends PuTongXiaoxi {
     private  String location_Y;
     private  String scale;
     private  String label;
-
+    public  WeiZhi(){
+        super("location");
+    }
 
 
 
