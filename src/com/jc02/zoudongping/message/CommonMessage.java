@@ -29,6 +29,5 @@ public abstract class CommonMessage extends Message {
         this.msgid = msgid;
     }
 
-    public abstract void showXml();
 
 }

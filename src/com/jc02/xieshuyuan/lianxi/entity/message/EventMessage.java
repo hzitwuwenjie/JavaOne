@@ -17,6 +17,7 @@ public class EventMessage extends Message{
         super("event");
         this.event=event;
     }
+    public void showXml(){}
 
     public String getEvent() {
         return event;
