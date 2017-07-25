@@ -13,6 +13,9 @@ package com.jc02.qinjiajun.message.message;
  */
 public class EventMessage extends  Mess {
     public String  event;
+    public EventMessage(String event){
+        super(event);
+    }
 
     public String getEvent() {
         return event;

@@ -13,6 +13,9 @@ package com.jc02.qinjiajun.message.message;
  */
 public class ItemEventMessage extends  EventMessage {
     public String eventKey;
+    public ItemEventMessage(){
+        super("CLICK");
+    }
 
     public String getEventKey() {
         return eventKey;
