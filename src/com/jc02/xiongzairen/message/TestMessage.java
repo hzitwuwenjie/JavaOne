@@ -36,7 +36,7 @@ public class TestMessage {
         System.out.println(qr.getMsgType());
         QrCodeMessage qr2=new QrCodeMessage("unsubscribe");
         System.out.println(qr.getEvent());
-        System.out.println(qr.getMsgType());
+
 
 
         CustomMessage cu=new CustomMessage("CLICK");
