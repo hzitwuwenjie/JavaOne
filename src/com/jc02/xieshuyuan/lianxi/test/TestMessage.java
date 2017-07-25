@@ -43,11 +43,14 @@ public class TestMessage {
 
         CustomMenuEventMessage customMenuEvent=new CustomMenuEventMessage();
         System.out.println("消息类型msgType值为："+customMenuEvent.getMsgType());
+        System.out.println("事件类型event值为："+customMenuEvent.getEvent());
 
         ReportLocationEventMessage reportLocationEvent=new ReportLocationEventMessage();
         System.out.println("消息类型msgType值为："+reportLocationEvent.getMsgType());
+        System.out.println("事件类型event值为："+reportLocationEvent.getEvent());
 
         ScanningQrEventMessage scanningQrEvent=new ScanningQrEventMessage();
         System.out.println("消息类型msgType值为："+scanningQrEvent.getMsgType());
+        System.out.println("事件类型event值为："+scanningQrEvent.getEvent());
     }
 }

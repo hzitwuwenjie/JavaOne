@@ -1,4 +1,6 @@
-package com.jc02.xieshuyuan.lianxi.entity.message;
+package com.jc02.xieshuyuan.lianxi.service;
+
+import com.jc02.xieshuyuan.lianxi.entity.message.Message;
 
 /**
  * 　　  　  　           \\\|///
@@ -7,22 +9,14 @@ package com.jc02.xieshuyuan.lianxi.entity.message;
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
  * |　@author 谢树源　　　　　                                                                 　|
  * |　@author 深圳合众艾特信息技术有限公司                                                   |
- * |　@create 2017年07月24日 - 16:54
- * |    @description   事件父类小心类
+ * |　@create 2017年07月25日 - 11:57
+ * |    @description   消息业务
  * +---------------------------------Oooo---------------------------------------+
  */
-public class EventMessage extends Message{
-    private String event;	//事件类型，subscribe(订阅)、unsubscribe(取消订阅)
-    public EventMessage(String msgType,String event){
-        super("event");
-        this.event=event;
+public class MessageServices {
+    public boolean senMag(Message txt){
+        System.out.println(txt);
+        return false;
     }
 
-    public String getEvent() {
-        return event;
-    }
-
-    public void setEvent(String event) {
-        this.event = event;
-    }
 }

@@ -18,6 +18,9 @@ public class TextMassage extends CommMessage {
     public TextMassage(){
         super("text");
     }
+    public String toString(){
+        return getFromUserName()+"发了一个消息给"+getToUserName()+"说："+getContent();
+    }
 
     public String getContent() {
         return content;
