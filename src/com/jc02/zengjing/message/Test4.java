@@ -1,7 +1,10 @@
 package com.jc02.zengjing.message;
 
+import com.jc02.fankelei.massage.VedioMessage;
 import com.jc02.pengmeiqian.message.ImageCommonMessage;
 import com.jc02.zengjing.message.commenmessage.ImageMessage;
+import com.jc02.zengjing.message.commenmessage.VideoMessage;
+import com.jc02.zengjing.message.eventmessage.DiyMessage;
 
 /**
  * 　　  　  　    \\\|///
@@ -16,6 +19,12 @@ import com.jc02.zengjing.message.commenmessage.ImageMessage;
  */
 public class Test4 {
     public static void main(String[] args) {
-
+        ImageMessage i =new ImageMessage();
+        System.out.println(i.getMsgType());
+        VideoMessage v=new VideoMessage("video");
+        System.out.println(v.getMsgType());
+        DiyMessage d=new DiyMessage("clink");
+        System.out.println(d.getMsgType());
+        System.out.println(d.getEvent());
     }
 }
