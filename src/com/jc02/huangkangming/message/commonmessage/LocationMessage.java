@@ -21,6 +21,10 @@ public class LocationMessage extends CommonMessage {
         super("location");
     }
 
+    @Override
+    public void showXml() {
+    }
+
     public String getLocation_x() {
         return location_x;
     }

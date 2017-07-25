@@ -17,6 +17,10 @@ public class LinkMessage extends CommonMessage{
     private String description; //消息描述
     private String url;         //消息链接
 
+    public LinkMessage() {
+        super("link");
+    }
+
     public String getTitle() {
         return title;
     }
@@ -39,5 +43,10 @@ public class LinkMessage extends CommonMessage{
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    @Override
+    public void showXml() {
+
     }
 }

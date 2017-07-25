@@ -19,8 +19,22 @@ public class LocationMessage extends CommMessage {
     private String scale;	//地图缩放大小
     private String label;	//地理位置信息
 
-    public LocationMessage(String msgType){
+    public LocationMessage(){
         super("location");
+    }
+    @Override
+    public void showXml(){
+        System.out.println("<xml>");
+        System.out.println("\t<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("\t<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("\t<CreateTime><![CDATA["+getCreateTime()+"]]></CreateTime>");
+        System.out.println("\t<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("\t<Location_X><![CDATA["+getLocation_X()+"]]></Location_X>");
+        System.out.println("\t<Location_Y><![CDATA["+getLocation_Y()+"]]></Location_Y>");
+        System.out.println("\t<Scale><![CDATA["+getScale()+"]]></Scale>");
+        System.out.println("\t<Label><![CDATA["+getLabel()+"]]></Label>");
+        System.out.println("\t<MsgId><![CDATA["+getMsgId()+"]]></MsgId>");
+        System.out.println("</xml>");
     }
     public String getLocation_X() {
         return location_X;

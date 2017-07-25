@@ -11,12 +11,16 @@ package com.jc02.lwj.message;
  * |    @description   地理位置
  * +---------------------------------Oooo---------------------------------------+
  */
-public class LocationMessage extends Message {
+public class LocationMessage extends CommonMessage {
     private String location_X;
     private String location_Y;
     private String scale;
     private String label;
-    private String msgId;
+
+
+    public LocationMessage() {
+        super("location");
+    }
 
     public String getLocation_X() {
         return location_X;
@@ -50,11 +54,4 @@ public class LocationMessage extends Message {
         this.label = label;
     }
 
-    public String getMsgId() {
-        return msgId;
-    }
-
-    public void setMsgId(String msgId) {
-        this.msgId = msgId;
-    }
 }
