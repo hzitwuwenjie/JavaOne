@@ -11,10 +11,14 @@ package com.jc02.xiongzairen.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class LinkMessage extends Message2 {
+public class LinkMessage extends CommonMessage {
     private String title;
     private String description;
     private String url;
+
+    public LinkMessage() {
+        super("link");
+    }
 
     public String getTitle() {
         return title;

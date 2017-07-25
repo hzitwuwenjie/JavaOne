@@ -11,13 +11,13 @@ package com.jc02.wjm.message;
  * |  @description   地理位置
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Location extends CommonMessage {
+public class LocationMessage extends CommonMessage {
     private String location_X;//	地理位置维度
     private String location_Y;	//地理位置经度
     private String scale;	//地图缩放大小
     private String label;	//地理位置信息
 
-    public Location() {
+    public LocationMessage() {
         super("location");
     }
 
