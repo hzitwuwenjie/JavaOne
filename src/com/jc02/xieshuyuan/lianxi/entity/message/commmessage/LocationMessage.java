@@ -13,12 +13,15 @@ import com.jc02.xieshuyuan.lianxi.entity.message.CommMessage;
  * |    @description   地理位置消息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class IocationMessage extends CommMessage {
+public class LocationMessage extends CommMessage {
     private String location_X;	//地理位置维度
     private String location_Y;	//地理位置经度
     private String scale;	//地图缩放大小
     private String label;	//地理位置信息
 
+    public LocationMessage(String msgType){
+        super("location");
+    }
     public String getLocation_X() {
         return location_X;
     }

@@ -15,7 +15,7 @@ public class Click extends EventMessage {
     private String eventKey;//	事件KEY值，与自定义菜单接口中KEY值对应
 
     public Click() {
-        super("event");
+        super("click");
     }
 
     public String getEventKey() {

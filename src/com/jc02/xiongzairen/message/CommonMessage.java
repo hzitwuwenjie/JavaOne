@@ -11,7 +11,11 @@ package com.jc02.xiongzairen.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Message2 extends Message {
+public class CommonMessage extends Message {
+    private long msgId;
+    public CommonMessage(String type){
+        super(type);
+    }
     public long getMsgId() {
         return msgId;
     }
@@ -20,5 +24,5 @@ public class Message2 extends Message {
         this.msgId = msgId;
     }
 
-    private long msgId;
+
 }

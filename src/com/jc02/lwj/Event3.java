@@ -11,7 +11,7 @@ package com.jc02.lwj;
  * |    @description   事件3
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Event3 extends EventMessage {
+public class Event3  {
     private String latitude;
     private String longitude;
     private String precision;

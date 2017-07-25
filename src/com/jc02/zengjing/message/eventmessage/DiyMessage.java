@@ -1,5 +1,7 @@
 package com.jc02.zengjing.message.eventmessage;
 
+import com.jc02.zengjing.message.EventMessage;
+
 /**
  * 　　  　  　    \\\|///
  * 　　　 　  　  \\　.-.-　//
@@ -13,6 +15,10 @@ package com.jc02.zengjing.message.eventmessage;
  */
 public class DiyMessage extends EventMessage {
     private String eventkey;
+
+    public DiyMessage(DiyType event) {
+        super(event.toString());
+    }
 
     public String getEventkey() {
         return eventkey;

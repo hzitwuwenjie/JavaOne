@@ -1,5 +1,7 @@
 package com.jc02.zengjing.message.eventmessage;
 
+import com.jc02.zengjing.message.EventMessage;
+
 /**
  * 　　  　  　    \\\|///
  * 　　　 　  　  \\　.-.-　//
@@ -11,10 +13,14 @@ package com.jc02.zengjing.message.eventmessage;
  * |  @description上传位置事件
  * +---------------------------------Oooo---------------------------------------+
  */
-public class LocalMessage extends EventMessage{
+public class LocalMessage extends EventMessage {
     private String latitude;
     private String longitude;
     private String precision;
+
+    public LocalMessage() {
+        super("location");
+    }
 
     public String getLatitude() {
         return latitude;
