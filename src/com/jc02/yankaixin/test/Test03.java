@@ -1,5 +1,6 @@
 package com.jc02.yankaixin.test;
 
+import com.jc02.huangkangming.exercise.SoftwareCom;
 import com.jc02.yankaixin.jiekou.Person;
 import com.jc02.yankaixin.jiekou.SoftwareCompany;
 
@@ -21,6 +22,8 @@ public class Test03 {
         Person p = new Person();
         p.setName("严凯新");
         p.setAge(22);
-        SoftwareCompany.recruitDeveloper(p);
+        SoftwareCompany company = new SoftwareCompany();
+        company.recruitDeveloper(p);
+        company.recruitDriver(p);
     }
 }
