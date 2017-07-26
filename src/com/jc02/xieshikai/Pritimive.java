@@ -14,4 +14,5 @@ package com.jc02.xieshikai;
  */
 public class Pritimive {
     int t[]=new int[6];
+
 }
