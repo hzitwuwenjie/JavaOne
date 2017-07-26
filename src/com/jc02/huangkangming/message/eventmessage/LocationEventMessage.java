@@ -8,13 +8,21 @@ package com.jc02.huangkangming.message.eventmessage;
  * |　@author 黄康明　　　　　                                                                 　|
  * |　@author 江西财经大学                                                  |
  * |　@create 2017年07月24日 - 16:53
- * |  @description
+ * |  @description 上报地理位置事件
  * +---------------------------------Oooo---------------------------------------+
  */
-public class LocationEventMessage extends Message2 {
+public class LocationEventMessage extends EventMessage {
     private String latitude;
     private String longitude;
     private String precision;
+
+    public LocationEventMessage() {
+        super("LOCATION");
+    }
+
+    @Override
+    public void showXml() {
+    }
 
     public String getLatitude() {
         return latitude;

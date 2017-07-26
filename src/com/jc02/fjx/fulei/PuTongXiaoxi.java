@@ -11,9 +11,11 @@ package com.jc02.fjx.fulei;
  * |    @description   普通消息
  * +---------------------------------Oooo---------------------------------------+
  */
-public class PuTongXiaoxi extends XiaoXi {
+public abstract class PuTongXiaoxi extends XiaoXi {
     private String msgid;
-
+    public PuTongXiaoxi(String type){
+        super(type);
+    }
     public String getMsgid() {
         return msgid;
     }
@@ -21,4 +23,7 @@ public class PuTongXiaoxi extends XiaoXi {
     public void setMsgid(String msgid) {
         this.msgid = msgid;
     }
+
+
+
 }

@@ -18,6 +18,22 @@ public class ReportLocationEventMessage extends EventMessage{
     private String longitude;	//地理位置经度
     private String precision;	//地理位置精度
 
+    public ReportLocationEventMessage(){
+        super("event","subscribe");
+    }
+    @Override
+    public void showXml(){
+        System.out.println("<xml>");
+        System.out.println("\t<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("\t<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("\t<CreateTime><![CDATA["+getCreateTime()+"]]></CreateTime>");
+        System.out.println("\t<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("\t<Event><![CDATA["+getEvent()+"]]></Event>");
+        System.out.println("\t<Latitude>23.137466</Latitude>");
+        System.out.println("\t<Longitude>113.352425</Longitude>");
+        System.out.println("\t<Precision>119.385040</Precision>");
+        System.out.println("</xml>");
+    }
     public String getLatitude() {
         return latitude;
     }

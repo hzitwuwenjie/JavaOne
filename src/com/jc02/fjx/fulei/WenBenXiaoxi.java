@@ -1,5 +1,7 @@
 package com.jc02.fjx.fulei;
 
+import java.util.UUID;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -13,8 +15,19 @@ package com.jc02.fjx.fulei;
  */
 public class WenBenXiaoxi extends PuTongXiaoxi {
     private String content;
-
-
+    public WenBenXiaoxi(){
+        super("text");
+    }
+    public void ShowXml(){
+        System.out.println("<xml>");
+        System.out.println("\t<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("\t<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("\t<CreateTime>"+System.currentTimeMillis()+"</CreateTime>");
+        System.out.println("\t<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("\t<Content><![CDATA["+getContent()+"]]></Content>");
+        System.out.println("\t<MsgId>"+ UUID.randomUUID().toString()+"</MsgId>");
+        System.out.println("</xml>");
+    }
 
 
     public String getContent() {
@@ -22,6 +35,6 @@ public class WenBenXiaoxi extends PuTongXiaoxi {
     }
 
     public void setContent(String content) {
-        content = content;
+        this.content = content;
     }
 }

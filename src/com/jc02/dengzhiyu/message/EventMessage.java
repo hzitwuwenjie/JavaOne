@@ -5,13 +5,15 @@ package com.jc02.dengzhiyu.message;/*
  *  |    @description   　　　　　　　　　　　　　                                                              　
  */
 
-public class EventMessage extends Message {
+public abstract class EventMessage extends Message {
     private String event;//	事件类型，
-    public EventMessage (){
+    public EventMessage (String event){
         super("event");
+        this.event=event;
 
     }
 
+   public abstract void showxml();
 
     public String getEvent() {
         return event;

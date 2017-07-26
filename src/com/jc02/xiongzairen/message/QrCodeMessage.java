@@ -15,6 +15,14 @@ public class QrCodeMessage extends EventMessage {
 
     private String eventKey;
     private String ticket;
+
+    public QrCodeMessage(EventType event ) {
+        super(event.toString());
+    }
+    public void showxml(){
+
+    }
+
     public String getTicket() {
         return ticket;
     }

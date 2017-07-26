@@ -23,4 +23,14 @@ public class TextMessage extends CommonMessage {
     public void setContent(String content ) {
         this.content = content;
     }
+    public void showXml() {
+        System.out.println("<xml>");
+        System.out.println("\t<ToUserName><![CDATA[" + getToUserName() + "]]></ToUserName>");
+        System.out.println("\t<FromUserName><![CDATA[" + getFromUserName() + "]]></FromUserName>");
+        System.out.println("\t<CreateTime>" + getCreateTime() + "</CreateTime>");
+        System.out.println("\t<MsgType><![CDATA[" + getMsgType() + "]]></MsgType>");
+        System.out.println("\t<Content><![CDATA["+getContent()+"]]></Content>");
+        System.out.println("\t<MsgId>" + getMsgId() + "</MsgId>");
+        System.out.println("</xml>");
+    }
 }

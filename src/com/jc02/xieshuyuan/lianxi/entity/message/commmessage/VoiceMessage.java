@@ -16,7 +16,22 @@ import com.jc02.xieshuyuan.lianxi.entity.message.CommMessage;
 public class VoiceMessage extends CommMessage {
     private String mediaId;	//语音消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private String format;	//语音格式，如amr，speex等
+    public VoiceMessage(){
+            super("voice");
+    }
 
+    @Override
+    public void showXml(){
+        System.out.println("<xml>");
+        System.out.println("\t<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("\t<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("\t<CreateTime><![CDATA["+getCreateTime()+"]]></CreateTime>");
+        System.out.println("\t<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("\t<MediaId><![CDATA["+getMediaId()+"]]></MediaId>");
+        System.out.println("\t<Format><![CDATA["+getFormat()+"]]></Format>");
+        System.out.println("\t<MsgId><![CDATA["+getMsgId()+"]]></MsgId>");
+        System.out.println("</xml>");
+    }
     public String getMediaId() {
         return mediaId;
     }

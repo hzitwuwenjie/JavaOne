@@ -7,21 +7,18 @@ package com.jc02.xiewenqiang.message;
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Message {
+public abstract class Message {
     private String msgType;
     private String toUserName;//	开发者微信号
     private String  fromUserName;//	发送方帐号（一个OpenID）
-    private int createTime;//	消息创建时间 （整型）
+    private long createTime;//	消息创建时间 （整型）
+    public Message(){}
     public Message(String type){
         this.msgType=type;
     }
 
     public String getMsgType() {
         return msgType;
-    }
-
-    public void setMsgType(String msgType) {
-        this.msgType = msgType;
     }
 
     public String getToUserName() {
@@ -40,11 +37,13 @@ public class Message {
         this.fromUserName = fromUserName;
     }
 
-    public int getCreateTime() {
+    public long getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(int createTime) {
+    public void setCreateTime(long createTime) {
         this.createTime = createTime;
     }
+
+    public abstract void showXml();
 }

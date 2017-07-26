@@ -1,6 +1,6 @@
 package com.jc02.zengjing.message.commenmessage;
 
-import com.jc02.zengjing.message.commenmessage.ComMessage;
+import com.jc02.zengjing.message.ComMessage;
 
 /**
  * 　　  　  　    \\\|///
@@ -14,17 +14,21 @@ import com.jc02.zengjing.message.commenmessage.ComMessage;
  * +---------------------------------Oooo---------------------------------------+
  */
 public class PositionMessage extends ComMessage {
-    private String ocation_X;
+    private String location_X;
     private String location_Y;
     private String scale;
     private String label;
 
-    public String getOcation_X() {
-        return ocation_X;
+    public PositionMessage() {
+        super("localtion");
     }
 
-    public void setOcation_X(String ocation_X) {
-        this.ocation_X = ocation_X;
+    public String getlocation_X() {
+        return location_X;
+    }
+
+    public void setlocation_X(String ocation_X) {
+        this.location_X = ocation_X;
     }
 
     public String getLocation_Y() {
@@ -49,5 +53,18 @@ public class PositionMessage extends ComMessage {
 
     public void setLabel(String label) {
         this.label = label;
+    }
+    public  void showXml(){
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("<CreateTime><![CDATA["+getCreateTime()+"]]></CreateTime>");
+        System.out.println("<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("<Location_X><![CDATA["+getlocation_X()+"]]></Location_X>");
+        System.out.println("<Location_Y><![CDATA["+getLocation_Y()+"]]></Location_Y>");
+        System.out.println("<Scale><![CDATA["+getScale()+"]]></Scale>");
+        System.out.println("<Label><![CDATA["+getLabel()+"]]></Label>");
+        System.out.println("<MsgId><![CDATA["+getMsgId()+"]]></MsgId>");
+        System.out.println("</xml>");
     }
 }

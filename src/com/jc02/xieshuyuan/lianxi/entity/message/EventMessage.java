@@ -11,8 +11,13 @@ package com.jc02.xieshuyuan.lianxi.entity.message;
  * |    @description   事件父类小心类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class EventMessage {
+public class EventMessage extends Message{
     private String event;	//事件类型，subscribe(订阅)、unsubscribe(取消订阅)
+    public EventMessage(String msgType,String event){
+        super("event");
+        this.event=event;
+    }
+    public void showXml(){}
 
     public String getEvent() {
         return event;

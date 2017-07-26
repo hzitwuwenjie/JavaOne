@@ -11,11 +11,15 @@ package com.jc02.yankaixin.message;
  * |  @description   语音消息类
  * +---------------------------------Oooo---------------------------------------+
  */
-public class VoiceMessage extends CommonMessage{
+public class VoiceMessage extends CommonMessage {
 
     private int mediaId;
     private String format;
     private String recognition;
+
+    public VoiceMessage(){
+        super("voice");
+    }
 
     public int getMediaId() {
         return mediaId;
@@ -39,5 +43,18 @@ public class VoiceMessage extends CommonMessage{
 
     public void setRecognition(String recognition) {
         this.recognition = recognition;
+    }
+
+    @Override
+    public void showXml(){
+        System.out.println("<xml>");
+        System.out.println("\t<ToUserName>" + this.getToUserName() + "</ToUserName>");
+        System.out.println("\t<FromUserName>" + this.getFromUserName() + "</FromUserName>");
+        System.out.println("\t<CreateTime>" + this.getCreateTime() + "</CreateTime>");
+        System.out.println("\t<MsgType>" + this.getMsgType() + "</MsgType>");
+        System.out.println("\t<MediaId>" + this.getMediaId() + "</MediaId>");
+        System.out.println("\t<Format>" + this.getFormat() + "</Format>");
+        System.out.println("\t<MsgId>" + this.getMsgId() + "</MsgId>");
+        System.out.println("</xml>");
     }
 }

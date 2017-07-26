@@ -1,5 +1,7 @@
 package com.jc02.fjx.fulei;
 
+import java.util.UUID;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -15,8 +17,22 @@ public class ShiPin extends PuTongXiaoxi {
     private  String mediaId;
     private String thumbMediaId;
 
+    public ShiPin(MeiJu type) {
+        super(type.toString());
+    }
 
+     public void ShowXml(){
+         System.out.println("<xml>");
+         System.out.println("<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+         System.out.println(" <FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+         System.out.println("<CreateTime>"+System.currentTimeMillis()+"</CreateTime>");
+         System.out.println("<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+         System.out.println("<MediaId><![CDATA["+getMediaId()+"]]></MediaId>");
+         System.out.println(" <ThumbMediaId><![CDATA["+getThumbMediaId()+"]]></ThumbMediaId>");
+         System.out.println("<MsgId>"+ UUID.randomUUID().toString()+"</MsgId>");
+         System.out.println("</xml>");
 
+     }
 
     public String getMediaId() {
         return mediaId;

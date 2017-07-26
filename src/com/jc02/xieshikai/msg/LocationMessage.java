@@ -18,6 +18,10 @@ public class LocationMessage extends CommonMessage{
     private double scale;       //地理缩放大小
     private String label;       //地理位置信息
 
+    public LocationMessage() {
+        super("location");
+    }
+
     public double getLocation_X() {
         return location_X;
     }
@@ -48,5 +52,10 @@ public class LocationMessage extends CommonMessage{
 
     public void setLabel(String label) {
         this.label = label;
+    }
+
+    @Override
+    public void showXml() {
+
     }
 }

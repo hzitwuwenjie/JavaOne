@@ -11,11 +11,14 @@ package com.jc02.fjx.fulei;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class XiaoXi {
+public abstract class XiaoXi {
     private String toUserName;//开发者微信号
     private String fromUserName;//发送方帐号（一个OpenID）
     private long createTime;//	消息创建时间 （整型）
     private String msgType;
+    public XiaoXi(String type){
+        this.msgType=type;
+    }
     public String  getToUserName() {
         return toUserName;
     }
@@ -47,4 +50,8 @@ public class XiaoXi {
     public void setMsgType(String msgType) {
         this.msgType = msgType;
     }
+
+    public abstract void  ShowXml();
+
+
 }

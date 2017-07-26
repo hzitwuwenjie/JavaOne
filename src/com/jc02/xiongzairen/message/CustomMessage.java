@@ -12,6 +12,15 @@ package com.jc02.xiongzairen.message;
  * +---------------------------------Oooo---------------------------------------+
  */
 public class CustomMessage extends EventMessage{
+    public CustomMessage(CustomEvent event) {
+        super(event.toString());
+
+    }
+    public void showxml(){
+        
+
+    }
+
     public String getEventKey() {
         return eventKey;
     }

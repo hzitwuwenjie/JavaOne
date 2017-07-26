@@ -11,9 +11,25 @@ package com.jc02.xiongzairen.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class TextMessage extends Message2{
+public class TextMessage extends CommonMessage {
     private String	text;
     private String content;
+
+    public TextMessage() {
+        super("text");
+    }
+
+    public void showxml(){
+        System.out.println("<xml>");
+
+        System.out.println("<toUserName><![CDATA["+getToUserName()+"]]></toUserName>");
+        System.out.println("<toFromUserName><![CDATA["+getFromUserName()+"]]></toFromUserName>");
+        System.out.println("<toContent><![CDATA["+getContent()+"]]><toContent>");
+        System.out.println("<toCreateTime><![CDATA["+getCreateTime()+")]]><toCreateTime>");
+        System.out.println("<toMsgType><![CDATA["+getMsgType()+"]]></toMsgType>");
+        System.out.println("<toMsgId><![CDATA["+getMsgId()+")]]></toMsgId>");
+        System.out.println("</xml>");
+    }
     public String getContent() {
         return content;
     }
@@ -22,9 +38,6 @@ public class TextMessage extends Message2{
 
         this.content = content;
     }
-
-
-
     public String getText() {
         return text;
     }

@@ -1,5 +1,7 @@
 package com.jc02.fjx.fulei;
 
+import java.util.UUID;
+
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
@@ -16,7 +18,23 @@ public class LianJie extends PuTongXiaoxi {
     private String description;
     private String url;
 
+    public LianJie() {
+        super("link");
+    }
 
+    public void ShowXml(){
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println(" <FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("<CreateTime>"+System.currentTimeMillis()+"</CreateTime>");
+        System.out.println("<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("<Title><![CDATA["+getTitle()+"]]></Title>");
+        System.out.println("  <Description><![CDATA["+getDescription()+"]]></Description>");
+        System.out.println("<Url><![CDATA["+getUrl()+"]]></Url>");
+        System.out.println("<MsgId>"+ UUID.randomUUID().toString()+"</MsgId>");
+        System.out.println("</xml>");
+
+}
 
 
     public String getTitle() {

@@ -9,13 +9,16 @@ public class LocaEventMessage extends EventMessage {
     private String latitude;//	地理位置纬度
     private String longitude;//	地理位置经度
     private String precision;//	地理位置精度
+    public LocaEventMessage(){
+        super("location");
+    }
 
     public String getLatitude() {
         return latitude;
     }
 
     public void setLatitude(String latitude) {
-        latitude = latitude;
+        this.latitude = latitude;
     }
 
     public String getLongitude() {
@@ -23,7 +26,7 @@ public class LocaEventMessage extends EventMessage {
     }
 
     public void setLongitude(String longitude) {
-        longitude = longitude;
+        this.longitude = longitude;
     }
 
     public String getPrecision() {
@@ -31,7 +34,12 @@ public class LocaEventMessage extends EventMessage {
     }
 
     public void setPrecision(String precision) {
-        precision = precision;
+        this.precision = precision;
+    }
+
+    @Override
+    public void showxml() {
+
     }
 }
 

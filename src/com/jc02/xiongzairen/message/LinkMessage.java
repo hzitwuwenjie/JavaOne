@@ -11,10 +11,26 @@ package com.jc02.xiongzairen.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class LinkMessage extends Message2 {
+public class LinkMessage extends CommonMessage {
     private String title;
     private String description;
     private String url;
+
+    public LinkMessage() {
+        super("link");
+    }
+    public void showxml(){
+        System.out.println("<toUserName><![CDATA["+getToUserName()+"]]></toUserName>");
+        System.out.println("<toFromUserName><![CDATA["+getFromUserName()+"]]></toFromUserName>");
+        System.out.println("<toTitle><![CDATA["+getTitle()+"]]><toTitle>");
+        System.out.println("<toCreateTime><![CDATA["+getCreateTime() + ")]]><toCreateTime>");
+        System.out.println("<toMsgType><![CDATA["+getMsgType()+"]]></toMsgType>");
+        System.out.println("<toDescription><![CDATA["+getDescription()+")]]></toDescription>");
+        System.out.println("<toUrl><![CDATA["+getUrl()+")]]></toUrl>");
+        System.out.println("<toMsgId><![CDATA["+getMsgId()+")]]></toMsgId>");
+        System.out.println("</xml>");
+
+    }
 
     public String getTitle() {
         return title;
