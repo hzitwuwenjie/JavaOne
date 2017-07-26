@@ -32,4 +32,14 @@ public class VoiceMessage extends Message {
     public void setFormat(String format) {
         this.format = format;
     }
+    public void showXml() {
+        System.out.println("<xml>");
+        System.out.println("\t<ToUserName><![CDATA[" + getToUserName() + "]]></ToUserName>");
+        System.out.println("\t<FromUserName><![CDATA[" + getFromUserName() + "]]></FromUserName>");
+        System.out.println("\t<CreateTime>" + getCreateTime() + "</CreateTime>");
+        System.out.println("\t<MsgType><![CDATA[" + getMsgType() + "]]></MsgType>");
+        System.out.println("\t<MediaId><![CDATA["+getMediaId()+"]]></MediaId>");
+        System.out.println("\t<Format><![CDATA["+getFormat()+"]]></Format>");
+        System.out.println("</xml>");
+    }
 }

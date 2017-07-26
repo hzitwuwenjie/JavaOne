@@ -1,24 +1,22 @@
-package com.jc02.huangkangming.exercise;
+package com.jc02.wjm.jiekou;
 
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
  * 　　　　　  　(　 .@.@　)
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
- * |　@author 黄康明　　　　　                                                                 　|
+ * |　@author 万家明　　　　　                                                                 　|
  * |　@author 江西财经大学                                                  |
- * |　@create 2017年07月25日 - 19:25
+ * |　@create 2017年07月25日 - 19:29
  * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Test {
+public class TestInterFace {
     public static void main(String[] args) {
-        SoftwareCom softwareCom=new SoftwareCom();
-
-        Person person=new Person("张三");
-
-        softwareCom.recruitDeveloper(person);
-        System.out.println(person);
+        Human h=new Human();
+        h.setName("万家明");
+        Company c=new Company();
+        c.human(h);
 
     }
 }

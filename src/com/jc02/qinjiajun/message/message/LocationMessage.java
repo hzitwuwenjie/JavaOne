@@ -17,6 +17,21 @@ public class LocationMessage extends  Message {
     public String scale;
     public String label;
 
+    public void showXml(){
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+ getToUserName()   +"]]></ToUserName>");
+        System.out.println("<FromUserName><![CDATA[" +  getFromUserName()    +       "]]></FromUserName>");
+        System.out.println("<CreateTime>"   +getCreateTime() +   "  </CreateTime>");
+        System.out.println("<MsgType><![CDATA["+ getMsgType() +"]]></MsgType>");
+        System.out.println("<location_X><![CDATA["+getLocation_X() +" ]]></location_X>");
+        System.out.println("<location_Y><![CDATA["+getLocation_Y()+" ]]></location_Y>");
+        System.out.println("<scale><![CDATA["+getScale()+" ]]></scale>");
+        System.out.println("<label><![CDATA["+getLabel()+" ]]></label>");
+        System.out.println("<MsgId> " + getMsgId() +"</MsgId>");
+        System.out.println("<xml>");
+
+    }
+
     public LocationMessage(){
         super("Location");
     }

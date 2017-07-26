@@ -1,18 +1,21 @@
-package com.jc02.huangkangming.exercise;
+package com.jc02.wjm.jiekou;
 
 /**
  * 　　  　  　           \\\|///
  * 　　　 　  　   \\　.-.-　//
  * 　　　　　  　(　 .@.@　)
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
- * |　@author 黄康明　　　　　                                                                 　|
+ * |　@author 万家明　　　　　                                                                 　|
  * |　@author 江西财经大学                                                  |
- * |　@create 2017年07月25日 - 19:21
- * |  @description   软件公司类
+ * |　@create 2017年07月25日 - 19:24
+ * |  @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class SoftwareCom {
-    public void recruitDeveloper(SoftwareDeve s){
-        s.programming();
+public class Company {
+
+
+
+    public void human(SoftWare softWare){
+        System.out.println(softWare);
     }
 }

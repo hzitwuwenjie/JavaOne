@@ -34,15 +34,12 @@ public class Person implements SoftwareDesigning,Drive{
 
     @Override
     public void drive() {
-        System.out.println("我能开车");
+        System.out.println(name + "具有驾驶能力");
     }
 
     @Override
     public void programme() {
-        System.out.println("我能编程");
+        System.out.println(name + "具有编程能力");
     }
 
-    public String toString(){
-        return name + "具有软件开发能力和驾驶能力";
-    }
 }

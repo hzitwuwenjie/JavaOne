@@ -41,4 +41,17 @@ public class LinkMessage extends CommonMessage {
     public void setUrl(String url) {
         this.url = url;
     }
+    public void showXml(){
+        System.out.println("<xml>");
+        System.out.println("\t<ToUserName><![CDATA["+getToUserName()+"]]></ToUserName>");
+        System.out.println("\t<FromUserName><![CDATA["+getFromUserName()+"]]></FromUserName>");
+        System.out.println("\t<CreateTime>"+getCreateTime()+"</CreateTime>");
+        System.out.println("\t<MsgType><![CDATA["+getMsgType()+"]]></MsgType>");
+        System.out.println("\t<Title><!["+getTitle()+"]]></Title>");
+        System.out.println("\t<Description><![CDATA["+getDescription()+"]]></Description>");
+        System.out.println("\t<Url><![CDATA["+getUrl()+"]]></Url>");
+        System.out.println("\t<MsgId>"+getMsgId()+"</MsgId>");
+        System.out.println("</xml>");
+
+    }
 }
