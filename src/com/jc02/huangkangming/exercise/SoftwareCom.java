@@ -13,6 +13,11 @@ package com.jc02.huangkangming.exercise;
  */
 public class SoftwareCom {
     public void recruitDeveloper(SoftwareDeve s){
+        System.out.println("正在面试开发人员");
         s.programming();
+    }
+    public void recruitDriver(Drive d){
+        System.out.println("正在面试驾驶人员");
+        d.driveCar();
     }
 }

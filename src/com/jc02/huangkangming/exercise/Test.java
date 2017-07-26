@@ -15,9 +15,10 @@ public class Test {
     public static void main(String[] args) {
         SoftwareCom softwareCom=new SoftwareCom();
 
-        Person person=new Person("张三");
+        Person person=new Person("张三",22);
 
         softwareCom.recruitDeveloper(person);
+        softwareCom.recruitDriver(person);
         System.out.println(person);
 
     }
