@@ -18,6 +18,7 @@ public class Test {
         Person person=new Person("张三");
 
         softwareCom.recruitDeveloper(person);
+        System.out.println(person);
 
     }
 }

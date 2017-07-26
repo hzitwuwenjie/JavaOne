@@ -37,12 +37,12 @@ public class Person implements Drive, SoftwareDeve{
 
     @Override
     public void driveCar() {
-        System.out.println("软件开发能力");
+        System.out.println("驾驶能力");
     }
 
     @Override
     public void programming() {
-        System.out.println("驾驶能力");
+        System.out.println("软件开发能力");
     }
 
     @Override
