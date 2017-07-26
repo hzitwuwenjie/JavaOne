@@ -12,5 +12,6 @@ public class TestJieKou {
         RenLei ren=new RenLei();
         ren.setName("张三");
         ren.toString();
+        System.out.println(ren);
     }
 }
