@@ -15,7 +15,7 @@ package com.jc02.xieshikai.msg;
 public abstract class Message {
     private String toUserName;  //开发者微信号
     private String fromUserName;//发送方帐号（一个OpenID）
-    private int createTime;     //消息创建时间（整型）
+    private long createTime;     //消息创建时间（整型）
     private String msgType;     //消息类型
 
     public Message(String msgType) {
@@ -38,11 +38,11 @@ public abstract class Message {
         this.fromUserName = fromUserName;
     }
 
-    public int getCreateTime() {
+    public long getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(int createTime) {
+    public void setCreateTime(long createTime) {
         this.createTime = createTime;
     }
 
