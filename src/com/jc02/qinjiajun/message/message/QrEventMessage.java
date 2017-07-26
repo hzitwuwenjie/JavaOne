@@ -15,6 +15,19 @@ public class QrEventMessage extends EventMessage {
     public String eventKey;
     public String ticket;
 
+    public void showXml(){
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+ getToUserName()   +"]]></ToUserName>");
+        System.out.println("<FromUserName><![CDATA[" +  getFromUserName()    +       "]]></FromUserName>");
+        System.out.println("<CreateTime>"   +getCreateTime() +   "  </CreateTime>");
+        System.out.println("<MsgType><![CDATA["+ getMsgType() +"]]></MsgType>");
+        System.out.println("<eventKey><![CDATA["+getEventKey()  +" ]]></eventKey>");
+        System.out.println("<ticket><![CDATA["+getTicket()  +" ]]></ticket>");
+        System.out.println("<MsgId> " + getEvent() +"</MsgId>");
+        System.out.println("<xml>");
+
+    }
+
     public QrEventMessage(){
         super("QrEvent");
     }

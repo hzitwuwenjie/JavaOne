@@ -19,6 +19,19 @@ public class VoiceMessage extends Message{
         super("Voice");
     }
 
+    public void showXml(){
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+ getToUserName()   +"]]></ToUserName>");
+        System.out.println("<FromUserName><![CDATA[" +  getFromUserName()    +       "]]></FromUserName>");
+        System.out.println("<CreateTime>"   +getCreateTime() +   "  </CreateTime>");
+        System.out.println("<MsgType><![CDATA["+ getMsgType() +"]]></MsgType>");
+        System.out.println("<format><![CDATA["+ getFormat() +" ]]></format>");
+        System.out.println("<mediaId><![CDATA["+ getMediaId()+" ]]></mediaId>");
+        System.out.println("<recognition><![CDATA["+ getRecognition()+" ]]></recognition>");
+        System.out.println("<MsgId> " + getMsgId() +"</MsgId>");
+        System.out.println("<xml>");
+
+    }
     public String getRecognition() {
         return recognition;
     }

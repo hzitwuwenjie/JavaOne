@@ -17,6 +17,18 @@ public class ItemEventMessage extends  EventMessage {
         super("CLICK");
     }
 
+    public void showXml(){
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+ getToUserName()   +"]]></ToUserName>");
+        System.out.println("<FromUserName><![CDATA[" +  getFromUserName()    +       "]]></FromUserName>");
+        System.out.println("<CreateTime>"   +getCreateTime() +   "  </CreateTime>");
+        System.out.println("<MsgType><![CDATA["+ getMsgType() +"]]></MsgType>");
+        System.out.println("<Content><![CDATA["+getEventKey()  +" ]]></Content>");
+        System.out.println("<MsgId> " + getEvent() +"</MsgId>");
+        System.out.println("<xml>");
+
+    }
+
     public String getEventKey() {
         return eventKey;
     }
