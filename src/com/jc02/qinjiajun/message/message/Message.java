@@ -11,18 +11,18 @@ package com.jc02.qinjiajun.message.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class Message extends Mess{
+public abstract class Message extends Mess{
     public Message(String msgType){
         super(msgType);
     }
 
-    public long  msgId;
+    private String   msgId;
 
-    public long getMsgId() {
+    public String getMsgId() {
         return msgId;
     }
 
-    public void setMsgId(long msgId) {
+    public void setMsgId(String msgId) {
         this.msgId = msgId;
     }
 

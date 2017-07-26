@@ -1,4 +1,4 @@
-package com.jc02.zxm.message;
+package com.jc02.zxm.message.message;
 
 /**
  * 　　  　  　      \\\|///
@@ -12,10 +12,14 @@ package com.jc02.zxm.message;
  * |    @description   视频消息　　　　　　　　　　　　　                   |
  * +---------------------------------Oooo--------------------------------------+
  */
-public class VideoMessage extends  CommonMsg {
+public class VideoMessage extends CommonMsg {
 
    private String mediaId;//	视频消息媒体id，可以调用多媒体文件下载接口拉取数据。
    private String thumbMediaId;//	视频消息缩略图的媒体id，可以调用多媒体文件下载接口拉取数据。
+
+    public VideoMessage(Enum msgtype) {
+        super(msgtype.toString());
+    }
 
     public String getThumbMediaId() {
         return thumbMediaId;
@@ -31,6 +35,10 @@ public class VideoMessage extends  CommonMsg {
 
     public void setMediaId(String mediaId) {
         this.mediaId = mediaId;
+    }
+    public void showXml()
+    {
+
     }
 }
 

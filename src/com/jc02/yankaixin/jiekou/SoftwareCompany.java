@@ -13,8 +13,13 @@ package com.jc02.yankaixin.jiekou;
  */
 public class SoftwareCompany {
 
-    public static void recruitDeveloper(SoftwareDesigning s){
+    public void recruitDeveloper(SoftwareDesigning s){
 
-        System.out.println(s);
+        s.programme();
+    }
+
+    public void recruitDriver(Drive d){
+
+        d.drive();
     }
 }

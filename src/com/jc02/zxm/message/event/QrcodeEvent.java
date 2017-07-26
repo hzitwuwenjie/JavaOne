@@ -1,4 +1,4 @@
-package com.jc02.zxm.message;
+package com.jc02.zxm.message.event;
 
 /**
  * 　　  　  　      \\\|///
@@ -12,9 +12,12 @@ package com.jc02.zxm.message;
  * |    @description   二维码事件　　　　　　　　　　　　　                   |
  * +---------------------------------Oooo--------------------------------------+
  */
-public class QrcodeEvent extends EventMessage{
+public class QrcodeEvent extends EventMessage {
     private  String eventKey;//	事件KEY值，qrscene_为前缀，后面为二维码的参数值
     private String ticket;//	二维码的ticket，可用来换取二维码图片
+    public QrcodeEvent(Enum event) {
+        super(event.toString());
+    }
 
     public String getEventKey() {
         return eventKey;
@@ -30,6 +33,10 @@ public class QrcodeEvent extends EventMessage{
 
     public void setTicket(String ticket) {
         this.ticket = ticket;
+    }
+    public void showXml()
+    {
+
     }
 }
 

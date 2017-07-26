@@ -13,6 +13,6 @@ package com.jc02.huangkangming.exercise;
  */
 public class SoftwareCom {
     public void recruitDeveloper(SoftwareDeve s){
-        System.out.println(s);
+        s.programming();
     }
 }

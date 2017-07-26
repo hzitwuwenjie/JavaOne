@@ -15,6 +15,19 @@ public class LinkMessage extends  Message {
     public String title;
     public String description;
     public String url;
+    public void showXml(){
+        System.out.println("<xml>");
+        System.out.println("<ToUserName><![CDATA["+ getToUserName()   +"]]></ToUserName>");
+        System.out.println("<FromUserName><![CDATA[" +  getFromUserName()    +       "]]></FromUserName>");
+        System.out.println("<CreateTime>"   +getCreateTime() +   "  </CreateTime>");
+        System.out.println("<MsgType><![CDATA["+ getMsgType() +"]]></MsgType>");
+        System.out.println("<title><![CDATA["+getTitle()  +" ]]></title>");
+        System.out.println("<description><![CDATA["+getDescription() +" ]]></description>");
+        System.out.println("<url><![CDATA["+getUrl() +" ]]></url>");
+        System.out.println("<MsgId> " + getMsgId() +"</MsgId>");
+        System.out.println("<xml>");
+
+    }
 
     public LinkMessage() {
         super("Link");

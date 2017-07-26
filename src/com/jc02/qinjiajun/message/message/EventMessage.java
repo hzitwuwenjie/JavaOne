@@ -11,8 +11,8 @@ package com.jc02.qinjiajun.message.message;
  * |    @description
  * +---------------------------------Oooo---------------------------------------+
  */
-public class EventMessage extends  Mess {
-    public String  event;
+public abstract class EventMessage extends  Mess {
+    private String  event;
     public EventMessage(String event){
         this.event=event;
     }
