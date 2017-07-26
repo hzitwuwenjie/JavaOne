@@ -12,16 +12,17 @@ package com.jc02.xieshuyuan.person;
  * +---------------------------------Oooo---------------------------------------+
  */
 public class Programmer extends Human{
+    public Programmer(){
+        super("谢树源",23);
+    }
     Program program=new Program() {
-        @Override
         public void program() {
-            System.out.println("具备有编程的能力！");
+            System.out.println(getName()+"具备有编程的能力！");
         }
     };
     Drive drive=new Drive() {
-        @Override
         public void drive() {
-            System.out.println("具备有驾驶的能力！");
+            System.out.println(getName()+"具备有驾驶的能力！");
         }
     };
 }

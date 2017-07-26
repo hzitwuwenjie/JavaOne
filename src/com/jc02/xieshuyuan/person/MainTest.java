@@ -14,8 +14,8 @@ package com.jc02.xieshuyuan.person;
 public class MainTest {
     public static void main(String[] args) {
         Programmer programmer=new Programmer();
-        programmer.drive.drive();
         programmer.program.program();
+        programmer.drive.drive();
         Driver driver=new Driver();
         driver.drive.drive();
         Company company=new Company();

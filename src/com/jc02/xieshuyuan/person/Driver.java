@@ -12,10 +12,12 @@ package com.jc02.xieshuyuan.person;
  * +---------------------------------Oooo---------------------------------------+
  */
 public class Driver extends Human{
+    public Driver(){
+        super("老王",36);
+    }
     Drive drive=new Drive() {
-        @Override
         public void drive() {
-            System.out.println("具备有驾驶的能力！");
+            System.out.println(getName()+"具备有驾驶的能力！");
         }
     };
 }

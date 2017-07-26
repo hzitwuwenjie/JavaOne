@@ -13,6 +13,6 @@ package com.jc02.xieshuyuan.person;
  */
 public class Company {
     public String recruit(Programmer programmer){
-        return "具有软件开发能力和驾驶能力";
+        return programmer.getName()+"具有软件开发能力和驾驶能力";
     }
 }
