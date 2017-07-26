@@ -1,8 +1,7 @@
 package com.jc02.xiewenqiang.test;
 
 import com.jc02.xiewenqiang.message.commonmessage.*;
-import com.jc02.xiewenqiang.message.eventmessage.LocationEventMessage;
-import com.jc02.xiewenqiang.message.eventmessage.MenuEventMessage;
+
 
 /**
  * +-------oOOo-----( _ )-----oOOo--------------------------------------------+
@@ -13,28 +12,46 @@ import com.jc02.xiewenqiang.message.eventmessage.MenuEventMessage;
  */
 public class TestMessage {
     public static void main(String[] args) {
-        ImageMessage imageMessage=new ImageMessage();
-        System.out.println(imageMessage);
-
-        LinkMessage linkMessage=new LinkMessage();
-        System.out.println(linkMessage);
-
-        locationMessage locationMessage =new locationMessage();
-        System.out.println(locationMessage);
-
+        System.out.println("==========================文本消息=========================");
         TextMessage textMessage = new TextMessage();
-        System.out.println(textMessage);
+        textMessage.setToUserName("小明");
+        textMessage.setFromUserName("张三");
+        textMessage.setCreateTime(System.currentTimeMillis());
+        textMessage.setContent("你好");
+        textMessage.showXml();
 
-        VedioMessage vedioMessage= new VedioMessage("shortVedio");
-        System.out.println(vedioMessage);
+        System.out.println("==========================图片消息=========================");
+        ImageMessage imageMessage = new ImageMessage();
+        imageMessage.setToUserName("小明");
+        imageMessage.setFromUserName("张三");
+        imageMessage.setCreateTime(System.currentTimeMillis());
+        imageMessage.setPicUrl("www.baidu.com");
+        imageMessage.showXml();
 
-        VoiceMessage voiceMessage =new VoiceMessage();
-        System.out.println(voiceMessage);
+        System.out.println("==========================连接消息=========================");
+        LinkMessage linkMessage = new LinkMessage();
+        linkMessage.setToUserName("小明");
+        linkMessage.setFromUserName("张三");
+        linkMessage.setCreateTime(System.currentTimeMillis());
+        linkMessage.setUrl("www.sougou.com");
+        linkMessage.setMsgId(100001);
+        linkMessage.showXml();
 
-        LocationEventMessage locaEventMessage =new LocationEventMessage();
-        System.out.println(locaEventMessage);
+        System.out.println("==========================地理位置消息=========================");
+        locationMessage loc = new locationMessage();
+        loc.setToUserName("小明");
+        loc.setFromUserName("张三");
+        loc.setCreateTime(System.currentTimeMillis());
+        loc.setLocation_X("20");
+        loc.setLocation_Y("48");
+        loc.setMsgId(1001);
+        loc.showXml();
 
-        MenuEventMessage menuEventMessage=new MenuEventMessage("CLICK");
-        System.out.println(menuEventMessage);
+        System.out.println("==========================视频消息=========================");
+        VedioMessage vedioMessage = new VedioMessage("shortvedio");
+        vedioMessage.setToUserName("小明");
+        vedioMessage.setFromUserName("张三");
+        vedioMessage.setMsgId(1001);
+        vedioMessage.showXml();
     }
 }
