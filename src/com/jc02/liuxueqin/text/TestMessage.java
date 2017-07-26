@@ -48,9 +48,14 @@ public class TestMessage {
         System.out.println(report.getMsgType());
         System.out.println(report.getEvent());
 
-        ZiDingYiCaiDanShiJian zidingyi=new ZiDingYiCaiDanShiJian();
-        System.out.println(zidingyi.getMsgType());
-        System.out.println(zidingyi.getEvent());
+        ZiDingYiCaiDanShiJian zidingyi1=new ZiDingYiCaiDanShiJian(ZiDingYiCaiDanShiJianEnum.CLICK);
+        System.out.println(zidingyi1.getMsgType());
+        System.out.println(zidingyi1.getEvent());
+
+        ZiDingYiCaiDanShiJian zidingyi2=new ZiDingYiCaiDanShiJian(ZiDingYiCaiDanShiJianEnum.VIEW);
+        System.out.println(zidingyi2.getMsgType());
+        System.out.println(zidingyi2.getEvent());
+
 
     }
 }
