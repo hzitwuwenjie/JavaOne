@@ -18,7 +18,7 @@ public class Wjm {
 int e,f;
         Calander c=new Calander();
         Scanner input=new Scanner(System.in);
-        System.out.println("请输入年份");
+        System.out.println("请输入 年份");
         int y=input.nextInt();
         int m=1;
         do {
